@@ -1,0 +1,521 @@
+Animal Class,Species Name,Common Name,Year,Continent,Countries
+Mammal,Plagiodontia ipnaeum,Samana hutia,1500,North America,Haiti
+Bird,Megalapteryx didinus,Upland moa,1500,Oceania,New Zealand
+Bird,Dinornis,Giant moa,1500,Oceania,New Zealand
+Bird,Emeus crassus,Eastern moa,1500,Oceania,New Zealand
+Bird,Anomalopteryx didiformis,Bush moa,1500,Oceania,New Zealand
+Bird,,Saint Helena dove,1502,Africa,Saint Helena
+Bird,,Saint Helena rail,1502,Africa,Saint Helena
+Bird,,Small Saint Helena petrel,1502,Africa,Saint Helena
+Mammal,,Vespucci's rodent,1503,South America,Brazil
+Mammal,,Flores cave rat,1510,Asia,Indonesia
+Mammal,,Buhler's coryphomys,1510,Asia,Indonesia
+Mammal,,Flores long-nosed rat,1510,Asia,Indonesia
+Mammal,,Verhoeven's giant tree rat,1510,Asia,Indonesia
+Mammal,,Large sloth lemur,1510,Africa,Madagascar
+Bird,,Saint Helena hoopoe,1550,Africa,Saint Helena
+Bird,Tyto pollens,Bahaman barn owl,1600,North America,Bahamas
+Mammal,Cuban coney,Geocapromys columbianus,1600,North America,Cuba
+Mammal,Boromys offella,Oriente cave rat,1600,North America,Cuba
+Mammal,Boromys torrei,Torre's cave rat,1600,North America,Cuba
+Mammal,,West Indies nesophontes,1600,North America,Cuba
+Reptile,,Mauritius skink (Leiolopisma mauritiana),1600,Africa,Reunion
+Bird,Telespiza persecutrix,Kauai finch,1600,Oceania,Hawaii
+Mammal,Heteropsomys insulans,Hispaniolan edible rat,1600,North America,Haiti
+Mammal,Hexolobodon phenax,Imposter hutia,1600,North America,Haiti
+Mammal,Solenodon marcanoi,Marcano's solenodon,1600,North America,Haiti
+Mammal,Isolobodon montanus,Montane hutia,1600,North America,Haiti
+Mammal,Nesiotites similis,Sardinian giant shrew,1600,Europe,Italy
+Mammal,Xenothrix mcgregori,Jamaican monkey,1600,North America,Jamaica
+Mammal,Pennatomys nivalis,Nevis rice rat,1600,North America,Sint Eustatius
+Bird,Malacorhynchus scarletti,Scarlett's duck,1600,Oceania,New Zealand
+Bird,Biziura delautouri,New Zealand musk duck,1600,Oceania,New Zealand
+Bird,Pachyornis elephantopus,Heavy-footed moa,1600,Oceania,New Zealand
+Bird,Euryapteryx curtus,Coastal moa,1600,Oceania,New Zealand
+Bird,Pachyanas chathamica,Chatham Islands duck,1600,Oceania,New Zealand
+Bird,Aptornis defossor,Adzebill,1600,Oceania,New Zealand
+Bird,Aegolius gradyi,Bermuda saw-whet owl,1600,North America,Bermuda
+Bird,Bermuteo avivorus,Bermuda hawk,1603,North America,Bermuda
+Bird,,Elephant bird,1610,Africa,Madagascar
+Bird,,Mauritius starling,1610,Africa,Mauritius
+Bird,,Ascension night heron,1610,Africa,Saint Helena
+Mammal,Bos primigenius,Aurochs (lived across Euro-Asia continent),1627,Europe,Poland
+Reptile,,Mauritian giant skink,1650,Africa,Mauritius
+Bird,,Saint Helena crake,1650,Africa,Saint Helena
+Bird,,Ascension flightless crake,1656,Africa,Saint Helena
+Bird,,Dodo,1662,Africa,Mauritius
+Bird,,Broad-billed parrot,1680,Africa,Mauritius
+Bird,,Mascarene coot,1693,Africa,Mauritius
+Bird,,Reunion shelduck,1700,Africa,Reunion
+Bird,,Reunion night hero,1700,Africa,Reunion
+Bird,,Reunion kestrel,1700,Africa,Reunion
+Bird,,Reunion rail,1700,Africa,Reunion
+Bird,,Reunion pink pigeon,1700,Africa,Reunion
+Bird,,Reunion owl,1700,Africa,Reunion
+Mammal,Isolobodon portoricensis,Puerto Rican hutia,1700,North America,Haiti
+Bird,,Mauritius night-heron,1700,Africa,Mauritius
+Bird,,Mauritian duck,1700,Africa,Mauritius
+Bird,,Mauritian shelduck,1700,Africa,Mauritius
+Mammal,Heteropsomys insulans,Insular cave rat,1700,North America,Puerto Rico
+Mammal,Monophyllus frater,Puerto Rican long-nosed bat,1700,North America,Puerto Rico
+Bird,,Reunion pigeon,1705,Africa,Reunion
+Bird,,Red rail,1710,Africa,Mauritius
+Bird,,Reunion gallinule,1730,Africa,Reunion
+Bird,,Reunion flightless ibis,1750,Africa,Reunion
+Bird,,Reunion sacred ibis,1750,Africa,Reunion
+Reptile,,Domed Mauritius giant tortoise,1750,Africa,Mauritius
+Reptile,,Saddle-backed Mauritius giant tortoise,1750,Africa,Mauritius
+Bird,Ara guadeloupensis,Lesser Antillean macaw,1760,North America,Guadeloupe
+Bird,Loxioides kikuchi,Kauai palila,1760,Oceania,Hawaii
+Bird,,Rodrigues night-heron,1760,Africa,Mauritius
+Bird,,Rodrigues owl,1760,Africa,Mauritius
+Bird,,Rodrigues parrot,1760,Africa,Mauritius
+Bird,,Rodrigues rail,1760,Africa,Mauritius
+Bird,,Rodrigues starling,1760,Africa,Mauritius
+Bird,Ara guadeloupensis,Lesser Antillean macaw (lived in North America),1760,North America,United States
+Bird,,Mascarene grey parakeet,1764,Africa,Mauritius
+Bird,,Mauritius grey parrot,1764,Africa,Mauritius
+Mammal,Hydrodamalis gigas,Steller's sea cow,1768,Asia,Russia
+Bird,Gallicolumba ferruginea,Tanna ground dove,1773,Oceania,Vanuatu
+Mammal,Prolagus sardus,Sardinian pika,1774,Europe,Italy
+Bird,Aplonis mavornata,Mysterious starling,1774,Oceania,New Zealand
+Bird,Prosobonia ellisi,White-winged sandpiper,1777,Oceania,French Polynesia
+Bird,Cyanoramphus ulietanus,Society parakeet,1777,Oceania,French Polynesia
+Bird,Circus eylesi,Eyles's harrier,1777,Oceania,New Zealand
+Bird,Gallirallus hypoleucus,Tongatapu rail,1777,Oceania,Tonga
+Bird,,Rodrigues solitaire,1778,Africa,Mauritius
+Bird,Amazona violacea,Guadeloupe parrot,1779,North America,Guadeloupe
+Bird,Anodorhynchus purpurascens,Violet macaw,1779,North America,Guadeloupe
+Bird,Amazona martinicana,Martinique parrot,1779,North America,Martinique
+Bird,Aratinga chloroptera maugei,Mauge's parakeet,1779,North America,Puerto Rico
+Bird,Amazona violacea,Guadeloupe parrot,1779,North America,Guadeloupe
+Bird,Amazona martinicana,Martinique parrot,1779,North America,Martinique
+Bird,,Reunion swamphen,1780,Africa,Reunion
+Bird,,Reunion parakeet,1780,Africa,Reunion
+Bird,Porzana nigra,Miller's rail,1784,Oceania,French Polynesia
+Mammal,Bison bonasus hungarorum,Carpathian wisent (lived across Carpathian Mountains),1790,Europe,Romania
+Bird,Eclectus infectus,Oceanic eclectus parrot ,1793,Oceania,Tonga
+Mammal,,Bluebuck,1799,Africa,South Africa
+Bird,Aratinga labati,Guadeloupe parakeet,1800,North America,Guadeloupe
+Reptile,,Reunion giant tortoise,1800,Africa,Reunion
+Bird,Tribonyx hodgenorum,Hodgens' waterhen ,1800,Oceania,New Zealand
+Bird,Colaptes oceanicus,Bermuda flicker,1800,North America,Bermuda
+Bird,Nyctanassa carcinocatactes,Bermuda night heron,1800,North America,Bermuda
+Bird,,Saint Helena cuckoo,1800,Africa,Saint Helena
+Bird,Dromaius baudinianus,Kangaroo Island emu,1805,Oceania,Australia
+Reptile,,Domed Rodrigues giant tortoise,1810,Africa,Mauritius
+Reptile,,Saddle-backed Rodrigues giant tortoise,1810,Africa,Mauritius
+Bird,,Hooded seedeater,1823,South America,Brazil
+Bird,Pomarea pomarea,Maupiti monarch,1823,Oceania,French Polynesia
+Bird,,Bonin thrush,1827,Asia,Japan
+Bird,Porzana monasa,Kosrae crake,1827,Oceania,Micronesia
+Bird,Aplonis corvina ,Kosrae starling,1827,Oceania,Micronesia
+Bird,,Bonin grosbeak,1828,Asia,Japan 
+Bird,,Mascarene parrot,1834,Africa,Reunion
+Bird,,Delalande's coua,1834,Africa,Madagascar
+Bird,Moho apicalis,O'ahu 'o'o,1837,Oceania,Hawaii
+Bird,Hemignathus lucidus lucidus,O'ahu nukupu'u,1837,Oceania,Hawaii
+Reptile,Leiocephalus herminieri,Martinique curly-tailed lizard,1840,North America,Martinique
+Reptile,Celestus occiduus,Jamaica giant galliwasp,1840,North America,Jamaica
+Bird,,Mauritius blue pigeon,1840,Africa,Mauritius
+Bird,Thinornis rossi,Aucland Islands shore plover,1840,Oceania,New Zealand
+Reptile,Leiocephalus herminieri,Martinique curly-tailed lizard,1840,North America,Martinique
+Reptile,,Rodrigues giant day gecko,1842,Africa,Mauritius
+Mammal,Notomys macrotis,Big-eared hopping mouse,1843,Oceania,Australia
+Bird,,Red-throated wood-rail,1843,South America,Peru
+Mammal,Notomys mordax,Darling Downs hopping mouse,1846,Oceania,Australia
+Bird,,Black-browed babbler,1848,Asia,Indonesia
+Bird,Dromaius novaehollandiae diemenensis,Tasmanian emu,1850,Oceania,Australia
+Bird,,Turquoise-throated puffleg,1850,South America,Colombia
+Reptile,,Charles Island tortoise,1850,South America,Ecuador
+Reptile,,Reunion giant tortoise,1850,Africa,Reunion
+Bird,Aplonis ulietensis,Bay thrush,1850,Oceania,French Polynesia
+Bird,Cyanoramphus zealandicus,Black-fronted parakeet,1850,Oceania,French Polynesia
+Bird,Prosobonia cancellata,Christmas sandpiper,1850,Oceania,Kiribati
+Bird,,Mauritius owl,1850,Africa,Mauritius
+Mammal,,Lesser Mascarene flying fox,1850,Africa,Mauritius
+Bird,,Spectacled cormorant,1850,Asia,Russia
+Bird,Nestor productus,Norfolk kaka,1851,Oceania,Australia
+Bird,Caloenas maculata,Liverpool pigeon,1851,Oceania,Australia
+Bird,,Letitia's thorntail,1852,South America,Bolivia
+Bird,Pinguinus impennis,Great auk (lived in the cold North Atlantic Coasts),1852,Europe,Iceland
+Bird,Pinguinus impennis,Great auk (lived in the cold North Atlantic Coasts),1852,North America,Canada
+Mammal,Megalomys luciae,Santa Lucian giant rice rat,1852,North America,Saint Lucia
+Bird,Columba vitiensis godmanae,White-throated pigeon,1853,Oceania,Australia
+Reptile,Pseudophilautus leucorhinus,,1856,Asia,Sri Lanka
+Mammal,Conilurus albipes,White-footed rabbit-rat,1857,Oceania,Australia
+Mammal,Pseudomys gouldii,Gould's mouse,1857,Oceania,Australia
+Bird,Chaetoptila angustipluma,Kioea,1859,Oceania,Hawaii
+Bird,Gallicolumba norfolciensis,Norfolk ground dove,1860,Oceania,Australia
+Mammal,Neovison macrodon,Sea mink (lived in North America),1860,North America,United States
+Mammal,Alces alces caucasicus,Caucasian moose (lived across Caucasus Mountains),1860,Asia,Turkey
+Bird,,Reunion starling,1860,Africa,Reunion
+Bird,,Bourbon crested starling,1860,Africa,Reunion
+Bird,Myadestes woahensis,Amaui,1860,Oceania,Hawaii
+Bird,Siphonorhis americana,Jamaican poorwill,1860,North America,Jamaica
+Bird,Pachyornis australis,Crested moa,1860,Oceania,New Zealand
+Reptile,Pseudophilautus maia,,1860,Asia,Sri Lanka
+Mammal,,Lesser Mascarene flying fox,1862,Africa,France
+Insect,,Mbashe River buff,1863,Africa,South Africa
+Insect,Lycaena dispar dispar,British large copper,1864,Europe,United Kingdom
+Reptile,Pseudophilautus temporalis,,1864,Asia,Sri Lanka
+Bird,,Siau scops owl,1866,Asia,Indonesia
+Bird,Cyanoramphus novaezelandiae subflavescenes,Red-crowned parakeet,1869,Oceania,Australia
+Reptile,Pseudophilautus nanus,,1869,Asia,Sri Lanka
+Reptile,Pseudophilautus nasutus,,1869,Asia,Sri Lanka
+Bird,Ara tricolor,Cuban red macaw,1870,North America,Cuba
+Bird,Coenocorypha barrierensis,North Island snipe,1870,Oceania,New Zealand
+Bird,Chenonetta finschi,Finsch's duck,1870,Oceania,New Zealand
+Reptile,Hoplodactylus delcourti,Kawekaweau,1870,Oceania,New Zealand
+Bird,Eudyptes chathamensis,Chatham Islands penguin,1872,Oceania,New Zealand
+Bird,Gallirallus dieffenbachii,Dieffenbach's rail,1872,Oceania,New Zealand
+Bird,Ixobrychus novaezelandiae,New Zealand little bittern,1872,Oceania,New Zealand
+Reptile,Pseudophilautus oxyrhynchus,,1872,Asia,Sri Lanka
+Mammal,Pteropus brunneus,Dusky flying fox,1874,Oceania,Australia
+Mammal,Pteropus pilosus,Large Palau flying fox,1874,Oceania,Palau
+Mammal,Potorous platyops,Broad-faced potoroo,1875,Oceania,Australia
+Bird,,Newton's parakeet,1875,Africa,Mauritius
+Bird,Coturnix novaezelandidae,New Zealand quail,1875,Oceania,New Zealand
+Bird,,Himalayan quail,1876,Asia,India
+Mammal,,Cape lion,1876,Africa,South Africa
+Reptile,Pseudophilautus hypomelas,,1876,Asia,Sri Lanka
+Reptile,Pseudophilautus pardus,,1876,Asia,Sri Lanka
+Mammal,,Falkland Island wolf,1876,South America,Falkland Islands [Islas Malvinas]
+Bird,Camptorhynchus labradorius,Labrador duck (lived in North America),1878,North America,United States
+Bird,Pterodroma caribbaea,Jamaican petrel,1879,North America,Jamaica
+Mammal,Oryzomys antillarum,Jamaican rice rat,1879,North America,Jamaica
+Insect,,Morant's blue,1879,Africa,South Africa
+Bird,Chlorostilbon bracei,Brace's emerald,1880,North America,Bahamas
+Mammal,,Atlas bear (lived across Atlas Mountains),1880,Africa,Algeria
+Reptile,,Gunther's streamlined frog,1882,Asia,Sri Lanka
+Reptile,Pseudophilautus extirpo,,1882,Asia,Sri Lanka
+Bird,Porzana sandwichensis,Hawaiian rail,1883,Oceania,Hawaii
+Mammal,,Quagga,1883,Africa,South Africa
+Arachnid,Tityus exstinctus,,1884,North America,Martinique
+Bird,,Seychelles parakeet,1886,Africa,Seychelles
+Reptile,Pseudophilautus adspersus,,1886,Asia,Sri Lanka
+Mammal,Cervus canadensis canadiensis,Eastern elk (lived in North America),1887,North America,United States
+Bird,,Ryukyu kingfisher,1887,Asia,Japan
+Mammal,Uromys porculus,Guadalcanal rat,1888,Oceania,Solomon Islands
+Mammal,Lagorchestes leporides,Estern hare-wallaby,1889,Oceania,Australia
+Bird,,Bonin nankeen night heron,1889,Asia,Japan
+Bird,,Bonin wood pigeon,1889,Asia,Japan
+Mammal,,Hokkaido wolf,1889,Asia,Japan
+Bird,Hemignathus ellisianus lanaiensis,Lana'i 'akialoa,1890,Oceania,Hawaii
+Fish,Romanogobio antipai,,1890,Europe,Romania
+Fish,Coregonus restrictus,,1890,Europe,Switzerland
+Bird,Rhodacanthis flaviceps,Lesser koa finch,1891,Oceania,Hawaii
+Bird,,Sulu bleeding-heart,1891,Asia,Philippines
+Bird,Ciridops anna,Ula-'ai-hawane,1892,Oceania,Hawaii
+Bird,Dendroscansor decurvirostris,Long-billed wren,1892,Oceania,New Zealand
+Mammal,Capra pyrenaica lusitanica,Portuguese ivex,1892,Europe,Portugal
+Fish,Moxostoma lacerum,Harelip sucker,1893,North America,United States
+Mammal,,Red gazelle,1894,Africa,Algeria
+Bird,Chloridops kona,Kona grosbeak,1894,Oceania,Hawaii
+Insect,Urania sloanus,Sloane's Urania butterfly,1894,North America,Jamaica
+Bird,Xenicus lyalli,Lyall's wren,1894,Oceania,New Zealand
+Bird,Porphyrio mantelli,North Island takahe,1894,Oceania,New Zealand
+Bird,Bowdleria rufescens,Chatham fernbird,1895,Oceania,New Zealand
+Bird,Rhodacanthis palmeri,Greater koa finch,1896,Oceania,Hawaii
+Mammal,Microtus pennsylvanicus nesophilus,Gull Island vole,1897,North America,United States
+Mammal,Oryzomys nelsoni,Nelson's rice rat,1897,North America,Mexico
+Mammal,Rattus nativitatis,Bulldog rat,1898,Oceania,Australia
+Bird,Drepanis pacifica,Hawai'i mamo,1898,Oceania,Hawaii
+Mammal,Oligoryzomys victus,Saint Vincent pygmy rice rat,1898,North America,Saint Vincent and the Grenadines
+Mammal,,One-striped opossum,1899,South America,Argentina
+Reptile,Pseudophilautus halyi,,1899,Asia,Sri Lanka
+Fish,Chondrostoma scodrense,,1900,Europe,Albania
+Bird,Athene cunicularia amaura,Antiguan burrowing owl,1900,North America,Antigua and Barbuda
+Bird,Athene cunicularia guadeloupensis,Guadeloupe burrowing owl,1900,North America,Guadeloupe
+Bird,Porphyrio paepae,Marquesas swamphen,1900,Oceania,French Polynesia
+Bird,Gallirallus pacificus,Tahitian red-billed rail,1900,Oceania,French Polynesia
+Bird,Caracara lutosa,Guadalupe caracara,1900,North America,Guadeloupe
+Insect,Agrotis photophila,Light-loving noctuid moth,1900,Oceania,Hawaii
+Reptile,Tropidophis bucculentus,Navassa Island dwarf boa,1900,North America,Navassa Island
+Reptile,Cyclura cornuta onchiopsis,Navassa Island iguana,1900,North America,Navassa Island
+Bird,Cabalus modestus,Chatham Islands rail,1900,Oceania,New Zealand
+Bird,Diaphorapteryx hawkinsi,Hawkins's rail,1900,Oceania,New Zealand
+Bird,Corvus moriorum ,Chatham raven,1900,Oceania,New Zealand
+Mammal,,Cape warthog,1900,Africa,South Africa
+Reptile,Tachygia microlepis,Tonga ground skink,1900,Oceania,Tonga
+Bird,,Tristan moorhen,1900,Africa,Saint Helena
+Crustacean,Pacifastacus nigrescens,Sooty crayfish,1900,North America,United States
+Insect,Coleophora leucochrysella,Chestnut casebearer moth,1900,North America,United States
+Bird,Aratinga labati ,Guadeloupe parakeet,1900,North America,Guadeloupe
+Bird,Hemiphaga novaeseelandiae spadicea,New Zealand pigeon,1901,Oceania,Australia
+Mammal,Notomys longicaudatus,Long-tailed hopping mouse,1901,Oceania,Australia
+Bird,Hemignathus sagittirostris,Greater 'amakihi,1901,Oceania,Hawaii
+Insect,Melanoplus spretus,Rocky Mountain locust (lived in North America),1902,North America,United States
+Bird,Mergus australis,New Zealand merganser,1902,Oceania,New Zealand
+Mammal,Megalomys desmarestii,Antillean giant rice rat,1902,North America,Martinique
+Mammal,Rattus macleari,Maclear's rat,1903,Oceania,Australia
+Fish,Oncorhynchus clarki macdonald,Yellowfin cutthroat trout,1903,North America,United States
+Mammal,Vulpes macrotis macrotis,Southern California kit fox,1903,North America,United States
+Bird,Moho bishopi,Bishop's 'o'o,1904,Oceania,Hawaii
+Bird,Microgoura meeki,Choiseul pigeon,1904,Oceania,Solomon Islands
+Fish,Salvelinus neocomensis,,1904,Europe,Switzerland
+Mammal,,Honshu wolf,1905,Asia,Japan
+Mammal,Sorex ornatus juncensis,Tule shrew,1905,North America,United States
+Bird,Anthornis melanocephala,Chatham bellbird,1906,Oceania,New Zealand
+Mammal,Cervus canadensis merriami,Merriam's elk,1906,North America,United States
+Bird,,Bogota sunangel,1907,South America,Colombia
+Bird,Drepanis funerea,Black mamo,1907,Oceania,Hawaii
+Bird,Heteralocha acutirostris,Huia,1907,Oceania,New Zealand
+Mammal,Nyctimene sanctacrucis,Nendo tube-nosed fruit bat,1907,Oceania,Solomon Islands
+Mammal,,De Winton's golden mole,1907,Africa,South Africa
+Bird,Dasyornis broadbenti litoralis,Rufous bristlebird ,1908,Oceania,Australia
+Bird,,Colombian grebe,1908,South America,Chile
+Mammal,Equus ferus ferus,Tarpan,1909,Europe,Russia
+Bird,Drymodes superciliaris colcloughi,Roper River scrub-robin,1910,Oceania,Australia
+Bird,Quiscalus palustris,Slender-billed grackle,1910,North America,Mexico
+Mammal,,Peruvian viscacha,1910,South America,Peru
+Mammal,Canis lupus beothucu,Newfoundland wolf,1911,North America,Canada
+Bird,Oceanodroma macrodactyla,Guadalupe storm petrel,1912,North America,Guadeloupe
+Reptile,,Eastwood's long-tailed seps,1912,Africa,South Africa
+Bird,Sceloglaux albifacies,Laughing owl,1914,Oceania,New Zealand
+Bird,Ectopistes migratorius,Passenger pigeon (lived in North America),1914,North America,United States
+Reptile,,Rodrigues day gecko,1917,Africa,Mauritius
+Reptile,Leiocephalus eremitus,Navassa curly-tailed lizard,1917,North America,Navassa Island
+Bird,Dysmorodrepanis munroi,Lana'i hookbill,1918,Oceania,Hawaii
+Bird,,Ruck's blue flycatcher,1918,Asia,Indonesia 
+Bird,Conuropsis carolinensis,Carolina parakeet (lived in North America),1918,North America,United States
+Mammal,Canis lupus bernardi,Banks Island wolf,1920,North America,Canada
+Bird,Acrocephalus familiaris familiaris,Laysan millerbird,1920,Oceania,Hawaii
+Bird,Ptilinopus mercierii,Red-moustached fruit dove,1922,Oceania,French Polynesia
+Bird,Prosobonia leucoptera,Tahiti sandpiper,1922,Oceania,French Polynesia
+Mammal,Ursus arctos californicus,California golden bear,1922,North America,United States
+Bird,Aplonis fusca,Tasman starling,1923,Oceania,Australia
+Bird,Zosterops strenuus,Robust white-eye,1923,Oceania,Australia
+Bird,Himatione fraithii,Laysan honeycreeper,1923,Oceania,Hawaii
+Bird,Rhipidura cervina,Lord Howe fantail,1924,Oceania,Australia
+Bird,Turdus poliocephalus vinitinctus,Lord Howe Island thrush,1924,Oceania,Australia
+Bird,,Madeiran wood pigeon,1924,Africa,Madeira
+Mammal,,Indian Javan rhinoceros,1925,Asia,India
+Mammal,Bison bonasus caucasicus,Caucasian wisent,1925,Europe,Russia
+Insect,Levuana irridescens,Levuana moth,1925,Oceania,Fiji
+Mammal,,Bubal hartebeest (lived North of the Sahara Desert),1925,Africa,Morocco
+Mammal,,Anthony's woodrat,1926,North America,Mexico 
+Insect,Pentagenia robusta,Robust burrowing mayfly,1926,North America,United States
+Bird,Psephotus pulcherrimus,Paradis parrot,1927,Oceania,Australia
+Mammal,,Ethiopian amphibious rat,1927,Africa,Ethiopia
+Insect,Agrotis crinigera,Poko noctuid moth,1927,Oceania,Hawaii
+Bird,Gallicolumba salamonis,Thick-billed ground dove,1927,Oceania,Solomon Islands
+Reptile,Pseudophilautus rugatus,,1927,Asia,Sri Lanka
+Reptile,Pseudophilautus zimmeri,,1927,Asia,Sri Lanka
+Bird,Gerygone insularis,Lord Howe gerygone,1928,Oceania,Australia
+Reptile,Ameiva cineracea,Guadeloupe ameiva,1928,North America,Guadeloupe
+Fish,Cottus echinatus,Utah Lake sculpin,1928,North America,United States
+Bird,,Vaurie's nightjar,1929,Asia,China
+Mammal,,Darwin's rice rat,1929,South America,Ecuador
+Bird,,Bering cackling goose,1929,Asia,Russia
+Amphibian,,Spiny-knee leaf frog,1930,South America,Brazil
+Reptile,,Cape Verde giant skink,1930,Africa,Cape Verde
+Bird,,Mukojima white-eye,1930,Asia,Japan 
+Mammal,Mus musculus muralis,St Kilda house mouse,1930,Europe,United Kingdom
+Fish,Oncorhynchus clarki alvordensis,Alvord cutthroat trout,1930,North America,United States
+Fish,Salvelinus agassizi,Silver trout,1930,North America,United States
+Insect,Mecodema punctellum,,1931,Oceania,New Zealand
+Bird,Rallus pectoralis clelandi,Lewin's water rail,1932,Oceania,Australia
+Mammal,Neotoma bunkeri,Bunker's woodrat,1932,North America,Mexico 
+Bird,Tympanuchus cupido cupido,Heath hen,1932,North America,United States
+Reptile,Pseudophilautus dimbullae,,1933,Asia,Sri Lanka
+Reptile,Pseudophilautus eximius,,1933,Asia,Sri Lanka
+Crustacean,Syncaris pasadenae,Pasadena freshwater shrimp,1933,North America,United States
+Amphibian,,Atelopus vogli,1933,South America,Venezuela
+Bird,Moho nobilis,Hawai'i 'o'o,1934,Oceania,Hawaii
+Mammal,Caloprymnus campestris,Desert rat-kangaroo,1935,Oceania,Australia
+Mammal,Lagorchestes asomatus,Central hare-wallaby,1935,Oceania,Australia
+Mammal,Canis lupus youngi,Southern Rocky Mountains wolf,1935,North America,United States
+Mammal,Thylacinus cynocephalus,Thylacine,1936,Oceania,Australia
+Bird,,Ryukyu wood pigeon,1936,Asia,Japan 
+Mammal,Mesocapromys nanus,Dwarf hutia,1937,North America,Cuba
+Mammal,,Bali tiger,1937,Asia,Indonesia
+Insect,Hydropsyche tobiasi,Tobias' caddisfly,1938,Europe,Germany
+Mammal,,Schomburgk's deer,1938,Asia,Thailand
+Fish,Rhinichthys osculus reliquus,Grass Valley speckled dace,1938,North America,United States
+Fish,Lepidomeda altivelis,Pahranagat spinedace,1938,North America,United States
+Bird,,Eskimo curlew,1939,South America,Brazil
+Fish,Coregonus gutturosus,Lake Constance whitefish (lived in Lake Constance),1940,Europe,Austria
+Fish,Coregonus oxyrinchus,Houting,1940,Europe,Belgium
+Mammal,Canis lupus fuscus,Cascade mountain wolf (lived in North America),1940,North America,United States
+Bird,Amazilia cyanifrons,Indigo-capped hummingbird,1940,North America,Costa Rica
+Mammal,,Indefatigable Galapagos mouse,1940,South America,Ecuador 
+Bird,Pomarea nukuhivae,Nuku Hiva monarch,1940,Oceania,French Polynesia
+Bird,Hemignathus obscurus,Hawai'i 'akialoa,1940,Oceania,Hawaii
+Bird,Hemignathus ellisianus ellisanus,O'ahu 'akialoa,1940,Oceania,Hawaii
+Bird,,Javan lapwing,1940,Asia,Indonesia
+Fish,,Titicaca Orestias,1940,South America,Peru
+Fish,,Salmo pallaryi,1940,Africa,Morocco
+Fish,Prototroctes oxyrhynchus,New Zealand grayling,1940,Oceania,New Zealand
+Reptile,Gallotia simonyi simonyi,Roque Chico de Salmor giant lizard,1940,Europe,Spain
+Bird,,Canary Islands oystercatcher,1940,Europe,Spain 
+Bird,Lalage leucopyga leucopyga,Norfolk triller,1942,Oceania,Australia
+Mammal,,Zuniga's dark rice rat,1942,South America,Peru
+Mammal,Macropus greyi,Toolache wallaby,1943,Oceania,Australia
+Insect,Glaucopsyche xerces,Xerces blue butterfly,1943,North America,United States
+Bird,Porzana palmeri,Laysan rail,1944,Oceania,Hawaii
+Bird,Gallirallus wakensis,Wake Island rail,1945,Oceania,Wake Island
+Reptile,Pseudophilautus zal,,1947,Asia,Sri Lanka
+Mammal,Peromyscus mekisturus,Puebla deer mouse,1948,North America,Mexico
+Fish,Empetrichthys merriami,Ash Meadows killifish,1948,North America,United States
+Bird,,Cyprus dipper,1950,Asia,Cyprus
+Bird,Corvus corax,Pied raven,1950,Europe,Denmark
+Insect,Plebejus argus masseyi,Silver-studded blue subsp. masseyi,1950,Europe,United Kingdom
+Fish,Coregonus fera,,1950,Europe,France
+Fish,Coregonus hiemalis,Gravenche,1950,Europe,France
+Mammal,Neotoma martinensis,San Martin Island woodrat,1950,North America,Mexico
+Reptile,Podarcis lilfordi rodriquezi,Ratas Island lizard,1950,Europe,Spain
+Bird,Turdus ravidus,Grand Cayman thrush,1950,North America,Cayman Islands
+Crustacean,Afrocyclops pauliani,,1951,Africa,Madagascar
+Mammal,,Queen of Sheba's gazelle,1951,Asia,Yemen
+Fish,Coregonus johannae,Deepwater cisco (lived in North America),1952,North America,United States
+Mammal,Monachus tropicalis,Caribbean monk seal (live in Caribbean Sea),1952,North America,Jamaica
+Bird,,Niceforo's pintail,1952,South America,Colombia
+Bird,,Negros fruit dove,1953,Asia,Philippines
+Mammal,,Ilin Island Cloudrunner,1953,Asia,Philippines
+Bird,Gallinula silvestris,Makira woodhen,1953,Oceania,Solomon Islands
+Fish,Characodon garmani,Parras characodon,1953,North America,Mexico
+Bird,Tympanuchus phasianellus hueyi,New Mexico Sharp-tailed Grouse,1954,North America,Mexico
+Bird,Turnagra tanagra,North Island piopio,1955,Oceania,New Zealand
+Reptile,Oligosoma gracilicorpus,Narrow-bodied skink,1955,Oceania,New Zealand
+Mammal,Geocapromys thoracatus,Little Swan Island hutia,1955,North America,Swan Islands
+Mammal,Geomys pinetis goffi,Goff's pocket gopher,1955,North America,United States
+Mammal,Onychogalea lunata,Crescent nail-tail wallaby,1956,Oceania,Australia
+Mammal,Pseudomys glaucus,Blue-gray mouse,1956,Oceania,Australia
+Bird,Campephilus imperialis,Imperial woodpecker,1956,North America,Mexico
+Bird,,Taichira antpitta,1956,South America,Venezuela
+Bird,,Darwin's ground finch,1957,South America,Ecuador 
+Fish,Chirostoma charari,Least silverside,1957,North America,Mexico
+Fish,Noturus trautmani,Scioto madtom,1957,North America,United States
+Mammal,Peromyscus polionotus decoloratus,Pallid beach mouse,1959,North America,United States
+Bird,Ninox novaeseelandiae albaria,Lord Howe boobook,1960,Oceania,Australia
+Mammal,Chaeropus ecaudatus,Pig-footed bandicoot,1960,Oceania,Australia
+Mammal,Macrotis leucura,Lesser bilby,1960,Oceania,Australia
+Mammal,Perameles eremiana,Desert bandicoot,1960,Oceania,Australia
+Bird,,Pink-headed duck (lived in the Gangetic plains),1960,Asia,Bangladesh
+Mammal,,Candango mouse,1960,South America,Brazil
+Fish,Gila crassicauda,Thicktail chub,1960,North America,United States
+Bird,Leucopeza semperi,Semper's warbler,1961,North America,Saint Lucia
+Fish,Notropis aulidion,Durango shiner,1961,North America,Mexico
+Mammal,,Red-bellied gracile opossum,1962,South America,Argentina
+Amphibian,,Du Toit's torrent frog,1962,Africa,Kenya
+Fish,Ptychochromis onilahy,,1962,Africa,Madagascar
+Mammal,,Gloomy tube-nosed bat,1962,Asia,Japan
+Bird,Paroreomyza flammea ,Moloka'i creeper,1963,Oceania,Hawaii
+Bird,Turnagra capensis,South Island piopio,1963,Oceania,New Zealand
+Crustacean,Hemigrapsus estellinensis ,,1963,North America,United States
+Mammal,Procyon lotor gloveralleni,Barbados raccoon,1964,North America,Barbados
+Fish,Notropis simus simus,Rio Grande bluntnose shiner,1964,North America,Mexico
+Mammal,Ursus arctos nelsoni,Mexican grizzly bear,1964,North America,Mexico
+Bird,Coenocorypha iredalei,South Island snipe,1964,Oceania,New Zealand
+Insect,,Saint Helena darter,1964,Africa,Saint Helena
+Amphibian,Plethodon ainsworthi,Ainsworth's salamander,1964,North America,United States
+Bird,Akialoa stejnegeri,Kaua'i 'akialoa,1965,Oceania,Hawaii
+Reptile,Podarcis sicula sanctistephani,Santo Stefano lizard,1965,Europe,Italy
+Mammal,Mystacina robusta,Greater short-tailed bat,1965,Oceania,New Zealand
+Bird,,Arabian ostrich (lived in the Middle East),1966,Asia,Saudi Arabia
+Insect,,Saint Helena giant earwig,1967,Africa,Saint Helena
+Mammal,Pteropus pilosus,Guam flying fox,1967,Oceania,Guam
+Fish,Coregonus nigripinnis,Blackfin cisco,1969,North America,United States
+Bird,,Glaucous macaw (lived across South America),1970,South America,Argentina
+Bird,,Colombian grebe,1970,South America,Colombia
+Fish,Coregonus bezola,,1970,Europe,France
+Bird,Micrathene whitneyi graysoni,Socorro elf owl,1970,North America,Mexico
+Fish,Gasterosteus crenobiontus,Technirghiol stickleback,1970,Europe,Romania
+Mammal,Uromys imperator,Emperor rat,1970,Oceania,Solomon Islands
+Mammal,Thomomys mazama tacomensis,Tacoma pocket gopher,1970,North America,United States
+Bird,,Antioquia brush finch,1971,South America,Colombia
+Bird,,Catanduanes bleeding heart,1971,Asia,Philippines
+Bird,Xenicus longipes ,Bush wren,1972,Oceania,New Zealand
+Bird,Nesoclopeus peocilopterus,Bar-winged rail,1973,Oceania,Fiji
+Amphibian,Eleutherodactylus karlschmidti,Web-footed coqui,1974,North America,Puerto Rico
+Mammal,,Japanese sea lion,1974,Asia,Japan
+Bird,Anas oustaleti,Mariana mallard,1974,Oceania,Northern Mariana Islands
+Bird,Turdus poliocephalus poliocephalus,Norfolk thrush,1975,Oceania,Australia
+Fish,Coregonus alpenae,Longjaw cisco,1975,North America,United States
+Fish,,Acanthobrama hulensis,1975,Asia,Israel
+Reptile,,Round Island burrowing boa,1975,Africa,Mauritius
+Fish,Notropis orca,Phantom shiner,1975,North America,Mexico
+Mammal,,Wimmer's shrew,1976,Africa,Cote d'Ivoire
+Bird,Pomarea fluxa,Eiao monarch,1977,Oceania,French Polynesia
+Fish,,Siamese flat-barbelled catfish,1977,Asia,Thailand
+Reptile,Xiphosurus roosevelti,Culebra Island giant anole,1978,North America,Puerto Rico
+Mammal,Mesocapromys sanfelipensis,San Felipe hutia,1978,North America,Cuba
+Amphibian,Taudactylus diurnus,Southern day frog,1979,Oceania,Australia
+Reptile,,Yunnan lake newt,1979,Asia,China
+Insect,Maculinea arion eutyphron,British large blue,1979,Europe,United Kingdom
+Mammal,,Japanese river otter,1979,Asia,Japan
+Fish,Cyprinodon nevadensis calidae,Tecopa pupfish,1979,North America,United States
+Bird,Zosterops albogularis,White-chested white-eye,1980,Oceania,Australia
+Amphibian,,Chile Darwin's frog,1980,South America,Chile
+Mammal,,Javan tiger,1980,Asia,Indonesia
+Fish,,Tristramella intermedia,1980,Asia,Israel
+Fish,,Aplocheilichthys sp. nov. 'Naivasha,1980,Africa,Kenya
+Insect,Pieris brassicae wollastoni,Madeiran large white,1980,Europe,Portugal
+Bird,,White-eyed river martin,1980,Asia,Thailand
+Mammal,Panthera tigris virgata,Caspian tiger (lived from Turkey to China along Causcasus Mountains),1980,Asia,Turkey
+Fish,Pogonichthys ciscoides,Clear Lake splittail,1980,North America,United States
+Fish,Gila bicolor isolata,Independence Valley tui chub,1980,North America,United States
+Bird,Numenius borealis,Eskimo curlew,1981,North America,Canada
+Amphibian,Rheobatrachus silus,Gastric-brooding frog,1981,Oceania,Australia
+Amphibian,Eleutherodactylus jasperi,Golden coqui,1981,North America,Puerto Rico
+Fish,Sander vitreus glaucus,Blue walleye,1983,North America,United States
+Fish,Evarra tlahuacensis,Endorheic chub,1983,North America,Mexico
+Fish,Evarra bustamantei,Mexican dace,1983,North America,Mexico
+Fish,Evarra eigenmanni,Plateau chub,1983,North America,Mexico
+Bird,,Aldabra brush-warbler,1983,Africa,Seychelles
+Bird,Myiagra freycineti,Guam flycatcher,1983,Oceania,Guam
+Fish,Gambusia georgei,San Marcos gambusia,1983,North America,United States
+Amphibian,Rheobatrachus vitellinus,Eungella gastric-brooding frog,1985,Oceania,Australia
+Fish,Coregonus reighardi,Shortnose cisco,1985,North America,United States
+Bird,,Alaotra grebe,1985,Africa,Madagascar
+Mammal,Dipodomys gravipes ,San Quintin kangaroo rat,1986,North America,United States
+Amphibian,,Craugastor escoces,1986,North America,Costa Rica
+Bird,,Eastern Canary Islands chiffchaff,1986,Africa,Spain
+Fish,Rhinichthys deaconi,Las Vegas dace,1986,North America,United States
+Insect,Rhyacophila amabilis,Castle Lake caddisfly,1986,North America,United States
+Fish,Rhinichthys cataractae smithi,Banff longnose dace,1987,North America,Canada
+Bird,Campephilus principalis bairdii,Cuban ivory-billed woodpecker,1987,North America,Cuba
+Bird,Moho braccatus,Kaua'i 'o'o,1987,Oceania,Hawaii
+Mammal,,Malabar civet,1987,Asia,India
+Bird,Ammodramus maritimus nigrescens,Dusky seaside sparrow,1987,North America,Mexico
+Fish,Gambusia amistadensis,Amistad gambusia,1987,North America,United States
+Mammal,Sylvilagus floridanus hitchensi,Smith Island cottontail,1987,North America,United States
+Bird,Campephilus principalis,Ivory-billed woodpecker,1987,North America,United States
+Mammal,,Kouprey (lived in South Asia),1988,Asia,Cambodia
+Bird,Loxops coccineus ochraceus,Maui 'akepa,1988,Oceania,Hawaii
+Bird,Vermivora bachmanii,Bachman's warbler,1988,North America,Mexico
+Fish,Etheostoma sellare,Maryland darter,1988,North America,United States
+Mammal,Mysateles garridoi,Garrido's hutia,1989,North America,Cuba
+Amphibian,Bufo periglenes,Golden toad,1989,North America,Costa Rica
+Amphibian,,Atelopus longirostris,1989,South America,Ecuador
+Bird,Podilymbus gigas,Atitlan grebe,1989,North America,Guatemala
+Bird,Myadestes myadestinus,Kama'o,1989,Oceania,Hawaii
+Bird,,San Cristobal vermilion flycatcher,1990,South America,Ecuador 
+Amphibian,Thorius infernalis,Atoyac minute salamander,1990,North America,Mexico
+Mammal,Lepus granatensis solisi,Majorcan hare,1990,Europe,Spain
+Amphibian,Thorius narismagnus,San Martin pygmy salamander,1990,North America,Mexico
+Crustacean,Cambarellus alvarezi,,1994,North America,Mexico
+Mammal,,Pacific degu,1994,South America,Chile
+Bird,Ninox novaeseelandiae undulata,Norfolk boobook,1996,Oceania,Australia
+Mammal,,Western black rhinoceros,1996,Africa,Cameroon
+Insect,Neduba extincta,Antioch Dunes shieldback katydid,1996,North America,United States
+Amphibian,Taudactylus acutirostris,Sharp-snouted day frog,1997,Oceania,Australia
+Bird,,Slender-billed curlew,1998,Asia,Russia 
+Fish,,Gokce baligi,1998,Asia,Turkey
+Bird,Porphyrio albus,Lord Howe swamphen,2000,Oceania,Australia
+Bird,Prosobonia ellisi,Moorea sandpiper,2000,Oceania,French Polynesia
+Bird,Loxops coccineus wolstenholmei,O'ahu 'akepa,2000,Oceania,Hawaii
+Bird,Prosobonia cancellata,Kiritimati sandpiper,2000,Oceania,Kiribati
+Mammal,,Formosan clouded leopard,2000,Asia,Taiwan
+Amphibian,,Osgood's Ethiopian toad,2003,Africa,Ethiopia
+Amphibian,,Craugastor chrysozetetes,2004,North America,Honduras
+Mammal,,Baiji,2004,Asia,China
+Mammal,Capra pyrenaica pyrenaica,Pyrenean ibex (lived in Iberian Peninsula),2005,Europe,Spain
+Fish,Chirostoma bartoni,Alberca silverside,2006,North America,Mexico
+Mammal,Puma concolor couguar,Eastern cougar (lived in northeastern North America),2011,North America,Canada
+Crustacean,Dexteria floridana,Florida fairy shrimp ,2011,North America,United States
+Reptile,,Pinta Island tortoise,2012,South America,Ecuador 
+Reptile,Emoia nativitatis,Christmas Island forest skink,2014,Oceania,Australia
+Mammal,Melomys rubicola,Bramble cay melomys,2016,Oceania,Australia
+Amphibian,Ecnomiohyla rabborum',Rabbs' fringe-limbed treefrog,2016,North America,Panama

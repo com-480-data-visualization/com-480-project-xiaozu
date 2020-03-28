@@ -12,6 +12,8 @@
 
 **10% of the final grade**
 
+Dataset from: https://github.com/kenziezou/thesixthextinction.git
+
 
 ## Milestone 2 (Friday 1st May, 5pm)
 
