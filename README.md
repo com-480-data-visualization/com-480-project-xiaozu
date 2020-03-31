@@ -20,11 +20,11 @@ __part about pre-processing__
 
 __ALSO BACHELOR?__ 
 
-### Problematic
+### 2.2 Problematic
 
-### Exploratory Data Analysis
+### 2.3 Exploratory Data Analysis
 
-### Related work
+### 2.4 Related work
 
 ## Milestone 2 (Friday 1st May, 5pm)
 
