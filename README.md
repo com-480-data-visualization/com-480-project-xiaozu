@@ -37,6 +37,35 @@ TODO
 ### 2.4 Related work
 TODO
 
+
+### 2.5 Some sketches of our visualizations [Additional]
+Show courses related to a selected one and insights about it.
+<p align="center">
+ <img src="/src/images/sketch1.jpg" width="400px" />
+</p>
+
+Show the number of students enrolled by year in the courses selected. 
+<p align="center">
+ <img src="/src/images/sketch2.jpg" width="300px" />
+</p>
+
+
+Show relation between a major and the courses selected by its students.
+<p align="center">
+ <img src="/src/images/sketch4.jpg" width="300px" />
+</p>
+
+
+Help a user to choose his/her next semester courses.
+<p align="center">
+ <img src="/src/images/sketch3.jpg" width="500px" />
+</p>
+
+General graphs.
+<p align="center">
+ <img src="/src/images/sketch5.jpg" width="300px" />
+</p>
+
 ## Milestone 2 (Friday 1st May, 5pm)
 
 **10% of the final grade**
