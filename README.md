@@ -35,10 +35,10 @@ We expect that the end-users who will mostly use our project will be mainly EPFL
 TODO
 
 ### 2.4 Related work
-TODO
+At the moment, we have not found any other related applications or websites. EPFL students choose courses based on the study plan offered online and keywords that are on the course description pages. As for the feature related to companies, LinkedIn allows HR to find people with specific skills but not for courses that they have done.
 
 
-### 2.5 Some sketches of our visualizations [Additional]
+##### Some sketches of our future visualizations
 Show courses related to a selected one and insights about it.
 <p align="center">
  <img src="/src/images/sketch1.jpg" width="400px" />
