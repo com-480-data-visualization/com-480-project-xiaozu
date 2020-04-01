@@ -52,18 +52,13 @@ Show the number of students enrolled by year in the courses selected.
 
 Show relation between a major and the courses selected by its students.
 <p align="center">
- <img src="/src/images/sketch4.jpg" width="300px" />
+ <img src="/src/images/sketch4.jpg" width="350px" />
 </p>
 
 
 Help a user to choose his/her next semester courses.
 <p align="center">
  <img src="/src/images/sketch3.jpg" width="500px" />
-</p>
-
-General graphs.
-<p align="center">
- <img src="/src/images/sketch5.jpg" width="300px" />
 </p>
 
 ## Milestone 2 (Friday 1st May, 5pm)
