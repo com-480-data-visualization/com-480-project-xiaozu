@@ -45,7 +45,7 @@ We expect that the end-users who will use our project will be mainly EPFL studen
 ### 2.3 Exploratory Data Analysis
 The data anlysis contains three parts. We build the tables by Pandas contains the figures for our objectives and show some examples in Pre-analysis.ipynb in order to get a hint.
 - a) Show the changes of the course enrollment over the years, i.e, for each course, compare the number of students in different years in order to show the popuarity trend of each course. We can see the image processing I course is very popuplar and is increasing rapidly while there is less student taking cryptography and security.
-- b) Compare the student major(section) composition of each courses. We can get statistic of major intake for each course and then show the different compositions of different courses. For example, the most students in image processing I are from Microengineering while machine learning is from Computer Sciences.
+- b) Compare the student major(section) composition of each courses. We can get statistic of major intake for each course and then show the different compositions of different courses. For example, the most students in image processing I are from Microengineering while machine learning is mostly composed by Computer Science student.
 - c) Analyze the similarity of course through the student enrollment based on the the hypothesis that the courses chosen by the same student have some commons. We build the coconrrence matrix of each course and find it is almost consistent with what we expected. For example, distributed algorithms has high cocurrence matrix coefficient with concurrent alogorithms which is the same as data visualization with applied data analysis.
 
 ### 2.4 Related work
