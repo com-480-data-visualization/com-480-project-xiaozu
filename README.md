@@ -42,8 +42,11 @@ We expect that the end-users who will use our project will be mainly EPFL studen
 
 - **General data representations**: Some examples: a) we could show a graph to show the trend in the number of students over the years (as explained above); b) indicate the number of students who had re-taken an exam. Moreover, other general visualizations would be to show how many new classes have been added in the year "x" or how many have been removed.
 
-### 2.3 Exploratory Data Analysis [TODO]
-TODO
+### 2.3 Exploratory Data Analysis
+The data anlysis contains three parts. We build the tables contains the figures for our objectives and show some examples in Pre-analysis.ipynb in order to get a hint.
+a) Show the changes of the course enrollment over the years, i.e, for each course, compare the number of students in different years in order to show the popuarity trend of each course. 
+b) Compare the student major(section) composition of each courses. We can get statistic of major intake for each course and then show the different compositions of different courses.
+c) Analyze the similarity of course through the student enrollment based on the the hypothesis that the courses chosen by the same student have some commons. We build the coconrrence matrix of each course and find it is almost consistent with what we expected.
 
 ### 2.4 Related work
 At the moment, we have not found any other related applications or websites. EPFL students choose courses based on the study plan offered online and keywords that are on the course description pages. As for the feature related to companies, LinkedIn allows HR to find people with specific skills but not for courses that they have done.
