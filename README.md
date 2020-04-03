@@ -27,10 +27,10 @@ We are more interested in master courses since they are more customizable from t
 
 #### 2.1.3 Database generated
 We have decided to store our data in 4 tables: Student, Enrollment, Course, Teaching.
-- csv/courses.csv : contains unique courses id, course name, teaching year for 15936 courses.
-- csv/student.csv: constains unique student id, student name, student section for 831103 students.
-- csv/teaching.csv： contains course id and itd corresponding professor for 831118 courses.
-- csv/enrollment.csv： contains student id, course id, student semester for 831129 student enrollments.
+- ``csv/courses.csv``: contains unique courses id, course name, teaching year for 15936 courses.
+- ``csv/student.csv``: constains unique student id, student name, student section for 831103 students.
+- ``csv/teaching.csv``: contains course id and itd corresponding professor for 831118 courses.
+- ``csv/enrollment.csv``：contains student id, course id, student semester for 831129 student enrollments.
 
 ### 2.2 Problematic
 #### 2.2.1 Target audience
@@ -46,10 +46,26 @@ We expect that the end-users who will use our project will be mainly EPFL studen
 - **General data representations**: Some examples: a) we could show a graph to show the trend in the number of students over the years (as explained above); b) indicate the number of students who had re-taken an exam. Moreover, other general visualizations would be to show how many new classes have been added in the year "x" or how many have been removed.
 
 ### 2.3 Exploratory Data Analysis
-Our data anlysis contains three parts. For each part we build related tables by Pandas that contain the figures for our objectives and we show some examples in Pre-analysis.ipynb.
-- a) Show the changes of the number of course enrollments over the years, i.e, for each course, we compare the number of students in different years in order to show the popuarity trend of each course. For instance, the Image processing I course is becoming rapidly increasing popular among students while less students are taking Cryptography and security over the recent years.
-- b) Compare the student major(section) composition of each course. We get statistics of major intake in each course and then show the different compositions of different courses. For example, the majority of students in Image processing I are from Microengineering while Machine learning is mostly composed by Computer Science and Data Science students.
-- c) Analyze the similarity of courses through the student enrollments based on the the hypothesis that the courses chosen by the same students have some commons. We build the co-occurrence matrix of each course from the course lists taken by each student. We find it consistent with what we expected, for example, Distributed algorithms has high co-ocurrence matrix coefficient with Concurrent alogorithms which is the same as Data visualization with Applied data analysis.
+Our data analysis contains three parts. For each part we build related tables by Pandas that contain the figures for our objectives and we show some examples in [Pre-analysis.ipynb](https://github.com/com-480-data-visualization/com-480-project-xiaozu/blob/milestone-1/src/data-analysis/Pre-analysis.ipynb).
+- **Show the changes of the number of course enrollments over the years**, i.e, for each course, we compare the number of students in different years in order to show the popuarity trend of each course. For instance, the Image processing I course is becoming rapidly increasing popular among students while less students are taking Cryptography and security over the recent years.
+<p align="center">
+ <img src="/src/images/da1.jpg" width="400px" />
+</p>
+
+- **Compare the student major (section) composition of each course**. We get statistics of major intake in each course and then show the different compositions of different courses. For example, the majority of students in Image processing I are from Microengineering while Machine learning is mostly composed by Computer Science and Data Science students.
+<p align="center">
+ <img src="/src/images/da2.jpg" width="400px" />
+</p>
+
+- **Analyze the similarity of courses through the student enrollments based on the the hypothesis that the courses chosen by the same students have some commons**. We build the co-occurrence matrix of each course from the course lists taken by each student. We find it consistent with what we expected, for example, Distributed algorithms has high co-ocurrence matrix coefficient with Concurrent alogorithms which is the same as Data visualization with Applied data analysis.
+<p align="center">
+ <img src="/src/images/da3.jpg" width="400px" />
+</p>
+
+- **Cluster the courses that are more closer each other.** We have treat the students as features (e.g. each course represented by a binary array) and then we have compute the correlation between the 2 courses on these arrays.
+<p align="center">
+ <img src="/src/images/da4.jpg" width="400px" />
+</p>
 
 ### 2.4 Related work
 At the moment, we have not found any other related applications or websites. EPFL students choose courses based on the study plan offered online and keywords that are on the course description pages. As for the feature related to companies, LinkedIn allows HR to find people with specific skills but not for courses that they have done.
@@ -68,15 +84,15 @@ Show the top N courses for a section (e.g. IC) over the years.
 </p>
 
 
-Show relation between a major and the courses selected by its students. For 1 course how people are distributed between different majors. 
+<!-- Show relation between a major and the courses selected by its students. For 1 course how people are distributed between different majors. 
 <p align="center">
  <img src="/src/images/sketch4.jpg" width="350px" />
 </p>
-redo or change it --> not for every majors
+redo or change it then not for every majors
 right: list of popular course
 left: master semester
 on which semester a course was taken
-plot: 1 to 1 relationship or 1 to N
+plot: 1 to 1 relationship or 1 to N -->
 
 
 Help a user to choose his/her next semester courses.
