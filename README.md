@@ -77,7 +77,7 @@ At the moment, we have not found any other related applications or websites. EPF
 
 
 ##### Some sketches of our future visualizations 
-Show courses related to a selected one(s), since we a lot of courses we will ask to the user to filter which one they want to look (e.g., filter by section). Moreover to hightlight the connections (shown in pink in the Fig. below) the user can select multiple courses. When you hover on the title of a course you will see a card on the right showing some insights about it.
+Show courses related to a selected one(s), since we a lot of courses we will ask to the user to filter which one they want to look (e.g., filter by section). Moreover to hightlight the connections (shown in pink in the Fig. below) the user can select multiple courses. When you hover on the title of a course you will see a card on the right showing some insights about it. We took the visualization idea from: [Exploring Comics project](https://github.com/ExploringComics/ExploringComics.github.io/blob/master/Comics_and_Diversity.pdf). 
 <p align="center">
  <img src="/src/images/sketch1.jpg" width="400px" />
 </p>
