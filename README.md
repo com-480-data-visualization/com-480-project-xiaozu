@@ -26,10 +26,10 @@ A challenging task was to clean the data crawled and to select the ones we are i
 
 #### 2.1.3 Database generated
 We have decided to store our data in 4 tables: Student, Enrollment, Course, Teaching.
-- ``csv/courses.csv``: contains unique courses id, course name, teaching year for 15936 courses.
-- ``csv/student.csv``: constains unique student id, student name, student section for 831103 students.
-- ``csv/teaching.csv``: contains course id and its corresponding professor for 831118 courses.
-- ``csv/enrollment.csv``: contains student id, course id, student semester for 831129 student enrollments.
+- ``csv/courses.csv``: contains unique courses id, course name, teaching year.
+- ``csv/student.csv``: constains unique student id, student name, student section.
+- ``csv/teaching.csv``: contains course id and its corresponding professor.
+- ``csv/enrollment.csv``: contains student id, course id, student semester.
 
 ### 2.2 Problematic
 #### 2.2.1 Target audience
