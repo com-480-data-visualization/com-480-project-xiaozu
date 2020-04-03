@@ -92,11 +92,6 @@ Help a user to choose his/her next semester courses. You can insert your name as
 <p align="center">
  <img src="/src/images/sketch4b.jpg" width="500px" />
 </p>
-<!-- For 1 course how people are distributed between different majors. redo or change it then not for every majors
-right: list of popular course
-left: master semester
-on which semester a course was taken
-plot: 1 to 1 relationship or 1 to N -->
 
 
 ## Milestone 2 (Friday 1st May, 5pm)
