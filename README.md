@@ -30,7 +30,7 @@ We have decided to store our data in 4 tables: Student, Enrollment, Course, Teac
 - ``csv/courses.csv``: contains unique courses id, course name, teaching year for 15936 courses.
 - ``csv/student.csv``: constains unique student id, student name, student section for 831103 students.
 - ``csv/teaching.csv``: contains course id and itd corresponding professor for 831118 courses.
-- ``csv/enrollment.csv``：contains student id, course id, student semester for 831129 student enrollments.
+- ``csv/enrollment.csv``: contains student id, course id, student semester for 831129 student enrollments.
 
 ### 2.2 Problematic
 #### 2.2.1 Target audience
