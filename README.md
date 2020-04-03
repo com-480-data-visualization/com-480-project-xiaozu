@@ -76,12 +76,11 @@ TSNE plot:
 At the moment, we have not found any other related applications or websites. EPFL students choose courses based on the study plan offered online and keywords that are on the course description pages. As for the feature related to companies, LinkedIn allows HR to find people with specific skills but not for courses that they have done.
 
 
-##### Some sketches of our future visualizations [TODO: I am updating it]
-Show courses related to a selected one and insights about it.
+##### Some sketches of our future visualizations 
+Show courses related to a selected one(s), since we a lot of courses we will ask to the user to filter which one they want to look (e.g., filter by section). Moreover to hightlight the connections (shown in pink in the Fig. below) the user can select multiple courses. When you hover on the title of a course you will see a card on the right showing some insights about it.
 <p align="center">
  <img src="/src/images/sketch1.jpg" width="400px" />
 </p>
-quando clicchi selezioni, ci saranno troppi corsi. Magari creare profilo e dire che corsi mi sono piaciuti (non scegliere sezione) --> trovare un modo per filtrare
 
 Show the top N courses for a section (e.g. IC) over the years.
 <p align="center">
@@ -89,22 +88,16 @@ Show the top N courses for a section (e.g. IC) over the years.
 </p>
 
 
-<!-- Show relation between a major and the courses selected by its students. For 1 course how people are distributed between different majors. 
+Help a user to choose his/her next semester courses. You can insert your name as a student and it return the graphical representation of the courses that you have done with a suggestion of what you could do based on your interests.
 <p align="center">
- <img src="/src/images/sketch4.jpg" width="350px" />
+ <img src="/src/images/sketch4b.jpg" width="500px" />
 </p>
-redo or change it then not for every majors
+<!-- For 1 course how people are distributed between different majors. redo or change it then not for every majors
 right: list of popular course
 left: master semester
 on which semester a course was taken
 plot: 1 to 1 relationship or 1 to N -->
 
-
-Help a user to choose his/her next semester courses.
-<p align="center">
- <img src="/src/images/sketch3.jpg" width="500px" />
-</p>
-remove courses without no connections (maybe change visualization)
 
 ## Milestone 2 (Friday 1st May, 5pm)
 
