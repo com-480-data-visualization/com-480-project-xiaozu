@@ -29,7 +29,7 @@ We are more interested in master courses since they are more customizable from t
 We have decided to store our data in 4 tables: Student, Enrollment, Course, Teaching.
 - ``csv/courses.csv``: contains unique courses id, course name, teaching year for 15936 courses.
 - ``csv/student.csv``: constains unique student id, student name, student section for 831103 students.
-- ``csv/teaching.csv``: contains course id and itd corresponding professor for 831118 courses.
+- ``csv/teaching.csv``: contains course id and its corresponding professor for 831118 courses.
 - ``csv/enrollment.csv``: contains student id, course id, student semester for 831129 student enrollments.
 
 ### 2.2 Problematic
@@ -47,7 +47,7 @@ We expect that the end-users who will use our project will be mainly EPFL studen
 
 ### 2.3 Exploratory Data Analysis
 Our data analysis contains three parts. For each part we build related tables by Pandas that contain the figures for our objectives and we show some examples in [Pre-analysis.ipynb](https://github.com/com-480-data-visualization/com-480-project-xiaozu/blob/milestone-1/src/data-analysis/Pre-analysis.ipynb).
-- **Show the changes of the number of course enrollments over the years**, i.e, for each course, we compare the number of students in different years in order to show the popuarity trend of each course. For instance, the Image processing I course is becoming rapidly increasing popular among students while less students are taking Cryptography and security over the recent years.
+- **Show the changes of the number of course enrollments over the years**, i.e, for each course, we compare the number of students in different years in order to show the popuarity trend of each course. For instance, the Image processing I course is becoming increasingly popular among students while less students are taking Cryptography and security over the recent years.
 <p align="center">
  <img src="/src/images/da1.jpg" width="400px" />
 </p>
