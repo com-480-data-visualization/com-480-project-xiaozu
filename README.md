@@ -25,9 +25,12 @@ The [crawling process](https://github.com/com-480-data-visualization/com-480-pro
 A challenging task was to clean the data crawled and to select the ones we are interested in. Firstly, the files contained special characters (accents), reason why, we have chosen the Latin encoding. Moreover, data is saved in excel files, which actually contain HTML code. __However, after having parsed, the files are consistent with each other.(updated this part --> it seems they are not consistent!) and add part about pre-processing__
 We are more interested in master courses since they are more customizable from the student than Bachelor ones (almost all are mandatory). 
 
-#### 2.1.3 Database generated [TODO]
+#### 2.1.3 Database generated
 We have decided to store our data in 4 tables: Student, Enrollment, Course, Teaching.
-TODO: make a table in markdown with name of columns or examples (e.g. screenshot from jupyter notebook).
+- csv/courses.csv : contains unique courses id, course name, teaching year for 15936 courses.
+- csv/student.csv: constains unique student id, student name, student section for 831103 students.
+- csv/teaching.csv： contains course id and itd corresponding professor for 831118 courses.
+- csv/enrollment.csv： contains student id, course id, student semester for 831129 student enrollments.
 
 ### 2.2 Problematic
 #### 2.2.1 Target audience
