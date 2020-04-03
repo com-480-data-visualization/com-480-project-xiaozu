@@ -63,8 +63,13 @@ Our data analysis contains three parts. For each part we build related tables by
 </p>
 
 - **Cluster the courses that are more closer each other.** We have treat the students as features (e.g. each course represented by a binary array) and then we have compute the correlation between the 2 courses on these arrays.
+PCA plot:
 <p align="center">
  <img src="/src/images/da4.jpg" width="400px" />
+</p>
+TSNE plot:
+<p align="center">
+ <img src="/src/images/da5.jpg" width="400px" />
 </p>
 
 ### 2.4 Related work
