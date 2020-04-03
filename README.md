@@ -59,7 +59,7 @@ Our data analysis contains three parts. For each part we build related tables by
 
 - **Analyze the similarity of courses through the student enrollments based on the the hypothesis that the courses chosen by the same students have some commons**. We build the co-occurrence matrix of each course from the course lists taken by each student. We find it consistent with what we expected, for example, Distributed algorithms has high co-ocurrence matrix coefficient with Concurrent alogorithms which is the same as Data visualization with Applied data analysis.
 <p align="center">
- <img src="/src/images/da3.jpg" width="400px" />
+ <img src="/src/images/da3.jpg" width="500px" />
 </p>
 
 - **Cluster the courses that are more closer each other.** We have treat the students as features (e.g. each course represented by a binary array) and then we have compute the correlation between the 2 courses on these arrays.
