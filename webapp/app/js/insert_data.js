@@ -26,6 +26,7 @@ const client = new MongoClient(url);
 
          var costi = await students.findOne({'student_name': "Volpini Costanza"});
          console.log(costi)
+        //  TODO: same user are name + surname and some are surname + name => do a function to check both!
 
         } catch (err) {
          console.log(err.stack);
