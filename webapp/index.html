@@ -1,15 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>MY APP</title>
-</head>
-<body>
-  <h1> May Node and Express be with you. </h1>
-  <form action="/quotes" method="POST">
-    <input type="text" placeholder="name" name="name">
-    <input type="text" placeholder="quote" name="quote">
-    <button type="submit">Submit</button>
-  </form>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <title>MY APP</title>
+    </head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="app/css/main.css">
+  <body>
+    <div class="container-fluid" style="padding:0px;">
+      <div class="row" id="header-ban">
+          <div class="col" id="header-ban-left"></div>
+      </div>
+    </div>
+    <div class="container-fluid" style="padding:0px;">
+          <div class="card" style="border-radius: 0px;">
+            <div class="card-header">
+              <ul class="nav nav-tabs card-header-tabs" id="menu-list" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link"  href="#explore" role="tab" aria-controls="explore" aria-selected="false">Explore</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#personal" role="tab" aria-controls="personal" aria-selected="false">Personal</a>
+                </li>
+              </ul>
+            </div>
+            <div class="card-body" style="background: #e6e9e9;">
+              <h4 class="card-title">Bologna</h4>
+              <h6 class="card-subtitle mb-2">Emilia-Romagna Region, Italy</h6>
+              
+              <div class="tab-content mt-3">
+                <div class="tab-pane active" id="home" role="tabpanel">
+                  <p class="card-text">It is the seventh most populous city in Italy, at the heart of a metropolitan area of about one million people. </p>
+                  <a href="#" class="card-link text-danger">Read more</a>
+                </div>
+                
+                <div class="tab-pane" id="explore" role="tabpanel" aria-labelledby="history-tab">  
+                  <p class="card-text">First settled around 1000 BCE and then founded as the Etruscan Felsina about 500 BCE, it was occupied by the Boii in the 4th century BCE and became a Roman colony and municipium with the name of Bononia in 196 BCE. </p>
+                  <a href="#" class="card-link text-danger">Read more</a>
+                </div>
+                
+                <div class="tab-pane" id="personal" role="tabpanel" aria-labelledby="deals-tab">
+                  <p class="card-text">Immerse yourself in the colours, aromas and traditions of Emilia-Romagna with a holiday in Bologna, and discover the city's rich artistic heritage.</p>
+                  <a href="#" class="btn btn-danger btn-sm">Get Deals</a>
+                </div>
+              </div>
+            </div>
+      </div>
+    </div>
+  </body>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </html>

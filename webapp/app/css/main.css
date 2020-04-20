@@ -1,0 +1,33 @@
+#header-ban{
+    position: relative;
+    top: 0;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    background-color: #1d4851;
+    background: url(/app/images/logo-right.gif) repeat-x 0 0;
+    height: 83px;
+}
+
+#header-ban-left{
+    background: transparent url(/app/images/logo-left.png) no-repeat 0 0;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 543px;
+    height: 83px;
+}
+
+#main-tabs{
+    margin-top: 5px;
+}
+
+.nav-link.active{
+    background-color: #e6e9e9 !important; 
+    border-color: #333333 #333333 #e6e9e9 !important; 
+    font-weight:700 !important; 
+}
+
+.card-header{
+    border-bottom: 1px solid #333333 !important; 
+}
