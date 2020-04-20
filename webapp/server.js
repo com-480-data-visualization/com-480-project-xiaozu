@@ -23,5 +23,6 @@ app.use('/app', express.static(__dirname + "/app"));
 
 // HANDLERS (e.g. GET, POST requests)
 app.get('/', (req, res) => {
+    res.sendFile(__dirname + '/index.html'),
     res.sendFile(__dirname + '/index.html')
 })
