@@ -1,7 +1,6 @@
 const express = require('express');
 const bodyParser= require('body-parser');
 const session = require('express-session');
-const { MongoClient } = require("mongodb");
 const path = require('path');
 var mongoose = require("mongoose");
 
@@ -36,10 +35,8 @@ app.get('/', (req, res) => {
     res.sendFile(__dirname + '/index.html')
 })
 
-// EPFL_db = db()
-
+// Database
 const url = "mongodb+srv://costanzaMongo:2sFcLtMzv7CDJ7kd@xiaozu-dq18h.azure.mongodb.net/test?retryWrites=true&w=majority"; 
- // The database to use
 mongoose.connect(url, {useUnifiedTopology: true, useNewUrlParser: true, dbName: 'EPFL'});
  
 const connection = mongoose.connection;
@@ -48,7 +45,7 @@ connection.once("open", function() {
   console.log("MongoDB database connection established successfully");
 });
 
-
+// Routes query
 router.route("/students").get(function(req, res) {
   students.find({}, function(err, result) {
     if (err) {
@@ -59,6 +56,7 @@ router.route("/students").get(function(req, res) {
   });
 });
 
+// Enrollments
 router.route("/enrollments").get(function(req, res) {
   enrollments.find({}, function(err, result) {
     if (err) {
@@ -69,6 +67,24 @@ router.route("/enrollments").get(function(req, res) {
   });
 });
 
+
+router.get("/enrollments/:studid", function(req, res) {
+	let filter = {};
+
+	if (req.params.studid) {
+		filter.student_id = req.params.studid;
+  }
+  
+	enrollments.find(filter, function(err, found) {
+		if ((err) || (!found))
+			return res.sendStatus(404);
+		res.json(found);
+	});
+});
+
+
+
+// Teacher
 router.route("/teachers").get(function(req, res) {
   teachers.find({}, function(err, result) {
     if (err) {
@@ -79,6 +95,7 @@ router.route("/teachers").get(function(req, res) {
   });
 });
 
+// Courses
 router.route("/courses").get(function(req, res) {
   courses.find({}, function(err, result) {
     if (err) {
@@ -88,3 +105,33 @@ router.route("/courses").get(function(req, res) {
     }
   });
 });
+
+
+router.route("/top_courses").get(function(req, res) {
+  // If you want to return just the top 5
+  // http://localhost:3000/top_courses/?max=5
+  if (!req.query.max) {
+    res.send("Please specify the numbers of courses (e.g., url/top_courses/?max=5)")
+  }
+  // case we have a query with max courses to return
+  // filter.max = req.query.max;
+  top_N_courses = +req.query.max;
+
+  enrollments.aggregate([{$group : {_id: "$course_id"}}]).limit(top_N_courses).exec( 
+      function(err, result) {
+        if (err) {
+          res.send(err);
+        } else {
+          let id_courses_list = result;
+          courses.find({course_id: {$in: id_courses_list}}, function(err, result) {
+              if (err) {
+                res.send(err);
+              } else {
+                res.send(result);
+              }
+            });
+          }
+      }
+  );
+});
+
