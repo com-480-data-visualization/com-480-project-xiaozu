@@ -12,6 +12,20 @@ var svg = d3.select("#bubbleCourses")
     .attr("transform",
           "translate(" + margin.left + "," + margin.top + ")");
 
+
+
+// db.orders.aggregate( [
+//   {
+//     $group: {
+//        _id: "$course_id",
+//        total: { $sum: "$course_id" }
+//     }
+//   },
+//   { $sort: { total: 1 } }
+// ] )
+
+
+
 //Read the data
 // IMPORTANT!!!!!!!: we can make query from mongoose to retrieve data (e.g. similar to sql query, we don't need any csv file..eveything was inserted in a database)
 d3.csv("https://raw.githubusercontent.com/holtzy/data_to_viz/master/Example_dataset/4_ThreeNum.csv", function(data) {

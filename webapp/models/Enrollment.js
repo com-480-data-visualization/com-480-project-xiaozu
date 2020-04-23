@@ -4,5 +4,5 @@ var EnrollmentSchema = new Schema({
     course_id : { type: String, required: true },
     student_id : { type: String, required: true},
     semester: {type: String, default: "master"}
-});
-module.exports = mongoose.model('Enrollment', EnrollmentSchema);
+},{ collection: 'enrollment' });
+module.exports = mongoose.model('enrollment', EnrollmentSchema);

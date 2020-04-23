@@ -5,15 +5,15 @@
 
 const mongoose = require('mongoose');
 
-require('./Student');
-require('./Teacher');
-require('./Course');
-require('./Enrollment');
+require('./student');
+require('./teacher');
+require('./course');
+require('./enrollment');
 
 module.exports = {
-  'Student' : mongoose.model('Student'),
-  'Teacher' : mongoose.model('Teacher'),
-  'Course' : mongoose.model('Course'),
-  'Enrollment' : mongoose.model('Enrollment'),
+  'student' : mongoose.model('student'),
+  'teacher' : mongoose.model('teacher'),
+  'course' : mongoose.model('course'),
+  'enrollment' : mongoose.model('enrollment'),
 }
 

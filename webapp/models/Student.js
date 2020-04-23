@@ -4,5 +4,5 @@ var StudentSchema = new Schema({
     student_id: {type: String,  required: true},
     student_name: { type: String, required: true},
     section: { type: String, required: true }
-});
-module.exports = mongoose.model('Student', StudentSchema);
+},{ collection: 'student' });
+module.exports = mongoose.model('student', StudentSchema);
