@@ -108,28 +108,64 @@ router.route("/courses").get(function(req, res) {
 
 
 router.route("/top_courses").get(function(req, res) {
+  console.log("here ")
   // If you want to return just the top 5
-  // http://localhost:3000/top_courses/?max=5
-  if (!req.query.max) {
+  // http://localhost:3000/top_courses/?max=5&year=2008-2009
+  if (!req.query.max || !req.query.year) {
     res.send("Please specify the numbers of courses (e.g., url/top_courses/?max=5)")
   }
   // case we have a query with max courses to return
   // filter.max = req.query.max;
   top_N_courses = +req.query.max;
+  ay = req.query.year
 
-  enrollments.aggregate([{$group : {_id: "$course_id"}}]).limit(top_N_courses).exec( 
-      function(err, result) {
+  // 1. group e assegnare un count ad ogni enrollment, poi 2. join con courses e dopo di che
+  // 3. filter by year e ordinare tutto a seconda del count trovato prima e dopo 
+  // fare limit (#maxcourses)
+  enrollments.aggregate([
+    {
+    $group: { // group by
+            _id: "$course_id",
+            count: { $sum: 1 }
+      }
+    },
+    { // join and pick just element of correct year
+      $lookup: {
+          from: "course", // collection name in db
+          localField: "_id",
+          foreignField: "course_id",
+          as: "courses_detail"
+      }
+    },
+    {
+      $replaceRoot: { newRoot: { $mergeObjects: [ { $arrayElemAt: [ "$courses_detail", 0 ] }, "$$ROOT" ] } }
+   },
+   { $project: { courses_detail: 0 } },
+    { // filter by date (some data have space etc)
+      $match: {
+        $expr: { 
+          $gt: [
+            {
+                $indexOfBytes: [
+                  "$year",
+                    ay
+                ]
+            },
+            -1
+          ]
+        }
+     }
+    },
+    { $sort : {"count" : -1 } }, //need to find a solution, sort it is extremely slow!
+  ]
+  ).limit(top_N_courses)
+  .exec( 
+      function(err, result) {  
         if (err) {
           res.send(err);
         } else {
-          let id_courses_list = result;
-          courses.find({course_id: {$in: id_courses_list}}, function(err, result) {
-              if (err) {
-                res.send(err);
-              } else {
-                res.send(result);
-              }
-            });
+          // console.log(result)
+          res.send(result)
           }
       }
   );
