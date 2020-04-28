@@ -5,18 +5,18 @@ const path = require('path');
 var mongoose = require("mongoose");
 
 
-models = require("./models");
-students = require("./models/student")
-enrollments = require("./models/enrollment")
-courses = require("./models/course")
-teachers = require("./models/teacher")
+// models = require("./models");
+students = require("./models/student.js")
+enrollments = require("./models/enrollment.js")
+courses = require("./models/course.js")
+teachers = require("./models/teacher.js")
 
 var app = express();
 const router = express.Router();
 
 
 // Register model definition here
-app.listen(3000, function() {
+app.listen(process.env.PORT || 3000, function() {
   console.log('listening on 3000')
 })
 
