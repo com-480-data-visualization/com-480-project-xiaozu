@@ -1,12 +1,13 @@
 {
   "name": "xiaozu",
   "version": "1.0.0",
-  "description": "",
+  "description": "1. Install [node](https://nodejs.org/it/download/) v.12.16.2\r 2. Install all the packages: ``npm install``\r 3. Run: ``npm run dev``\r 4. Here your webpage: http://localhost:3000/",
   "main": "server.js",
   "scripts": {
     "dev": "nodemon server.js",
     "start": "node server.js",
-    "src": "*.js", "use": "@now/node"
+    "src": "*.js",
+    "use": "@now/node"
   },
   "author": "",
   "license": "ISC",
@@ -23,5 +24,6 @@
   },
   "devDependencies": {
     "nodemon": "^2.0.3"
-  }
+  },
+  "keywords": []
 }
