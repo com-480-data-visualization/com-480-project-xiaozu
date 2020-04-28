@@ -1,11 +1,10 @@
 {
     "version": 2,
-    "builds": [{ "src": "*.js", "use": "@now/node-server@0.4.26" }],
+    "builds": [
+        { "src": "package.json", "use": "@now/static-build" },
+        { "src": "server.js", "use": "@now/node-server@0.4.26" }  
+    ],
     "routes": [
-        {
-          "src": "/",
-          "dest": "/server.js",
-          "methods": ["GET"]
-        }
+        { "src": "^/(.*)", "dest": "/index.html" }
       ]
   }
