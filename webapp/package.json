@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "nodemon server.js",
     "start": "node server.js",
-    "src": "server.js", "use": "@now/node"
+    "src": "*.js", "use": "@now/node"
   },
   "author": "",
   "license": "ISC",
