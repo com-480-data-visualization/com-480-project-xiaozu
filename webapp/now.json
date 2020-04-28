@@ -1,7 +1,7 @@
 {
     "version": 2,
     "builds": [
-        { "src": "package.json", "use": "@now/static-build" },
+        { "src": "package.json", "use": "@now/static-build@canary" },
         { "src": "/models/*.js", "use": "@now/node" },
         { "src": "server.js", "use": "@now/node-server@canary" }  
     ],
