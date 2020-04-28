@@ -1,7 +1,6 @@
 {
     "version": 2,
     "builds": [
-        { "src": "/models/*.js", "use": "@now/node" },
         { "src": "server.js", "use": "@now/node-server@canary" }  
     ],
     "routes": [
