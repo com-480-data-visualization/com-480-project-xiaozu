@@ -2,7 +2,8 @@
     "version": 2,
     "builds": [
         { "src": "package.json", "use": "@now/static-build" },
-        { "src": "server.js", "use": "@now/node-server@0.4.26" }  
+        { "src": "/models/*.js", "use": "@now/node" },
+        { "src": "server.js", "use": "@now/node-server@canary" }  
     ],
     "routes": [
         { "src": "^/(.*)", "dest": "/index.html" }
