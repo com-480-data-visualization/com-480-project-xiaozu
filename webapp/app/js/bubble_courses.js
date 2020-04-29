@@ -1,3 +1,4 @@
+
 function hideLoader() {
   $('#loading').hide();
 }
@@ -16,19 +17,20 @@ var svg = d3.select("#bubbleCourses")
     .attr("transform",
           "translate(" + margin.left + "," + margin.top + ")");
 
-
 let courses_url = "http://localhost:3000/top_courses/?max=5&year=2008-2009"
-         
+
 d3.json(courses_url, function(error, data) {
     hideLoader(); // hide loading
 
     console.log(data)
-
+    res = []
+    data.map(d=>res.push(d.course_name))
+    console.log(res);
     // TODO: adapt the following data to graph, see console for data
 
     // Add X axis
   var x = d3.scaleLinear()
-    .domain([0, 12000])
+    .domain([0, 1000])
     .range([ 0, width ]);
   svg.append("g")
     .attr("transform", "translate(0," + height + ")")
@@ -36,23 +38,23 @@ d3.json(courses_url, function(error, data) {
 
   // Add Y axis
   var y = d3.scaleLinear()
-    .domain([35, 90])
+    .domain([0, 1000])
     .range([ height, 0]);
   svg.append("g")
     .call(d3.axisLeft(y));
 
   // Add a scale for bubble size
   var z = d3.scaleLinear()
-    .domain([200000, 1310000000])
-    .range([ 4, 40]);
+    .domain([0, 500])
+    .range([ 0, 500]);
 
   // Add a scale for bubble color
   var myColor = d3.scaleOrdinal()
-    .domain(["Asia", "Europe", "Americas", "Africa", "Oceania"])
+    .domain(res)
     .range(d3.schemeSet2);
 
   // -1- Create a tooltip div that is hidden by default:
-  var tooltip = d3.select("#my_dataviz")
+  var tooltip = d3.select("#bubbleCourses")
     .append("div")
       .style("opacity", 0)
       .attr("class", "tooltip")
@@ -68,7 +70,7 @@ d3.json(courses_url, function(error, data) {
       .duration(200)
     tooltip
       .style("opacity", 1)
-      .html("Country: " + d.country)
+      .html("Course: " + d.course_name)
       .style("left", (d3.mouse(this)[0]+30) + "px")
       .style("top", (d3.mouse(this)[1]+30) + "px")
   }
@@ -83,7 +85,19 @@ d3.json(courses_url, function(error, data) {
       .duration(200)
       .style("opacity", 0)
   }
+  var points = []
+  var centers = []
 
+
+    //while (true) {
+    //  var a = Math.random()*1000
+    //  var b = Math.random()*1000
+    //  if(!points.includes([a,b]){
+    //    centers.append([a,b])
+    //    points.append()
+    //    return y(Math.random()*1000);
+    //  }
+  //  }
   // Add dots
   svg.append('g')
     .selectAll("dot")
@@ -91,10 +105,10 @@ d3.json(courses_url, function(error, data) {
     .enter()
     .append("circle")
       .attr("class", "bubbles")
-      .attr("cx", function (d) { return x(d.gdpPercap); } )
-      .attr("cy", function (d) { return y(d.lifeExp); } )
-      .attr("r", function (d) { return z(d.pop); } )
-      .style("fill", function (d) { return myColor(d.continent); } )
+      .attr("cx", function (d) { return x(Math.random()*1000); } )
+      .attr("cy", function (d) { return y(Math.random()*1000); } )
+      .attr("r", function (d) { return z(d.count); } )
+      .style("fill", function (d) { return myColor(d.course_name); } )
     // -3- Trigger the functions
     .on("mouseover", showTooltip )
     .on("mousemove", moveTooltip )

@@ -5,18 +5,18 @@ const path = require('path');
 var mongoose = require("mongoose");
 
 
-// models = require("./models");
-students = require("./models/student.js")
-enrollments = require("./models/enrollment.js")
-courses = require("./models/course.js")
-teachers = require("./models/teacher.js")
+models = require("./models");
+students = require("./models/student")
+enrollments = require("./models/enrollment")
+courses = require("./models/course")
+teachers = require("./models/teacher")
 
 var app = express();
 const router = express.Router();
 
 
 // Register model definition here
-app.listen(process.env.PORT || 3000, function() {
+app.listen(3000, function() {
   console.log('listening on 3000')
 })
 
@@ -36,9 +36,9 @@ app.get('/', (req, res) => {
 })
 
 // Database
-const url = "mongodb+srv://costanzaMongo:2sFcLtMzv7CDJ7kd@xiaozu-dq18h.azure.mongodb.net/test?retryWrites=true&w=majority"; 
+const url = "mongodb+srv://costanzaMongo:2sFcLtMzv7CDJ7kd@xiaozu-dq18h.azure.mongodb.net/test?retryWrites=true&w=majority";
 mongoose.connect(url, {useUnifiedTopology: true, useNewUrlParser: true, dbName: 'EPFL'});
- 
+
 const connection = mongoose.connection;
 
 connection.once("open", function() {
@@ -74,7 +74,7 @@ router.get("/enrollments/:studid", function(req, res) {
 	if (req.params.studid) {
 		filter.student_id = req.params.studid;
   }
-  
+
 	enrollments.find(filter, function(err, found) {
 		if ((err) || (!found))
 			return res.sendStatus(404);
@@ -120,7 +120,7 @@ router.route("/top_courses").get(function(req, res) {
   ay = req.query.year
 
   // 1. group e assegnare un count ad ogni enrollment, poi 2. join con courses e dopo di che
-  // 3. filter by year e ordinare tutto a seconda del count trovato prima e dopo 
+  // 3. filter by year e ordinare tutto a seconda del count trovato prima e dopo
   // fare limit (#maxcourses)
   enrollments.aggregate([
     {
@@ -143,7 +143,7 @@ router.route("/top_courses").get(function(req, res) {
    { $project: { courses_detail: 0 } },
     { // filter by date (some data have space etc)
       $match: {
-        $expr: { 
+        $expr: {
           $gt: [
             {
                 $indexOfBytes: [
@@ -155,12 +155,12 @@ router.route("/top_courses").get(function(req, res) {
           ]
         }
      }
-    },
-    { $sort : {"count" : -1 } }, //need to find a solution, sort it is extremely slow!
+    }
+   //{ $sort : {"count" : -1 } }, //need to find a solution, sort it is extremely slow!
   ]
-  ).limit(top_N_courses)
-  .exec( 
-      function(err, result) {  
+).limit(top_N_courses)
+  .exec(
+      function(err, result) {
         if (err) {
           res.send(err);
         } else {
@@ -170,4 +170,3 @@ router.route("/top_courses").get(function(req, res) {
       }
   );
 });
-
