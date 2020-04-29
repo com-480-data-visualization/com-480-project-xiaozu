@@ -58,7 +58,7 @@
 #content-tab{
     background-color: #fff;
     border: 1px #1993AE solid;
-    height: 74vh;
+    min-height: 74vh;
 }
 
 
