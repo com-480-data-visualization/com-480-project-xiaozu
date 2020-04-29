@@ -2,7 +2,7 @@
 // https://observablehq.com/@d3/chord-diagram
 // Construct matrix for storing data
 var courseConnections = [{"name": "A", "connects": [{"B" : 2}, {"C": 1}]}, {"name": "B", "connects": [{"A": 2}, {"C": 40}]}, {name: "C", "connects": [{"A": 10}, {"B": 40}]}];
-var coursesNames = ["Machine Learning", "Deep Learning", "ADA"];
+var coursesNames = ["ML", "Deep Learning", "ADA"];
 
 var indexByName = new Map;
 var matrix = [];
@@ -64,6 +64,7 @@ var height = Math.min(640, width)
 var data = matrix;
 
 
+
 function groupTicks(d, step) {
   const k = (d.endAngle - d.startAngle) / d.value;
   return d3.range(0, d.value, step).map(value => {
@@ -100,17 +101,24 @@ var chords = chord(data);
 var group = svg.append("g")
         .selectAll("g")
         .data(chords.groups)
-        .enter().append('g');
-        // .join("g");
+        .enter().append('g')
+        .attr("class", "group")
+        .on("mouseover", mouseover);
+
+        var paths = group.append("path")
+      .attr("fill", d => color(d.index))
+      .attr("stroke", d => d3.rgb(color(d.index)).darker())
+      .attr("id", function(d, i) { return "group" + i; })
+      .attr("d", arc);
     
-      group.append("path")
-          .attr("fill", d => color(d.index))
-          .attr("stroke", d => d3.rgb(color(d.index)).darker())
-          .attr("d", arc);
+      // group.append("path")
+      //     .attr("fill", d => color(d.index))
+      //     .attr("stroke", d => d3.rgb(color(d.index)).darker())
+      //     .attr("d", arc);
     
 var groupTick = group.append("g")
         .selectAll("g")
-        .data(d => groupTicks(d, 1e3))
+        .data(d => groupTicks(d, 2e4))
         .enter().append('g')
         .attr("transform", d => `rotate(${d.angle * 180 / Math.PI - 90}) translate(${outerRadius},0)`);
     
@@ -126,8 +134,16 @@ var groupTick = group.append("g")
           .attr("transform", d => d.angle > Math.PI ? "rotate(180) translate(-16)" : null)
           .attr("text-anchor", d => d.angle > Math.PI ? "end" : null)
           .text(d => formatValue(d.value));
-    
-      svg.append("g")
+   
+          var groupText = group.append("text")
+          .attr("x", 6)
+          .attr("dy", 13);   
+          
+          groupText.append("textPath")
+    .attr("xlink:href", function(d, i) { return "#group" + i; })
+    .text(function(d, i) { return coursesNames[i]; });
+  
+    const ribbons = svg.append("g")
           .attr("fill-opacity", 0.67)
         .selectAll("path")
         .data(chords)
@@ -136,3 +152,24 @@ var groupTick = group.append("g")
           .attr("fill", d => color(d.target.index))
           .attr("stroke", d => d3.rgb(color(d.target.index)).darker());
     
+
+          function mouseover(d, i) {
+            ribbons.classed("fade", function(p) {
+              return p.source.index != i
+                  && p.target.index != i;
+            });
+          }
+
+
+          function rbmouse(d, i) {
+            if (!this.classList.contains("fade")) {
+              var t = d.target.index + " -> " + d.source.index + ": " + d.source.value;
+              t += d.source.index + " -> " + d.target.index + ": " + d.target.value;
+              textbox.text(t);
+            }
+          }
+          
+          var textbox = svg.append("text")
+            .attr("x", -outerRadius)
+            .attr("y", -outerRadius)
+            .text("");
