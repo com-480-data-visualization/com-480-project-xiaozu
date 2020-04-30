@@ -19,7 +19,7 @@ const router = express.Router();
 
 
 // Register model definition here
-app.listen(process.env.PORT | 3000, function() {
+app.listen(process.env.PORT || 3000, function() {
   console.log('listening on 3000')
 })
 
