@@ -17,13 +17,13 @@ host = window.location.hostname;
 
 if(host.indexOf('localhost') > -1) {
   //is development
-  host = "http://" + host;
+  host = "http://" + host + ":3000";
 } else {
   // is production
   host = "https://" + host;
 }
 
-let courses_url = host + ":3000/top_courses/?max=5&year=2008-2009"
+let courses_url = host + "/top_courses/?max=5&year=2008-2009"
 
 d3.json(courses_url, function (error, data) {
   hideLoader(); // hide loading
