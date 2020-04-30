@@ -3,6 +3,8 @@ const bodyParser= require('body-parser');
 const session = require('express-session');
 const path = require('path');
 var mongoose = require("mongoose");
+const dotenv = require('dotenv');
+dotenv.config();
 
 
 models = require("./models");
@@ -17,7 +19,7 @@ const router = express.Router();
 
 
 // Register model definition here
-app.listen(3000, function() {
+app.listen(process.env.PORT | 3000, function() {
   console.log('listening on 3000')
 })
 
@@ -38,7 +40,7 @@ app.get('/', (req, res) => {
 })
 
 // Database
-const url = "mongodb+srv://costanzaMongo:2sFcLtMzv7CDJ7kd@xiaozu-dq18h.azure.mongodb.net/test?retryWrites=true&w=majority";
+const url = process.env.MONGO;
 mongoose.connect(url, {useUnifiedTopology: true, useNewUrlParser: true, dbName: 'EPFL'});
 
 const connection = mongoose.connection;
