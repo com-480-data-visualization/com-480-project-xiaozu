@@ -1,5 +1,5 @@
 // Giving a course return a graph with the relations between courses taken also from other students
-// https://observablehq.com/@d3/chord-diagram
+// https://observablehq.com/@d3/chord-diagram and https://observablehq.com/@adrianpearl/migration-between-states#height
 // Construct matrix for storing data
 var courseConnections = [{ "name": "A", "connects": [{ "B": 2 }, { "C": 1 }] }, { "name": "B", "connects": [{ "A": 2 }, { "C": 40 }] }, { name: "C", "connects": [{ "A": 10 }, { "B": 40 }] }];
 var coursesNames = ["ML", "Deep Learning", "ADA"];
