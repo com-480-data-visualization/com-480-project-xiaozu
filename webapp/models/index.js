@@ -9,11 +9,13 @@ require('./student');
 require('./teacher');
 require('./course');
 require('./enrollment');
+require('./jaccard');
 
 module.exports = {
   'student' : mongoose.model('student'),
   'teacher' : mongoose.model('teacher'),
   'course' : mongoose.model('course'),
   'enrollment' : mongoose.model('enrollment'),
+  'jaccard' : mongoose.model('enrollment'),
 }
 

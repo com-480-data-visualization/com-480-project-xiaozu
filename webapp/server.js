@@ -10,6 +10,7 @@ students = require("./models/student")
 enrollments = require("./models/enrollment")
 courses = require("./models/course")
 teachers = require("./models/teacher")
+jaccards = require("./models/jaccard")
 
 var app = express();
 const router = express.Router();
