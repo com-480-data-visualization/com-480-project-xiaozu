@@ -12,7 +12,7 @@ if (host.indexOf('localhost') > -1) {
   host = "https://" + host;
 }
 
-var course_related_url = host + "/courses_related/?course=Machine%20learning&max=10"
+var course_related_url = host + "/courses_related/?course=Machine%20learning&max=5"
 
 function relationGraph() {
   d3.json(course_related_url, function (error, courseConnections) {
@@ -141,7 +141,21 @@ function relationGraph() {
 
     groupText.append("textPath")
       .attr("xlink:href", function (d, i) { return "#group" + i; })
-      .text(function (d, i) { return coursesNames[i]; });
+      .text(function (d, i) { 
+        return coursesNames[i]; 
+      });
+
+    
+    //  group.append("text")
+    //   .each(d => { d.angle = (d.startAngle + d.endAngle) / 2; })
+    //   .attr("dy", ".35em")
+    //   .attr("transform", d => `
+    //     rotate(${(d.angle * 180 / Math.PI - 90)})
+    //     translate(${innerRadius + 26})
+    //     ${d.angle > Math.PI ? "rotate(180)" : ""}
+    //   `)
+    //   .attr("text-anchor", d => d.angle > Math.PI ? "end" : null)
+    //   .text(function (d, i) { return coursesNames[i]; });
 
     const ribbons = svg.append("g")
       .attr("fill-opacity", 0.67)
