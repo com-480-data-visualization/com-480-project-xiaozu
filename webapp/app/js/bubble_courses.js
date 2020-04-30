@@ -1,5 +1,5 @@
 function hideLoader() {
-  $('#loading').hide();
+  $('#loading1').hide();
 }
 
 // set the dimensions and margins of the graph
@@ -27,7 +27,7 @@ let courses_url = host + "/top_courses/?max=5&year=2008-2009"
 
 function bubbleGraph() {
   d3.json(courses_url, function (error, data) {
-    hideLoader(); // hide loading
+    // hideLoader(); // hide loading
 
     // append the svg object to the body of the page
     var svg = d3.select("#bubbleCourses")
@@ -39,8 +39,6 @@ function bubbleGraph() {
         "translate(" + margin.left + "," + margin.top + ")");
 
 
-
-    console.log(data)
     res = []
     data.map(d => res.push(d.course_name))
     console.log(res);
@@ -50,16 +48,16 @@ function bubbleGraph() {
     var x = d3.scaleLinear()
       .domain([0, 500])
       .range([0, width]);
-    svg.append("g")
-      .attr("transform", "translate(0," + height + ")")
-      .call(d3.axisBottom(x));
+    // svg.append("g")
+    //   .attr("transform", "translate(0," + height + ")")
+    //   .call(d3.axisBottom(x));
 
     // Add Y axis
     var y = d3.scaleLinear()
       .domain([0, 500])
       .range([height, 0]);
-    svg.append("g")
-      .call(d3.axisLeft(y));
+    // svg.append("g")
+    //   .call(d3.axisLeft(y));
 
     // Add a scale for bubble size
     var z = d3.scaleSqrt()
