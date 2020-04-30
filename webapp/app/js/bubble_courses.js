@@ -23,7 +23,7 @@ if (host.indexOf('localhost') > -1) {
   host = "https://" + host;
 }
 
-let courses_url = host + "/top_courses/?max=5&year=2008-2009"
+let courses_url = host + "/top_courses/?max=10&year=2008-2009"
 
 function bubbleGraph() {
   d3.json(courses_url, function (error, data) {
