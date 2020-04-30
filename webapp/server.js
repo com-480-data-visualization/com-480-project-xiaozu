@@ -185,3 +185,27 @@ router.route("/top_courses").get(function(req, res) {
       }
   );
 });
+
+router.route("/courses_related").get(function(req, res) {
+  console.log("here ")
+  // If you want to return just the top 5
+  // http://localhost:3000/courses_related/?course=Machine%20learning&max=20
+  if (!req.query.course || !req.query.max) {
+    res.send("Please specify the numbers of courses (e.g., url/courses_related/?course=Machine%20learning&max=20)")
+  }
+
+  // select students set from course name
+  jaccard.aggregate([
+    { $match : { course_name : "Machine learning" } },
+    { $lookup: { from: "jaccard", pipeline: [], as: "courses" } }
+  ]).exec(
+      function(err, result) {
+        if (err) {
+          res.send(err);
+        } else {
+          console.log(result[0].set[0])
+          res.send(result)
+          }
+      }
+  );
+});
