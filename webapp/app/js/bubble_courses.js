@@ -27,7 +27,6 @@ let courses_url = host + "/top_courses/?max=5&year=2008-2009"
 
 function bubbleGraph() {
   d3.json(courses_url, function (error, data) {
-    console.log("here1")
     hideLoader(); // hide loading
 
     // append the svg object to the body of the page
@@ -68,9 +67,13 @@ function bubbleGraph() {
       .range([0, 250]);
 
     // Add a scale for bubble color
+    // var myColor = d3.scaleOrdinal()
+    //   .domain(res)
+    //   .range(d3.schemeSet2);
+
     var myColor = d3.scaleOrdinal()
-      .domain(res)
-      .range(d3.schemeSet2);
+      .domain(d3.range(10))
+      .range(["#157A6E", "#499F68", "#77B28C", "#B4654A", "#A63D40", "#E9B872", "#331832", "#FFE8D1", "#61210F", "#C7DFC5"])
 
     // -1- Create a tooltip div that is hidden by default:
     var tooltip = d3.select("#bubbleCourses")

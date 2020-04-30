@@ -59,7 +59,7 @@ function relationGraph() {
 
     var color = d3.scaleOrdinal()
       .domain(d3.range(10))
-      .range(["#8dd3c7", "#ffffb3", "#bebada", "#fb8072", "#80b1d3", "#fdb462", "#b3de69", "#fccde5", "#d9d9d9", "#bc80bd"])
+      .range(["#157A6E", "#499F68", "#77B28C", "#B4654A", "#A63D40", "#E9B872", "#331832", "#FFE8D1", "#61210F", "#C7DFC5"])
 
 
     var width = window.width;
