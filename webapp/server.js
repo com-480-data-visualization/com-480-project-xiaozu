@@ -10,7 +10,7 @@ students = require("./models/student")
 enrollments = require("./models/enrollment")
 courses = require("./models/course")
 teachers = require("./models/teacher")
-jaccards = require("./models/jaccard")
+jaccard = require("./models/jaccard")
 
 var app = express();
 const router = express.Router();
@@ -70,8 +70,8 @@ router.route("/enrollments").get(function(req, res) {
 });
 
 
-router.route("/jaccards").get(function(req, res) {
-  jaccards.find({}, function(err, result) {
+router.route("/jaccard").get(function(req, res) {
+  jaccard.find({}, function(err, result) {
     if (err) {
       res.send(err);
     } else {
