@@ -13,7 +13,17 @@ var margin = {
 var width = 500 - margin.left - margin.right;
 var height = 500 - margin.top - margin.bottom;
 
-let courses_url = "http://localhost:3000/top_courses/?max=5&year=2008-2009"
+host = window.location.hostname;
+
+if(host.indexOf('localhost') > -1) {
+  //is development
+  host = "http://" + host;
+} else {
+  // is production
+  host = "https://" + host;
+}
+
+let courses_url = host + ":3000/top_courses/?max=5&year=2008-2009"
 
 d3.json(courses_url, function (error, data) {
   hideLoader(); // hide loading
