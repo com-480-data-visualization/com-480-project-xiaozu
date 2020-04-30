@@ -110,17 +110,40 @@ router.route("/teachers").get(function(req, res) {
   });
 });
 
-// Courses
-router.route("/courses").get(function(req, res) {
-  courses.find({}, function(err, result) {
-    if (err) {
-      res.send(err);
-    } else {
-      res.send(result);
-    }
-  });
-});
 
+router.route("/courses").get(function(req, res) {
+  console.log("here ")
+  // If you want to return just the top 5
+  // http://localhost:3000/courses_related/?course=Machine%20learning&max=20
+  if (!req.query.student) {
+    res.send("Please specify the numbers of courses (e.g., url/courses/?student=Rocchi%20Eleonora")
+  }
+
+  // select students set from course name
+  students.aggregate([
+    { $match : { student_name : req.query.student } },
+    { $lookup: { from: "enrollment", localField: "student_id", foreignField: "student_id", as: "from_course"} },
+    { $unwind: "$from_course"},
+    { $replaceRoot: { newRoot: { $mergeObjects: "$from_course" } }},
+    { $lookup: { from: "course", localField: "course_id", foreignField: "course_id", as: "course" }},
+    { $unwind: "$course"},
+    { $replaceRoot: { newRoot: { $mergeObjects: "$course" } }},
+    { $project : { "course_name": 1 } }
+  ]).exec(
+      function(err, result) {
+        if (err) {
+          res.send(err);
+        } else {
+          var course_lst = []
+          result.forEach((item, _) => {
+            course_lst[course_lst.length] = item.course_name
+          });
+          res.send(course_lst)
+
+        }
+      }
+  );
+});
 
 router.route("/top_courses").get(function(req, res) {
   console.log("here ")
