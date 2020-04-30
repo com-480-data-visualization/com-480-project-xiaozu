@@ -12,7 +12,7 @@ if (host.indexOf('localhost') > -1) {
   host = "https://" + host;
 }
 
-var course_related_url = host + "/courses_related/?course=Machine%20learning&max=20"
+var course_related_url = host + "/courses_related/?course=Machine%20learning&max=10"
 
 function relationGraph() {
   d3.json(course_related_url, function (error, courseConnections) {
@@ -61,9 +61,10 @@ function relationGraph() {
       .domain(d3.range(10))
       .range(["#8dd3c7", "#ffffb3", "#bebada", "#fb8072", "#80b1d3", "#fdb462", "#b3de69", "#fccde5", "#d9d9d9", "#bc80bd"])
 
+
     var width = window.width;
     var height = window.height;
-    var outerRadius = Math.min(width, height) * 0.5 - 30
+    var outerRadius = Math.min(width, height) * 0.5 - 30;
     var innerRadius = outerRadius - 20
     var height = Math.min(640, width)
     var data = matrix;
@@ -95,8 +96,9 @@ function relationGraph() {
 
     var svg = d3.select("#relationsCourse")
       .append("svg")
+      .attr("style", "height: 500px;")
       .attr("viewBox", [-width / 2, -height / 2, width, height])
-      .attr("font-size", 10)
+      .attr("font-size", 8)
       .attr("font-family", "sans-serif");
 
     var chords = chord(data);
@@ -134,8 +136,8 @@ function relationGraph() {
     //   .text(d => formatValue(d.value));
 
     var groupText = group.append("text")
-      .attr("x", 6)
-      .attr("dy", 13);
+      .attr("x", 10)
+      .attr("dy", -5);
 
     groupText.append("textPath")
       .attr("xlink:href", function (d, i) { return "#group" + i; })
