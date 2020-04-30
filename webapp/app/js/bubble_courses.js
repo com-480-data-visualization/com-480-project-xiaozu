@@ -77,7 +77,7 @@ d3.json(courses_url, function (error, data) {
       .duration(200)
     tooltip
       .style("opacity", 1)
-      .html(["Course: " + d.course_name, "Number of enrollments: " + d.count])
+      .html(["Course: " + d.course_name, " Number of enrollments: " + d.count])
       .style("left", (d3.mouse(this)[0] + 30) + "px")
       .style("top", (d3.mouse(this)[1] + 30) + "px")
   }
