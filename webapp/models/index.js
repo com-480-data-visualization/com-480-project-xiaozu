@@ -16,6 +16,6 @@ module.exports = {
   'teacher' : mongoose.model('teacher'),
   'course' : mongoose.model('course'),
   'enrollment' : mongoose.model('enrollment'),
-  'jaccard' : mongoose.model('enrollment'),
+  'jaccard' : mongoose.model('jaccard'),
 }
 

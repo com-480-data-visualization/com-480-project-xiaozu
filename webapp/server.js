@@ -70,6 +70,17 @@ router.route("/enrollments").get(function(req, res) {
 });
 
 
+router.route("/jaccards").get(function(req, res) {
+  jaccards.find({}, function(err, result) {
+    if (err) {
+      res.send(err);
+    } else {
+      res.send(result);
+    }
+  });
+});
+
+
 router.get("/enrollments/:studid", function(req, res) {
 	let filter = {};
 
