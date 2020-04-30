@@ -2,170 +2,176 @@
 // https://observablehq.com/@d3/chord-diagram and https://observablehq.com/@adrianpearl/migration-between-states#height
 // Construct matrix for storing data
 
-let course_related = host + ":3000/courses_related/?course=Machine%20learning&max=20"
+var host = window.location.hostname;
 
-d3.json(course_related, function (error, courseConnections) {
+if (host.indexOf('localhost') > -1) {
+  //is development
+  host = "http://" + host + ":3000";
+} else {
+  // is production
+  host = "https://" + host;
+}
 
-  var coursesNames = courseConnections.map(d => d.name)
-  console.log(coursesNames)
-  var indexByName = new Map;
-  var matrix = [];
+var course_related_url = host + "/courses_related/?course=Machine%20learning&max=20"
 
-  let num_courses = courseConnections.length;
+function relationGraph() {
+  d3.json(course_related_url, function (error, courseConnections) {
+    // Example format
+    // var courseConnections = [{ "name": "A", "connects": [{ "B": 2 }, { "C": 1 }] }, { "name": "B", "connects": [{ "A": 2 }, { "C": 40 }] }, { name: "C", "connects": [{ "A": 10 }, { "B": 40 }] }];
+    // var coursesNames = ["ML", "Deep Learning", "ADA"];
+    var coursesNames = courseConnections.map(d => d.name);
 
-  // structures: [Array(0, 0, 0), Array(0, 0, 0), Array(0, 0, 0)];
-  for (var i = 0; i < num_courses; i++) {
-    matrix.push(new Array(num_courses));
-  }
+    var indexByName = new Map;
+    var matrix = [];
 
-  let n = 0;
+    let num_courses = courseConnections.length;
 
-  // name A B C
-  // A    1 0.6 0.9
-  // B    0.4 1 0.4
-  // C    0.2 0.4 1
-  // Create {"A" => 0, "B" => 1, "C" => 2}
-  courseConnections.forEach(d => {
-    if (!indexByName.has(d = d.name)) {
-      indexByName.set(d, n++);
+    // structures: [Array(0, 0, 0), Array(0, 0, 0), Array(0, 0, 0)]; 
+    for (var i = 0; i < num_courses; i++) {
+      matrix.push(new Array(num_courses));
     }
-  })
 
-  courseConnections.forEach(d => {
-    var from = indexByName.get(d.name);
-    var connections_vect = matrix[from]
-    connections_vect[from] = 1
+    let n = 0;
 
-    d.connects.map(c => {
-      nameCourse = Object.keys(c)[0];
-      var idx = indexByName.get(nameCourse);
-      connections_vect[idx] = c[nameCourse];
+    // name A B C
+    // A    1 0.6 0.9
+    // B    0.4 1 0.4
+    // C    0.2 0.4 1
+
+    // Create {"A" => 0, "B" => 1, "C" => 2}
+    courseConnections.forEach(d => {
+      if (!indexByName.has(d = d.name)) {
+        indexByName.set(d, n++);
+      }
     })
-  })
 
-  var color = d3.scaleOrdinal()
-    .domain(d3.range(10))
-    .range(["#8dd3c7", "#ffffb3", "#bebada", "#fb8072", "#80b1d3", "#fdb462", "#b3de69", "#fccde5", "#d9d9d9", "#bc80bd"])
+    courseConnections.forEach(d => {
+      var from = indexByName.get(d.name);
+      var connections_vect = matrix[from]
+      connections_vect[from] = 1
 
-  // var color = ["#8dd3c7"
-  // , "#ffffb3"
-  // , "#bebada"
-  // , "#fb8072"
-  // , "#80b1d3"
-  // , "#fdb462"
-  // , "#b3de69"
-  // , "#fccde5"
-  // , "#d9d9d9"
-  // , "#bc80bd"
-  //   , "#ccebc5"
-  //   , "#ffed6f"
-  // ]
-  //console.log(matrix)
+      d.connects.map(c => {
+        nameCourse = Object.keys(c)[0];
+        var idx = indexByName.get(nameCourse);
+        connections_vect[idx] = c[nameCourse];
+      })
+    })
 
-  var outerRadius = Math.min(width, height) * 0.5 - 30
-  var innerRadius = outerRadius - 20
-  var height = Math.min(640, width)
-  var data = matrix;
+    var color = d3.scaleOrdinal()
+      .domain(d3.range(10))
+      .range(["#8dd3c7", "#ffffb3", "#bebada", "#fb8072", "#80b1d3", "#fdb462", "#b3de69", "#fccde5", "#d9d9d9", "#bc80bd"])
 
-  // function groupTicks(d, step) {
-  //   const k = (d.endAngle - d.startAngle) / d.value;
-  //   console.log(k)
-  //   return d3.range(0, d.value, step).map(value => {
-  //     return { value: value, angle: value * k + d.startAngle };
-  //   });
-  // }
+    var width = window.width;
+    var height = window.height;
+    var outerRadius = Math.min(width, height) * 0.5 - 30
+    var innerRadius = outerRadius - 20
+    var height = Math.min(640, width)
+    var data = matrix;
 
-  // var formatValue = d3.formatPrefix(",.0", 1e3)
+    // function groupTicks(d, step) {
+    //   const k = (d.endAngle - d.startAngle) / d.value;
+    //   console.log(k)
+    //   return d3.range(0, d.value, step).map(value => {
+    //     return { value: value, angle: value * k + d.startAngle };
+    //   });
+    // }
 
-  var chord = d3.chord()
-    .padAngle(0.05)
-    .sortSubgroups(d3.descending)
+    // var formatValue = d3.formatPrefix(",.0", 1e3)
+
+    var chord = d3.chord()
+      .padAngle(0.05)
+      .sortSubgroups(d3.descending)
 
 
-  var arc = d3.arc()
-    .innerRadius(innerRadius)
-    .outerRadius(outerRadius)
+    var arc = d3.arc()
+      .innerRadius(innerRadius)
+      .outerRadius(outerRadius)
 
 
-  var ribbon = d3.ribbon()
-    .radius(innerRadius)
+    var ribbon = d3.ribbon()
+      .radius(innerRadius)
 
-  var svg = d3.select("#relationsCourse")
-    .append("svg")
-    .attr("viewBox", [-width / 2, -height / 2, width, height])
-    .attr("font-size", 10)
-    .attr("font-family", "sans-serif");
+      console.log(outerRadius)
 
-  var chords = chord(data);
+    var svg = d3.select("#relationsCourse")
+      .append("svg")
+      .attr("viewBox", [-width / 2, -height / 2, width, height])
+      .attr("font-size", 10)
+      .attr("font-family", "sans-serif");
 
-  var group = svg.append("g")
-    .selectAll("g")
-    .data(chords.groups)
-    .enter().append('g')
-    .attr("class", "group")
-    .on("mouseover", mouseover);
+    var chords = chord(data);
 
-  var paths = group.append("path")
-    .attr("fill", d => color(d.index))
-    .attr("stroke", d => d3.rgb(color(d.index)).darker())
-    .attr("id", function (d, i) { return "group" + i; })
-    .attr("d", arc);
+    var group = svg.append("g")
+      .selectAll("g")
+      .data(chords.groups)
+      .enter().append('g')
+      .attr("class", "group")
+      .on("mouseover", mouseover);
 
-  // var groupTick = group.append("g")
-  //   .selectAll("g")
-  //   .data(d => groupTicks(d, 2e4))
-  //   .enter().append('g')
-  //   .attr("transform", d => `rotate(${d.angle * 180 / Math.PI - 90}) translate(${outerRadius},0)`);
+    var paths = group.append("path")
+      .attr("fill", d => color(d.index))
+      .attr("stroke", d => d3.rgb(color(d.index)).darker())
+      .attr("id", function (d, i) { return "group" + i; })
+      .attr("d", arc);
 
-  // groupTick.append("line")
-  //   .attr("stroke", "#000")
-  //   .attr("x2", 6);
+    // var groupTick = group.append("g")
+    //   .selectAll("g")
+    //   .data(d => groupTicks(d, 2e4))
+    //   .enter().append('g')
+    //   .attr("transform", d => `rotate(${d.angle * 180 / Math.PI - 90}) translate(${outerRadius},0)`);
 
-  // groupTick
-  //   .filter(d => d.value % 5e3 === 0)
-  //   .append("text")
-  //   .attr("x", 8)
-  //   .attr("dy", ".35em")
-  //   .attr("transform", d => d.angle > Math.PI ? "rotate(180) translate(-16)" : null)
-  //   .attr("text-anchor", d => d.angle > Math.PI ? "end" : null)
-  //   .text(d => formatValue(d.value));
+    // groupTick.append("line")
+    //   .attr("stroke", "#000")
+    //   .attr("x2", 6);
 
-  var groupText = group.append("text")
-    .attr("x", 6)
-    .attr("dy", 13);
+    // groupTick
+    //   .filter(d => d.value % 5e3 === 0)
+    //   .append("text")
+    //   .attr("x", 8)
+    //   .attr("dy", ".35em")
+    //   .attr("transform", d => d.angle > Math.PI ? "rotate(180) translate(-16)" : null)
+    //   .attr("text-anchor", d => d.angle > Math.PI ? "end" : null)
+    //   .text(d => formatValue(d.value));
 
-  groupText.append("textPath")
-    .attr("xlink:href", function (d, i) { return "#group" + i; })
-    .text(function (d, i) { return coursesNames[i]; });
+    var groupText = group.append("text")
+      .attr("x", 6)
+      .attr("dy", 13);
 
-  const ribbons = svg.append("g")
-    .attr("fill-opacity", 0.67)
-    .selectAll("path")
-    .data(chords)
-    .enter().append('path')
-    .attr("d", ribbon)
-    .attr("fill", d => color(d.target.index))
-    .attr("stroke", d => d3.rgb(color(d.target.index)).darker());
+    groupText.append("textPath")
+      .attr("xlink:href", function (d, i) { return "#group" + i; })
+      .text(function (d, i) { return coursesNames[i]; });
 
-
-  function mouseover(d, i) {
-    ribbons.classed("fade", function (p) {
-      return p.source.index != i
-        && p.target.index != i;
-    });
-  }
+    const ribbons = svg.append("g")
+      .attr("fill-opacity", 0.67)
+      .selectAll("path")
+      .data(chords)
+      .enter().append('path')
+      .attr("d", ribbon)
+      .attr("fill", d => color(d.target.index))
+      .attr("stroke", d => d3.rgb(color(d.target.index)).darker());
 
 
-  function rbmouse(d, i) {
-    if (!this.classList.contains("fade")) {
-      var t = d.target.index + " -> " + d.source.index + ": " + d.source.value;
-      t += d.source.index + " -> " + d.target.index + ": " + d.target.value;
-      textbox.text(t);
+    function mouseover(d, i) {
+      ribbons.classed("fade", function (p) {
+        return p.source.index != i
+          && p.target.index != i;
+      });
     }
-  }
 
-  var textbox = svg.append("text")
-    .attr("x", -outerRadius)
-    .attr("y", -outerRadius)
-    .text("");
-});
+
+    function rbmouse(d, i) {
+      if (!this.classList.contains("fade")) {
+        var t = d.target.index + " -> " + d.source.index + ": " + d.source.value;
+        t += d.source.index + " -> " + d.target.index + ": " + d.target.value;
+        textbox.text(t);
+      }
+    }
+
+    var textbox = svg.append("text")
+      .attr("x", -outerRadius)
+      .attr("y", -outerRadius)
+      .text("");
+  });
+}
+
+q.defer(relationGraph);
