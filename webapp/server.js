@@ -196,16 +196,65 @@ router.route("/courses_related").get(function(req, res) {
 
   // select students set from course name
   jaccard.aggregate([
-    { $match : { course_name : "Machine learning" } },
+    { $match : { course_name : req.query.course } },
     { $lookup: { from: "jaccard", pipeline: [], as: "courses" } }
   ]).exec(
       function(err, result) {
         if (err) {
           res.send(err);
         } else {
-          console.log(result[0].set[0])
-          res.send(result)
+          var lst = []
+          var students = new Set(result[0].set.substring(1, result[0].set.length - 1).split(","))
+          for(var c in result[0].courses){
+            var tmp = result[0].courses[c].set;
+            tmp = tmp.substring(1, tmp.length - 1).split(",");
+            var count = 0;
+            for(var s in tmp){
+              if(students.has(tmp[s])){
+                count += 1
+              }
+            }
+            var jj = count / (students.size + tmp.length - count)
+            if(jj > 0){
+              lst[lst.length] = [jj, result[0].courses[c].course_name]
+            }
           }
+          var most_related = lst.sort(function(a, b){return b[0]-a[0]}).slice(1, +req.query.max + 1) //TODO
+
+          most_related_courses = [req.query.course]
+          for(i in most_related){
+            most_related_courses[most_related_courses.length] = most_related[i][1]
+          }
+          console.log(most_related_courses)
+          jaccard.aggregate([
+            {$match :{ course_name : {"$in": most_related_courses }}}
+          ]).exec(
+            function(err, result2) {
+              if (err) {
+                res.send(err);
+              } else {
+                var courseConnections = []
+                for(c1 in result2){
+                  name1 = result2[c1].course_name
+                  connections = []
+                  s1 = result2[c1].set
+                  s1 = s1.substring(1, s1.length - 1).split(",")
+                  for(c2 in result2){
+                    name2 = result2[c2].course_name;
+                    jaccard_coeff = 1;
+                    s2 = result2[c2].set
+                    s2 = s2.substring(1, s2.length - 1).split(",")
+                    commons = s1.filter(value => -1 !== s2.indexOf(value))
+                    connections[connections.length] = {}
+                    connections[connections.length - 1][name2] =  commons.length / (s1.length + s2.length - commons.length)
+                  }
+                  courseConnections[courseConnections.length] = {"name" : name1, "connects" : connections}
+                }
+                res.send(courseConnections)
+              }
+            }
+          );
+        }
       }
   );
 });
