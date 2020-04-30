@@ -24,7 +24,8 @@ app.use(
   bodyParser.urlencoded({ extended: true })
 );
 
-app.use('/app', express.static(__dirname + "/app"));
+// app.use('/app', express.static(__dirname + "/app"));
+app.use('/app', express.static(__dirname + '/app'));
 
 app.use("/", router);
 
