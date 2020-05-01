@@ -99,7 +99,7 @@ Help a user to choose his/her next semester courses. You can insert your name as
 **10% of the final grade**
 
 Report: [PDF Document](https://github.com/com-480-data-visualization/com-480-project-xiaozu/blob/master/report/Dataviz.pdf) \
-Prototype: [Website](https://xiaozuepfl.herokuapp.com/#personal)
+Prototype: [Website](https://xiaozuepfl.herokuapp.com/)
 
 
 ## Milestone 3 (Thursday 28th May, 5pm)
