@@ -112,6 +112,7 @@ function bubbleGraph() {
     console.log(data)
     data.forEach(d => {
       var flag = 0;
+      var r = 3 * Math.round(d.count);
       while (true) {
         var a = Math.round(Math.random() * (max - min + 1)) + min;
         var b = Math.round(Math.random() * (max - min + 1)) + min;
@@ -129,7 +130,7 @@ function bubbleGraph() {
 
 
       centers.push([a, b])
-      var r = 3 * Math.round(d.count);
+
       for (var i = Math.max(0, (a - r)); i < Math.min((a + r), 500); i++) {
         for (var j = Math.max(0, (b - r)); j < Math.min(500, (b + r)); j++) {
           points[i][j] = 1;
