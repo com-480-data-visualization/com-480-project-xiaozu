@@ -3,6 +3,87 @@
     <head>
         <meta charset="UTF-8">
         <title>Data Visualization</title>
+        <script>
+        function showGraph(){
+          // set the dimensions and margins of the graph
+          var margin = {
+            top: 80,
+            right: 20,
+            bottom: 30,
+            left: 50
+          };
+
+          var width = 500 - margin.left - margin.right;
+          var height = 500 - margin.top - margin.bottom;
+
+          var host = window.location.hostname;
+          if (host.indexOf('localhost') > -1) {
+            //is development
+            host = "http://" + host + ":3000";
+          } else {
+            // is production
+            host = "https://" + host;
+          }
+
+          var student_name = document.getElementById("myText").value;
+          console.log(student_name);
+          var student_course_url = host + "/personal_graph/?student=" + encodeURIComponent(student_name);
+          var empty_url = host + "/graph";
+
+          var svg = d3.select("#personalGraph")
+            .append("svg")
+            .attr("width", width + margin.left + margin.right + 300)
+            .attr("height", height + margin.top + margin.bottom)
+            .append("g")
+            .attr("transform",
+              "translate(" + margin.left + "," + margin.top + ")");
+
+
+          // default implementation from: https://www.d3-graph-gallery.com/graph/network_basic.html
+          d3.json(student_course_url, function (error, data) {
+            console.log(data)
+            // Initialize the links
+            var link = svg
+              .selectAll("line")
+              .data(data.links)
+              .enter()
+              .append("line")
+                .style("stroke", "#aaa")
+
+            // Initialize the nodes
+            var node = svg
+              .selectAll("circle")
+              .data(data.nodes)
+              .enter()
+              .append("circle")
+                .attr("r", 20)
+                .style("fill", "#69b3a2")
+
+            // Let's list the force we wanna apply on the network
+            var simulation = d3.forceSimulation(data.nodes)                 // Force algorithm is applied to data.nodes
+                .force("link", d3.forceLink()                               // This force provides links between nodes
+                      .id(function(d) { return d.id; })                     // This provide  the id of a node
+                      .links(data.links)                                    // and this the list of links
+                )
+                .force("charge", d3.forceManyBody().strength(-400))         // This adds repulsion between nodes. Play with the -400 for the repulsion strength
+                .force("center", d3.forceCenter(width / 2, height / 2))     // This force attracts nodes to the center of the svg area
+                .on("end", ticked);
+
+            // This function is run at each iteration of the force algorithm, updating the nodes position.
+            function ticked() {
+              link
+                  .attr("x1", function(d) { return d.source.x; })
+                  .attr("y1", function(d) { return d.source.y; })
+                  .attr("x2", function(d) { return d.target.x; })
+                  .attr("y2", function(d) { return d.target.y; });
+
+              node
+                   .attr("cx", function (d) { return d.x+6; })
+                   .attr("cy", function(d) { return d.y-6; });
+            }
+          });
+        }
+        </script>
     </head>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="app/css/main.css">
@@ -34,12 +115,12 @@
                 <div class="tab-pane active" id="home" role="tabpanel">
                   <h4 class="card-title mh-100">Hi!</h4>
                   <p class="card-text">
-                    We have made ISN'T ACADEMIA to <i>help students to select courses</i> at EPFL. </br> 
-                    We will provide general information to give an overview of courses and give customized suggestions by combining it with their personal data. 
+                    We have made ISN'T ACADEMIA to <i>help students to select courses</i> at EPFL. </br>
+                    We will provide general information to give an overview of courses and give customized suggestions by combining it with their personal data.
                   </p>
-                  <p>So let me <i>introduce our website</i> quickly. </br> 
+                  <p>So let me <i>introduce our website</i> quickly. </br>
                     You will notice 3 tabs on the top, our main visualizations will be in the Explore and General tabs. </br>
-                    Feel free to take a look at them! 
+                    Feel free to take a look at them!
                   </p><p>
                     Enjoy! </br> Costanza, Eleonora and Wei</p>
                 </div>
@@ -54,9 +135,14 @@
                 <div class="tab-pane" id="personal" role="tabpanel" aria-labelledby="deals-tab">
                   <h4 class="card-title mh-100">Which course should I do this semester?</h4>
                   <p class="card-text">
-                    We have created the course network to give suggestions on course selection. Just insert your name and remove the courses you didn't love (or the ones that you would have preferred to skip in the past). 
+                    We have created the course network to give suggestions on course selection. Just insert your name and remove the courses you didn't love (or the ones that you would have preferred to skip in the past).
                   </p>
-                  <div id="relationsCourse"></div>
+                  <!--div id="relationsCourse"></div-->
+
+                  <input type="text" id="myText" value="Insert name...">
+                  <!--button onclick="showGraph()">Try it</button-->
+                  <!--div id="personalGraph"></div-->
+
                 </div>
               </div>
               </div>
