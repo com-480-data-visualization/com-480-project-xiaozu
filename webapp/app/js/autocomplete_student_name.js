@@ -2,12 +2,12 @@ var students = ['Aabid Fouad', 'Aamodt Simen', 'Aanhaanen Simone', 'Aapro Lauren
 
 function hideLoaderBadges() {
     $('#loading-badges').hide();
-  }
+}
 
-function showLoaderBadges(){
+function showLoaderBadges() {
     $('#loading-badges').css("visibility", "visible");
 }
-  
+
 
 // Constructing the suggestion engine
 var students = new Bloodhound({
@@ -22,30 +22,106 @@ $('.typeahead').typeahead({
     highlight: true, /* Enable substring highlighting */
     minLength: 1 /* Specify minimum characters required for showing result */
 },
-{
-    name: 'students',
-    source: students
-}).bind("typeahead:selected", function(obj, datum, name) {
-    showLoaderBadges();
-    var name_student = datum.replace(/ /g, "%20");
+    {
+        name: 'students',
+        source: students
+    }).bind("typeahead:selected", function (obj, datum, name) {
+        showLoaderBadges();
+        var name_student = datum.replace(/ /g, "%20");
 
-    // Send query and return courses done by a student
-    var host = window.location.hostname;
+        // Send query and return courses done by a student
+        var host = window.location.hostname;
 
-    if (host.indexOf('localhost') > -1) {
-        //is development
-        host = "http://" + host + ":3000";
-    } else {
-        // is production
-        host = "https://" + host;
-    }
+        if (host.indexOf('localhost') > -1) {
+            //is development
+            host = "http://" + host + ":3000";
+        } else {
+            // is production
+            host = "https://" + host;
+        }
 
-    var courses_by_student_url = host + "/courses/?student=" + name_student;
+        var courses_by_student_url = host + "/courses/?student=" + name_student;
 
-    $.ajax({url: courses_by_student_url, success: function(courses_by_stud){
-        hideLoaderBadges();
-        courses_by_stud.forEach(course => {
-            $("#coursesbadges").append(`<span class='badge badge-secondary' style="margin-right: 10px;">${course.course_name}</span>`);
-        })
-      }});
+        $.ajax({
+            url: courses_by_student_url, success: function (courses_by_stud) {
+                hideLoaderBadges();
+                // courses_by_stud.forEach(course => {
+                //     $("#coursesbadges").append(`<span class='badge badge-secondary' style="margin-right: 10px;">${course.course_name}</span>`);
+                // });
+
+                var host = window.location.hostname;
+                if (host.indexOf('localhost') > -1) {
+                    //is development
+                    host = "http://" + host + ":3000";
+                } else {
+                    // is production
+                    host = "https://" + host;
+                }
+
+                var personal_url = host + "/personal_graph/?student=" + name_student;
+
+                d3.json(personal_url, function (error, data) {
+                    if (error) throw error;
+                    console.log("I am inside")
+
+                    var width = 960,
+                        height = 500;
+
+
+                    var force = d3.forceSimulation()
+                        // .force("collide", d3.forceCollide(12))
+                        .force("center", d3.forceCenter(width / 2, height / 2))
+                        .charge(-400)
+                        .linkDistance(40)
+                        .nodes(data)
+                        .on("tick", tick);
+
+
+                // var drag = force.drag()
+                //     .on("dragstart", dragstart);
+
+                // var svg = d3.select("body").append("svg")
+                //     .attr("width", width)
+                //     .attr("height", height);
+
+                // var link = svg.selectAll(".link"),
+                //     node = svg.selectAll(".node");
+
+                //     force
+                //         .nodes(graph.nodes)
+                //         .links(graph.links)
+                //         .start();
+
+                //     link = link.data(graph.links)
+                //         .enter().append("line")
+                //         .attr("class", "link");
+
+                //     node = node.data(graph.nodes)
+                //         .enter().append("circle")
+                //         .attr("class", "node")
+                //         .attr("r", 12)
+                //         .on("dblclick", dblclick)
+                //         .call(drag);
+                // });
+
+                function tick() {
+                    link.attr("x1", function (d) { return d.source.x; })
+                        .attr("y1", function (d) { return d.source.y; })
+                        .attr("x2", function (d) { return d.target.x; })
+                        .attr("y2", function (d) { return d.target.y; });
+
+                    node.attr("cx", function (d) { return d.x; })
+                        .attr("cy", function (d) { return d.y; });
+                }
+
+                // function dblclick(d) {
+                //     d3.select(this).classed("fixed", d.fixed = false);
+                // }
+
+                // function dragstart(d) {
+                //     d3.select(this).classed("fixed", d.fixed = true);
+                // }
+            });
+        }
+    });
 });

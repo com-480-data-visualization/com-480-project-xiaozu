@@ -180,9 +180,10 @@ router.route("/personal_graph").get(function(req, res) {
 
 
 router.route("/courses").get(function(req, res) {
-  console.log("here ")
+  //TODO: change it, we should be able to return all courses when we do /courses or just courses of a student whenever
+  // the student is specified
   // If you want to return just the top 5
-  // http://localhost:3000/courses_related/?course=Machine%20learning&max=20
+  // http://localhost:3000/courses/?student=Rocchi%20Eleonora
   if (!req.query.student) {
     res.send("Please specify the numbers of courses (e.g., url/courses/?student=Rocchi%20Eleonora")
   }
