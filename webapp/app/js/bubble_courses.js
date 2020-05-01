@@ -41,9 +41,7 @@ function bubbleGraph() {
 
     res = []
     data.map(d => res.push(d.course_name))
-    console.log(res);
-    // TODO: adapt the following data to graph, see console for data
-
+    // console.log(res);
     // Add X axis
     var x = d3.scaleLinear()
       .domain([0, 500])
@@ -113,13 +111,11 @@ function bubbleGraph() {
 
     data.forEach(d => {
       var flag = 0;
-      console.log(d.count)
+      // console.log(d.count)
       
       while (true) {
         var a = Math.round(Math.random() * (max - min + 1)) + min;
         var b = Math.round(Math.random() * (max - min + 1)) + min;
-        console.log(a -r);
-        console.log(a+r);
         for (var i = Math.max(0, (a - r)); i < Math.min((a + r), 500); i++) {
           for (var j = Math.max(0, (b - r)); j < Math.min(500, (b + r)); j++) {
             if (points[i][j] == 1) {
