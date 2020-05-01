@@ -23,7 +23,7 @@ if (host.indexOf('localhost') > -1) {
   host = "https://" + host;
 }
 
-let courses_url = host + "/top_courses/?max=10&year=2008-2009"
+let courses_url = host + "/top_courses/?max=5&year=2008-2009"
 
 function bubbleGraph() {
   d3.json(courses_url, function (error, data) {
@@ -109,13 +109,17 @@ function bubbleGraph() {
     var centers = [];
     var max = 450;
     var min = 50;
-    console.log(data)
+
+
     data.forEach(d => {
       var flag = 0;
-      var r = 3 * Math.round(d.count);
+      console.log(d.count)
+      
       while (true) {
         var a = Math.round(Math.random() * (max - min + 1)) + min;
         var b = Math.round(Math.random() * (max - min + 1)) + min;
+        console.log(a -r);
+        console.log(a+r);
         for (var i = Math.max(0, (a - r)); i < Math.min((a + r), 500); i++) {
           for (var j = Math.max(0, (b - r)); j < Math.min(500, (b + r)); j++) {
             if (points[i][j] == 1) {
@@ -128,9 +132,9 @@ function bubbleGraph() {
         }
       }
 
-
+      var r = 3 * Math.round(d.count);
       centers.push([a, b])
-
+      
       for (var i = Math.max(0, (a - r)); i < Math.min((a + r), 500); i++) {
         for (var j = Math.max(0, (b - r)); j < Math.min(500, (b + r)); j++) {
           points[i][j] = 1;
@@ -139,7 +143,6 @@ function bubbleGraph() {
 
 
     });
-    console.log(centers);
     var p = 0;
     var q = 0;
     // Add dots
