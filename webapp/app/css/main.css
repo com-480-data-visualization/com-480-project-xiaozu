@@ -91,12 +91,17 @@
     z-index: 9999999;
 }
 
-/* CSS AUTOCOMPLETE */
-.bs-example {
-	font-family: sans-serif;
-	position: relative;
-	margin: 100px;
+
+
+#loading-badges {
+    background: url(/app/images/loading.gif) no-repeat center center;
+    height: 200px;
+    width: 200px;
+    z-index: 9999999;
+    visibility: hidden;
 }
+
+/* CSS AUTOCOMPLETE */
 .typeahead, .tt-query, .tt-hint {
 	border: 2px solid #CCCCCC;
 	border-radius: 8px;
@@ -111,7 +116,7 @@
 	background-color: #FFFFFF;
 }
 .typeahead:focus {
-	border: 2px solid #0097CF;
+	border: 2px solid rgb(25, 147, 174);;
 }
 .tt-query {
 	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
