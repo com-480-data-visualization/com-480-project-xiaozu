@@ -1,7 +1,7 @@
 // Giving a course return a graph with the relations between courses taken also from other students
 // https://observablehq.com/@d3/chord-diagram and https://observablehq.com/@adrianpearl/migration-between-states#height
 // Construct matrix for storing data
-function hideLoader() {
+function hideLoader2() {
   $('#loading2').hide();
 }
 var host = window.location.hostname;
@@ -16,9 +16,11 @@ if (host.indexOf('localhost') > -1) {
 
 var course_related_url = host + "/courses_related/?course=Machine%20learning&max=5"
 
+console.log(course_related_url)
+
 function relationGraph() {
   d3.json(course_related_url, function (error, courseConnections) {
-    // hideLoader();
+    hideLoader2();
     // Example format
     // var courseConnections = [{ "name": "A", "connects": [{ "B": 2 }, { "C": 1 }] }, { "name": "B", "connects": [{ "A": 2 }, { "C": 40 }] }, { name: "C", "connects": [{ "A": 10 }, { "B": 40 }] }];
     // var coursesNames = ["ML", "Deep Learning", "ADA"];

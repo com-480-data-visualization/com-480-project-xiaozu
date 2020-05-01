@@ -9,6 +9,11 @@ function showLoaderBadges() {
 }
 
 
+function showLoader2() {
+    $('#loading2').css("visibility", "visible");
+}
+
+
 // Constructing the suggestion engine
 var students = new Bloodhound({
     datumTokenizer: Bloodhound.tokenizers.whitespace,
@@ -64,37 +69,20 @@ $('.typeahead').typeahead({
 
                 showLoaderBadges();
 
-                d3.json(personal_url, function (error, graph) {
-                    hideLoaderBadges();
+                function personalGraph() {
+                    d3.json(personal_url, function (error, graph) {
                     if (error) throw error;
 
-                    // set the dimensions and margins of the graph
-                    var margin = {
-                        top: 80,
-                        right: 20,
-                        bottom: 30,
-                        left: 50
-                    };
-
-                    var width = 500 - margin.left - margin.right;
-                    var height = 500 - margin.top - margin.bottom;
+                    var width = 500;
+                    var height = 500;
 
                     document.getElementById("personalGraph").innerHTML = "";
 
-                    // var svg = d3.select("#personalGraph")
-                    //     .append("svg")
-                    //     .attr("width", width + margin.left + margin.right + 300)
-                    //     .attr("height", height + margin.top + margin.bottom)
-                    //     .append("g")
-                    //     .attr("transform",
-                    //         "translate(" + margin.left + "," + margin.top + ")");
-
-
                     var svg = d3.select("#personalGraph")
                         .append("svg").attr("style", "height: 500px;")
-                        .attr("viewBox", [-width / 2, -height / 2, width, height])
+                        // .attr("viewBox", [-width / 2, -height / 2, width, height])
+                        .attr("viewBox", [-width / 2, -10, 900, height])
                         .attr("font-size", 8)
-                        // .append("g").style('transform', 'translate(50%, 50%)')
                         .attr("font-family", "sans-serif");
 
                     var color = d3.scaleOrdinal(d3.schemeCategory20);
@@ -172,69 +160,13 @@ $('.typeahead').typeahead({
                         d.fy = null;
                     }
 
+                    hideLoaderBadges();
+                    showLoader2();
+
                 });
+            }
 
-
-                // console.log("I am inside")
-
-                // var width = 960,
-                //     height = 500;
-
-
-                // var force = d3.forceSimulation()
-                //     // .force("collide", d3.forceCollide(12))
-                //     .force("center", d3.forceCenter(width / 2, height / 2))
-                //     .charge(-400)
-                //     .linkDistance(40)
-                //     .nodes(data)
-                //     .on("tick", tick);
-
-
-                // var drag = force.drag()
-                //     .on("dragstart", dragstart);
-
-                // var svg = d3.select("body").append("svg")
-                //     .attr("width", width)
-                //     .attr("height", height);
-
-                // var link = svg.selectAll(".link"),
-                //     node = svg.selectAll(".node");
-
-                //     force
-                //         .nodes(graph.nodes)
-                //         .links(graph.links)
-                //         .start();
-
-                //     link = link.data(graph.links)
-                //         .enter().append("line")
-                //         .attr("class", "link");
-
-                //     node = node.data(graph.nodes)
-                //         .enter().append("circle")
-                //         .attr("class", "node")
-                //         .attr("r", 12)
-                //         .on("dblclick", dblclick)
-                //         .call(drag);
-                // });
-
-                // function tick() {
-                //     link.attr("x1", function (d) { return d.source.x; })
-                //         .attr("y1", function (d) { return d.source.y; })
-                //         .attr("x2", function (d) { return d.target.x; })
-                //         .attr("y2", function (d) { return d.target.y; });
-
-                //     node.attr("cx", function (d) { return d.x; })
-                //         .attr("cy", function (d) { return d.y; });
-                // }
-
-                // function dblclick(d) {
-                //     d3.select(this).classed("fixed", d.fixed = false);
-                // }
-
-                // function dragstart(d) {
-                //     d3.select(this).classed("fixed", d.fixed = true);
-                // }
-                // });
+                q.defer(personalGraph);
             }
         });
     });

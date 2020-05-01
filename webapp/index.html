@@ -48,7 +48,8 @@
                   <h4 class="card-title mh-100">It is time to explore the trend of EPFL courses!</h4>
                   <p class="card-text">
                     On this page, you will be able to compare course popularity through the changes in the number of student enrollments over the years. </p>
-                  <div id="bubbleCourses"></div>
+                    <div id="loading1"></div>
+                    <div id="bubbleCourses"></div>
                 </div>
 
               <div class="tab-pane" id="personal" role="tabpanel" aria-labelledby="deals-tab">
@@ -56,15 +57,15 @@
                 <p class="card-text">
                   We have created the course network to give suggestions on course selection. Just insert your name and remove the courses you didn't love (or the ones that you would have preferred to skip in the past).
                 </p>
-                <!--div id="relationsCourse"></div-->
                 <div>
                   <h6>Type the student name:</h6>
                       <input id="studentNameAutocomplete" type="text" class="typeahead tt-query" autocomplete="off" spellcheck="false">
                     <div id="loading-badges"> </div>
-                      <div id="coursesbadges"></div>
+                      <div id="coursesbadges" style="margin-top: 15px;"></div>
                       <div id="personalGraph"></div>
-                  </div>
-
+                </div>
+                  <div id="loading2"></div>
+                  <div id="relationsCourse"></div>
               </div>
             </div>
             </div>

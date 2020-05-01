@@ -1,4 +1,4 @@
-function hideLoader() {
+function hideLoaderBubble() {
   $('#loading1').hide();
 }
 
@@ -27,7 +27,7 @@ let courses_url = host + "/top_courses/?max=5&year=2008-2009"
 
 function bubbleGraph() {
   d3.json(courses_url, function (error, data) {
-    // hideLoader(); // hide loading
+    hideLoaderBubble(); // hide loading
 
     // append the svg object to the body of the page
     var svg = d3.select("#bubbleCourses")
