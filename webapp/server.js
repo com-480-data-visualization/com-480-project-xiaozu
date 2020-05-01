@@ -147,7 +147,7 @@ router.route("/personal_graph").get(function(req, res) {
                   nodes = []
                   map_nodes_to_idx = {}
                   for(i in course_lst){
-                    nodes[nodes.length] = {"id": i, "name": course_lst[i]}
+                    nodes[nodes.length] = {"id": i, "name": course_lst[i], "taken": 1}
                     map_nodes_to_idx[course_lst[i]] = i
                   }
 
@@ -156,7 +156,7 @@ router.route("/personal_graph").get(function(req, res) {
                     course_name_y = result[i].course_name_y
                     if(!course_lst.includes(course_name_y)){
                       course_lst[course_lst.length] =  course_name_y
-                      nodes[nodes.length] = {"id": course_lst.length, "name": course_name_y}
+                      nodes[nodes.length] = {"id": course_lst.length, "name": course_name_y, "taken": 0}
                       map_nodes_to_idx[course_name_y] = course_lst.length
                     }
                     links[links.length] = {

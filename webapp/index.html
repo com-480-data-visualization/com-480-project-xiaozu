@@ -6,7 +6,7 @@
         <style>
 
         .links line {
-          stroke: #000;
+          stroke: #999;
           stroke-opacity: 0.6;
           stroke-width: 1.5px;
         }
@@ -47,7 +47,9 @@
           var student_name = document.getElementById("myText").value;
           console.log(student_name);
           var student_course_url = host + "/personal_graph/?student=" + encodeURIComponent(student_name);
-          var empty_url = host + "/graph";
+
+          // clean the previous network if existing
+          document.getElementById("personalGraph").innerHTML = "";
 
           var svg = d3.select("#personalGraph")
             .append("svg")
@@ -59,38 +61,13 @@
 
           var color = d3.scaleOrdinal(d3.schemeCategory20);
           var simulation = d3.forceSimulation()
-            .force("link", d3.forceLink().id(function(d) { return d.id; }))
+            .force("link", d3.forceLink().id(function(d) { return d.id ; }).distance(200))
             .force("charge", d3.forceManyBody())
             .force("center", d3.forceCenter(width / 2, height / 2));
 
           // default implementation from: https://bl.ocks.org/heybignick/3faf257bbbbc7743bb72310d03b86ee8
           d3.json(student_course_url, function (error, graph) {
             console.log(graph)
-
-            // TODO: fix names length (bug here)
-            // for(i in graph.nodes){
-            //   new_name = ""
-            //   old_name = graph.nodes[i].name
-            //   count = 0
-            //   //console.log("AAA" + old_name)
-            //   for(j = 0; j < old_name.length; j++){
-            //     if(old_name[j] == ' '){
-            //       //console.log("BBB" + new_name)
-            //       if(count > 10){
-            //         count = -1;
-            //         new_name += '\n';
-            //       }
-            //     }
-            //     if(count != -1){
-            //       new_name += old_name.charAt(j);
-            //     }
-            //     count += 1
-            //     //console.log("AAA" + new_name)
-            //   }
-            //   graph.nodes[i].name = new_name;
-            // }
-
-
 
             if (error) throw error;
             var link = svg.append("g")
@@ -106,12 +83,9 @@
               .data(graph.nodes)
               .enter().append("g")
 
-            //var rect = node.append("rect")
             var circle = node.append("circle")
-              //.attr("width", 30)
-              //.attr("height", 40)
               .attr("r", 20)
-              .attr("fill", function(d) { return color(d.id); })
+              .attr("fill", function(d) { return color(d.taken); })
               .call(d3.drag()
                 .on("start", dragstarted)
                 .on("drag", dragged)
