@@ -102,7 +102,7 @@ function relationGraph() {
     var svg = d3.select("#relationsCourse")
       .append("svg")
       .attr("style", "height: 500px;")
-      .attr("viewBox", [-width / 2, -height / 2, width, height])
+      .attr("viewBox", [-width, -height / 2, 900, height])
       .attr("font-size", 8)
       .attr("font-family", "sans-serif");
 

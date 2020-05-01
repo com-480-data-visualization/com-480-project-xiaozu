@@ -159,3 +159,15 @@
     font-family: sans-serif;
     font-size: 12px;
   }
+
+  #copyright{
+    right: 30px;
+    bottom: 30px;
+    position: absolute;
+    color: gray;
+    font-size: 12px;
+  }
+
+  #isa-link {
+    color: #2699b2 !important;
+  }

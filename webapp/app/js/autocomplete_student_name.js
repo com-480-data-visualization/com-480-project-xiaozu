@@ -50,7 +50,7 @@ $('.typeahead').typeahead({
         $.ajax({
             url: courses_by_student_url, success: function (courses_by_stud) {
                 hideLoaderBadges();
-                $("#coursesbadges").innerHTML = ""; // reset
+                document.getElementById("coursesbadges").innerHTML = ""; // reset
                 $("#coursesbadges").append(`<h6>Courses that you have done</h6>`)
                 courses_by_stud.forEach(course => {
                     $("#coursesbadges").append(`<span class='badge badge-secondary' style="margin-right: 10px;">${course.course_name}</span>`);
@@ -79,13 +79,21 @@ $('.typeahead').typeahead({
                     document.getElementById("personalGraph").innerHTML = "";
 
                     var svg = d3.select("#personalGraph")
-                        .append("svg").attr("style", "height: 500px;")
-                        // .attr("viewBox", [-width / 2, -height / 2, width, height])
-                        .attr("viewBox", [-width / 2, -10, 900, height])
+                        .append("svg")
+                        // .attr("style", "height: 500px;")
+                        .attr("viewBox", [-width / 2, -10, 1200, height])
                         .attr("font-size", 8)
-                        .attr("font-family", "sans-serif");
+                        .attr("font-family", "sans-serif")
+                    //     .call(d3.zoom().on("zoom", function () {
+                    //         svg.attr("transform", d3.event.transform)
+                    //      }))
+                    //    .append("g")
 
-                    var color = d3.scaleOrdinal(d3.schemeCategory20);
+                    // var color = d3.scaleOrdinal(d3.schemeCategory20);
+                    var color = d3.scaleOrdinal()
+                        .domain(d3.range(10))
+                        .range(["#6B9AC4", "#96C9DC"])
+              
                     var simulation = d3.forceSimulation()
                         .force("link", d3.forceLink().id(function (d) { return d.id; }).distance(200))
                         .force("charge", d3.forceManyBody())
