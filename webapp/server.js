@@ -72,7 +72,7 @@ router.route("/enrollments").get(function(req, res) {
   });
 });
 
-
+// Jaccard
 router.route("/jaccard").get(function(req, res) {
   jaccard.find({}, function(err, result) {
     if (err) {
@@ -82,7 +82,6 @@ router.route("/jaccard").get(function(req, res) {
     }
   });
 });
-
 
 router.get("/enrollments/:studid", function(req, res) {
 	let filter = {};
@@ -98,8 +97,6 @@ router.get("/enrollments/:studid", function(req, res) {
 	});
 });
 
-
-
 // Teacher
 router.route("/teachers").get(function(req, res) {
   teachers.find({}, function(err, result) {
@@ -111,16 +108,13 @@ router.route("/teachers").get(function(req, res) {
   });
 });
 
-
 router.route("/personal_graph").get(function(req, res) {
   console.log("here ")
-  // If you want to return just the top 5
-  // http://localhost:3000/personal_graph/?student=Rocchi%20Eleonora
+  // Build the personal graph for a specific student
+  // If student is not specified return an error
   if (!req.query.student) {
-    res.send("Please specify the numbers of courses (e.g., url/personal_graph/?student=Rocchi%20Eleonora")
+    res.send("Please specify the student (e.g., url/personal_graph/?student=Rocchi%20Eleonora")
   }
-
-  // select students set from course name
   students.aggregate([
     { $match : { student_name : req.query.student } },
     { $lookup: { from: "enrollment", localField: "student_id", foreignField: "student_id", as: "from_course"} },
@@ -164,25 +158,21 @@ router.route("/personal_graph").get(function(req, res) {
                       "target": map_nodes_to_idx[course_name_y],
                       "value": Math.max(1, Math.round(result[i].jaccard * 10))
                     };
-                    //console.log(map_nodes_to_idx[result[i].course_name_x], map_nodes_to_idx[course_name_y])
                   }
                   res.send({ "nodes": nodes, "links": links})
 
                 }
               }
           );
-          //res.send(result)
-
         }
       }
   );
 });
 
-
 router.route("/courses").get(function(req, res) {
   //TODO: change it, we should be able to return all courses when we do /courses or just courses of a student whenever
   // the student is specified
-  // If you want to return just the top 5
+  // Choose the student of which you want to return the courses
   // http://localhost:3000/courses/?student=Rocchi%20Eleonora
   if (!req.query.student) {
     res.send("Please specify the numbers of courses (e.g., url/courses/?student=Rocchi%20Eleonora")
@@ -212,10 +202,9 @@ router.route("/courses").get(function(req, res) {
 
 router.route("/top_courses").get(function(req, res) {
   console.log("here ")
-  // If you want to return just the top 5
   // http://localhost:3000/top_courses/?max=5&year=2008-2009
   if (!req.query.max || !req.query.year) {
-    res.send("Please specify the numbers of courses (e.g., url/top_courses/?max=5)")
+    res.send("Please specify the numbers of courses and the academic year (e.g., url/top_courses/?max=5&year=2008-2009)")
   }
   // case we have a query with max courses to return
   // filter.max = req.query.max;
@@ -276,13 +265,12 @@ router.route("/top_courses").get(function(req, res) {
 
 router.route("/courses_related").get(function(req, res) {
   console.log("here ")
-  // If you want to return just the top 5
+  // Pick the courses that are most related to 'course' (at most 'max')
   // http://localhost:3000/courses_related/?course=Machine%20learning&max=20
   if (!req.query.course || !req.query.max) {
     res.send("Please specify the numbers of courses (e.g., url/courses_related/?course=Machine%20learning&max=20)")
   }
 
-  // select students set from course name
   jaccard.aggregate([
     { $match : { course_name : req.query.course } },
     { $lookup: { from: "jaccard", pipeline: [], as: "courses" } }
