@@ -165,7 +165,7 @@ router.route("/personal_graph").get(function(req, res) {
                     };
                     console.log(map_nodes_to_idx[result[i].course_name_x], map_nodes_to_idx[course_name_y])
                   }
-                  res.send({ })
+                  res.send({ "nodes": nodes, "links": links})
 
                 }
               }
