@@ -133,18 +133,7 @@
               .on("tick", ticked);
 
             simulation.force("link")
-              .links(graph.links)
-              .linkDistance(function (d) {
-                return 300;
-              })
-              .linkStrength(function (d) {
-                return d.value / 1000.0;
-              })
-              .charge(function(d){
-                  var charge = -500;
-                  if (d.index === 0) charge = 10 * charge;
-                  return charge;
-              });;
+              .links(graph.links);
 
             function ticked() {
               link
