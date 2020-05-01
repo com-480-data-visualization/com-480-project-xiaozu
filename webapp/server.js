@@ -161,9 +161,10 @@ router.route("/personal_graph").get(function(req, res) {
                     }
                     links[links.length] = {
                       "source": map_nodes_to_idx[result[i].course_name_x],
-                      "target": map_nodes_to_idx[course_name_y]
+                      "target": map_nodes_to_idx[course_name_y],
+                      "value": Math.max(1, Math.round(result[i].jaccard * 10))
                     };
-                    console.log(map_nodes_to_idx[result[i].course_name_x], map_nodes_to_idx[course_name_y])
+                    //console.log(map_nodes_to_idx[result[i].course_name_x], map_nodes_to_idx[course_name_y])
                   }
                   res.send({ "nodes": nodes, "links": links})
 
