@@ -1,3 +1,17 @@
+$(".js-range-slider").ionRangeSlider({
+  type: "double", //2 handlers
+  skin: "flat",
+  prettify_enabled: false, // 2 000 --> 2000
+  min: 2004,
+  max: 2020,
+  from: 2019,
+  to: 2020,
+  grid: true,
+  grid_snap: true
+});
+
+$("span.irs-grid-pol.small").hide(); //hide ticks ionRangeSlider
+
 function hideLoaderBubble() {
   $('#loading1').hide();
 }
