@@ -1,3 +1,18 @@
+// Load the full build.
+var _ = require('lodash');
+// Load the core build.
+var _ = require('lodash/core');
+// Load the FP build for immutable auto-curried iteratee-first data-last methods.
+var fp = require('lodash/fp');
+ 
+// Load method categories.
+var array = require('lodash/array');
+var object = require('lodash/fp/object');
+ 
+// Cherry-pick methods for smaller browserify/rollup/webpack bundles.
+var at = require('lodash/at');
+var curryN = require('lodash/fp/curryN');
+
 const express = require('express');
 const bodyParser= require('body-parser');
 const session = require('express-session');
@@ -14,6 +29,7 @@ courses = require("./models/course")
 teachers = require("./models/teacher")
 jaccard = require("./models/jaccard")
 personal_graph = require("./models/personalgraph")
+courseenrol = require("./models/courseenrol")
 
 var app = express();
 const router = express.Router();
@@ -200,30 +216,21 @@ router.route("/courses").get(function(req, res) {
   );
 });
 
-router.route("/top_courses").get(function(req, res) {
-  console.log("here ")
-  // http://localhost:3000/top_courses/?max=5&year=2008-2009
-  if (!req.query.max || !req.query.year) {
-    res.send("Please specify the numbers of courses and the academic year (e.g., url/top_courses/?max=5&year=2008-2009)")
-  }
-  // case we have a query with max courses to return
-  // filter.max = req.query.max;
-  top_N_courses = +req.query.max;
-  ay = req.query.year
-  years = ay.split("-")
+router.route("/courses_enroll").get(function(req, res) {
+  // just for us --> to generate file for db
 
   // from 2015 - 2020 extract: 
   // 2014-2015, 2015-2016, 2016-2017, 2017-2018, 2018-2019, 2019-2020, 2020-2021
   var list_years = [];
-  for (var i = parseInt(years[0]); i <= parseInt(years[1]); i++) {
+  for (var i = 2004; i <= 2020; i++) {
     list_years.push(i.toString());
   }
-
-  console.log(list_years)
 
   // 1. group e assegnare un count ad ogni enrollment, poi 2. join con courses e dopo di che
   // 3. filter by year e ordinare tutto a seconda del count trovato prima e dopo
   // fare limit (#maxcourses)
+
+  //TODO: check names and delete the smallest one in case of repetition of same name!
   enrollments.aggregate([
     {
     $group: { // group by
@@ -253,8 +260,48 @@ router.route("/top_courses").get(function(req, res) {
           ]
       }
      }
-    }
-   //{ $sort : {"count" : -1 } }, //need to find a solution, sort it is extremely slow!
+    },
+  ]
+)
+  .exec(
+      function(err, result) {
+        if (err) {
+          res.send(err);
+        } else {
+          res.send(result)
+          }
+      }
+  );
+});
+
+router.route("/top_courses").get(function(req, res) {
+  // http://localhost:3000/top_courses/?max=5&year=2008-2009
+  if (!req.query.max || !req.query.year) {
+    res.send("Please specify the numbers of courses and the academic year (e.g., url/top_courses/?max=5&year=2008-2009)")
+  }
+  top_N_courses = +req.query.max;
+  ay = req.query.year
+
+  // 1. group e assegnare un count ad ogni enrollment, poi 2. join con courses e dopo di che
+  // 3. filter by year e ordinare tutto a seconda del count trovato prima e dopo
+  // fare limit (#maxcourses)
+  courseenrol.aggregate([
+    { // filter by date (some data have space etc)
+      $match: {
+        $expr: {
+          $gt: [
+            {
+                $indexOfBytes: [
+                  "$year",
+                    ay
+                ]
+            },
+            -1
+          ]
+        }
+     }
+    },
+   { $sort : {"count" : -1 } }, //need to find a solution, sort it is extremely slow!
   ]
 ).limit(top_N_courses)
   .exec(
@@ -262,6 +309,9 @@ router.route("/top_courses").get(function(req, res) {
         if (err) {
           res.send(err);
         } else {
+          // Sum enrollments of courses of same name
+          // sort and then limit
+
           // console.log(result)
           res.send(result)
           }

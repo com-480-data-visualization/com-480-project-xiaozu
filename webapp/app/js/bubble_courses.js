@@ -1,4 +1,5 @@
 let default_year = [2019, 2020]
+let num_courses_to_show = 10
 
 function showLoaderBubble() {
   $('#loading1').css("visibility", "visible");
@@ -18,25 +19,13 @@ $(".js-range-slider").ionRangeSlider({
   to: default_year[1],
   grid: true,
   grid_snap: true,
+  drag_interval: true,
+
   onFinish: function(data){
-    var difference_year = data.to - data.from;
-    console.log(difference_year)
-    if(difference_year > 1){
-      // from 2015 - 2020 extract: 
-      // 2014-2015, 2015-2016, 2016-2017, 2017-2018, 2018-2019, 2019-2020, 2020-2021
-      var list = [];
-      for (var i = data.from; i <= data.to; i++) {
-          list.push(i);
-      }
-
-      console.log(list)
-    }
-
-
     default_year = [data.from, data.to];
     showLoaderBubble();
     q.defer(bubbleGraph);
-    courses_url = host + `/top_courses/?max=5&year=${default_year[0]}-${default_year[1]}`
+    courses_url = host + `/top_courses/?max=${num_courses_to_show}&year=${default_year[0]}-${default_year[1]}`
   }
 });
 
@@ -64,7 +53,7 @@ if (host.indexOf('localhost') > -1) {
   host = "https://" + host;
 }
 
-let courses_url = host + `/top_courses/?max=5&year=${default_year[0]}-${default_year[1]}`
+let courses_url = host + `/top_courses/?max=${num_courses_to_show}&year=${default_year[0]}-${default_year[1]}`
 
 function bubbleGraph() {
   d3.json(courses_url, function (error, data) {
