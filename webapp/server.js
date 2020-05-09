@@ -210,6 +210,16 @@ router.route("/top_courses").get(function(req, res) {
   // filter.max = req.query.max;
   top_N_courses = +req.query.max;
   ay = req.query.year
+  years = ay.split("-")
+
+  // from 2015 - 2020 extract: 
+  // 2014-2015, 2015-2016, 2016-2017, 2017-2018, 2018-2019, 2019-2020, 2020-2021
+  var list_years = [];
+  for (var i = parseInt(years[0]); i <= parseInt(years[1]); i++) {
+    list_years.push(i.toString());
+  }
+
+  console.log(list_years)
 
   // 1. group e assegnare un count ad ogni enrollment, poi 2. join con courses e dopo di che
   // 3. filter by year e ordinare tutto a seconda del count trovato prima e dopo
@@ -236,16 +246,12 @@ router.route("/top_courses").get(function(req, res) {
     { // filter by date (some data have space etc)
       $match: {
         $expr: {
-          $gt: [
-            {
-                $indexOfBytes: [
-                  "$year",
-                    ay
-                ]
-            },
-            -1
+
+          $or: [
+            {$in: [{$arrayElemAt:[{ $split: ["$year", "-"] }, 0]}, list_years]},
+            {$in: [{$arrayElemAt:[{ $split: ["$year", "-"] }, 1]}, list_years]}
           ]
-        }
+      }
      }
     }
    //{ $sort : {"count" : -1 } }, //need to find a solution, sort it is extremely slow!
