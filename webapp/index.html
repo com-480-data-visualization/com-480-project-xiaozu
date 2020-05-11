@@ -51,7 +51,10 @@
                   <p class="card-text">
                     On this page, you will be able to compare course popularity through the changes in the number of student enrollments over the years. </p>
                     <div id="loading1"></div>
-                    <div id="bubbleCourses"></div>
+                    <div class="row">
+                      <div class="col" id="bubbleCourses"></div>
+                      <div class="col" id="showStatisticCourse"></div>
+                    </div>
                     <input type="text" class="js-range-slider" name="my_range" value="" />
 
                 </div>
@@ -83,7 +86,6 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 <script src="https://d3js.org/d3.v4.js"></script>
 <script  type="text/javascript" src="app/js/typeahead.bundle.js"></script>
-<script src="lodash.js"></script>
 <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
 <script src="app/js/main.js"></script>
 <script src="app/js/bubble_courses.js"></script>

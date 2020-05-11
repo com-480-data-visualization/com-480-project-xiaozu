@@ -71,6 +71,15 @@
   stroke: black;
 }
 
+.bubbles:focus {
+  stroke: black;
+}
+
+.selectedBubble{
+  stroke: black !important;
+  stroke-width: 3px !important;
+}
+
 #loading1 {
     background: url(/app/images/loading.gif) no-repeat center center;
     height: 200px;

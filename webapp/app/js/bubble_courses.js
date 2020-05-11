@@ -136,6 +136,29 @@ function bubbleGraph() {
         .duration(200)
         .style("opacity", 0)
     }
+
+    var showStatistics = function (d){
+      // clean selections
+      d3.selectAll(".bubbles").classed('selectedBubble', false);
+      console.log(this)
+
+      // highlight selected bubble
+      this.classList.add("selectedBubble");
+      var div = document.getElementById("showStatisticCourse");
+      div.innerHTML = "";
+      div.innerHTML = `
+      <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">${d.course_name}</h5>
+          <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="card-link">Card link</a>
+          <a href="#" class="card-link">Another link</a>
+        </div>
+      </div>
+      `;
+      console.log(d.course_name, " Number of enrollments: " + d.count);
+    }
     var points = Array(500).fill(0).map(() => Array(500).fill(0));
     var centers = [];
     var max = 450;
@@ -197,20 +220,20 @@ function bubbleGraph() {
       .on("mouseover", showTooltip)
       .on("mousemove", moveTooltip)
       .on("mouseleave", hideTooltip)
+      .on("click", showStatistics)
 
 
-    var highlight = function (d) {
-      // reduce opacity of all groups
-      d3.selectAll(".bubbles").style("opacity", .05)
-      // expect the one that is hovered
-      d3.selectAll("." + d).style("opacity", 1)
-    }
+    // var highlight = function (d) {
+    //   // reduce opacity of all groups
+    //   d3.selectAll(".bubbles").style("opacity", .05)
+    //   // expect the one that is hovered
+    //   d3.selectAll("." + d).style("opacity", 1)
+    // }
 
-    // And when it is not hovered anymore
-    var noHighlight = function (d) {
-      d3.selectAll(".bubbles").style("opacity", 1)
-    }
-
+    // // And when it is not hovered anymore
+    // var noHighlight = function (d) {
+    //   d3.selectAll(".bubbles").style("opacity", 1)
+    // }
 
 
     // Add one dot in the legend for each name.
@@ -228,8 +251,11 @@ function bubbleGraph() {
       .style("fill", function (d) {
         return myColor(d)
       })
-      .on("mouseover", highlight)
-      .on("mouseleave", noHighlight)
+      // TODO: avoid overlap bubbles and legend (same below)
+      // the following command is used to hide bubbles when we hover legend however, it looks strange
+      // because it seems a bug (personal opnion)
+      // .on("mouseover", highlight)
+      // .on("mouseleave", noHighlight)
 
     // Add labels beside legend dots
     svg.selectAll("mylabels")
@@ -248,8 +274,8 @@ function bubbleGraph() {
       })
       .attr("text-anchor", "left")
       .style("alignment-baseline", "middle")
-      .on("mouseover", highlight)
-      .on("mouseleave", noHighlight)
+      // .on("mouseover", highlight)
+      // .on("mouseleave", noHighlight)
 
   });
 }
