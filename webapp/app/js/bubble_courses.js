@@ -1,5 +1,5 @@
-let default_year = [2019, 2020]
-let num_courses_to_show = 10
+let default_year = [2019, 2020];
+let num_courses_to_show = 10;
 
 function showLoaderBubble() {
   $('#loading1').css("visibility", "visible");
@@ -32,17 +32,6 @@ $(".js-range-slider").ionRangeSlider({
 $("span.irs-grid-pol.small").hide(); //hide ticks ionRangeSlider
 
 
-// set the dimensions and margins of the graph
-var margin = {
-  top: 10,
-  right: 20,
-  bottom: 30,
-  left: 50
-};
-
-var width = 500 - margin.left - margin.right;
-var height = 500 - margin.top - margin.bottom;
-
 var host = window.location.hostname;
 
 if (host.indexOf('localhost') > -1) {
@@ -62,14 +51,28 @@ function bubbleGraph() {
     console.log(courses_url)
     document.getElementById("bubbleCourses").innerHTML = "";
 
+    const margin = { top: 10, right: 20, bottom: 30, left: 30 };
+
+    // the exact dimensions of 400 x 400
+    // will only be used for the initial render
+    // but the width to height proportion 
+    // will be preserved as the chart is resized
+    var width = 900 - margin.left - margin.right;
+    var height = 400 - margin.top - margin.bottom;
+
+    
+
     // append the svg object to the body of the page
     var svg = d3.select("#bubbleCourses")
       .append("svg")
-      .attr("width", width + margin.left + margin.right + 300)
-      .attr("height", height + margin.top + margin.bottom)
-      .append("g")
-      .attr("transform",
-        "translate(" + margin.left + "," + margin.top + ")");
+      .attr('width', width + margin.left + margin.right)
+      .attr('height', height + margin.top + margin.bottom)
+      // .append("g")
+      .call(responsivefy)
+      .append('g')
+      .attr('transform', `translate(${margin.left}, ${margin.top})`);
+      // .attr("transform",
+      //   "translate(" + margin.left + "," + margin.top + ")");
 
 
     res = []
@@ -276,6 +279,47 @@ function bubbleGraph() {
       .style("alignment-baseline", "middle")
       // .on("mouseover", highlight)
       // .on("mouseleave", noHighlight)
+
+
+      function responsivefy(svg) {
+        // container will be the DOM element
+        // that the svg is appended to
+        // we then measure the container
+        // and find its aspect ratio
+        const container = d3.select(svg.node().parentNode);
+        var width = parseInt(svg.style('width'), 10);
+        var height = parseInt(svg.style('height'), 10);
+        var  aspect = width / height;
+       
+        // set viewBox attribute to the initial size
+        // control scaling with preserveAspectRatio
+        // resize svg on inital page load
+        svg.attr('viewBox', `0 0 ${width} ${height}`)
+            .attr('preserveAspectRatio', 'xMinYMid')
+            .call(resize);
+       
+        // add a listener so the chart will be resized
+        // when the window resizes
+        // multiple listeners for the same event type
+        // requires a namespace, i.e., 'click.foo'
+        // api docs: https://goo.gl/F3ZCFr
+        d3.select(window).on(
+            'resize.' + container.attr('id'), 
+            resize
+        );
+       
+        // this is the code that resizes the chart
+        // it will be called on load
+        // and in response to window resizes
+        // gets the width of the container
+        // and resizes the svg to fill it
+        // while maintaining a consistent aspect ratio
+        function resize() {
+            const w = parseInt(container.style('width'));
+            svg.attr('width', w);
+            svg.attr('height', Math.round(w / aspect));
+        }
+      }
 
   });
 }

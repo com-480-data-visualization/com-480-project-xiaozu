@@ -21,6 +21,10 @@ console.log(course_related_url)
 function relationGraph() {
   d3.json(course_related_url, function (error, courseConnections) {
     hideLoader2();
+
+    var width = 500;
+    var height = 500;
+
     // Example format
     // var courseConnections = [{ "name": "A", "connects": [{ "B": 2 }, { "C": 1 }] }, { "name": "B", "connects": [{ "A": 2 }, { "C": 40 }] }, { name: "C", "connects": [{ "A": 10 }, { "B": 40 }] }];
     // var coursesNames = ["ML", "Deep Learning", "ADA"];
@@ -66,9 +70,6 @@ function relationGraph() {
       .domain(d3.range(10))
       .range(["#157A6E", "#499F68", "#77B28C", "#B4654A", "#A63D40", "#E9B872", "#331832", "#FFE8D1", "#61210F", "#C7DFC5"])
 
-
-    var width = window.width;
-    var height = window.height;
     var outerRadius = Math.min(width, height) * 0.5 - 30;
     var innerRadius = outerRadius - 20
     var height = Math.min(640, width)

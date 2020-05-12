@@ -67,13 +67,18 @@
   stroke-width: 2px;
   stroke: white;
 }
+
 .bubbles:hover {
   stroke: black;
 }
 
-.bubbles:focus {
-  stroke: black;
+.legend-container {
+  align-items: center;
+  flex: 0 1 auto;
+  align-self: center;
+  margin: 0 auto;
 }
+
 
 .selectedBubble{
   stroke: black !important;
