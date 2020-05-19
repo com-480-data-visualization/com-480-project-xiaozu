@@ -57,7 +57,7 @@ function relationGraph() {
     courseConnections.forEach(d => {
       var from = indexByName.get(d.name);
       var connections_vect = matrix[from]
-      connections_vect[from] = 1
+      connections_vect[from] = 0
 
       d.connects.map(c => {
         nameCourse = Object.keys(c)[0];

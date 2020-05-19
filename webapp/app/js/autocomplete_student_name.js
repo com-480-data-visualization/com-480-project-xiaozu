@@ -49,11 +49,24 @@ $('.typeahead').typeahead({
 
         $.ajax({
             url: courses_by_student_url, success: function (courses_by_stud) {
+
                 hideLoaderBadges();
                 document.getElementById("coursesbadges").innerHTML = ""; // reset
-                $("#coursesbadges").append(`<h6>Courses that you have done</h6>`)
+                $("#coursesbadges").append(`<h6>Courses that you have done</h6>`);
+
+                // show badges
                 courses_by_stud.forEach(course => {
-                    $("#coursesbadges").append(`<span class='badge badge-secondary' style="margin-right: 10px;">${course.course_name}</span>`);
+                    $("#coursesbadges").append(
+                        `<span class='badge badge-secondary' style="margin-right: 10px;">
+                            ${course.course_name}
+                            <a><i class="fas fa-times" style="vertical-align: middle;"></i></a> 
+                        </span>`
+                    //     `<span class='badge badge-secondary'>
+                    //         <span>Example Tag</span>
+                    //         <a><i class="fas fa-times"></i></a> 
+                    //   </span>`
+
+                        );
                 });
 
                 var host = window.location.hostname;
