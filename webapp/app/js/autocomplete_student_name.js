@@ -19,6 +19,8 @@ function showLoader2() {
 function removeCourse(e){
     var course = e.getAttribute("value");
     courses_to_be_removed.push(course);
+
+    e.parentNode.parentNode.setAttribute("style", "display: none"); // hide tag
 }
 
 
@@ -96,6 +98,10 @@ $('.typeahead').typeahead({
                 function personalGraph() {
                     d3.json(personal_url, function (error, graph) {
                     if (error) throw error;
+
+                    // TODO: We have to remove the courses name: courses_to_be_removed
+                    // I have stored all the courses that should be removed in the graph inside
+                    // courses_to_be_removed as a list of names
 
                     var width = 500;
                     var height = 500;
