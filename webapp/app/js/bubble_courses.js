@@ -20,6 +20,8 @@ $(".js-range-slider").ionRangeSlider({
   grid: true,
   grid_snap: true,
   drag_interval: true,
+  min_interval: 1,
+  max_interval: 1,
 
   onFinish: function(data){
     default_year = [data.from, data.to];
@@ -236,14 +238,18 @@ function bubbleGraph() {
     // Add one dot in the legend for each name.
     var size = 20
     var allgroups = res
+
+    var start_legend = 0;
+    var start_legend_y = height - 100;
+
     svg.selectAll("myrect")
       .data(allgroups)
       .enter()
       .append("circle")
-      .attr("cx", 390)
+      .attr("cx", start_legend)
       .attr("cy", function (d, i) {
-        return 10 + i * (size + 5)
-      }) // 100 is where the first dot appears. 25 is the distance between dots
+        return start_legend_y + 5 + i * (size + 5)
+      }) 
       .attr("r", 7)
       .style("fill", function (d) {
         return myColor(d)
@@ -259,10 +265,10 @@ function bubbleGraph() {
       .data(allgroups)
       .enter()
       .append("text")
-      .attr("x", 390 + size * .8)
+      .attr("x", start_legend + size * .8)
       .attr("y", function (d, i) {
-        return i * (size + 5) + (size / 2)
-      }) // 100 is where the first dot appears. 25 is the distance between dots
+        return start_legend_y + i * (size + 5) + (size / 2)
+      }) 
       .style("fill", function (d) {
         return myColor(d)
       })
