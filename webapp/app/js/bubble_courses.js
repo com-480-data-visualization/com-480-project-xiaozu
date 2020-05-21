@@ -160,8 +160,8 @@ function bubbleGraph() {
     }
     var points = Array(500).fill(0).map(() => Array(500).fill(0));
     var centers = [];
-    var max = 450;
-    var min = 50;
+    var max = 400;
+    var min = 140;
 
 
     data.forEach(d => {
