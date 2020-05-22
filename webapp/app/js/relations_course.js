@@ -107,7 +107,8 @@ export function chord(course, idDiv) {
         .data(chords.groups)
         .enter().append('g')
         .attr("class", "group")
-        .on("mouseover", mouseover);
+        .on("mouseover", mouseover)
+        .on("mouseout", mouseout);
   
       var paths = group.append("path")
         .attr("fill", d => color(d.index))
@@ -141,20 +142,11 @@ export function chord(course, idDiv) {
             && p.target.index != i;
         });
       }
-  
-  
-      function rbmouse(d, i) {
-        if (!this.classList.contains("fade")) {
-          var t = d.target.index + " -> " + d.source.index + ": " + d.source.value;
-          t += d.source.index + " -> " + d.target.index + ": " + d.target.value;
-          textbox.text(t);
-        }
+
+      function mouseout(d, i){
+        // show chord without hide ribbons
+        ribbons.classed("fade", false); //remove effect
       }
-  
-      var textbox = svg.append("text")
-        .attr("x", -outerRadius)
-        .attr("y", -outerRadius)
-        .text("");
     });
   }
   
