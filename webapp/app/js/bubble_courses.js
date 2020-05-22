@@ -1,3 +1,5 @@
+import { chord } from "./relations_course.js";
+
 let default_year = [2019, 2020];
 let num_courses_to_show = 5;
 
@@ -71,7 +73,7 @@ function bubbleGraph() {
       //   "translate(" + margin.left + "," + margin.top + ")");
 
 
-    res = []
+    var res = []
     data.map(d => res.push(d.course_name))
     // console.log(res);
     // Add X axis
@@ -120,7 +122,7 @@ function bubbleGraph() {
         .duration(200)
       tooltip
         .style("opacity", 1)
-        .html(["Course: " + d.course_name, " Number of enrollments: " + d.count])
+        .html(["Course: " + d.course_name])
         .style("left", (d3.mouse(this)[0] + 30) + "px")
         .style("top", (d3.mouse(this)[1] + 30) + "px")
     }
@@ -136,10 +138,10 @@ function bubbleGraph() {
         .style("opacity", 0)
     }
 
+    // TODO: Maybe we should show a course always open as preview?
     var showStatistics = function (d){
       // clean selections
       d3.selectAll(".bubbles").classed('selectedBubble', false);
-      console.log(this)
 
       // highlight selected bubble
       this.classList.add("selectedBubble");
@@ -149,15 +151,20 @@ function bubbleGraph() {
       <div class="card" style="width: 18rem;">
         <div class="card-body">
           <h5 class="card-title">${d.course_name}</h5>
-          <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+          <h6 class="card-subtitle mb-2 text-muted">Number of enrollments: ${d.count}</h6>
+          <div id="chord-course"></div>
           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
           <a href="#" class="card-link">Card link</a>
-          <a href="#" class="card-link">Another link</a>
         </div>
       </div>
       `;
-      console.log(d.course_name, " Number of enrollments: " + d.count);
+
+      // call chord code
+      chord(d.course_name, "chord-course");
+
     }
+
+
     var points = Array(500).fill(0).map(() => Array(500).fill(0));
     var centers = [];
     var max = 400;
