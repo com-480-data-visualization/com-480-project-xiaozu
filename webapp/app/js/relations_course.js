@@ -91,12 +91,12 @@ export function chord(course, idDiv) {
   
         console.log(outerRadius)
 
-      console.log(idDiv)
+      document.getElementById(idDiv).innerHTML = ""; // remove all
   
       var svg = d3.select(`#${idDiv}`)
         .append("svg")
-        .attr("style", "height: 500px;")
-        .attr("viewBox", [-width, -height / 2, 900, height])
+        .attr("style", "height: 150px;")
+        .attr("viewBox", [-400,-250,900,500])
         .attr("font-size", 8)
         .attr("font-family", "sans-serif");
   

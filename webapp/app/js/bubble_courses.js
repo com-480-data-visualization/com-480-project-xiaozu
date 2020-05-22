@@ -161,7 +161,6 @@ function bubbleGraph() {
 
       // call chord code
       chord(d.course_name, "chord-course");
-
     }
 
 
