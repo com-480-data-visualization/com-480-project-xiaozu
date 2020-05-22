@@ -3,7 +3,7 @@
 // Construct matrix for storing data
 export function chord(course, idDiv) {
   function hideLoader2() {
-    $('#loading2').hide();
+    $(`#${idDiv}-loading`).hide();
   }
   var host = window.location.hostname;
   

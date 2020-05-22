@@ -152,6 +152,7 @@ function bubbleGraph() {
         <div class="card-body">
           <h5 class="card-title">${d.course_name}</h5>
           <h6 class="card-subtitle mb-2 text-muted">Number of enrollments: ${d.count}</h6>
+          <div id="chord-course-loading"></div>
           <div id="chord-course"></div>
           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
           <a href="#" class="card-link">Card link</a>
@@ -159,7 +160,7 @@ function bubbleGraph() {
       </div>
       `;
 
-      // call chord code
+      // call chord code it will be inserted in id: chord-course (defined above)
       chord(d.course_name, "chord-course");
     }
 

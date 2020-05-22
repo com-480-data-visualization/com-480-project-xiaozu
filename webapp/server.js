@@ -110,7 +110,6 @@ router.route("/teachers").get(function(req, res) {
 });
 
 router.route("/personal_graph").get(function(req, res) {
-  console.log("here ")
   // Build the personal graph for a specific student
   // If student is not specified return an error
   if (!req.query.student) {
@@ -131,7 +130,6 @@ router.route("/personal_graph").get(function(req, res) {
           res.send(err);
         } else {
           course_lst = course_names.map(d => d.course_name)
-          console.log(course_lst)
           personal_graph.aggregate([
             { $match : { course_name_x : {$in: course_lst}} }
           ]).exec(
@@ -305,7 +303,6 @@ router.route("/top_courses").get(function(req, res) {
 });
 
 router.route("/courses_related").get(function(req, res) {
-  console.log("here ")
   // Pick the courses that are most related to 'course' (at most 'max')
   // http://localhost:3000/courses_related/?course=Machine%20learning&max=20
   if (!req.query.course || !req.query.max) {
@@ -314,7 +311,8 @@ router.route("/courses_related").get(function(req, res) {
 
   jaccard.aggregate([
     { $match : { course_name : req.query.course } },
-    { $lookup: { from: "jaccard", pipeline: [], as: "courses" } }
+    { $lookup: { from: "jaccard", pipeline: [], as: "courses" } },
+
   ]).exec(
       function(err, result) {
         if (err) {
@@ -342,7 +340,6 @@ router.route("/courses_related").get(function(req, res) {
           for(i in most_related){
             most_related_courses[most_related_courses.length] = most_related[i][1]
           }
-          console.log(most_related_courses)
           jaccard.aggregate([
             {$match :{ course_name : {"$in": most_related_courses }}}
           ]).exec(

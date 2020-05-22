@@ -102,6 +102,14 @@
     visibility: hidden;
 }
 
+#chord-course-loading {
+  background: url(/app/images/loading.gif) no-repeat center center;
+  height: 150px;
+  width: 150px;
+  z-index: 9999999;
+  margin: auto;
+}
+
 
 
 #loading-badges {
