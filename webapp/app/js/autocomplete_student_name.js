@@ -75,13 +75,17 @@ $('.typeahead').typeahead({
                 courses_by_stud.forEach(course => {
                     $("#coursesbadges").append(
                         `<li style="margin-bottom: 10px;">
-                            <span>
-                                <button type="button" class="btn buttons-icon-lock"
-                                value="${course.course_name}" onclick="removeCourse(this);">
-                                    <i class="fas fa-lock"></i>
-                                </button>
-                                ${course.course_name}
-                            </span>
+                            <div class="row">
+                                <div class="col-1">
+                                    <button type="button" class="btn buttons-icon-lock"
+                                    value="${course.course_name}" onclick="removeCourse(this);">
+                                        <i class="fas fa-lock"></i>
+                                    </button>
+                                </div>
+                                <div class="col-11">
+                                    ${course.course_name}
+                                </div> 
+                            </div>
                         </li>`
                         );
                 });
