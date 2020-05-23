@@ -1,3 +1,8 @@
+body{
+  width: 100%;
+  height: 100%;
+}
+
 #header-ban{
     position: relative;
     top: 0;
@@ -21,6 +26,29 @@
 #main-tabs{
     margin-top: 5px;
 }
+
+#network-container{
+  height: calc(70vh - 2px);
+  padding: 0px;
+}
+
+#network-graph{
+  border-right: 1px #1993AE solid;
+  z-index: 0;
+}
+
+#personal-data-network{
+  border-bottom: 1px #1993AE solid;
+  padding: 10px;
+  background-color: #FFFFFF;
+  z-index: 2;
+}
+
+#statistics-network{
+  background-color: #FFFFFF;
+  z-index: 2;
+}
+
 
 .nav-link{
     -webkit-border-radius: 3px 3px 0 0;
@@ -58,7 +86,7 @@
 #content-tab{
     background-color: #fff;
     border: 1px #1993AE solid;
-    min-height: 74vh;
+    min-height: 68vh;
 }
 
 
@@ -124,12 +152,12 @@
 .typeahead, .tt-query, .tt-hint {
 	border: 2px solid #CCCCCC;
 	border-radius: 8px;
-	font-size: 22px; /* Set input font size */
+	font-size: inherit; /* Set input font size */
 	height: 30px;
 	line-height: 30px;
 	outline: medium none;
 	padding: 8px 12px;
-	width: 396px;
+	width: 350px;
 }
 .typeahead {
 	background-color: #FFFFFF;
@@ -153,7 +181,7 @@
 	width: 422px;
 }
 .tt-suggestion {
-	font-size: 22px;  /* Set suggestion dropdown font size */
+	font-size: inherit;  /* Set suggestion dropdown font size */
 	padding: 3px 20px;
 }
 .tt-suggestion:hover {
@@ -183,13 +211,24 @@
   }
 
   #copyright{
-    right: 30px;
-    bottom: 30px;
-    position: absolute;
     color: gray;
     font-size: 12px;
+    right: 0px;
+    text-align: end;
   }
 
   #isa-link {
     color: #2699b2 !important;
   }
+
+  #selected-courses {
+    position: absolute;
+    left: 3;
+    bottom: 0;
+    width: 300px;
+    height: 100%;
+    padding: 6px;
+    background-color: #4c5;
+    color: #333;
+    z-index: 1;
+}
