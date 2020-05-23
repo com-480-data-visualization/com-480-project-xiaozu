@@ -30,6 +30,10 @@ body{
 #network-container{
   height: calc(70vh - 2px);
   padding: 0px;
+
+  /* disable scrolling */
+  overflow-y:hidden;
+  overflow-x:hidden;
 }
 
 #network-graph{
@@ -69,7 +73,14 @@ body{
 .ul-courses-lock {
   list-style-type: none;
   padding: 5px;
+  overflow: auto;
+  height: 100%;
+  width: 391px;
  }
+
+.buttons-icon-lock{
+  background-color:transparent; padding: 0; vertical-align: unset; line-height: 0; color: #1993AE; font-size: 15px;
+}
 
 
 .nav-link{
