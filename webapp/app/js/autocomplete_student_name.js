@@ -62,22 +62,24 @@ $('.typeahead').typeahead({
             url: courses_by_student_url, success: function (courses_by_stud) {
 
                 // hideLoaderBadges();
-                // document.getElementById("coursesbadges").innerHTML = ""; // reset
-                // $("#coursesbadges").append(`<h6>Courses that you have done</h6>`);
+                document.getElementById("coursesbadges").innerHTML = ""; // reset
 
-                // courses_to_be_removed = [];
+                courses_to_be_removed = [];
 
-                // // show badges
-                // courses_by_stud.forEach(course => {
-                //     $("#coursesbadges").append(
-                //         `<span class='badge badge-secondary' style="margin-right: 10px;">
-                //             ${course.course_name}
-                //             <button type="button" class="btn" style="background-color:transparent; padding: 0; vertical-align: unset; line-height: 0; color: white;">
-                //                 <a value="${course.course_name}" onclick="removeCourse(this);"><i class="fas fa-times" style="vertical-align: middle;"></i></a> 
-                //             </button>
-                //         </span>`
-                //         );
-                // });
+                // show badges
+                courses_by_stud.forEach(course => {
+                    $("#coursesbadges").append(
+                        `<li style="margin-bottom: 10px;">
+                            <i class="fas fa-lock"></i>
+                        </li>`
+                        // `<span class='badge badge-secondary' style="margin-right: 10px;">
+                        //     ${course.course_name}
+                        //     <button type="button" class="btn" style="background-color:transparent; padding: 0; vertical-align: unset; line-height: 0; color: white;">
+                        //         <a value="${course.course_name}" onclick="removeCourse(this);"><i class="fas fa-times" style="vertical-align: middle;"></i></a> 
+                        //     </button>
+                        // </span>`
+                        );
+                });
 
                 var host = window.location.hostname;
                 if (host.indexOf('localhost') > -1) {

@@ -33,21 +33,43 @@ body{
 }
 
 #network-graph{
-  border-right: 1px #1993AE solid;
   z-index: 0;
 }
 
 #personal-data-network{
   border-bottom: 1px #1993AE solid;
+  border-left: 1px #1993AE solid;
   padding: 10px;
   background-color: #FFFFFF;
-  z-index: 2;
+  z-index: 3;
+  height: 20vh;
 }
 
 #statistics-network{
   background-color: #FFFFFF;
+  border-left: 1px #1993AE solid;
   z-index: 2;
+  height: calc(50vh - 2px);
 }
+
+
+#selected-courses {
+  position: absolute;
+  left: 3;
+  bottom: 0;
+  width: 300px;
+  height: 100%;
+  padding: 6px;
+  border-left: 1px #1993AE solid;
+  background-color: #fff;
+  z-index: 1;
+  font-size: 10px;
+}
+
+.ul-courses-lock {
+  list-style-type: none;
+  padding: 5px;
+ }
 
 
 .nav-link{
@@ -182,7 +204,8 @@ body{
 }
 .tt-suggestion {
 	font-size: inherit;  /* Set suggestion dropdown font size */
-	padding: 3px 20px;
+  padding: 3px 20px;
+  z-index: 9999;
 }
 .tt-suggestion:hover {
 	cursor: pointer;
@@ -220,15 +243,3 @@ body{
   #isa-link {
     color: #2699b2 !important;
   }
-
-  #selected-courses {
-    position: absolute;
-    left: 3;
-    bottom: 0;
-    width: 300px;
-    height: 100%;
-    padding: 6px;
-    background-color: #4c5;
-    color: #333;
-    z-index: 1;
-}
