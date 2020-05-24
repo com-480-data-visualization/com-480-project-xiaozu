@@ -109,16 +109,16 @@ $('.typeahead').typeahead({
 
                 showLoaderBadges();
 
-                function personalGraph() {
+                function course_network() {
                     d3.json(personal_url, function (error, graph) {
                     if (error) throw error;
 
                     var width = 500;
                     var height = 500;
 
-                    document.getElementById("personalGraph").innerHTML = "";
+                    document.getElementById("course_network").innerHTML = "";
 
-                    var svg = d3.select("#personalGraph")
+                    var svg = d3.select("#course_network")
                         .append("svg")
                         // .attr("style", "height: 500px;")
                         .attr("viewBox", [-width / 2, -10, 1200, height])
@@ -214,7 +214,7 @@ $('.typeahead').typeahead({
                 });
             }
 
-                q.defer(personalGraph);
+                q.defer(course_network);
             }
         });
     });
