@@ -95,6 +95,7 @@ body{
   line-height: 0; 
   color: #1993AE; 
   font-size: 15px;
+  visibility: hidden;
 }
 
 

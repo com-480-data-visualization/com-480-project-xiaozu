@@ -68,6 +68,9 @@ $('.typeahead').typeahead({
         $.ajax({
             url: courses_by_student_url, success: function (courses_by_stud) {
 
+                // show btn
+                $("#slide-courses").css("visibility", "visible");
+
                 // hideLoaderBadges();
                 document.getElementById("coursesbadges").innerHTML = ""; // reset
 
