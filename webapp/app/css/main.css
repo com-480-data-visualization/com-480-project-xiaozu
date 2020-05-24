@@ -46,14 +46,15 @@ body{
   padding: 10px;
   background-color: #FFFFFF;
   z-index: 3;
-  height: 20vh;
+  height: 15vh;
+  text-align: center;
 }
 
 #statistics-network{
   background-color: #FFFFFF;
   border-left: 1px #1993AE solid;
   z-index: 2;
-  height: calc(50vh - 2px);
+  height: calc(55vh - 2px);
 }
 
 
@@ -63,7 +64,7 @@ body{
   bottom: 0;
   width: 300px;
   height: 100%;
-  padding: 6px;
+  padding: 10px;
   border-left: 1px #1993AE solid;
   background-color: #fff;
   z-index: 1;
@@ -75,11 +76,25 @@ body{
   padding: 5px;
   overflow: auto;
   height: 100%;
-  width: 391px;
+  width: 407px;
  }
 
 .buttons-icon-lock{
-  background-color:transparent; padding: 0; vertical-align: unset; line-height: 0; color: #1993AE; font-size: 15px;
+  background-color:transparent; 
+  padding: 0; 
+  vertical-align: unset; 
+  line-height: 0; 
+  color: #1993AE; 
+  font-size: 15px;
+}
+
+#slide-courses{
+  background-color:transparent; 
+  padding: 0; 
+  vertical-align: unset; 
+  line-height: 0; 
+  color: #1993AE; 
+  font-size: 15px;
 }
 
 
@@ -120,6 +135,7 @@ body{
     background-color: #fff;
     border: 1px #1993AE solid;
     min-height: 68vh;
+    padding: 0px;
 }
 
 
@@ -211,7 +227,8 @@ body{
 	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 	margin-top: 12px;
 	padding: 8px 0;
-	width: 422px;
+  width: 350px;
+  text-align: start;
 }
 .tt-suggestion {
 	font-size: inherit;  /* Set suggestion dropdown font size */
@@ -254,3 +271,18 @@ body{
   #isa-link {
     color: #2699b2 !important;
   }
+
+  #home{
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  #explore{
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  .btn.focus, .btn:focus {
+    outline: 0;
+    box-shadow: unset;
+}
