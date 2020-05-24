@@ -10,14 +10,14 @@ require('./teacher');
 require('./course');
 require('./enrollment');
 require('./jaccard');
-require('./courseenrol');
+require('./course_enroll');
 require('./course_network');
 
 // Stats endpoints for sidebar plots
-// require('./courseprofessor');
-// require('./studbyenryear');
-// require('./studbysec');
-// require('./studebyyear');
+// require('./course_prof');
+// require('./stud_by_enroll_year');
+// require('./stud_by_section');
+// require('./stud_by_year');
 
 module.exports = {
   'student' : mongoose.model('student'),
@@ -25,12 +25,12 @@ module.exports = {
   'course' : mongoose.model('course'),
   'enrollment' : mongoose.model('enrollment'),
   'jaccard' : mongoose.model('jaccard'),
-  'courseenrol' : mongoose.model('courseenrol'),
+  'course_enroll' : mongoose.model('course_enroll'),
   'course_network' : mongoose.model('course_network'),
 
   // Stats endpoints for sidebar plots
-  // 'courseprofessor' : mongoose.model('courseprofessor'),
-  // 'studbyenryear' : mongoose.model('studbyenryear'),
-  // 'studbysec' : mongoose.model('studbysec'),
-  // 'studebyyear' : mongoose.model('studebyyear')
+  // 'course_prof' : mongoose.model('course_prof'),
+  // 'stud_by_enroll_year' : mongoose.model('stud_by_enroll_year'),
+  // 'stud_by_section' : mongoose.model('stud_by_section'),
+  // 'stud_by_year' : mongoose.model('stud_by_year')
 }

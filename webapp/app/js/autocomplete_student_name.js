@@ -27,7 +27,7 @@ function removeCourse(e){
         icon.classList.remove("fa-lock");
         icon.classList.add("fa-lock-open");
         e.style.color = "gray"; // hide tag
-    }  
+    }
 }
 
 
@@ -87,7 +87,7 @@ $('.typeahead').typeahead({
                                 </div>
                                 <div class="col-11">
                                     ${course.course_name}
-                                </div> 
+                                </div>
                             </div>
                         </li>`
                         );
@@ -102,7 +102,7 @@ $('.typeahead').typeahead({
                     host = "https://" + host;
                 }
 
-                var personal_url = host + "/personal_graph/?student=" + name_student;
+                var personal_url = host + "/course_network/?student=" + name_student;
 
                 console.log(personal_url)
 
@@ -133,7 +133,7 @@ $('.typeahead').typeahead({
                     var color = d3.scaleOrdinal()
                         .domain(d3.range(10))
                         .range(["#6B9AC4", "#96C9DC"])
-              
+
                     var simulation = d3.forceSimulation()
                         .force("link", d3.forceLink().id(function (d) { return d.id; }).distance(200))
                         .force("charge", d3.forceManyBody())

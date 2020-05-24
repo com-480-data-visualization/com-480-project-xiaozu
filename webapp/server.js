@@ -13,8 +13,8 @@ enrollments = require("./models/enrollment")
 courses = require("./models/course")
 teachers = require("./models/teacher")
 jaccard = require("./models/jaccard")
-personal_graph = require("./models/personalgraph")
-courseenrol = require("./models/courseenrol")
+course_network = require("./models/course_network")
+course_enroll = require("./models/course_enroll")
 
 var app = express();
 const router = express.Router();
@@ -109,11 +109,11 @@ router.route("/teachers").get(function(req, res) {
   });
 });
 
-router.route("/personal_graph").get(function(req, res) {
+router.route("/course_network").get(function(req, res) {
   // Build the personal graph for a specific student
   // If student is not specified return an error
   if (!req.query.student) {
-    res.send("Please specify the student (e.g., url/personal_graph/?student=Rocchi%20Eleonora")
+    res.send("Please specify the student (e.g., url/course_network/?student=Rocchi%20Eleonora")
   }
   students.aggregate([
     { $match : { student_name : req.query.student } },
@@ -130,7 +130,7 @@ router.route("/personal_graph").get(function(req, res) {
           res.send(err);
         } else {
           course_lst = course_names.map(d => d.course_name)
-          personal_graph.aggregate([
+          course_network.aggregate([
             { $match : { course_name_x : {$in: course_lst}} }
           ]).exec(
               function(err, result) {
@@ -202,7 +202,7 @@ router.route("/courses").get(function(req, res) {
 router.route("/courses_enroll").get(function(req, res) {
   // just for us --> to generate file for db
 
-  // from 2015 - 2020 extract: 
+  // from 2015 - 2020 extract:
   // 2014-2015, 2015-2016, 2016-2017, 2017-2018, 2018-2019, 2019-2020, 2020-2021
   var list_years = [];
   for (var i = 2004; i <= 2020; i++) {
@@ -268,7 +268,7 @@ router.route("/top_courses").get(function(req, res) {
   // 1. group e assegnare un count ad ogni enrollment, poi 2. join con courses e dopo di che
   // 3. filter by year e ordinare tutto a seconda del count trovato prima e dopo
   // fare limit (#maxcourses)
-  courseenrol.aggregate([
+  course_enroll.aggregate([
     { // filter by date (some data have space etc)
       $match: {
         $expr: {

@@ -5,6 +5,5 @@ var CourseEnrollmentSchema = new Schema({
     course_name : { type: String, required: true},
     year: {type: String, required: true},
     count: {type: Number, required: true}
-},{ collection: 'courseenrol' });
-module.exports = mongoose.model('courseenrol', CourseEnrollmentSchema);
-
+},{ collection: 'course_enroll' });
+module.exports = mongoose.model('course_enroll', CourseEnrollmentSchema);
