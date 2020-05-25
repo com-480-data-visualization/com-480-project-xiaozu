@@ -14,10 +14,8 @@ require('./course_enroll');
 require('./course_network');
 
 // Stats endpoints for sidebar plots
-// require('./course_prof');
-// require('./stud_by_enroll_year');
-// require('./stud_by_section');
-// require('./stud_by_year');
+require('./course_prof');
+require('./course_stats');
 
 module.exports = {
   'student' : mongoose.model('student'),
@@ -29,8 +27,7 @@ module.exports = {
   'course_network' : mongoose.model('course_network'),
 
   // Stats endpoints for sidebar plots
-  // 'course_prof' : mongoose.model('course_prof'),
-  // 'stud_by_enroll_year' : mongoose.model('stud_by_enroll_year'),
-  // 'stud_by_section' : mongoose.model('stud_by_section'),
-  // 'stud_by_year' : mongoose.model('stud_by_year')
+  'course_prof' : mongoose.model('course_prof'),
+  'course_stats' : mongoose.model('course_stats'),
+
 }

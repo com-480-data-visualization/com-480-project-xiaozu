@@ -15,6 +15,8 @@ teachers = require("./models/teacher")
 jaccard = require("./models/jaccard")
 course_network = require("./models/course_network")
 course_enroll = require("./models/course_enroll")
+course_prof = require("./models/course_prof")
+course_stats = require("./models/course_stats")
 
 var app = express();
 const router = express.Router();
@@ -256,6 +258,36 @@ router.route("/courses_enroll").get(function(req, res) {
       }
   );
 });
+
+
+router.route("/course_prof").get(function(req, res) {
+  if (!req.query.course_name) {
+    res.send("Please specify the numbers of courses (e.g., url/course_prof/?course_name=Machine%20learning)")
+  }
+  course_prof.find({"course_name" : req.query.course_name}, function(err, result) {
+    if (err) {
+      res.send(err);
+    } else {
+      res.send(result);
+    }
+  });
+
+});
+
+router.route("/course_stats").get(function(req, res) {
+  if (!req.query.course_name) {
+    res.send("Please specify the numbers of courses (e.g., url/course_stats/?course_name=Machine%20learning)")
+  }
+  course_stats.find({"course_name" : req.query.course_name}, function(err, result) {
+    if (err) {
+      res.send(err);
+    } else {
+      res.send(result);
+    }
+  });
+
+});
+
 
 router.route("/top_courses").get(function(req, res) {
   // http://localhost:3000/top_courses/?max=5&year=2008-2009

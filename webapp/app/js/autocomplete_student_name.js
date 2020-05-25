@@ -30,6 +30,132 @@ function removeCourse(e){
     }
 }
 
+/********************************************************
+*****************  COURSE STATISTIC *********************
+********************************************************/
+
+
+function getHostUrl() {
+  var host = window.location.hostname;
+  if (host.indexOf('localhost') > -1) {
+      //is development
+      host = "http://" + host + ":3000";
+  } else {
+      // is production
+      host = "https://" + host;
+  }
+  return host
+}
+
+function fill_course_prof(course_name) {
+  var course_prof_url = getHostUrl() + "/course_prof/?course_name=" + course_name;
+  d3.json(course_prof_url, function (error, res) { //TODO: should return just a json
+    if (error) throw error;
+    var div = document.getElementById("course_prof");
+    var lst_prof = res[0].prof.substring(1, res[0].prof.length - 1).split(",")
+    var prof_str = ""
+    var padding = 1
+    for (var i = 0; i < lst_prof.length; i++) {
+      prof_str = prof_str.concat(lst_prof[i].substring(padding, lst_prof[i].length - 1))
+      if(i < lst_prof.length - 1)
+        prof_str = prof_str.concat(", ")
+      padding = 2
+    }
+    div.innerHTML = `
+    <h2> <b> Prof: </b> <i> ${prof_str} </i>  <h2>
+    `;
+
+  });
+
+}
+
+function fill_stud_by_year(course_name) {
+  // Set text content
+  var div = document.getElementById("stud_by_year");
+  div.innerHTML = `
+  <h2> <b> Number of enrolled students by year</b> <h2>
+  `;
+
+  // Set margin and dimesion
+  var margin = {top: 10, right: 30, bottom: 30, left: 60},
+  width = 460 - margin.left - margin.right,
+  height = 400 - margin.top - margin.bottom;
+
+  var svg = d3.select("#stud_by_year")
+    .append("svg")
+      .attr("width", width + margin.left + margin.right)
+      .attr("height", height + margin.top + margin.bottom)
+    .append("g")
+      .attr("transform",
+            "translate(" + margin.left + "," + margin.top + ")");
+
+  // Dra the scatter plot
+  var stud_by_year_url = getHostUrl() + "/stud_by_year/?course_name=" + course_name;
+  d3.json(stud_by_year_url, function (error, data) { //TODO: should return just a json
+    if (error) throw error;
+
+    // Get max number of students enrolled
+    var max_enrolled = 10;
+    for (var i = 0; i < data.length; i++) {
+      var nr_students = parseInt(data[i].nr_students)
+      if( nr_students > max_enrolled)
+        max_enrolled = nr_students;
+    }
+    // Set the max to the 110% of the original one to avoid points at the very top of the plot
+    max_enrolled = max_enrolled + Math.trunc(max_enrolled/10);
+
+    // Sorting by year
+    data.sort(function (a,b){
+      var year_a = parseInt(a.year.substring(0,4))
+      var year_b = parseInt(b.year.substring(0,4))
+      return year_a - year_b;
+    });
+
+
+    var x = d3.scaleTime()
+      .domain(d3.extent(data, function(d) { return parseInt(d.year.substring(0,4)); }))
+      .range([ 0, width ]);
+    svg.append("g")
+      .attr("transform", "translate(0," + height + ")")
+      .call(d3.axisBottom(x));
+    // Add Y axis
+    var y = d3.scaleLinear()
+      .domain( [0, max_enrolled])
+      .range([ height, 0 ]);
+    svg.append("g")
+      .call(d3.axisLeft(y));
+    // Add the line
+    svg.append("path")
+      .datum(data)
+      .attr("fill", "none")
+      .attr("stroke", "#69b3a2")
+      .attr("stroke-width", 1.5)
+      .attr("d", d3.line()
+        .x(function(d) { return x(parseInt(d.year.substring(0,4))) })
+        .y(function(d) { return y(parseInt(d.nr_students)) })
+      )
+
+    // Add the points
+    svg
+      .append("g")
+      .selectAll("dot")
+      .data(data)
+      .enter()
+      .append("circle")
+        .attr("cx", function(d) { return x(parseInt(d.year.substring(0,4))) } )
+        .attr("cy", function(d) { return y(parseInt(d.nr_students)) } )
+        .attr("r", 5)
+        .attr("fill", "#69b3a2")
+
+
+
+
+
+  });
+}
+
+
+
 
 // Constructing the suggestion engine
 var students = new Bloodhound({
@@ -113,15 +239,17 @@ $('.typeahead').typeahead({
                     d3.json(personal_url, function (error, graph) {
                     if (error) throw error;
 
-                    var width = 500;
-                    var height = 500;
+                    // TODO: @Roele1955 change the size to adapt to the box size
+                    var width = 500;//$(window).width();
+                    var height = 500; //$(window).height();
 
                     document.getElementById("course_network").innerHTML = "";
 
+                    var radius = 20
                     var svg = d3.select("#course_network")
                         .append("svg")
-                        // .attr("style", "height: 500px;")
-                        .attr("viewBox", [-width / 2, -10, 1200, height])
+                        //.attr("style", "height: 100%;")
+                        .attr("viewBox", [20, 20, width-20, height-20])
                         .attr("font-size", 8)
                         .attr("font-family", "sans-serif")
                     //     .call(d3.zoom().on("zoom", function () {
@@ -135,7 +263,7 @@ $('.typeahead').typeahead({
                         .range(["#6B9AC4", "#96C9DC"])
 
                     var simulation = d3.forceSimulation()
-                        .force("link", d3.forceLink().id(function (d) { return d.id; }).distance(200))
+                        .force("link", d3.forceLink().id(function (d) { return d.id; }).distance(radius * 5))
                         .force("charge", d3.forceManyBody())
                         .force("center", d3.forceCenter(width / 2, height / 2));
 
@@ -152,8 +280,9 @@ $('.typeahead').typeahead({
                         .data(graph.nodes)
                         .enter().append("g")
 
+
                     var circle = node.append("circle")
-                        .attr("r", 20)
+                        .attr("r", radius)
                         .attr("fill", function (d) { return color(d.taken); })
                         .call(d3.drag()
                             .on("start", dragstarted)
@@ -162,11 +291,34 @@ $('.typeahead').typeahead({
 
                     var lables = node.append("text")
                         .text(function (d) {
-                            return d.name;
+                            var words = d.name.split(" ")
+                            str = ""
+                            const lower_separator = new Set(['of', 'du', 'de', 'dans', 'le', 'pour', 'la', 'les', 'the', 'for', 'to']);
+                            const union_separator = new Set(['and', 'et']);
+                            const numbers = new Set(['I', 'II', 'III', 'IV', 'V', 'VI', 'VII', '1', '2', '3', '4', '5', '6', '7']);
+                            if(words.length == 1) {
+                              return [words[0][0].toUpperCase().concat(words[0].substring(1, Math.min(3, words[0].length)))];
+                            }
+                            for (var i = 0; i < words.length; i++) {
+                              if(lower_separator.has(words[i])) {
+                                str = str.concat(words[i][0]);
+                              }
+                              else if(union_separator.has(words[i])){
+                                str = str.concat("\&");
+                              }
+                              else if(numbers.has(words[i])){
+                                str = str.concat(" ").concat(words[i]);
+                              }
+                              else{
+                                str = str.concat(words[i][0].toUpperCase());
+                              }
+
+                            }
+                            return [str]
                         })
                         .attr('text-anchor', 'middle')
-                        .attr('x', 3)
-                        .attr('y', 5);
+                        .attr('x', 0)
+                        .attr('y', 0);
 
                     node.append("title")
                         .text(function (d) { return d.name; });
@@ -177,6 +329,11 @@ $('.typeahead').typeahead({
 
                     simulation.force("link")
                         .links(graph.links);
+
+
+                    // Registering hovering
+                    node.on("click", showStatistics)
+
 
                     function ticked() {
                         link
@@ -206,6 +363,23 @@ $('.typeahead').typeahead({
                         if (!d3.event.active) simulation.alphaTarget(0);
                         d.fx = null;
                         d.fy = null;
+                    }
+
+                    function showStatistics(d) {
+
+                      var div = document.getElementById("statistics-network");
+                      div.innerHTML = `
+                      <div class="showStatistics" style="width: 18rem;">
+                        <h1> ${d.name} </h1>
+                        <br>
+                        <div id="course_prof"></div>
+                        <br>
+                        <div id="stud_by_year"></div>
+                      </div>
+                      `;
+
+                      fill_course_prof(d.name);
+                      fill_stud_by_year(d.name);
                     }
 
                     hideLoaderBadges();
