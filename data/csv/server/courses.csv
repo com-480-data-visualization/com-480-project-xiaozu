@@ -5,8 +5,11 @@
 3,3,Special topics in reactor physics,2014-2015
 4,4,Special topics in reactor physics,2013-2014
 5,5,Special topics in reactor physics,2017-2018
+6,6,Special topics in reactor physics,2018-2019
 7,7,Adaptation and learning,2018-2019
 8,8,Adaptation and learning,2019-2020
+10,10,Spectroscopie analytique,2011-2012
+15,15,Spectroscopie analytique,2012-2013
 16,16,Spectroscopie analytique,2007-2008
 18,18,Bioinformatics II,2009-2010
 28,28,Théorie et critique du projet MA1 (Gueissaz),2012-2013
@@ -25,6 +28,8 @@
 57,57,"Organisation, économie et droit de la construction II",2014-2015
 58,58,"Organisation, économie et droit de la construction II",2011-2012
 59,59,"Organisation, économie et droit de la construction II",2013-2014
+60,60,Enjeux éthiques contemporains : l'ingénieur dans la société I,2010-2011
+61,61,Enjeux éthiques contemporains : l'ingénieur dans la société I,2011-2012
 62,62,Ouvrages hydrauliques et aménagements hydroélectriques,2019-2020
 63,63,Ouvrages hydrauliques et aménagements hydroélectriques,2018-2019
 64,64,Ouvrages hydrauliques et aménagements hydroélectriques,2015-2016
@@ -45,6 +50,12 @@
 84,84,Scientific literature analysis in neuroscience,2015-2016
 85,85,Scientific literature analysis in neuroscience,2014-2015
 98,98,Construction en bois pour ingénieurs civils II,2005-2006
+99,99,La recherche dans tous ses états II,2018-2019
+100,100,La recherche dans tous ses états II,2016-2017
+101,101,La recherche dans tous ses états II,2017-2018
+102,102,La recherche dans tous ses états II,2015-2016
+103,103,La recherche dans tous ses états II,2019-2020
+104,104,La recherche dans tous ses états II,2014-2015
 105,105,Bioelectronics and biomedical microelectronics,2017-2018
 106,106,Bioelectronics and biomedical microelectronics,2019-2020
 107,107,Bioelectronics and biomedical microelectronics,2018-2019
@@ -65,6 +76,9 @@
 132,132,Distributed information systems,2008-2009
 133,133,Distributed information systems,2009-2010
 134,134,Aerial robots,2017-2018
+135,135,Création collective: arts-impro & ingénierie I,2019-2020
+136,136,Création collective: arts-impro & ingénierie I,2018-2019
+137,137,Création collective: arts-impro & ingénierie I,2017-2018
 138,138,Analyse et gestion de risques,2015-2016
 139,139,Analyse et gestion de risques,2016-2017
 140,140,Analyse et gestion de risques,2017-2018
@@ -130,7 +144,14 @@
 248,248,Fundamentals & processes for photovoltaic devices,2019-2020
 249,249,Fundamentals & processes for photovoltaic devices,2014-2015
 250,250,Fundamentals & processes for photovoltaic devices,2016-2017
+251,251,"Science, technologie et société I",2015-2016
+252,252,"Science, technologie et société I",2016-2017
+253,253,"Science, technologie et société I",2017-2018
+254,254,"Science, technologie et société I",2013-2014
+255,255,"Science, technologie et société I",2014-2015
+256,256,"Science, technologie et société I",2019-2020
 257,257,"Science, technologie et société I",2018-2019
+258,258,"Science, technologie et société I",2012-2013
 264,264,Environmental Engineering Seminar series (Autumn),2009-2010
 265,265,Environmental Engineering Seminar series (Autumn),2007-2008
 266,266,Environmental Engineering Seminar series (Autumn),2008-2009
@@ -190,12 +211,12 @@
 351,351,Architecture et construction de la ville I,2014-2015
 352,352,Optique quantique II,2010-2011
 353,353,Optique quantique II,2011-2012
-354,354,Spacecraft design and system engineering,2019-2020
 358,358,Spacecraft design and system engineering,2006-2007
 367,367,Solid waste engineering,2017-2018
 368,368,Solid waste engineering,2018-2019
 369,369,Solid waste engineering,2019-2020
 370,370,Solid waste engineering,2016-2017
+371,371,Communication professionnelle B II,2004-2005
 372,372,L'architecture du paysage,2016-2017
 377,377,Théorie et critique du projet MA1 (Lacaton et Druot),2017-2018
 378,378,Biomaterials,2017-2018
@@ -227,6 +248,9 @@
 434,434,Neuroscience: from molecular mechanisms to disease,2019-2020
 435,435,Neuroscience: from molecular mechanisms to disease,2018-2019
 436,436,Project in genomics and bioinformatics,2011-2012
+437,437,Project in genomics and bioinformatics,2013-2014
+438,438,Project in genomics and bioinformatics,2012-2013
+439,439,Project in genomics and bioinformatics,2010-2011
 440,440,Génie parasismique,2007-2008
 441,441,Génie parasismique,2005-2006
 442,442,Génie parasismique,2004-2005
@@ -237,6 +261,8 @@
 447,447,Génie parasismique,2012-2013
 448,448,Génie parasismique,2010-2011
 449,449,"Cognition, émotions et société II",2009-2010
+450,450,"Cognition, émotions et société II",2010-2011
+452,452,Introduction à l'économie,2004-2005
 453,453,Smart grids technologies,2017-2018
 454,454,Smart grids technologies,2016-2017
 455,455,Smart grids technologies,2013-2014
@@ -244,6 +270,7 @@
 457,457,Smart grids technologies,2019-2020
 458,458,Smart grids technologies,2018-2019
 459,459,Smart grids technologies,2015-2016
+467,467,"Cognition, émotions et société I",2010-2011
 468,468,"Cognition, émotions et société I",2009-2010
 473,473,Neuroscience: cellular and circuit mechanisms,2019-2020
 474,474,Biologie et biochimie cellulaire pour ingénieurs,2006-2007
@@ -276,7 +303,6 @@
 525,525,Biomechanics of the musculoskeletal system,2013-2014
 526,526,Biomechanics of the musculoskeletal system,2018-2019
 527,527,Théorie et critique du projet MA1 (Müller Inderbitzin),2015-2016
-528,528,Théorie et critique du projet MA1 (Lamunière & Jaccaud),2007-2008
 531,531,Network Calculus,2004-2005
 532,532,Solar decathlon summer workshop,2016-2017
 533,533,Economie spatiale et régionale,2015-2016
@@ -290,11 +316,11 @@
 541,541,Technology & innovation strategy,2017-2018
 542,542,Technology & innovation strategy,2016-2017
 543,543,Technology & innovation strategy,2019-2020
-544,544,Technology & innovation strategy,2015-2016
 545,545,Technology & innovation strategy,2018-2019
 546,546,Communications optiques,2006-2007
 547,547,Communications optiques,2011-2012
 548,548,Communications optiques,2010-2011
+549,549,Communications optiques,2012-2013
 550,550,Communications optiques,2005-2006
 551,551,Communications optiques,2009-2010
 552,552,Communications optiques,2004-2005
@@ -316,6 +342,15 @@
 568,568,Architecture et construction de la ville II,2018-2019
 569,569,Architecture et construction de la ville II,2017-2018
 570,570,Architecture et construction de la ville II,2012-2013
+571,571,Hommes/machines II,2018-2019
+572,572,Hommes/machines II,2019-2020
+573,573,Hommes/machines II,2016-2017
+574,574,Hommes/machines II,2017-2018
+575,575,Hommes/machines II,2009-2010
+576,576,Hommes/machines II,2013-2014
+577,577,Hommes/machines II,2014-2015
+578,578,Hommes/machines II,2012-2013
+579,579,Hommes/machines II,2015-2016
 581,581,Opto- and macroelectronic materials,2009-2010
 582,582,Opto- and macroelectronic materials,2011-2012
 583,583,Opto- and macroelectronic materials,2010-2011
@@ -335,12 +370,7 @@
 604,604,Caractères architecturaux et urbanismes de l'Islam,2017-2018
 605,605,Caractères architecturaux et urbanismes de l'Islam,2015-2016
 606,606,Caractères architecturaux et urbanismes de l'Islam,2019-2020
-607,607,Instruments de gestion économique et financière,2004-2005
-608,608,Instruments de gestion économique et financière,2005-2006
-609,609,Instruments de gestion économique et financière,2007-2008
 610,610,Instruments de gestion économique et financière,2006-2007
-611,611,Instruments de gestion économique et financière,2009-2010
-612,612,Instruments de gestion économique et financière,2008-2009
 613,613,Instability,2019-2020
 614,614,Instability,2018-2019
 615,615,Instability,2017-2018
@@ -422,8 +452,17 @@
 700,700,Cellular signalling,2013-2014
 701,701,Cellular signalling,2010-2011
 702,702,Cellular signalling,2016-2017
+703,703,Cellular signalling,2008-2009
 704,704,Cellular signalling,2015-2016
 705,705,Cellular signalling,2019-2020
+706,706,"Science, technologie et société II",2013-2014
+707,707,"Science, technologie et société II",2015-2016
+708,708,"Science, technologie et société II",2016-2017
+709,709,"Science, technologie et société II",2014-2015
+710,710,"Science, technologie et société II",2012-2013
+711,711,"Science, technologie et société II",2018-2019
+712,712,"Science, technologie et société II",2017-2018
+713,713,"Science, technologie et société II",2019-2020
 714,714,Advanced signal processing,2010-2011
 715,715,Advanced signal processing,2005-2006
 716,716,Advanced signal processing,2009-2010
@@ -434,6 +473,12 @@
 721,721,Advanced signal processing,2008-2009
 722,722,Advanced signal processing,2013-2014
 723,723,Advanced signal processing,2012-2013
+724,724,Sciences et religions I,2016-2017
+725,725,Sciences et religions I,2017-2018
+726,726,Sciences et religions I,2015-2016
+727,727,Sciences et religions I,2018-2019
+728,728,Sciences et religions I,2014-2015
+729,729,Sciences et religions I,2019-2020
 730,730,Virtual reality,2009-2010
 731,731,Virtual reality,2004-2005
 732,732,Virtual reality,2005-2006
@@ -511,7 +556,9 @@
 812,812,Physique du solide III,2017-2018
 819,819,Filtres électriques,2012-2013
 822,822,Fonctions analytiques II,2005-2006
+825,825,Modern chemical dynamics,2011-2012
 826,826,Modern chemical dynamics,2010-2011
+827,827,Analyse de la structure des polymères,2006-2007
 828,828,Analyse de la structure des polymères,2007-2008
 829,829,Analyse de la structure des polymères,2004-2005
 830,830,Analyse de la structure des polymères,2005-2006
@@ -520,6 +567,18 @@
 833,833,UE N : Art et architecture: constructing the view II,2017-2018
 834,834,UE N : Art et architecture: constructing the view II,2018-2019
 835,835,UE N : Art et architecture: constructing the view II,2019-2020
+836,836,Culture médiatique I,2014-2015
+837,837,Culture médiatique I,2013-2014
+838,838,Culture médiatique I,2015-2016
+839,839,Culture médiatique I,2012-2013
+840,840,Culture médiatique I,2011-2012
+841,841,Culture médiatique I,2016-2017
+842,842,Culture médiatique I,2017-2018
+843,843,Culture médiatique I,2019-2020
+844,844,Culture médiatique I,2018-2019
+845,845,Création collective: arts-impro & ingénierie II,2017-2018
+846,846,Création collective: arts-impro & ingénierie II,2018-2019
+847,847,Création collective: arts-impro & ingénierie II,2019-2020
 848,848,Aerodynamics,2016-2017
 849,849,Aerodynamics,2019-2020
 850,850,Aerodynamics,2017-2018
@@ -558,8 +617,6 @@
 917,917,Computational Social Media,2018-2019
 918,918,Computational Social Media,2017-2018
 931,931,Scientific literature analysis in molecular medicine,2014-2015
-947,947,Comportement organisationnel A,2008-2009
-948,948,Comportement organisationnel A,2009-2010
 949,949,Comportement organisationnel A,2007-2008
 952,952,Méthodes expérimentales en physique II,2005-2006
 953,953,Méthodes expérimentales en physique II,2004-2005
@@ -568,6 +625,8 @@
 956,956,GLP / GMP,2009-2010
 957,957,GLP / GMP,2008-2009
 958,958,GLP / GMP,2007-2008
+959,959,Enjeux éthiques contemporains : l'ingénieur dans la société II,2010-2011
+960,960,Enjeux éthiques contemporains : l'ingénieur dans la société II,2011-2012
 961,961,"Organisation, économie et droit de la construction I",2004-2005
 962,962,"Organisation, économie et droit de la construction I",2015-2016
 963,963,"Organisation, économie et droit de la construction I",2016-2017
@@ -645,6 +704,9 @@
 1093,1093,Nanotechnology,2017-2018
 1094,1094,Nanotechnology,2018-2019
 1095,1095,Nanotechnology,2016-2017
+1096,1096,"Apprentissage, développement et enseignement",2014-2015
+1097,1097,"Apprentissage, développement et enseignement",2016-2017
+1098,1098,"Apprentissage, développement et enseignement",2018-2019
 1099,1099,"Apprentissage, développement et enseignement",2017-2018
 1100,1100,Bayesian computation,2018-2019
 1101,1101,Bayesian computation,2017-2018
@@ -656,19 +718,32 @@
 1136,1136,L'ingénieur dans R&D industriels I,2006-2007
 1137,1137,L'ingénieur dans R&D industriels I,2005-2006
 1139,1139,La recherche dans tous ses états I,2015-2016
+1140,1140,La recherche dans tous ses états I,2019-2020
+1141,1141,La recherche dans tous ses états I,2018-2019
+1142,1142,La recherche dans tous ses états I,2017-2018
+1143,1143,La recherche dans tous ses états I,2016-2017
+1144,1144,La recherche dans tous ses états I,2014-2015
 1147,1147,Construction en bois II,2007-2008
 1148,1148,Construction en bois II,2008-2009
 1149,1149,Construction en bois II,2006-2007
 1150,1150,Construction en bois II,2009-2010
 1151,1151,Construction en bois II,2010-2011
 1170,1170,Comprendre la ville et concevoir le projet,2011-2012
-1171,1171,Comprendre la ville et concevoir le projet,2010-2011
+1173,1173,Understanding modern Switzerland II,2015-2016
+1174,1174,Understanding modern Switzerland II,2019-2020
+1175,1175,Understanding modern Switzerland II,2018-2019
+1176,1176,Understanding modern Switzerland II,2016-2017
+1177,1177,Understanding modern Switzerland II,2014-2015
+1178,1178,Understanding modern Switzerland II,2017-2018
+1179,1179,Understanding modern Switzerland II,2009-2010
+1180,1180,Understanding modern Switzerland II,2010-2011
+1181,1181,Understanding modern Switzerland II,2013-2014
+1182,1182,Understanding modern Switzerland II,2012-2013
+1183,1183,Understanding modern Switzerland II,2011-2012
 1184,1184,Principles of microeconomics,2016-2017
-1185,1185,Principles of microeconomics,2018-2019
+1186,1186,Principles of microeconomics,2012-2013
 1188,1188,Principles of microeconomics,2019-2020
 1190,1190,Principles of microeconomics,2011-2012
-1191,1191,Principles of microeconomics,2014-2015
-1192,1192,Principles of microeconomics,2015-2016
 1193,1193,Principles of microeconomics,2017-2018
 1212,1212,Fixed income analysis,2012-2013
 1213,1213,Fixed income analysis,2014-2015
@@ -681,9 +756,7 @@
 1220,1220,Probabilistic methods,2018-2019
 1221,1221,Medical physics II,2019-2020
 1222,1222,UE M : Espace et lumière: le projet d'éclairage,2015-2016
-1223,1223,UE M : Espace et lumière: le projet d'éclairage,2016-2017
 1224,1224,UE M : Espace et lumière: le projet d'éclairage,2014-2015
-1225,1225,UE M : Espace et lumière: le projet d'éclairage,2013-2014
 1226,1226,UE M : Espace et lumière: le projet d'éclairage,2012-2013
 1227,1227,UE M : Espace et lumière: le projet d'éclairage,2011-2012
 1228,1228,Analyse de risques,2013-2014
@@ -792,6 +865,8 @@
 1372,1372,Villes et transports,2011-2012
 1373,1373,Villes et transports,2012-2013
 1374,1374,Villes et transports,2016-2017
+1375,1375,Les sciences et leur histoire : perspectives philosophiques I,2010-2011
+1376,1376,Les sciences et leur histoire : perspectives philosophiques I,2009-2010
 1377,1377,Détection des polluants de l'air et traitement des fumées,2006-2007
 1378,1378,Détection des polluants de l'air et traitement des fumées,2007-2008
 1386,1386,Modélisation et simulation de systèmes de production,2007-2008
@@ -803,13 +878,8 @@
 1392,1392,Traitement des signaux biomédicaux,2005-2006
 1393,1393,Traitement des signaux biomédicaux,2006-2007
 1394,1394,Traitement des signaux biomédicaux,2007-2008
-1395,1395,Traitement des signaux biomédicaux,2004-2005
 1396,1396,Traitement de signaux multidimensionnels,2004-2005
-1399,1399,Innovation management,2018-2019
-1400,1400,Innovation management,2019-2020
-1401,1401,Innovation management,2017-2018
 1402,1402,Innovation management,2015-2016
-1403,1403,Innovation management,2016-2017
 1417,1417,Environmental Engineering Seminar series (winter),2006-2007
 1418,1418,Supramolecular chemistry,2008-2009
 1419,1419,Supramolecular chemistry,2013-2014
@@ -831,6 +901,7 @@
 1435,1435,Instrumentation bio-optique,2006-2007
 1436,1436,Instrumentation bio-optique,2008-2009
 1437,1437,Instrumentation bio-optique,2009-2010
+1438,1438,Pratiques artistiques : penser par cas I,2010-2011
 1439,1439,Data Analysis & Empirical Methods,2011-2012
 1440,1440,Capteurs en instrumentation médicale,2010-2011
 1441,1441,Capteurs en instrumentation médicale,2011-2012
@@ -843,7 +914,14 @@
 1452,1452,Legged robots,2018-2019
 1453,1453,Legged robots,2019-2020
 1454,1454,Cases in finance,2009-2010
+1455,1455,Pratiques artistiques I,2019-2020
+1456,1456,Pratiques artistiques I,2013-2014
 1457,1457,Pratiques artistiques I,2014-2015
+1458,1458,Pratiques artistiques I,2016-2017
+1459,1459,Pratiques artistiques I,2017-2018
+1460,1460,Pratiques artistiques I,2015-2016
+1461,1461,Pratiques artistiques I,2012-2013
+1462,1462,Pratiques artistiques I,2018-2019
 1463,1463,Hydrodynamique acoustique,2015-2016
 1464,1464,Hydrodynamique acoustique,2019-2020
 1465,1465,Hydrodynamique acoustique,2018-2019
@@ -855,6 +933,7 @@
 1471,1471,Hydrodynamique acoustique,2014-2015
 1472,1472,Hydrodynamique acoustique,2017-2018
 1473,1473,Hydrodynamique acoustique,2013-2014
+1474,1474,Communication professionnelle B I,2004-2005
 1475,1475,Homotopical algebra,2017-2018
 1476,1476,Solid state physics IV,2013-2014
 1477,1477,Solid state physics IV,2012-2013
@@ -868,6 +947,7 @@
 1485,1485,Solid state physics IV,2017-2018
 1486,1486,Solid state physics IV,2016-2017
 1487,1487,Solid state physics IV,2019-2020
+1491,1491,Hommes / Machines. L'automatisation de l'humain II,2010-2011
 1492,1492,Hommes / Machines. L'automatisation de l'humain II,2011-2012
 1493,1493,Théorie et critique du projet MA1 (Mangado),2011-2012
 1494,1494,Navigation dans les transports,2008-2009
@@ -930,9 +1010,16 @@
 1593,1593,Project in drug discovery,2013-2014
 1594,1594,Negotiation,2004-2005
 1595,1595,Negotiation,2006-2007
-1596,1596,Negotiation,2005-2006
 1597,1597,Théorie et critique du projet MA1 (Lütjens et Padmanabhan),2016-2017
-1599,1599,Spacecraft avionics architectures,2019-2020
+1607,1607,Hommes/machines I,2017-2018
+1608,1608,Hommes/machines I,2014-2015
+1609,1609,Hommes/machines I,2015-2016
+1610,1610,Hommes/machines I,2013-2014
+1611,1611,Hommes/machines I,2012-2013
+1612,1612,Hommes/machines I,2009-2010
+1613,1613,Hommes/machines I,2018-2019
+1614,1614,Hommes/machines I,2016-2017
+1615,1615,Hommes/machines I,2019-2020
 1629,1629,Solid state physics III,2018-2019
 1630,1630,Solid state physics III,2019-2020
 1637,1637,Hydrogeophysics,2016-2017
@@ -962,9 +1049,17 @@
 1661,1661,Structure et architecture,2010-2011
 1662,1662,Learning theory,2019-2020
 1663,1663,Learning theory,2018-2019
+1664,1664,Pratiques artistiques II,2017-2018
+1665,1665,Pratiques artistiques II,2012-2013
+1666,1666,Pratiques artistiques II,2016-2017
+1667,1667,Pratiques artistiques II,2013-2014
+1668,1668,Pratiques artistiques II,2015-2016
 1669,1669,Pratiques artistiques II,2014-2015
+1670,1670,Pratiques artistiques II,2018-2019
+1671,1671,Pratiques artistiques II,2019-2020
 1672,1672,Data and artificial intelligence for transportation,2017-2018
 1673,1673,Data and artificial intelligence for transportation,2018-2019
+1674,1674,Pratiques artistiques : penser par cas II,2010-2011
 1675,1675,Satellite communications  systems and networks,2017-2018
 1676,1676,Satellite communications  systems and networks,2016-2017
 1677,1677,Satellite communications  systems and networks,2015-2016
@@ -977,7 +1072,6 @@
 1684,1684,Satellite communications  systems and networks,2008-2009
 1685,1685,Satellite communications  systems and networks,2012-2013
 1686,1686,Satellite communications  systems and networks,2006-2007
-1687,1687,Satellite communications  systems and networks,2018-2019
 1688,1688,Satellite communications  systems and networks,2011-2012
 1689,1689,Capteurs et microsystèmes III,2004-2005
 1690,1690,Molecular Neurobiology and Neurodegenerative Disease,2008-2009
@@ -989,6 +1083,8 @@
 1696,1696,Environmental Engineering Seminar series (summer),2006-2007
 1702,1702,Innovation for construction and the environment,2019-2020
 1703,1703,Sustainable logistics systems,2019-2020
+1724,1724,Les sciences et leur histoire : perspectives philosophiques II,2010-2011
+1725,1725,Les sciences et leur histoire : perspectives philosophiques II,2009-2010
 1729,1729,Analysis and modelling of locomotion,2018-2019
 1730,1730,Analysis and modelling of locomotion,2014-2015
 1731,1731,Analysis and modelling of locomotion,2015-2016
@@ -1002,6 +1098,12 @@
 1739,1739,Advanced probability and applications,2015-2016
 1740,1740,Advanced probability and applications,2016-2017
 1741,1741,Advanced probability and applications,2019-2020
+1762,1762,Sciences et religions II,2015-2016
+1763,1763,Sciences et religions II,2017-2018
+1764,1764,Sciences et religions II,2016-2017
+1765,1765,Sciences et religions II,2018-2019
+1766,1766,Sciences et religions II,2014-2015
+1767,1767,Sciences et religions II,2019-2020
 1768,1768,Cellules solaires et macro-électronique,2004-2005
 1769,1769,Advanced nanomaterials,2014-2015
 1770,1770,Advanced nanomaterials,2010-2011
@@ -1075,9 +1177,6 @@
 1885,1885,Relativity and cosmology I,2013-2014
 1886,1886,Relativity and cosmology I,2018-2019
 1887,1887,Analyse et modélisation du risque,2004-2005
-1888,1888,UE X : Experience design,2019-2020
-1889,1889,UE X : Experience design,2018-2019
-1890,1890,UE X : Experience design,2017-2018
 1891,1891,Flexible bioelectronics,2016-2017
 1892,1892,Flexible bioelectronics,2014-2015
 1893,1893,Flexible bioelectronics,2013-2014
@@ -1088,6 +1187,7 @@
 1898,1898,Digital musicology,2017-2018
 1899,1899,Digital musicology,2018-2019
 1900,1900,Digital musicology,2019-2020
+1901,1901,Création musicale et biographie II,2009-2010
 1902,1902,Analyse de produits et systèmes,2016-2017
 1903,1903,Analyse de produits et systèmes,2018-2019
 1904,1904,Analyse de produits et systèmes,2019-2020
@@ -1103,7 +1203,6 @@
 1914,1914,Analyse de produits et systèmes,2006-2007
 1915,1915,Analyse de produits et systèmes,2008-2009
 1916,1916,Analyse de produits et systèmes,2004-2005
-1917,1917,UE N : Art et architecture II,2013-2014
 1918,1918,UE N : Art et architecture II,2012-2013
 1919,1919,UE N : Art et architecture II,2011-2012
 1928,1928,Principles of intellectual property management,2016-2017
@@ -1146,6 +1245,7 @@
 2014,2014,Introduction to natural language processing,2018-2019
 2015,2015,Introduction to natural language processing,2019-2020
 2016,2016,Introduction to natural language processing,2014-2015
+2032,2032,Apprentissage et intelligence artificielle,2019-2020
 2033,2033,Applied corporate & industry analysis,2016-2017
 2034,2034,Applied corporate & industry analysis,2017-2018
 2035,2035,Applied corporate & industry analysis,2018-2019
@@ -1193,10 +1293,11 @@
 2131,2131,Introduction to crystal growth by epitaxy,2015-2016
 2132,2132,Introduction to crystal growth by epitaxy,2016-2017
 2133,2133,Introduction to crystal growth by epitaxy,2014-2015
+2134,2134,Scientific project design in synthetic biology (iGEM),2018-2019
+2135,2135,Scientific project design in synthetic biology (iGEM),2015-2016
 2136,2136,Scientific project design in synthetic biology (iGEM),2019-2020
 2137,2137,Scientific project design in synthetic biology (iGEM),2014-2015
 2140,2140,Fundamentals of radiation damage and effects,2009-2010
-2141,2141,Fundamentals of radiation damage and effects,2010-2011
 2142,2142,Fundamentals of radiation damage and effects,2007-2008
 2143,2143,Fundamentals of radiation damage and effects,2008-2009
 2144,2144,Fundamentals of radiation damage and effects,2011-2012
@@ -1219,6 +1320,15 @@
 2161,2161,UE O : Béton. Matière de construction,2018-2019
 2162,2162,UE O : Béton. Matière de construction,2012-2013
 2163,2163,UE O : Béton. Matière de construction,2016-2017
+2178,2178,Culture médiatique II,2011-2012
+2179,2179,Culture médiatique II,2012-2013
+2180,2180,Culture médiatique II,2018-2019
+2181,2181,Culture médiatique II,2013-2014
+2182,2182,Culture médiatique II,2015-2016
+2183,2183,Culture médiatique II,2014-2015
+2184,2184,Culture médiatique II,2016-2017
+2185,2185,Culture médiatique II,2017-2018
+2186,2186,Culture médiatique II,2019-2020
 2193,2193,Financial mathematics,2009-2010
 2194,2194,Financial mathematics,2011-2012
 2195,2195,Financial mathematics,2010-2011
@@ -1284,7 +1394,7 @@
 2289,2289,Flow cytometry,2011-2012
 2290,2290,Flow cytometry,2012-2013
 2291,2291,Topics in bioinformatics II,2006-2007
-2293,2293,Systemic & strategic problem solving,2019-2020
+2292,2292,Topics in bioinformatics II,2007-2008
 2295,2295,Topics in numerical linear algebra,2012-2013
 2296,2296,Models and methods for random networks,2009-2010
 2297,2297,Models and methods for random networks,2010-2011
@@ -1326,15 +1436,14 @@
 2359,2359,"Visionnaires éclectiques. Architectures, 2000-2018",2019-2020
 2360,2360,"Visionnaires éclectiques. Architectures, 2000-2018",2018-2019
 2361,2361,Lever aérien,2007-2008
-2362,2362,Lever aérien,2008-2009
 2363,2363,Lever aérien,2009-2010
 2374,2374,Projet interdisciplinaire à option B (été),2005-2006
+2375,2375,"Pratiques artistiques : filmer, innover II",2011-2012
 2376,2376,Supraconductivité I,2005-2006
 2377,2377,Supraconductivité I,2006-2007
 2378,2378,Supraconductivité I,2004-2005
 2379,2379,Supraconductivité I,2008-2009
 2380,2380,Supraconductivité I,2007-2008
-2381,2381,Data science in practice,2017-2018
 2382,2382,Data science in practice,2019-2020
 2383,2383,Data science in practice,2018-2019
 2384,2384,Projets métaphoriques d'Archizoom à Koolhaas,2016-2017
@@ -1345,7 +1454,6 @@
 2389,2389,Modélisation et optimisation de systèmes énergétiques,2004-2005
 2390,2390,Modélisation et optimisation de systèmes énergétiques,2007-2008
 2391,2391,Modélisation et optimisation de systèmes énergétiques,2006-2007
-2392,2392,Modélisation et optimisation de systèmes énergétiques,2008-2009
 2393,2393,Modélisation et optimisation de systèmes énergétiques,2005-2006
 2395,2395,Traitement optique,2004-2005
 2396,2396,Sustainability assessment of urban systems,2019-2020
@@ -1357,8 +1465,19 @@
 2403,2403,Surface analysis,2016-2017
 2404,2404,Traitement avancé des eaux usées,2006-2007
 2405,2405,Architecture et métropole II,2004-2005
+2406,2406,How people learn I,2016-2017
+2407,2407,How people learn I,2012-2013
 2408,2408,How people learn I,2017-2018
 2409,2409,How people learn I,2014-2015
+2410,2410,How people learn I,2019-2020
+2411,2411,How people learn I,2013-2014
+2412,2412,How people learn I,2018-2019
+2413,2413,How people learn I,2015-2016
+2419,2419,History of globalization II,2017-2018
+2420,2420,History of globalization II,2018-2019
+2421,2421,History of globalization II,2014-2015
+2422,2422,History of globalization II,2015-2016
+2423,2423,History of globalization II,2016-2017
 2437,2437,Structural stability,2019-2020
 2438,2438,Hydraulic turbomachines,2011-2012
 2439,2439,Hydraulic turbomachines,2017-2018
@@ -1411,6 +1530,7 @@
 2496,2496,Biomedical optics,2017-2018
 2497,2497,Biomedical optics,2018-2019
 2498,2498,Biomedical optics,2019-2020
+2499,2499,Biomedical optics,2014-2015
 2500,2500,Biomedical optics,2013-2014
 2501,2501,Biomedical optics,2011-2012
 2502,2502,Biomedical optics,2012-2013
@@ -1458,12 +1578,10 @@
 2549,2549,Economie hydraulique,2007-2008
 2550,2550,Economie hydraulique,2014-2015
 2551,2551,Théorie et critique du projet MA1 (Huang),2008-2009
-2552,2552,Théorie et critique du projet MA1 (Huang),2016-2017
 2553,2553,Théorie et critique du projet MA1 (Huang),2010-2011
 2554,2554,Théorie et critique du projet MA1 (Huang),2009-2010
 2555,2555,Théorie et critique du projet MA1 (Huang),2018-2019
 2556,2556,Théorie et critique du projet MA1 (Huang),2011-2012
-2557,2557,Théorie et critique du projet MA1 (Huang),2017-2018
 2558,2558,Théorie et critique du projet MA1 (Huang),2019-2020
 2559,2559,Théorie et critique du projet MA1 (Huang),2012-2013
 2560,2560,Networked control systems,2019-2020
@@ -1507,7 +1625,19 @@
 2626,2626,Complex circuits,2006-2007
 2627,2627,Complex circuits,2005-2006
 2628,2628,Complex circuits,2004-2005
+2629,2629,History of globalization I,2016-2017
+2630,2630,History of globalization I,2015-2016
+2631,2631,History of globalization I,2014-2015
+2632,2632,History of globalization I,2017-2018
+2633,2633,History of globalization I,2018-2019
+2634,2634,Géopolitique et politique de la mondialisation II,2009-2010
+2635,2635,Géopolitique et politique de la mondialisation II,2011-2012
+2636,2636,Géopolitique et politique de la mondialisation II,2010-2011
+2637,2637,Géopolitique et politique de la mondialisation II,2015-2016
+2638,2638,Géopolitique et politique de la mondialisation II,2016-2017
 2639,2639,Géopolitique et politique de la mondialisation II,2012-2013
+2640,2640,Géopolitique et politique de la mondialisation II,2014-2015
+2641,2641,Géopolitique et politique de la mondialisation II,2013-2014
 2642,2642,Space mission design and operations,2009-2010
 2643,2643,Space mission design and operations,2017-2018
 2644,2644,Space mission design and operations,2019-2020
@@ -1531,21 +1661,11 @@
 2685,2685,Cellular biology and biochemistry for engineers,2016-2017
 2686,2686,Cellular biology and biochemistry for engineers,2008-2009
 2687,2687,Cellular biology and biochemistry for engineers,2014-2015
-2688,2688,Cellular biology and biochemistry for engineers,2015-2016
 2689,2689,Cellular biology and biochemistry for engineers,2013-2014
 2690,2690,Cellular biology and biochemistry for engineers,2012-2013
 2691,2691,Cellular biology and biochemistry for engineers,2007-2008
 2692,2692,Cellular biology and biochemistry for engineers,2009-2010
 2693,2693,Cellular biology and biochemistry for engineers,2010-2011
-2694,2694,Cellular biology and biochemistry for engineers,2017-2018
-2695,2695,Cellular biology and biochemistry for engineers,2019-2020
-2696,2696,Cellular biology and biochemistry for engineers,2018-2019
-2698,2698,Environmental policy,2017-2018
-2699,2699,Environmental policy,2016-2017
-2702,2702,Data science for business,2016-2017
-2703,2703,Data science for business,2017-2018
-2704,2704,Data science for business,2019-2020
-2705,2705,Data science for business,2018-2019
 2706,2706,Supraconductivité II,2006-2007
 2707,2707,Supraconductivité II,2007-2008
 2708,2708,Supraconductivité II,2004-2005
@@ -1588,7 +1708,7 @@
 2774,2774,Life cycle engineering of polymers,2017-2018
 2775,2775,Life cycle engineering of polymers,2014-2015
 2776,2776,Life cycle engineering of polymers,2019-2020
-2807,2807,Information Technology in Logistics,2011-2012
+2803,2803,"Développement durable, enquêtes et controverses I",2009-2010
 2811,2811,Chemical processes of sustainable and renewable energy,2010-2011
 2812,2812,Chemical processes of sustainable and renewable energy,2012-2013
 2813,2813,Chemical processes of sustainable and renewable energy,2006-2007
@@ -1673,17 +1793,15 @@
 2922,2922,Cryptography and security,2012-2013
 2923,2923,Cryptography and security,2007-2008
 2924,2924,Principles of power systems,2019-2020
+2933,2933,Relation pédagogique et climat de classe,2015-2016
+2934,2934,Relation pédagogique et climat de classe,2017-2018
 2941,2941,UE N : Empreintes,2009-2010
 2942,2942,UE N : Empreintes,2008-2009
 2943,2943,UE N : Empreintes,2007-2008
 2954,2954,Information: strategy & economics,2011-2012
-2955,2955,Information: strategy & economics,2017-2018
 2956,2956,Information: strategy & economics,2018-2019
 2957,2957,Information: strategy & economics,2012-2013
-2958,2958,Information: strategy & economics,2014-2015
-2959,2959,Information: strategy & economics,2013-2014
 2960,2960,Information: strategy & economics,2016-2017
-2961,2961,Information: strategy & economics,2015-2016
 2962,2962,Advanced wireless communications: algorithms and architectures,2016-2017
 2963,2963,Advanced wireless communications: algorithms and architectures,2015-2016
 2964,2964,Advanced wireless communications: algorithms and architectures,2014-2015
@@ -1765,7 +1883,6 @@
 3081,3081,High-tech marketing,2004-2005
 3082,3082,High-tech marketing,2006-2007
 3083,3083,High-tech marketing,2007-2008
-3084,3084,High-tech marketing,2005-2006
 3085,3085,Théorie et critique du projet MA1 (Dietz),2012-2013
 3086,3086,Théorie et critique du projet MA1 (Dietz),2013-2014
 3087,3087,Théorie et critique du projet MA1 (Dietz),2014-2015
@@ -1789,21 +1906,26 @@
 3123,3123,Scientific project design in drug discovery,2018-2019
 3124,3124,Scientific project design in drug discovery,2019-2020
 3125,3125,Scientific project design in drug discovery,2014-2015
+3126,3126,Scientific project design in drug discovery,2016-2017
 3127,3127,Scientific project design in drug discovery,2015-2016
 3128,3128,Scientific project design in drug discovery,2017-2018
 3129,3129,Bio-nano-chip design,2014-2015
 3130,3130,Bio-nano-chip design,2018-2019
 3131,3131,Bio-nano-chip design,2017-2018
-3132,3132,Bio-nano-chip design,2019-2020
 3133,3133,Bio-nano-chip design,2016-2017
 3134,3134,Bio-nano-chip design,2015-2016
 3135,3135,Comptabilité,2004-2005
 3160,3160,Introduction to brain imaging ,2010-2011
 3161,3161,Introduction to brain imaging ,2009-2010
+3162,3162,Introduction to brain imaging ,2008-2009
+3163,3163,Enjeux éthiques contemporains II,2012-2013
+3164,3164,Enjeux éthiques contemporains II,2014-2015
+3165,3165,Enjeux éthiques contemporains II,2013-2014
 3166,3166,Scientific literature analysis in computational molecular biology,2017-2018
 3167,3167,Scientific literature analysis in computational molecular biology,2018-2019
 3168,3168,Scientific literature analysis in computational molecular biology,2016-2017
 3169,3169,Scientific literature analysis in computational molecular biology,2014-2015
+3170,3170,Scientific literature analysis in computational molecular biology,2015-2016
 3171,3171,Scientific literature analysis in computational molecular biology,2019-2020
 3177,3177,Behavioral finance,2013-2014
 3178,3178,Behavioral finance,2012-2013
@@ -1838,7 +1960,6 @@
 3231,3231,UE P : Béton. Construction et préfabrication,2017-2018
 3232,3232,UE P : Béton. Construction et préfabrication,2013-2014
 3233,3233,UE P : Béton. Construction et préfabrication,2012-2013
-3234,3234,UE P : Béton. Construction et préfabrication,2014-2015
 3235,3235,UE P : Béton. Construction et préfabrication,2015-2016
 3236,3236,UE P : Béton. Construction et préfabrication,2019-2020
 3237,3237,UE P : Béton. Construction et préfabrication,2016-2017
@@ -1849,6 +1970,17 @@
 3242,3242,Analyse d'images du territoire II,2005-2006
 3243,3243,Analyse d'images du territoire II,2004-2005
 3251,3251,Chevalley groups,2008-2009
+3252,3252,Droit et technique II,2016-2017
+3253,3253,Droit et technique II,2015-2016
+3254,3254,Droit et technique II,2011-2012
+3255,3255,Droit et technique II,2010-2011
+3256,3256,Droit et technique II,2012-2013
+3257,3257,Droit et technique II,2019-2020
+3258,3258,Droit et technique II,2014-2015
+3259,3259,Droit et technique II,2013-2014
+3260,3260,Droit et technique II,2009-2010
+3261,3261,Droit et technique II,2017-2018
+3262,3262,Droit et technique II,2018-2019
 3264,3264,Fate and behaviour of environmental contaminants,2018-2019
 3265,3265,Fate and behaviour of environmental contaminants,2017-2018
 3266,3266,Fate and behaviour of environmental contaminants,2019-2020
@@ -1858,6 +1990,7 @@
 3285,3285,Topics in number theory,2010-2011
 3286,3286,Topics in number theory,2017-2018
 3287,3287,Topics in number theory,2013-2014
+3288,3288,Topics in number theory,2012-2013
 3289,3289,Topics in number theory,2015-2016
 3290,3290,Topics in number theory,2014-2015
 3291,3291,Fluvial biogeosciences,2019-2020
@@ -1950,6 +2083,14 @@
 3416,3416,Space technology and operations,2004-2005
 3417,3417,Space technology and operations,2007-2008
 3426,3426,How people learn II,2017-2018
+3427,3427,How people learn II,2013-2014
+3428,3428,How people learn II,2019-2020
+3429,3429,How people learn II,2015-2016
+3430,3430,How people learn II,2012-2013
+3431,3431,How people learn II,2018-2019
+3432,3432,How people learn II,2016-2017
+3433,3433,How people learn II,2014-2015
+3434,3434,"L'EPFL dans l'histoire : technique, culture, image et société I",2009-2010
 3435,3435,Organic semiconductors,2009-2010
 3436,3436,Organic semiconductors,2008-2009
 3437,3437,Organic semiconductors,2012-2013
@@ -1964,7 +2105,6 @@
 3446,3446,Organic semiconductors,2007-2008
 3447,3447,Organic semiconductors,2013-2014
 3471,3471,Structures et propriétés physiques,2004-2005
-3472,3472,Technology & innovation management (a),2013-2014
 3473,3473,Technology & innovation management (a),2012-2013
 3487,3487,Snow physics and hydrology,2014-2015
 3488,3488,Snow physics and hydrology,2012-2013
@@ -1996,10 +2136,7 @@
 3528,3528,Optimization methods,2019-2020
 3529,3529,Optimization methods,2017-2018
 3530,3530,Optimization methods,2018-2019
-3531,3531,Technology policy and the energy transition,2018-2019
-3532,3532,Technology policy and the energy transition,2017-2018
 3533,3533,Technology policy and the energy transition,2019-2020
-3534,3534,Technology policy and the energy transition,2015-2016
 3535,3535,Technology policy and the energy transition,2016-2017
 3536,3536,Géologie de la construction,2007-2008
 3537,3537,Géologie de la construction,2009-2010
@@ -2019,7 +2156,6 @@
 3566,3566,Théorie et critique du projet MA1 (Hubmann & Vass),2012-2013
 3572,3572,Technology & innovation management,2010-2011
 3573,3573,Technology & innovation management,2011-2012
-3574,3574,Technology & innovation management,2014-2015
 3575,3575,Structures existantes I : Sécurité et durabilité,2011-2012
 3576,3576,Structures existantes I : Sécurité et durabilité,2008-2009
 3577,3577,Structures existantes I : Sécurité et durabilité,2007-2008
@@ -2060,13 +2196,16 @@
 3620,3620,Structures complexes,2007-2008
 3621,3621,Structures complexes,2006-2007
 3622,3622,Structures complexes,2008-2009
+3623,3623,"L'EPFL dans l'histoire : technique, culture, image et société II",2009-2010
 3625,3625,Solidification,2009-2010
 3626,3626,Solidification,2005-2006
 3627,3627,Solidification,2006-2007
 3628,3628,Solidification,2004-2005
 3629,3629,Solidification,2007-2008
 3630,3630,Solidification,2008-2009
+3631,3631,Space projects at the European Space Agency,2006-2007
 3632,3632,Complex manifolds,2019-2020
+3633,3633,Hommes / Machines. L'automatisation de l'humain I,2010-2011
 3634,3634,Hommes / Machines. L'automatisation de l'humain I,2011-2012
 3638,3638,Modélisation et représentation informatique II,2017-2018
 3639,3639,Modélisation et représentation informatique II,2016-2017
@@ -2097,13 +2236,7 @@
 3673,3673,Scaling laws in micro- and nanosystems,2016-2017
 3677,3677,Projet interdisciplinaire à option A (hiver),2005-2006
 3678,3678,Projet interdisciplinaire à option A (hiver),2006-2007
-3683,3683,Presentation skills,2016-2017
-3684,3684,Presentation skills,2015-2016
-3685,3685,Presentation skills,2013-2014
-3686,3686,Presentation skills,2010-2011
-3687,3687,Presentation skills,2011-2012
 3688,3688,Presentation skills,2012-2013
-3689,3689,Presentation skills,2014-2015
 3690,3690,Presentation skills,2017-2018
 3702,3702,Sciences de la ville,2016-2017
 3703,3703,Advanced solid mechanics,2019-2020
@@ -2148,7 +2281,9 @@
 3742,3742,Analysis on groups,2014-2015
 3743,3743,Analysis on groups,2015-2016
 3744,3744,Analysis on groups,2013-2014
+3745,3745,Advanced principles and applications of systems biology,2016-2017
 3746,3746,Advanced principles and applications of systems biology,2015-2016
+3747,3747,Advanced principles and applications of systems biology,2014-2015
 3748,3748,Systems engineering,2016-2017
 3749,3749,Flow of dispersed media,2015-2016
 3750,3750,Flow of dispersed media,2013-2014
@@ -2177,19 +2312,17 @@
 3774,3774,Urban hydraulic systems,2014-2015
 3775,3775,Urban hydraulic systems,2011-2012
 3776,3776,Topics in Cognitive and Behavioural Neuroscience,2006-2007
+3777,3777,Topics in Cognitive and Behavioural Neuroscience,2007-2008
 3779,3779,Logistique et analyse prévisionnelle,2005-2006
 3780,3780,Logistique et analyse prévisionnelle,2008-2009
 3781,3781,Logistique et analyse prévisionnelle,2006-2007
 3782,3782,Logistique et analyse prévisionnelle,2009-2010
 3783,3783,Logistique et analyse prévisionnelle,2007-2008
 3784,3784,"Industry dynamics, models & trends",2010-2011
-3786,3786,"Industry dynamics, models & trends",2011-2012
 3787,3787,"Industry dynamics, models & trends",2012-2013
 3788,3788,"Industry dynamics, models & trends",2019-2020
 3789,3789,"Industry dynamics, models & trends",2018-2019
-3790,3790,"Industry dynamics, models & trends",2017-2018
 3792,3792,"Industry dynamics, models & trends",2016-2017
-3793,3793,"Industry dynamics, models & trends",2013-2014
 3795,3795,Distributed algorithms,2017-2018
 3796,3796,Distributed algorithms,2004-2005
 3797,3797,Distributed algorithms,2006-2007
@@ -2241,6 +2374,10 @@
 3862,3862,Outils d'analyse socio-spatiale,2008-2009
 3863,3863,Outils d'analyse socio-spatiale,2006-2007
 3864,3864,Outils d'analyse socio-spatiale,2005-2006
+3865,3865,Scientific literature analysis in molecular and cancer biology,2016-2017
+3866,3866,Enjeux éthiques contemporains I,2014-2015
+3867,3867,Enjeux éthiques contemporains I,2013-2014
+3868,3868,Enjeux éthiques contemporains I,2012-2013
 3869,3869,Introduction to finance,2009-2010
 3870,3870,Introduction to finance,2010-2011
 3871,3871,Introduction to finance,2011-2012
@@ -2249,14 +2386,10 @@
 3874,3874,Introduction to finance,2014-2015
 3875,3875,Introduction to finance,2015-2016
 3876,3876,Introduction to finance,2013-2014
-3877,3877,Introduction to finance,2007-2008
 3878,3878,Introduction to finance,2008-2009
 3879,3879,Introduction to finance,2017-2018
 3880,3880,Introduction to finance,2016-2017
 3881,3881,Introduction to finance,2018-2019
-3882,3882,Organizational behavior,2017-2018
-3883,3883,Organizational behavior,2019-2020
-3884,3884,Organizational behavior,2015-2016
 3885,3885,Composites technology,2019-2020
 3886,3886,Composites technology,2008-2009
 3887,3887,Composites technology,2016-2017
@@ -2299,17 +2432,13 @@
 3948,3948,Applied probability & stochastic processes,2019-2020
 3949,3949,Applied probability & stochastic processes,2011-2012
 3950,3950,Applied probability & stochastic processes,2012-2013
-3951,3951,Applied probability & stochastic processes,2010-2011
 3952,3952,Applied probability & stochastic processes,2017-2018
 3953,3953,Applied probability & stochastic processes,2016-2017
 3954,3954,Applied probability & stochastic processes,2018-2019
 3955,3955,Applied probability & stochastic processes,2015-2016
 3956,3956,Applied probability & stochastic processes,2013-2014
 3959,3959,Entrepreneurship & new venture strategy,2011-2012
-3960,3960,Entrepreneurship & new venture strategy,2019-2020
-3961,3961,Entrepreneurship & new venture strategy,2018-2019
 3962,3962,Entrepreneurship & new venture strategy,2017-2018
-3963,3963,Entrepreneurship & new venture strategy,2010-2011
 3972,3972,Théorie et critique du projet MA1 (Dreier et Frenzel),2017-2018
 3974,3974,High-temperature deformation and fracture,2009-2010
 3975,3975,High-temperature deformation and fracture,2008-2009
@@ -2320,13 +2449,17 @@
 3980,3980,Semiconductor electronic and optoelectronic devices I,2013-2014
 3981,3981,Semiconductor electronic and optoelectronic devices I,2014-2015
 3982,3982,Semiconductor electronic and optoelectronic devices I,2012-2013
+3983,3983,Stages semestriels,2015-2016
+3984,3984,Stages semestriels,2018-2019
+3985,3985,Stages semestriels,2017-2018
+3986,3986,Langue et culture : Arabe,2011-2012
 3987,3987,Laboratory in single-cell electrophysiology,2014-2015
 3988,3988,Laboratory in single-cell electrophysiology,2010-2011
+3989,3989,Laboratory in single-cell electrophysiology,2012-2013
 3990,3990,Laboratory in single-cell electrophysiology,2013-2014
 3997,3997,Seminar series on advances in materials (spring),2016-2017
 3998,3998,Seminar series on advances in materials (spring),2018-2019
 3999,3999,Seminar series on advances in materials (spring),2019-2020
-4000,4000,Seminar series on advances in materials (spring),2017-2018
 4001,4001,"Perception, Emotions & Cognition",2008-2009
 4002,4002,"Concours bureaux d'étude, histoire et actualité",2007-2008
 4003,4003,"Concours bureaux d'étude, histoire et actualité",2009-2010
@@ -2358,14 +2491,21 @@
 4040,4040,Advanced compiler construction,2016-2017
 4041,4041,Advanced compiler construction,2018-2019
 4042,4042,Advanced compiler construction,2013-2014
+4043,4043,Philosophical perspectives on the exact sciences II,2019-2020
 4044,4044,Selected Chapters in Biotechnology,2006-2007
 4051,4051,Computational game theory & applications,2010-2011
 4052,4052,Computational game theory & applications,2013-2014
 4053,4053,Computational game theory & applications,2012-2013
+4054,4054,Computational game theory & applications,2014-2015
+4055,4055,Histoire de la mondialisation II,2011-2012
+4056,4056,Histoire de la mondialisation II,2010-2011
+4057,4057,Histoire de la mondialisation II,2012-2013
+4058,4058,Histoire de la mondialisation II,2013-2014
 4059,4059,Lab in acoustics,2017-2018
 4060,4060,Lab in acoustics,2019-2020
 4061,4061,Lab in acoustics,2016-2017
 4062,4062,Lab in acoustics,2018-2019
+4063,4063,Lab in acoustics,2014-2015
 4064,4064,Lab in acoustics,2013-2014
 4065,4065,Selected topics in mechanics of solids and structures,2016-2017
 4066,4066,Selected topics in mechanics of solids and structures,2018-2019
@@ -2374,17 +2514,12 @@
 4069,4069,Selected topics in mechanics of solids and structures,2014-2015
 4078,4078,UE E : Architecture et structures,2009-2010
 4079,4079,UE E : Architecture et structures,2010-2011
-4080,4080,UE E : Architecture et structures,2007-2008
 4081,4081,UE E : Architecture et structures,2006-2007
 4082,4082,UE E : Architecture et structures,2008-2009
 4083,4083,UE E : Architecture et structures,2005-2006
 4084,4084,UE E : Architecture et structures,2014-2015
-4085,4085,UE E : Architecture et structures,2015-2016
-4086,4086,UE E : Architecture et structures,2013-2014
 4087,4087,UE E : Architecture et structures,2017-2018
 4088,4088,UE E : Architecture et structures,2016-2017
-4089,4089,UE E : Architecture et structures,2012-2013
-4090,4090,UE E : Architecture et structures,2011-2012
 4091,4091,Program parallelization on PC clusters,2013-2014
 4092,4092,Program parallelization on PC clusters,2015-2016
 4093,4093,Program parallelization on PC clusters,2010-2011
@@ -2392,17 +2527,30 @@
 4095,4095,Program parallelization on PC clusters,2011-2012
 4096,4096,Program parallelization on PC clusters,2012-2013
 4097,4097,Program parallelization on PC clusters,2014-2015
+4098,4098,Design industriel VI,2016-2017
+4099,4099,Design industriel VI,2015-2016
+4100,4100,Design industriel VI,2013-2014
+4101,4101,Design industriel VI,2014-2015
+4102,4102,Design industriel VI,2012-2013
+4103,4103,Design industriel VI,2019-2020
+4104,4104,Design industriel VI,2017-2018
+4105,4105,Design industriel VI,2018-2019
+4106,4106,Design industriel VI,2010-2011
+4107,4107,Design industriel VI,2011-2012
+4108,4108,Design industriel VI,2009-2010
 4109,4109,UE L : Art et architecture I,2012-2013
 4110,4110,UE L : Art et architecture I,2013-2014
 4111,4111,UE L : Art et architecture I,2011-2012
 4115,4115,UE H : Architectures,2008-2009
 4116,4116,UE H : Architectures,2009-2010
 4120,4120,Management de projet MBO,2005-2006
+4121,4121,Management de projet MBO,2004-2005
 4132,4132,Phénomènes non linéaires et chaos I,2006-2007
 4133,4133,Phénomènes non linéaires et chaos I,2008-2009
 4134,4134,Phénomènes non linéaires et chaos I,2004-2005
 4135,4135,Phénomènes non linéaires et chaos I,2007-2008
 4136,4136,Phénomènes non linéaires et chaos I,2005-2006
+4137,4137,Plasma physics III,2013-2014
 4138,4138,Plasma physics III,2014-2015
 4139,4139,Plasma physics III,2012-2013
 4140,4140,Plasma physics III,2018-2019
@@ -2411,6 +2559,7 @@
 4143,4143,Plasma physics III,2016-2017
 4144,4144,Plasma physics III,2010-2011
 4145,4145,Plasma physics III,2011-2012
+4146,4146,Plasma physics III,2009-2010
 4147,4147,Plasma physics III,2008-2009
 4148,4148,Plasma physics III,2015-2016
 4149,4149,Image processing I,2010-2011
@@ -2433,6 +2582,13 @@
 4171,4171,Immunology,2016-2017
 4172,4172,"Systèmes éducatifs, organisations, acteurs, savoirs",2017-2018
 4181,4181,Images de la nature II,2016-2017
+4182,4182,Images de la nature II,2018-2019
+4183,4183,Images de la nature II,2019-2020
+4184,4184,Images de la nature II,2017-2018
+4185,4185,Images de la nature II,2014-2015
+4186,4186,Images de la nature II,2015-2016
+4187,4187,Images de la nature II,2012-2013
+4188,4188,Images de la nature II,2013-2014
 4189,4189,MEMS practicals I,2017-2018
 4190,4190,MEMS practicals I,2019-2020
 4191,4191,MEMS practicals I,2018-2019
@@ -2440,6 +2596,7 @@
 4193,4193,Radiation protection & radiation applications,2015-2016
 4194,4194,Radiation protection & radiation applications,2014-2015
 4196,4196,Marketing,2004-2005
+4197,4197,Economic growth and sustainability II,2019-2020
 4198,4198,Advanced heat transfer,2018-2019
 4199,4199,Advanced heat transfer,2019-2020
 4200,4200,Advanced heat transfer,2017-2018
@@ -2447,8 +2604,6 @@
 4202,4202,Advanced heat transfer,2015-2016
 4203,4203,Advanced heat transfer,2014-2015
 4204,4204,Ecohydrology and environmental sustainability,2008-2009
-4205,4205,Quality assurance and quality management systems,2016-2017
-4206,4206,Quality assurance and quality management systems,2015-2016
 4208,4208,UE B : Critique architecturale II,2006-2007
 4209,4209,UE B : Critique architecturale II,2005-2006
 4211,4211,Introduction au droit et à l'éthique en STV,2012-2013
@@ -2487,15 +2642,13 @@
 4249,4249,Cancer biology I,2012-2013
 4250,4250,Cancer biology I,2007-2008
 4251,4251,Cancer biology I,2013-2014
+4252,4252,Le développement de l'adolescent,2016-2017
 4255,4255,Protein mass spectrometry and proteomics,2017-2018
 4256,4256,Protein mass spectrometry and proteomics,2018-2019
 4257,4257,Protein mass spectrometry and proteomics,2019-2020
-4259,4259,Brain computer interaction,2016-2017
 4260,4260,Brain computer interaction,2018-2019
-4261,4261,Brain computer interaction,2014-2015
 4262,4262,Brain computer interaction,2015-2016
 4263,4263,Brain computer interaction,2012-2013
-4264,4264,Brain computer interaction,2013-2014
 4265,4265,Brain computer interaction,2017-2018
 4267,4267,Brain computer interaction,2010-2011
 4268,4268,Brain computer interaction,2011-2012
@@ -2512,6 +2665,7 @@
 4283,4283,Statistical theory,2016-2017
 4284,4284,Statistical theory,2014-2015
 4285,4285,Statistical theory,2013-2014
+4286,4286,Histoire sociale des technologies I,2014-2015
 4287,4287,Numerical methods in heat transfer,2009-2010
 4288,4288,Numerical methods in heat transfer,2010-2011
 4289,4289,Numerical methods in heat transfer,2011-2012
@@ -2630,7 +2784,6 @@
 4452,4452,Biomolecular structure and mechanics,2009-2010
 4453,4453,Biomolecular structure and mechanics,2018-2019
 4454,4454,Biomolecular structure and mechanics,2014-2015
-4455,4455,Théorie et critique du projet MA2 (Zuber),2015-2016
 4456,4456,Astrophysics III : stellar and galactic dynamics,2017-2018
 4457,4457,Astrophysics III : stellar and galactic dynamics,2019-2020
 4459,4459,Astrophysics III : stellar and galactic dynamics,2014-2015
@@ -2641,6 +2794,7 @@
 4464,4464,Astrophysics III : stellar and galactic dynamics,2016-2017
 4465,4465,Astrophysics III : stellar and galactic dynamics,2018-2019
 4466,4466,Astrophysics III : stellar and galactic dynamics,2015-2016
+4474,4474,Histoire sociale des technologies II,2014-2015
 4483,4483,Statistical theories and electronic of solids,2008-2009
 4484,4484,Statistical theories and electronic of solids,2004-2005
 4485,4485,Statistical theories and electronic of solids,2007-2008
@@ -2651,11 +2805,7 @@
 4490,4490,Statistical theories and electronic of solids,2013-2014
 4491,4491,Statistical theories and electronic of solids,2010-2011
 4492,4492,Statistical theories and electronic of solids,2011-2012
-4509,4509,Leading and managing in a global context,2016-2017
 4510,4510,Leading and managing in a global context,2019-2020
-4511,4511,Leading and managing in a global context,2015-2016
-4512,4512,Leading and managing in a global context,2017-2018
-4513,4513,Leading and managing in a global context,2018-2019
 4514,4514,Multivariate statistics,2016-2017
 4515,4515,Multivariate statistics,2018-2019
 4516,4516,Multivariate statistics,2019-2020
@@ -2675,6 +2825,7 @@
 4530,4530,Cancer biology II,2010-2011
 4531,4531,Cancer biology II,2014-2015
 4532,4532,Cancer biology II,2007-2008
+4543,4543,Études musicales,2009-2010
 4544,4544,Decentralized systems engineering,2019-2020
 4545,4545,Decentralized systems engineering,2017-2018
 4546,4546,Decentralized systems engineering,2018-2019
@@ -2690,6 +2841,7 @@
 4556,4556,Safety of chemical processes,2017-2018
 4557,4557,Safety of chemical processes,2014-2015
 4558,4558,Integrated optics,2015-2016
+4559,4559,Integrated optics,2016-2017
 4560,4560,Integrated optics,2017-2018
 4561,4561,Integrated optics,2013-2014
 4562,4562,Integrated optics,2014-2015
@@ -2710,11 +2862,12 @@
 4577,4577,Travaux souterrains,2019-2020
 4578,4578,Travaux souterrains,2015-2016
 4579,4579,Travaux souterrains,2013-2014
-4580,4580,Studio MA1 (Giuliani et Hönger),2013-2014
+4581,4581,Advanced cryptography,2018-2019
 4582,4582,Advanced cryptography,2006-2007
 4583,4583,Advanced cryptography,2011-2012
 4584,4584,Advanced cryptography,2010-2011
 4585,4585,Advanced cryptography,2009-2010
+4586,4586,Advanced cryptography,2007-2008
 4587,4587,Advanced cryptography,2014-2015
 4588,4588,Advanced cryptography,2012-2013
 4589,4589,Advanced cryptography,2019-2020
@@ -2763,7 +2916,15 @@
 4642,4642,Eco-morphologie fluviale,2006-2007
 4643,4643,Eco-morphologie fluviale,2008-2009
 4649,4649,"Marketing, innovation, and new product development",2009-2010
+4650,4650,Economic growth and sustainability I,2019-2020
+4651,4651,Images de la nature I,2012-2013
+4652,4652,Images de la nature I,2019-2020
 4653,4653,Images de la nature I,2016-2017
+4654,4654,Images de la nature I,2018-2019
+4655,4655,Images de la nature I,2017-2018
+4656,4656,Images de la nature I,2015-2016
+4657,4657,Images de la nature I,2014-2015
+4658,4658,Images de la nature I,2013-2014
 4660,4660,Radiation-based imaging methods for nuclear and industrial applications,2017-2018
 4677,4677,Machine learning programming,2019-2020
 4678,4678,Machine learning programming,2018-2019
@@ -2784,6 +2945,7 @@
 4709,4709,Phénomènes non linéaires et chaos II,2007-2008
 4710,4710,Phénomènes non linéaires et chaos II,2005-2006
 4711,4711,Phénomènes non linéaires et chaos II,2006-2007
+4714,4714,Politiques des images II,2010-2011
 4715,4715,Management de projet SIG,2009-2010
 4716,4716,Management de projet SIG,2006-2007
 4717,4717,Management de projet SIG,2007-2008
@@ -2792,14 +2954,11 @@
 4722,4722,UE H : Graphie ,2018-2019
 4723,4723,UE H : Graphie ,2019-2020
 4724,4724,UE H : Graphie ,2017-2018
-4725,4725,UE H : Graphie ,2014-2015
 4726,4726,UE H : Graphie ,2013-2014
-4727,4727,UE H : Graphie ,2015-2016
 4728,4728,UE L : Art et architecture: construire l'image  I,2014-2015
 4745,4745,Michelangelo and the experience of space,2019-2020
 4746,4746,UE F : Architecture et réhabilitation,2009-2010
 4747,4747,UE F : Architecture et réhabilitation,2011-2012
-4748,4748,UE F : Architecture et réhabilitation,2012-2013
 4749,4749,UE F : Architecture et réhabilitation,2010-2011
 4750,4750,UE F : Architecture et réhabilitation,2016-2017
 4751,4751,UE F : Architecture et réhabilitation,2013-2014
@@ -2808,10 +2967,20 @@
 4754,4754,UE F : Architecture et réhabilitation,2017-2018
 4755,4755,UE F : Architecture et réhabilitation,2018-2019
 4756,4756,UE F : Architecture et réhabilitation,2005-2006
-4757,4757,UE F : Architecture et réhabilitation,2006-2007
 4758,4758,UE F : Architecture et réhabilitation,2007-2008
 4759,4759,UE F : Architecture et réhabilitation,2019-2020
 4760,4760,UE F : Architecture et réhabilitation,2008-2009
+4761,4761,Design industriel V,2014-2015
+4762,4762,Design industriel V,2013-2014
+4763,4763,Design industriel V,2009-2010
+4764,4764,Design industriel V,2011-2012
+4765,4765,Design industriel V,2010-2011
+4766,4766,Design industriel V,2015-2016
+4767,4767,Design industriel V,2016-2017
+4768,4768,Design industriel V,2018-2019
+4769,4769,Design industriel V,2012-2013
+4770,4770,Design industriel V,2019-2020
+4771,4771,Design industriel V,2017-2018
 4772,4772,Lab in EDA based design,2017-2018
 4773,4773,Lab in EDA based design,2016-2017
 4774,4774,Lab in EDA based design,2018-2019
@@ -2819,6 +2988,10 @@
 4776,4776,Lab in EDA based design,2013-2014
 4777,4777,Lab in EDA based design,2019-2020
 4778,4778,Lab in EDA based design,2015-2016
+4779,4779,Histoire de la mondialisation I,2010-2011
+4780,4780,Histoire de la mondialisation I,2011-2012
+4781,4781,Histoire de la mondialisation I,2013-2014
+4782,4782,Histoire de la mondialisation I,2012-2013
 4783,4783,Computational photography,2016-2017
 4784,4784,Computational photography,2017-2018
 4785,4785,Computational photography,2019-2020
@@ -2847,6 +3020,8 @@
 4826,4826,Gestion de production I,2005-2006
 4827,4827,Gestion de production I,2007-2008
 4828,4828,Gestion de production I,2004-2005
+4829,4829,"Emotions, self and social cognition II",2011-2012
+4830,4830,Philosophical perspectives on the exact sciences and their history I,2011-2012
 4831,4831,Advanced composites in engineering structures,2016-2017
 4832,4832,Advanced composites in engineering structures,2006-2007
 4833,4833,Advanced composites in engineering structures,2009-2010
@@ -2881,23 +3056,42 @@
 4875,4875,Conception des constructions en bois,2017-2018
 4876,4876,Conception des constructions en bois,2019-2020
 4877,4877,Laboratory information management systems (LIMS),2010-2011
+4878,4878,Laboratory information management systems (LIMS),2012-2013
 4879,4879,Laboratory information management systems (LIMS),2006-2007
 4880,4880,Laboratory information management systems (LIMS),2007-2008
 4881,4881,Laboratory information management systems (LIMS),2014-2015
 4882,4882,Laboratory information management systems (LIMS),2015-2016
 4883,4883,Laboratory information management systems (LIMS),2013-2014
+4884,4884,Laboratory information management systems (LIMS),2011-2012
 4885,4885,Laboratory information management systems (LIMS),2016-2017
 4886,4886,Laboratory information management systems (LIMS),2008-2009
+4887,4887,Laboratory information management systems (LIMS),2009-2010
 4888,4888,Seminar series on advances in materials (autumn),2016-2017
 4889,4889,Seminar series on advances in materials (autumn),2019-2020
 4890,4890,Seminar series on advances in materials (autumn),2017-2018
 4891,4891,Seminar series on advances in materials (autumn),2018-2019
 4893,4893,Semiconductor devices II,2018-2019
 4894,4894,Semiconductor devices II,2019-2020
+4895,4895,Langue et culture : Hindi,2014-2015
+4896,4896,Langue et culture : Hindi,2011-2012
+4897,4897,Langue et culture : Hindi,2012-2013
+4898,4898,Langue et culture : Hindi,2013-2014
+4899,4899,Langue et culture : Hindi,2009-2010
+4900,4900,Langue et culture : Hindi,2010-2011
 4901,4901,Histoire assistée par ordinateur (HAO),2013-2014
 4902,4902,Histoire assistée par ordinateur (HAO),2014-2015
+4903,4903,Histoire de l'image I,2013-2014
+4904,4904,Histoire de l'image I,2017-2018
+4905,4905,Histoire de l'image I,2015-2016
+4906,4906,Histoire de l'image I,2019-2020
+4907,4907,Histoire de l'image I,2014-2015
+4908,4908,Histoire de l'image I,2012-2013
+4909,4909,Histoire de l'image I,2016-2017
+4911,4911,Philosophy of biology I,2011-2012
+4912,4912,Laboratory in molecular neuroscience,2012-2013
 4913,4913,Laboratory in molecular neuroscience,2014-2015
 4914,4914,Laboratory in molecular neuroscience,2010-2011
+4915,4915,Laboratory in molecular neuroscience,2013-2014
 4932,4932,Semiconductor electronic and optoelectronic devices II,2009-2010
 4933,4933,Semiconductor electronic and optoelectronic devices II,2008-2009
 4934,4934,Semiconductor electronic and optoelectronic devices II,2013-2014
@@ -3004,6 +3198,7 @@
 5091,5091,Plasma physics II,2016-2017
 5092,5092,Plasma physics II,2014-2015
 5093,5093,Plasma physics II,2015-2016
+5094,5094,Plasma physics II,2018-2019
 5095,5095,Plasma physics II,2019-2020
 5096,5096,Plasma physics II,2010-2011
 5097,5097,Plasma physics II,2008-2009
@@ -3021,7 +3216,6 @@
 5110,5110,Séminaire en physiologie et instrumentation,2005-2006
 5111,5111,Séminaire en physiologie et instrumentation,2008-2009
 5112,5112,Séminaire en physiologie et instrumentation,2007-2008
-5114,5114,Séminaire en physiologie et instrumentation,2011-2012
 5117,5117,Experience design ,2019-2020
 5118,5118,Experience design ,2018-2019
 5119,5119,Phénomènes de transport dans l'environnement,2005-2006
@@ -3039,7 +3233,6 @@
 5143,5143,Théories et techniques du projet de sauvegarde,2017-2018
 5144,5144,Théories et techniques du projet de sauvegarde,2015-2016
 5145,5145,Théories et techniques du projet de sauvegarde,2013-2014
-5177,5177,Ressources humaines dans les projets,2005-2006
 5182,5182,Ressources humaines dans les projets,2006-2007
 5184,5184,Ressources humaines dans les projets,2004-2005
 5185,5185,Immunology (advanced topics),2015-2016
@@ -3050,6 +3243,7 @@
 5190,5190,Immunology (advanced topics),2012-2013
 5191,5191,Machine learning for DH,2019-2020
 5200,5200,Economics,2004-2005
+5201,5201,Economics,2006-2007
 5202,5202,Economics,2005-2006
 5203,5203,Economics,2008-2009
 5204,5204,Wireless receivers: algorithms and architectures,2014-2015
@@ -3111,6 +3305,18 @@
 5262,5262,Physical and computational organic chemistry,2016-2017
 5263,5263,Physical and computational organic chemistry,2011-2012
 5264,5264,Physical and computational organic chemistry,2013-2014
+5265,5265,"Musique, politique, société II",2011-2012
+5266,5266,"Musique, politique, société II",2010-2011
+5267,5267,"Musique, politique, société II",2012-2013
+5268,5268,"Musique, politique, société II",2016-2017
+5269,5269,"Musique, politique, société II",2017-2018
+5270,5270,"Musique, politique, société II",2019-2020
+5271,5271,"Musique, politique, société II",2018-2019
+5272,5272,"Musique, politique, société II",2013-2014
+5273,5273,"Musique, politique, société II",2014-2015
+5274,5274,"Musique, politique, société II",2015-2016
+5294,5294,Évolution technique : une histoire sociale et culturelle II,2010-2011
+5295,5295,Évolution technique : une histoire sociale et culturelle II,2011-2012
 5297,5297,Physics and hydrology of snow,2017-2018
 5298,5298,Physics and hydrology of snow,2016-2017
 5299,5299,Physics and hydrology of snow,2019-2020
@@ -3171,7 +3377,9 @@
 5442,5442,Nuclear computations lab,2011-2012
 5443,5443,Nuclear computations lab,2013-2014
 5444,5444,"Global perspectives, local realities I",2017-2018
+5445,5445,"Global perspectives, local realities I",2016-2017
 5446,5446,"Global perspectives, local realities I",2019-2020
+5447,5447,"Global perspectives, local realities I",2018-2019
 5474,5474,Technological Innovation,2019-2020
 5475,5475,Technological Innovation,2018-2019
 5476,5476,Technological Innovation,2017-2018
@@ -3194,12 +3402,16 @@
 5502,5502,Technologie chimique et biologique de l'environnement,2008-2009
 5503,5503,Technologie chimique et biologique de l'environnement,2012-2013
 5504,5504,Technologie chimique et biologique de l'environnement,2010-2011
+5505,5505,Technologie chimique et biologique de l'environnement,2011-2012
 5517,5517,Project in translational bioengineering,2012-2013
 5518,5518,Nonlinear analysis of structures,2019-2020
 5519,5519,Nonlinear analysis of structures,2017-2018
 5520,5520,Nonlinear analysis of structures,2016-2017
 5526,5526,Circuits intégrés I,2018-2019
+5529,5529,"Global perspectives, local realities II",2017-2018
 5530,5530,"Global perspectives, local realities II",2019-2020
+5531,5531,"Global perspectives, local realities II",2018-2019
+5532,5532,"Global perspectives, local realities II",2016-2017
 5533,5533,Novel spectroscopic methods in chemistry,2009-2010
 5534,5534,Novel spectroscopic methods in chemistry,2007-2008
 5535,5535,Novel spectroscopic methods in chemistry,2008-2009
@@ -3229,9 +3441,9 @@
 5559,5559,Biomécanique du système musculosquelettique,2006-2007
 5560,5560,Biomécanique du système musculosquelettique,2004-2005
 5561,5561,Biomécanique du système musculosquelettique,2005-2006
-5562,5562,Biomécanique du système musculosquelettique,2010-2011
 5563,5563,Théorie et critique du projet MA3 (Hubmann & Vass),2012-2013
 5564,5564,Ateliers et théorie du projet VII (Steinmann),2004-2005
+5576,5576,Asie contemporaine I,2009-2010
 5597,5597,Building design in the circular economy,2019-2020
 5598,5598,Building design in the circular economy,2018-2019
 5599,5599,Statistique multivariée,2013-2014
@@ -3246,21 +3458,26 @@
 5608,5608,Statistics for data science,2019-2020
 5609,5609,Economie d'innovation,2004-2005
 5610,5610,Economie d'innovation,2007-2008
-5611,5611,Economie d'innovation,2008-2009
 5613,5613,Economie d'innovation,2006-2007
 5614,5614,Economie d'innovation,2009-2010
 5615,5615,Espace et lumière : le projet d'éclairage I,2004-2005
 5623,5623,Integrated systems design,2005-2006
 5624,5624,Integrated systems design,2006-2007
-5630,5630,Leadership & human resource management in a global context,2014-2015
-5631,5631,Leadership & human resource management in a global context,2010-2011
-5632,5632,Leadership & human resource management in a global context,2011-2012
-5633,5633,Leadership & human resource management in a global context,2013-2014
 5634,5634,Leadership & human resource management in a global context,2012-2013
 5635,5635,Propriétés acoustiques des matériaux,2005-2006
 5636,5636,Propriétés acoustiques des matériaux,2004-2005
 5653,5653,Physical and chemical analyses of materials,2019-2020
 5654,5654,Studio MA2 (Bosshard Vaquer),2013-2014
+5655,5655,"Musique, politique, société I",2011-2012
+5656,5656,"Musique, politique, société I",2010-2011
+5657,5657,"Musique, politique, société I",2018-2019
+5658,5658,"Musique, politique, société I",2017-2018
+5659,5659,"Musique, politique, société I",2019-2020
+5660,5660,"Musique, politique, société I",2012-2013
+5661,5661,"Musique, politique, société I",2014-2015
+5662,5662,"Musique, politique, société I",2013-2014
+5663,5663,"Musique, politique, société I",2016-2017
+5664,5664,"Musique, politique, société I",2015-2016
 5665,5665,Lasers and applications in chemistry,2009-2010
 5666,5666,Lasers and applications in chemistry,2011-2012
 5667,5667,Lasers and applications in chemistry,2005-2006
@@ -3282,7 +3499,6 @@
 5710,5710,Qualité de l'environnement intérieur I,2005-2006
 5711,5711,Qualité de l'environnement intérieur I,2006-2007
 5721,5721,Wireless communications and mobility,2004-2005
-5730,5730,Marketing and service management,2008-2009
 5731,5731,Marketing and service management,2007-2008
 5732,5732,Marketing and service management,2006-2007
 5733,5733,Markov chains and algorithmic applications,2017-2018
@@ -3336,16 +3552,12 @@
 5850,5850,Robust and nonparametric statistics,2015-2016
 5851,5851,Robust and nonparametric statistics,2013-2014
 5868,5868,UE L : Dessin  d'architecture et infographie,2007-2008
-5869,5869,UE L : Dessin  d'architecture et infographie,2008-2009
 5870,5870,UE L : Dessin  d'architecture et infographie,2009-2010
 5871,5871,Management de projet et analyse du risque,2018-2019
 5872,5872,Management de projet et analyse du risque,2017-2018
 5873,5873,Management de projet et analyse du risque,2016-2017
 5874,5874,Management de projet et analyse du risque,2015-2016
-5875,5875,Management de projet et analyse du risque,2014-2015
-5876,5876,Management de projet et analyse du risque,2011-2012
 5877,5877,Management de projet et analyse du risque,2019-2020
-5878,5878,Management de projet et analyse du risque,2010-2011
 5879,5879,Management de projet et analyse du risque,2013-2014
 5880,5880,Management de projet et analyse du risque,2012-2013
 5881,5881,UE H : Graphie I,2012-2013
@@ -3363,6 +3575,7 @@
 5908,5908,Security protocols and applications,2004-2005
 5909,5909,Statistical physics IV,2012-2013
 5910,5910,Statistical physics IV,2011-2012
+5911,5911,Statistical physics IV,2009-2010
 5912,5912,Statistical physics IV,2010-2011
 5913,5913,Statistical physics IV,2008-2009
 5914,5914,Statistical physics IV,2013-2014
@@ -3391,6 +3604,7 @@
 5939,5939,Aéroélasticité et interaction fluide-structure,2019-2020
 5940,5940,Aéroélasticité et interaction fluide-structure,2018-2019
 5951,5951,Gestion des ressources humaines II,2004-2005
+5956,5956,Philosophical perspectives on the exact sciences and their history II,2011-2012
 5983,5983,Gestion de la maintenance des infrastructures,2010-2011
 5984,5984,Gestion de la maintenance des infrastructures,2012-2013
 5985,5985,Gestion de la maintenance des infrastructures,2015-2016
@@ -3405,13 +3619,13 @@
 5994,5994,Gestion de la maintenance des infrastructures,2004-2005
 5995,5995,Gestion de la maintenance des infrastructures,2006-2007
 5996,5996,Gestion de la maintenance des infrastructures,2013-2014
-5998,5998,Conception de mécanismes spatiaux : introduction,2019-2020
 6009,6009,"Semiconductor materials and properties, from the bulk to the nanostructure",2008-2009
 6010,6010,"Semiconductor materials and properties, from the bulk to the nanostructure",2011-2012
 6011,6011,"Semiconductor materials and properties, from the bulk to the nanostructure",2010-2011
 6012,6012,"Semiconductor materials and properties, from the bulk to the nanostructure",2009-2010
 6013,6013,"Semiconductor materials and properties, from the bulk to the nanostructure",2014-2015
 6014,6014,"Semiconductor materials and properties, from the bulk to the nanostructure",2013-2014
+6015,6015,Philosophy of biology II,2011-2012
 6018,6018,Seminar series on advances in materials,2015-2016
 6019,6019,Seminar series on advances in materials,2012-2013
 6020,6020,Seminar series on advances in materials,2011-2012
@@ -3443,6 +3657,8 @@
 6053,6053,Lab methods : animal experimentation,2013-2014
 6054,6054,Lab methods : animal experimentation,2014-2015
 6055,6055,Lab methods : animal experimentation,2019-2020
+6056,6056,Lab methods : animal experimentation,2017-2018
+6057,6057,Lab methods : animal experimentation,2016-2017
 6058,6058,Statistical genetics,2019-2020
 6060,6060,Selected topics in advanced optics,2017-2018
 6061,6061,Selected topics in advanced optics,2019-2020
@@ -3450,6 +3666,7 @@
 6063,6063,Selected topics in advanced optics,2014-2015
 6064,6064,Selected topics in advanced optics,2018-2019
 6065,6065,Selected topics in advanced optics,2015-2016
+6072,6072,Connaissances et mondialisation II,2009-2010
 6074,6074,Introduction to additive manufacturing,2019-2020
 6075,6075,Introduction to additive manufacturing,2018-2019
 6076,6076,Lab methods : proteomics,2019-2020
@@ -3457,6 +3674,7 @@
 6078,6078,Lab methods : proteomics,2015-2016
 6079,6079,Lab methods : proteomics,2014-2015
 6082,6082,Computational geomechanics,2019-2020
+6105,6105,"Emotions, self and social cognition I",2011-2012
 6106,6106,Théorie du territoire II,2004-2005
 6107,6107,Computer-supported cooperative work,2004-2005
 6108,6108,Computer-supported cooperative work,2006-2007
@@ -3468,6 +3686,13 @@
 6114,6114,Computer-supported cooperative work,2009-2010
 6115,6115,Computer-supported cooperative work,2011-2012
 6116,6116,Computer-supported cooperative work,2013-2014
+6117,6117,Gestion des organisations II,2016-2017
+6118,6118,Gestion des organisations II,2017-2018
+6119,6119,Gestion des organisations II,2019-2020
+6120,6120,Gestion des organisations II,2013-2014
+6121,6121,Gestion des organisations II,2015-2016
+6122,6122,Gestion des organisations II,2018-2019
+6123,6123,Gestion des organisations II,2014-2015
 6124,6124,"Mécanique des solides, chapitres choisis",2008-2009
 6125,6125,"Mécanique des solides, chapitres choisis",2007-2008
 6126,6126,Réalité virtuelle,2004-2005
@@ -3480,13 +3705,9 @@
 6133,6133,UE I : La représentation comme visualisation et visualisation scientifique,2008-2009
 6134,6134,UE I : La représentation comme visualisation et visualisation scientifique,2009-2010
 6135,6135,Management par la qualité totale,2004-2005
-6136,6136,UE K : Construction et critères environnementaux,2008-2009
-6137,6137,UE K : Construction et critères environnementaux,2007-2008
 6139,6139,UE K : Construction et critères environnementaux,2006-2007
 6140,6140,UE K : Construction et critères environnementaux,2005-2006
-6141,6141,UE K : Construction et critères environnementaux,2011-2012
 6142,6142,UE K : Construction et critères environnementaux,2009-2010
-6143,6143,UE K : Construction et critères environnementaux,2010-2011
 6150,6150,Design technologies for integrated systems,2010-2011
 6151,6151,Design technologies for integrated systems,2009-2010
 6152,6152,Design technologies for integrated systems,2007-2008
@@ -3512,9 +3733,10 @@
 6173,6173,Riemannian geometry II,2013-2014
 6174,6174,Imagery of territory,2016-2017
 6175,6175,Imagery of territory,2013-2014
-6176,6176,Imagery of territory,2014-2015
 6213,6213,Impact des polluants sur les écosystèmes,2005-2006
 6214,6214,Impact des polluants sur les écosystèmes,2006-2007
+6223,6223,Evaluations des apprentissages,2016-2017
+6224,6224,Evaluations des apprentissages,2014-2015
 6226,6226,Microwaves,2010-2011
 6227,6227,Microwaves,2016-2017
 6228,6228,Microwaves,2015-2016
@@ -3534,18 +3756,29 @@
 6242,6242,Management de projet,2009-2010
 6243,6243,Management de projet,2008-2009
 6244,6244,Management de projet,2007-2008
-6245,6245,Management de projet,2004-2005
 6246,6246,Management de projet,2005-2006
 6247,6247,Management de projet,2006-2007
 6248,6248,Théorie et critique du projet VII (Berger),2005-2006
 6249,6249,Théorie et critique du projet VII (Berger),2006-2007
 6250,6250,Séminaire de physique (hiver),2006-2007
+6252,6252,Experimental cognitive psychology II,2019-2020
+6253,6253,Experimental cognitive psychology II,2015-2016
+6254,6254,Experimental cognitive psychology II,2018-2019
+6255,6255,Experimental cognitive psychology II,2017-2018
+6256,6256,Experimental cognitive psychology II,2013-2014
+6257,6257,Experimental cognitive psychology II,2012-2013
+6258,6258,Experimental cognitive psychology II,2014-2015
+6259,6259,Experimental cognitive psychology II,2016-2017
 6265,6265,Qualité de l'environnement intérieur et architecture: stratégies durables,2013-2014
 6266,6266,Database systems,2017-2018
 6267,6267,Database systems,2015-2016
 6268,6268,Database systems,2019-2020
 6269,6269,Database systems,2018-2019
 6270,6270,Database systems,2016-2017
+6271,6271,Economie et politique de l'énergie I,2018-2019
+6272,6272,Economie et politique de l'énergie I,2017-2018
+6273,6273,Economie et politique de l'énergie I,2016-2017
+6274,6274,Economie et politique de l'énergie I,2015-2016
 6275,6275,Physics of novel electronic materials,2018-2019
 6276,6276,Physics of novel electronic materials,2019-2020
 6277,6277,Propagation d'ondes électromagnétiques,2011-2012
@@ -3555,6 +3788,7 @@
 6281,6281,Propagation d'ondes électromagnétiques,2007-2008
 6282,6282,Propagation d'ondes électromagnétiques,2009-2010
 6283,6283,Propagation d'ondes électromagnétiques,2008-2009
+6284,6284,Propagation d'ondes électromagnétiques,2012-2013
 6285,6285,Propagation d'ondes électromagnétiques,2004-2005
 6287,6287,Calcul stochastique,2009-2010
 6288,6288,Calcul stochastique,2011-2012
@@ -3575,7 +3809,6 @@
 6303,6303,Integrated circuits technology,2009-2010
 6304,6304,Integrated circuits technology,2004-2005
 6305,6305,Integrated circuits technology,2006-2007
-6306,6306,SIG et aide à la décision,2010-2011
 6307,6307,SIG et aide à la décision,2011-2012
 6308,6308,SIG et aide à la décision,2008-2009
 6309,6309,SIG et aide à la décision,2013-2014
@@ -3590,6 +3823,8 @@
 6318,6318,SIG et aide à la décision,2016-2017
 6319,6319,Sublinear algorithms for big data analysis,2018-2019
 6320,6320,Sublinear algorithms for big data analysis,2017-2018
+6321,6321,Mythes méditerranéens : approches anthropologiques I,2011-2012
+6322,6322,Mythes méditerranéens : approches anthropologiques I,2010-2011
 6323,6323,Photonic systems and technology,2019-2020
 6324,6324,Photonic systems and technology,2016-2017
 6325,6325,Photonic systems and technology,2017-2018
@@ -3656,7 +3891,6 @@
 6436,6436,Théorie et critique du projet MA2 (Weinand),2014-2015
 6437,6437,Théorie et critique du projet MA2 (Weinand),2016-2017
 6438,6438,Théorie et critique du projet MA2 (Weinand),2008-2009
-6439,6439,Théorie et critique du projet MA2 (Weinand),2009-2010
 6440,6440,Théorie et critique du projet MA2 (Weinand),2019-2020
 6441,6441,Théorie et critique du projet MA2 (Weinand),2017-2018
 6442,6442,Théorie et critique du projet MA2 (Weinand),2012-2013
@@ -3666,12 +3900,15 @@
 6455,6455,Biometrics,2008-2009
 6456,6456,Biometrics,2011-2012
 6457,6457,Biometrics,2014-2015
+6458,6458,Biometrics,2009-2010
+6459,6459,Biometrics,2015-2016
 6460,6460,Biometrics,2017-2018
 6461,6461,Biometrics,2010-2011
 6462,6462,Biometrics,2007-2008
 6463,6463,Biometrics,2013-2014
 6464,6464,Biometrics,2005-2006
 6465,6465,Biometrics,2006-2007
+6466,6466,Biometrics,2012-2013
 6467,6467,Nuclear fusion and plasma physics,2009-2010
 6468,6468,Nuclear fusion and plasma physics,2011-2012
 6469,6469,Nuclear fusion and plasma physics,2008-2009
@@ -3684,6 +3921,24 @@
 6476,6476,Nuclear fusion and plasma physics,2015-2016
 6477,6477,Nuclear fusion and plasma physics,2014-2015
 6478,6478,Nuclear fusion and plasma physics,2013-2014
+6479,6479,Going East II,2014-2015
+6480,6480,Going East II,2015-2016
+6481,6481,Going East II,2013-2014
+6482,6482,Going East II,2011-2012
+6483,6483,Going East II,2016-2017
+6484,6484,Going East II,2018-2019
+6485,6485,Going East II,2012-2013
+6486,6486,Going East II,2017-2018
+6487,6487,Going East II,2010-2011
+6496,6496,Going East I,2016-2017
+6497,6497,Going East I,2012-2013
+6498,6498,Going East I,2017-2018
+6499,6499,Going East I,2011-2012
+6500,6500,Going East I,2018-2019
+6501,6501,Going East I,2014-2015
+6502,6502,Going East I,2013-2014
+6503,6503,Going East I,2015-2016
+6504,6504,Going East I,2010-2011
 6508,6508,Nuclear magnetic resonance,2013-2014
 6510,6510,Biomicroscopy I,2010-2011
 6511,6511,Biomicroscopy I,2017-2018
@@ -3737,6 +3992,9 @@
 6590,6590,Statistical signal and data processing through applications,2013-2014
 6591,6591,Statistical signal and data processing through applications,2015-2016
 6592,6592,Statistical signal and data processing through applications,2014-2015
+6595,6595,Histoires des technologies : de l'innovation à l'usage,2012-2013
+6609,6609,Mythes méditerranéens : approches anthropologiques II,2011-2012
+6610,6610,Mythes méditerranéens : approches anthropologiques II,2010-2011
 6624,6624,Espace et lumière : le projet d'éclairage II,2004-2005
 6625,6625,Photonique appliquée I,2007-2008
 6626,6626,Photonique appliquée I,2006-2007
@@ -3780,6 +4038,10 @@
 6664,6664,Intelligent agents,2017-2018
 6665,6665,Intelligent agents,2014-2015
 6666,6666,Physics of nuclear reactor II,2019-2020
+6667,6667,Economie et politique de l'énergie II,2015-2016
+6668,6668,Economie et politique de l'énergie II,2017-2018
+6669,6669,Economie et politique de l'énergie II,2016-2017
+6670,6670,Economie et politique de l'énergie II,2018-2019
 6682,6682,Propagation of acoustic waves,2017-2018
 6683,6683,Propagation of acoustic waves,2016-2017
 6684,6684,Propagation of acoustic waves,2014-2015
@@ -3789,7 +4051,6 @@
 6688,6688,Econometrics: data analysis & empirical methods,2013-2014
 6689,6689,Econometrics: data analysis & empirical methods,2014-2015
 6702,6702,Qualité de l'environnement intérieur dans le bâtiment II,2004-2005
-6703,6703,International negotiation  (for master programme),2008-2009
 6704,6704,International negotiation  (for master programme),2007-2008
 6705,6705,International negotiation  (for master programme),2009-2010
 6706,6706,Advanced computer networks and distributed systems,2006-2007
@@ -3797,7 +4058,16 @@
 6708,6708,Advanced computer networks and distributed systems,2007-2008
 6709,6709,Advanced computer networks and distributed systems,2012-2013
 6710,6710,Advanced computer networks and distributed systems,2011-2012
+6723,6723,Experimental cognitive psychology I,2016-2017
+6724,6724,Experimental cognitive psychology I,2013-2014
+6725,6725,Experimental cognitive psychology I,2012-2013
+6726,6726,Experimental cognitive psychology I,2015-2016
+6727,6727,Experimental cognitive psychology I,2014-2015
+6728,6728,Experimental cognitive psychology I,2019-2020
+6729,6729,Experimental cognitive psychology I,2017-2018
+6730,6730,Experimental cognitive psychology I,2018-2019
 6731,6731,Séminaire de physique,2008-2009
+6732,6732,Séminaire de physique,2007-2008
 6736,6736,Sécurité et fiabilité II,2004-2005
 6737,6737,Sécurité et fiabilité II,2005-2006
 6738,6738,Sécurité et fiabilité II,2006-2007
@@ -3830,9 +4100,7 @@
 6832,6832,UE L : Art and architecture: constructing the view I,2019-2020
 6833,6833,UE L : Art and architecture: constructing the view I,2017-2018
 6834,6834,UE L : Art and architecture: constructing the view I,2016-2017
-6835,6835,UE L : Art and architecture: constructing the view I,2015-2016
 6836,6836,Managing multicultural teams,2007-2008
-6837,6837,Managing multicultural teams,2009-2010
 6838,6838,Managing multicultural teams,2008-2009
 6839,6839,Probability theory,2017-2018
 6840,6840,Probability theory,2011-2012
@@ -3866,21 +4134,25 @@
 6871,6871,Réalisation des infrastructures de transport,2010-2011
 6872,6872,Réalisation des infrastructures de transport,2004-2005
 6873,6873,Réalisation des infrastructures de transport,2008-2009
-6875,6875,Management qualité,2008-2009
 6876,6876,Management qualité,2007-2008
-6877,6877,Management qualité,2009-2010
-6878,6878,Management qualité,2010-2011
 6892,6892,Théorie du territoire I,2004-2005
 6893,6893,Semiconductor devices I,2018-2019
 6894,6894,Semiconductor devices I,2019-2020
 6895,6895,Perturbation theory and asymptotic analysis I,2006-2007
+6896,6896,Gestion des organisations I,2018-2019
 6897,6897,Gestion des organisations I,2013-2014
+6898,6898,Gestion des organisations I,2014-2015
+6899,6899,Gestion des organisations I,2015-2016
+6900,6900,Gestion des organisations I,2019-2020
+6901,6901,Gestion des organisations I,2016-2017
+6902,6902,Gestion des organisations I,2017-2018
 6903,6903,Conception avancée de systèmes VLSI numériques,2004-2005
 6904,6904,Mécanique des structures et solides VI,2004-2005
 6905,6905,Mécanique des structures et solides VI,2005-2006
 6906,6906,Mécanique des structures et solides VI,2006-2007
 6907,6907,Emerging renewable power,2013-2014
 6908,6908,Emerging renewable power,2014-2015
+6909,6909,Philosophical perspectives on the exact sciences I,2019-2020
 6910,6910,Théorie des noeuds,2004-2005
 6912,6912,Introduction to VLSI Design,2016-2017
 6913,6913,Introduction to VLSI Design,2015-2016
@@ -3906,11 +4178,19 @@
 6933,6933,Computational linear algebra,2013-2014
 6934,6934,Computational linear algebra,2015-2016
 6937,6937,Lab methods : histology,2016-2017
+6938,6938,Lab methods : histology,2018-2019
 6939,6939,Lab methods : histology,2019-2020
 6940,6940,Lab methods : histology,2013-2014
 6941,6941,Lab methods : histology,2014-2015
 6942,6942,Lab methods : histology,2015-2016
 6943,6943,Lab methods : histology,2017-2018
+6944,6944,Histoire de l'image II,2013-2014
+6945,6945,Histoire de l'image II,2012-2013
+6946,6946,Histoire de l'image II,2019-2020
+6947,6947,Histoire de l'image II,2015-2016
+6948,6948,Histoire de l'image II,2014-2015
+6949,6949,Histoire de l'image II,2017-2018
+6950,6950,Histoire de l'image II,2016-2017
 6951,6951,Lab in signal and image processing,2015-2016
 6952,6952,Lab in signal and image processing,2018-2019
 6953,6953,Lab in signal and image processing,2017-2018
@@ -3937,7 +4217,10 @@
 6974,6974,Statistical learning,2017-2018
 6990,6990,Photochemistry II,2016-2017
 6991,6991,Photochemistry II,2005-2006
+6992,6992,Photochemistry II,2007-2008
+6993,6993,Photochemistry II,2013-2014
 6994,6994,Photochemistry II,2009-2010
+6995,6995,Photochemistry II,2008-2009
 6996,6996,Photochemistry II,2015-2016
 6997,6997,Photochemistry II,2011-2012
 6998,6998,Photochemistry II,2019-2020
@@ -3951,16 +4234,20 @@
 7006,7006,Semiconductor physics and light-matter interaction,2018-2019
 7007,7007,Semiconductor physics and light-matter interaction,2019-2020
 7008,7008,Histoire de l'architecture,2004-2005
+7027,7027,Landmark papers in Cellular Neuroscience,2007-2008
 7040,7040,Lab methods : flow cytometry,2017-2018
 7041,7041,Lab methods : flow cytometry,2018-2019
 7042,7042,Lab methods : flow cytometry,2014-2015
 7043,7043,Lab methods : flow cytometry,2015-2016
+7044,7044,Lab methods : flow cytometry,2016-2017
 7045,7045,Lab methods : flow cytometry,2019-2020
 7046,7046,Lab methods : flow cytometry,2013-2014
+7056,7056,People and things : what's the difference ? II,2011-2012
 7059,7059,Selected topics in distributed computing,2007-2008
 7060,7060,Selected topics in distributed computing,2006-2007
 7061,7061,Selected topics in distributed computing,2008-2009
 7062,7062,Selected topics in distributed computing,2004-2005
+7063,7063,Connaissances et mondialisation I,2009-2010
 7064,7064,Computational multiphase thermal fluid dynamics,2014-2015
 7065,7065,Computational multiphase thermal fluid dynamics,2018-2019
 7066,7066,Computational multiphase thermal fluid dynamics,2015-2016
@@ -3997,11 +4284,7 @@
 7126,7126,Mécanique numérique des solides et des structures,2007-2008
 7127,7127,Mécanique numérique des solides et des structures,2004-2005
 7128,7128,Mécanique numérique des solides et des structures,2005-2006
-7129,7129,B2B - high-tech marketing,2013-2014
-7131,7131,B2B - high-tech marketing,2014-2015
-7132,7132,B2B - high-tech marketing,2012-2013
 7133,7133,B2B - high-tech marketing,2016-2017
-7134,7134,B2B - high-tech marketing,2015-2016
 7135,7135,Difficult Double: Trouble with Classicists,2017-2018
 7136,7136,Difficult Double: Trouble with Classicists,2018-2019
 7137,7137,Ponts en béton,2018-2019
@@ -4027,12 +4310,9 @@
 7159,7159,Methods for rapid production and development,2016-2017
 7160,7160,Methods for rapid production and development,2014-2015
 7161,7161,UE K : Architecture et durabilité : études de performances,2017-2018
-7162,7162,UE K : Architecture et durabilité : études de performances,2014-2015
 7163,7163,UE K : Architecture et durabilité : études de performances,2015-2016
 7164,7164,UE K : Architecture et durabilité : études de performances,2016-2017
-7165,7165,UE K : Architecture et durabilité : études de performances,2018-2019
 7166,7166,UE K : Architecture et durabilité : études de performances,2019-2020
-7167,7167,UE K : Architecture et durabilité : études de performances,2012-2013
 7168,7168,UE I : Analogue-Digital-Virtuel,2015-2016
 7169,7169,UE I : Analogue-Digital-Virtuel,2013-2014
 7170,7170,UE I : Analogue-Digital-Virtuel,2011-2012
@@ -4087,6 +4367,9 @@
 7280,7280,Image processing II,2014-2015
 7281,7281,Image processing II,2013-2014
 7282,7282,Image processing II,2012-2013
+7283,7283,Séminaire d'intégration,2018-2019
+7284,7284,Séminaire d'intégration,2017-2018
+7285,7285,Séminaire d'intégration,2015-2016
 7286,7286,Experimental data analysis and modelization,2005-2006
 7287,7287,Experimental data analysis and modelization,2008-2009
 7288,7288,Experimental data analysis and modelization,2012-2013
@@ -4117,6 +4400,17 @@
 7334,7334,Advanced computer architecture,2015-2016
 7335,7335,Advanced computer architecture,2014-2015
 7336,7336,Advanced computer architecture,2019-2020
+7337,7337,Design graphique et interactif V,2012-2013
+7338,7338,Design graphique et interactif V,2009-2010
+7339,7339,Design graphique et interactif V,2010-2011
+7340,7340,Design graphique et interactif V,2011-2012
+7341,7341,"Internet : enjeux sociaux, enjeux mondiaux II",2013-2014
+7342,7342,"Internet : enjeux sociaux, enjeux mondiaux II",2016-2017
+7343,7343,"Internet : enjeux sociaux, enjeux mondiaux II",2011-2012
+7344,7344,"Internet : enjeux sociaux, enjeux mondiaux II",2010-2011
+7345,7345,"Internet : enjeux sociaux, enjeux mondiaux II",2014-2015
+7346,7346,"Internet : enjeux sociaux, enjeux mondiaux II",2015-2016
+7347,7347,"Internet : enjeux sociaux, enjeux mondiaux II",2012-2013
 7348,7348,Qualité de l'environnement intérieur II,2005-2006
 7349,7349,Qualité de l'environnement intérieur II,2006-2007
 7350,7350,UE : Environnement et GC,2010-2011
@@ -4186,6 +4480,14 @@
 7420,7420,Photonique appliquée II,2009-2010
 7421,7421,Espace et lumière II,2005-2006
 7422,7422,Espace et lumière II,2006-2007
+7423,7423,Mythes de la Méditerranée ancienne II,2016-2017
+7424,7424,Mythes de la Méditerranée ancienne II,2015-2016
+7425,7425,Mythes de la Méditerranée ancienne II,2014-2015
+7426,7426,Mythes de la Méditerranée ancienne II,2012-2013
+7427,7427,Mythes de la Méditerranée ancienne II,2013-2014
+7428,7428,Mythes de la Méditerranée ancienne II,2018-2019
+7429,7429,Mythes de la Méditerranée ancienne II,2017-2018
+7430,7430,Mythes de la Méditerranée ancienne II,2019-2020
 7431,7431,Turbomachines thermiques,2010-2011
 7432,7432,Turbomachines thermiques,2007-2008
 7433,7433,Turbomachines thermiques,2008-2009
@@ -4209,6 +4511,7 @@
 7451,7451,Photomedicine (SV),2010-2011
 7452,7452,Interdisciplinary / disciplinary project for chemical master,2017-2018
 7453,7453,Interdisciplinary / disciplinary project for chemical master,2016-2017
+7456,7456,Asie contemporaine II,2009-2010
 7457,7457,Numerical methods for conservation laws,2019-2020
 7458,7458,Numerical methods for conservation laws,2018-2019
 7459,7459,Numerical methods for conservation laws,2017-2018
@@ -4218,6 +4521,7 @@
 7467,7467,Stochastic models in communications and computer science,2004-2005
 7470,7470,Statistique non paramétrique et robuste,2006-2007
 7472,7472,Statistical population genetics,2015-2016
+7474,7474,Histoire et architecture de l'EPFL II,2018-2019
 7475,7475,Single cell biology,2018-2019
 7476,7476,Single cell biology,2019-2020
 7483,7483,Optics laboratories,2014-2015
@@ -4232,9 +4536,9 @@
 7504,7504,Biophysics II,2018-2019
 7505,7505,Biophysics II,2016-2017
 7507,7507,Biophysics II,2015-2016
+7511,7511,Négociation,2004-2005
 7512,7512,"Technique, Éthique et Société",2004-2005
 7517,7517,Théorie et critique du projet MA3 (Kirchhoff),2009-2010
-7525,7525,Nonlinear optics,2019-2020
 7526,7526,Nonlinear optics,2018-2019
 7529,7529,Governing global migration I,2019-2020
 7530,7530,Nuclear materials,2018-2019
@@ -4263,23 +4567,33 @@
 7554,7554,Electronic spectroscopy,2012-2013
 7555,7555,Electronic spectroscopy,2007-2008
 7556,7556,Electronic spectroscopy,2008-2009
-7557,7557,Electronic spectroscopy,2019-2020
 7558,7558,Electronic spectroscopy,2015-2016
 7563,7563,Théorie et critique du projet MA2 (Lamunière & Jaccaud),2007-2008
 7569,7569,Simulation numérique de systèmes physiques II,2006-2007
 7570,7570,Simulation numérique de systèmes physiques II,2007-2008
 7571,7571,Simulation numérique de systèmes physiques II,2004-2005
 7572,7572,Simulation numérique de systèmes physiques II,2005-2006
+7574,7574,Histoire et architecture de l'EPFL I,2018-2019
 7575,7575,Statistique pour données médicales,2005-2006
 7592,7592,Photomedicine,2017-2018
 7593,7593,Photomedicine,2016-2017
 7594,7594,Photomedicine,2015-2016
-7595,7595,Photomedicine,2019-2020
 7596,7596,Photomedicine,2014-2015
 7597,7597,Studio MA2 (Gugger),2013-2014
+7608,7608,Mythes de la Méditerranée ancienne I,2017-2018
+7609,7609,Mythes de la Méditerranée ancienne I,2018-2019
+7610,7610,Mythes de la Méditerranée ancienne I,2019-2020
+7611,7611,Mythes de la Méditerranée ancienne I,2012-2013
+7612,7612,Mythes de la Méditerranée ancienne I,2013-2014
+7613,7613,Mythes de la Méditerranée ancienne I,2016-2017
+7614,7614,Mythes de la Méditerranée ancienne I,2014-2015
+7615,7615,Mythes de la Méditerranée ancienne I,2015-2016
+7616,7616,Évolution technique : une histoire sociale et culturelle I,2010-2011
+7617,7617,Évolution technique : une histoire sociale et culturelle I,2011-2012
 7618,7618,Propagation of electromagnetic waves,2015-2016
 7619,7619,Propagation of electromagnetic waves,2014-2015
 7620,7620,Propagation of electromagnetic waves,2013-2014
+7638,7638,Études musicales I,2015-2016
 7640,7640,Ecologie et gestion du paysage,2007-2008
 7641,7641,Econometrics,2017-2018
 7642,7642,Econometrics,2018-2019
@@ -4308,6 +4622,17 @@
 7683,7683,Powerplants and heat pumps,2009-2010
 7684,7684,Powerplants and heat pumps,2012-2013
 7685,7685,Powerplants and heat pumps,2013-2014
+7686,7686,"Internet : enjeux sociaux, enjeux mondiaux I",2015-2016
+7687,7687,"Internet : enjeux sociaux, enjeux mondiaux I",2011-2012
+7688,7688,"Internet : enjeux sociaux, enjeux mondiaux I",2010-2011
+7689,7689,"Internet : enjeux sociaux, enjeux mondiaux I",2014-2015
+7690,7690,"Internet : enjeux sociaux, enjeux mondiaux I",2012-2013
+7691,7691,"Internet : enjeux sociaux, enjeux mondiaux I",2013-2014
+7692,7692,"Internet : enjeux sociaux, enjeux mondiaux I",2016-2017
+7693,7693,Design graphique et interactif VI,2011-2012
+7694,7694,Design graphique et interactif VI,2010-2011
+7695,7695,Design graphique et interactif VI,2009-2010
+7696,7696,Design graphique et interactif VI,2012-2013
 7697,7697,Advanced computer graphics,2019-2020
 7698,7698,Advanced computer graphics,2007-2008
 7699,7699,Advanced computer graphics,2005-2006
@@ -4333,14 +4658,18 @@
 7719,7719,Chimie des denrées alimentaires,2016-2017
 7720,7720,Chimie des denrées alimentaires,2018-2019
 7721,7721,Chimie des denrées alimentaires,2014-2015
+7722,7722,Chimie des denrées alimentaires,2019-2020
 7723,7723,Chimie des denrées alimentaires,2017-2018
 7724,7724,Chimie des denrées alimentaires,2015-2016
 7725,7725,Chimie des denrées alimentaires,2006-2007
 7726,7726,Chimie des denrées alimentaires,2005-2006
+7727,7727,Chimie des denrées alimentaires,2009-2010
+7728,7728,Chimie des denrées alimentaires,2010-2011
 7729,7729,Chimie des denrées alimentaires,2007-2008
 7730,7730,Chimie des denrées alimentaires,2008-2009
 7731,7731,Chimie des denrées alimentaires,2004-2005
 7732,7732,Chimie des denrées alimentaires,2013-2014
+7733,7733,Chimie des denrées alimentaires,2011-2012
 7734,7734,Chimie des denrées alimentaires,2012-2013
 7735,7735,Image processing for Earth observation,2019-2020
 7736,7736,Image processing for Earth observation,2018-2019
@@ -4396,7 +4725,6 @@
 7862,7862,Diffraction methods in structural biology,2012-2013
 7863,7863,Diffraction methods in structural biology,2013-2014
 7864,7864,Diffraction methods in structural biology,2014-2015
-7865,7865,UE J : Territoire et paysage (printemps),2009-2010
 7869,7869,Pharmacological chemistry,2010-2011
 7870,7870,Pharmacological chemistry,2011-2012
 7871,7871,Pharmacological chemistry,2018-2019
@@ -4429,7 +4757,6 @@
 7910,7910,Advanced bioengineering methods laboratory,2012-2013
 7911,7911,Advanced bioengineering methods laboratory,2017-2018
 7912,7912,Advanced bioengineering methods laboratory,2013-2014
-7913,7913,Connaissance pour le développement,2004-2005
 7915,7915,Connaissance pour le développement,2006-2007
 7920,7920,Lab in microwaves,2014-2015
 7921,7921,Lab in microwaves,2015-2016
@@ -4455,7 +4782,9 @@
 7948,7948,Introduction to algebraic geometry,2018-2019
 7949,7949,Introduction to algebraic geometry,2014-2015
 7950,7950,Introduction to algebraic geometry,2015-2016
+7952,7952,Introduction to algebraic geometry,2012-2013
 7953,7953,Introduction to algebraic geometry,2013-2014
+7954,7954,People and things : what's the difference ? I,2011-2012
 7960,7960,Histoire de l'architecture VIII,2009-2010
 7961,7961,Histoire de l'architecture VIII,2008-2009
 7962,7962,Histoire de l'architecture VIII,2005-2006
@@ -4502,7 +4831,7 @@
 8029,8029,Conception de systèmes de production,2006-2007
 8030,8030,Conception de systèmes de production,2007-2008
 8031,8031,Conception de systèmes de production,2008-2009
-8032,8032,Conception de systèmes de production,2004-2005
+8033,8033,Histoire de l'art numérique II,2015-2016
 8034,8034,Conservation des sols et  gestion des systèmes naturels,2006-2007
 8035,8035,Statistical analysis of network data,2019-2020
 8036,8036,Particules élémentaires II,2016-2017
@@ -4538,6 +4867,7 @@
 8086,8086,Audio signal processing and virtual acoustics,2014-2015
 8087,8087,Audio signal processing and virtual acoustics,2017-2018
 8088,8088,Audio signal processing and virtual acoustics,2015-2016
+8097,8097,Statistical mechanics and Gibbs measures,2018-2019
 8098,8098,Statistical mechanics and Gibbs measures,2019-2020
 8099,8099,Conception of information systems,2004-2005
 8100,8100,Computer aided verification,2005-2006
@@ -4565,6 +4895,7 @@
 8133,8133,Semiconducteurs organiques,2005-2006
 8134,8134,Semiconducteurs organiques,2006-2007
 8135,8135,Methods in Molecular and Cellular Neuroscience,2006-2007
+8136,8136,Methods in Molecular and Cellular Neuroscience,2007-2008
 8137,8137,Managerial accounting,2008-2009
 8138,8138,Managerial accounting,2007-2008
 8139,8139,Managerial accounting,2006-2007
@@ -4681,14 +5012,13 @@
 8333,8333,Materials and technology of microfabrication,2016-2017
 8334,8334,Materials and technology of microfabrication,2018-2019
 8335,8335,Materials and technology of microfabrication,2019-2020
-8336,8336,Télécommunications I,2004-2005
 8337,8337,Early detection of technological innovation potential,2008-2009
-8338,8338,Early detection of technological innovation potential,2005-2006
 8339,8339,Early detection of technological innovation potential,2006-2007
 8340,8340,Early detection of technological innovation potential,2007-2008
 8341,8341,Early detection of technological innovation potential,2009-2010
 8342,8342,Early detection of technological innovation potential,2004-2005
 8343,8343,Advanced diffusional processes,2019-2020
+8344,8344,"Développement durable, enquêtes et controverses II",2009-2010
 8345,8345,"UE A : Espace public de la ville, documentation et analyse historiques",2010-2011
 8362,8362,Qualité de l'environnement intérieur et énergie dans le bâtiment,2012-2013
 8363,8363,Qualité de l'environnement intérieur et énergie dans le bâtiment,2011-2012
@@ -4706,6 +5036,7 @@
 8375,8375,Materials selection,2018-2019
 8376,8376,Materials selection,2008-2009
 8377,8377,Materials selection,2014-2015
+8378,8378,Materials selection,2004-2005
 8379,8379,Materials selection,2005-2006
 8380,8380,Ecologie industrielle,2008-2009
 8381,8381,Ecologie industrielle,2009-2010
@@ -4713,12 +5044,10 @@
 8383,8383,Ecologie industrielle,2007-2008
 8384,8384,Ecologie industrielle,2010-2011
 8385,8385,Ecologie industrielle,2006-2007
+8388,8388,"Énergie, climat, économie et société I",2014-2015
+8389,8389,"Énergie, climat, économie et société I",2013-2014
+8390,8390,"Énergie, climat, économie et société I",2012-2013
 8391,8391,Calcul scientifique,2004-2005
-8392,8392,Economics of innovation & management in energy,2015-2016
-8393,8393,Economics of innovation & management in energy,2017-2018
-8394,8394,Economics of innovation & management in energy,2019-2020
-8395,8395,Economics of innovation & management in energy,2018-2019
-8396,8396,Economics of innovation & management in energy,2016-2017
 8397,8397,Physical models for micro and nanosystems,2017-2018
 8398,8398,Physical models for micro and nanosystems,2009-2010
 8399,8399,Physical models for micro and nanosystems,2008-2009
@@ -4733,6 +5062,14 @@
 8408,8408,Physical models for micro and nanosystems,2016-2017
 8410,8410,Physical models for micro and nanosystems,2007-2008
 8411,8411,Physical models for micro and nanosystems,2006-2007
+8412,8412,Psychologie sociale I,2015-2016
+8413,8413,Psychologie sociale I,2014-2015
+8414,8414,Psychologie sociale I,2017-2018
+8415,8415,Psychologie sociale I,2019-2020
+8416,8416,Psychologie sociale I,2016-2017
+8417,8417,Psychologie sociale I,2013-2014
+8418,8418,Psychologie sociale I,2012-2013
+8419,8419,Psychologie sociale I,2018-2019
 8420,8420,Interest rate and credit risk models,2019-2020
 8421,8421,Interest rate and credit risk models,2018-2019
 8438,8438,Deformation and fracture Laboratory Work,2008-2009
@@ -4744,6 +5081,7 @@
 8444,8444,Deformation and fracture Laboratory Work,2012-2013
 8445,8445,Business plan,2006-2007
 8446,8446,Business plan,2007-2008
+8447,8447,Mythes méditerranéens et grands textes fondateurs II,2009-2010
 8452,8452,History and the digital,2019-2020
 8453,8453,Numerical flow simulation,2014-2015
 8454,8454,Numerical flow simulation,2009-2010
@@ -4775,8 +5113,6 @@
 8480,8480,Stochastic calculus II,2011-2012
 8481,8481,Stochastic calculus II,2012-2013
 8482,8482,Stochastic calculus II,2017-2018
-8483,8483,Business information systems,2014-2015
-8484,8484,Business information systems,2015-2016
 8485,8485,Business information systems,2013-2014
 8486,8486,Business information systems,2016-2017
 8487,8487,Art et histoire des jardins I,2004-2005
@@ -4804,19 +5140,19 @@
 8528,8528,Biotechnology lab (for SV and CGC),2011-2012
 8529,8529,Biotechnology lab (for SV and CGC),2010-2011
 8530,8530,Groups and cohomology,2011-2012
-8546,8546,Operations: economics & strategy,2017-2018
-8547,8547,Operations: economics & strategy,2019-2020
-8548,8548,Operations: economics & strategy,2013-2014
-8549,8549,Operations: economics & strategy,2016-2017
-8550,8550,Operations: economics & strategy,2015-2016
-8551,8551,Operations: economics & strategy,2014-2015
-8552,8552,Operations: economics & strategy,2018-2019
 8553,8553,Operations: economics & strategy,2012-2013
 8554,8554,Technologie des microstructures III,2006-2007
 8555,8555,Technologie des microstructures III,2005-2006
 8556,8556,Technologie des microstructures III,2004-2005
 8578,8578,Ateliers et théorie du projet VII (Berger),2004-2005
 8595,8595,Théorie et critique du projet MA3 (Mangado),2011-2012
+8596,8596,Chine: la renaissance d'une grande puissance II,2017-2018
+8597,8597,Chine: la renaissance d'une grande puissance II,2014-2015
+8598,8598,Chine: la renaissance d'une grande puissance II,2015-2016
+8599,8599,Chine: la renaissance d'une grande puissance II,2018-2019
+8600,8600,Chine: la renaissance d'une grande puissance II,2013-2014
+8601,8601,Chine: la renaissance d'une grande puissance II,2019-2020
+8602,8602,Chine: la renaissance d'une grande puissance II,2016-2017
 8604,8604,Investments,2010-2011
 8605,8605,Investments,2011-2012
 8606,8606,Investments,2014-2015
@@ -4828,6 +5164,13 @@
 8612,8612,Investments,2018-2019
 8613,8613,Investments,2009-2010
 8614,8614,Investments,2017-2018
+8619,8619,Chine: la renaissance d'une grande puissance I,2016-2017
+8620,8620,Chine: la renaissance d'une grande puissance I,2017-2018
+8621,8621,Chine: la renaissance d'une grande puissance I,2013-2014
+8622,8622,Chine: la renaissance d'une grande puissance I,2019-2020
+8623,8623,Chine: la renaissance d'une grande puissance I,2014-2015
+8624,8624,Chine: la renaissance d'une grande puissance I,2015-2016
+8625,8625,Chine: la renaissance d'une grande puissance I,2018-2019
 8627,8627,Signal processing and machine learning for DH,2018-2019
 8628,8628,Signal processing and machine learning for DH,2017-2018
 8629,8629,Eléments constructifs et matériaux VII,2006-2007
@@ -4876,7 +5219,8 @@
 8710,8710,Art et histoire des jardins II,2005-2006
 8711,8711,Art et histoire des jardins II,2004-2005
 8712,8712,Art et histoire des jardins II,2006-2007
-8713,8713,Business law,2007-2008
+8714,8714,Histoire des technologies II,2012-2013
+8715,8715,Histoire des technologies II,2013-2014
 8716,8716,Assembly techniques,2016-2017
 8717,8717,Assembly techniques,2014-2015
 8718,8718,Assembly techniques,2015-2016
@@ -4898,6 +5242,7 @@
 8735,8735,Deep learning,2018-2019
 8736,8736,Deep learning,2019-2020
 8737,8737,Deep learning,2017-2018
+8747,8747,Mythes méditerranéens et grands textes fondateurs I,2009-2010
 8748,8748,Interactive conceptual design of structural forms,2017-2018
 8749,8749,Interactive conceptual design of structural forms,2018-2019
 8761,8761,Multi-phase flow,2018-2019
@@ -4906,23 +5251,34 @@
 8764,8764,Multi-phase flow,2015-2016
 8765,8765,Multi-phase flow,2019-2020
 8766,8766,Multimedia documents,2006-2007
+8767,8767,Multimedia documents,2004-2005
 8768,8768,Multimedia documents,2005-2006
 8769,8769,Multimedia documents,2008-2009
 8770,8770,Multimedia documents,2007-2008
 8776,8776,Transportation economics,2019-2020
+8779,8779,Physics of materials,2016-2017
 8780,8780,Physics of materials,2017-2018
 8781,8781,Physics of materials,2018-2019
 8782,8782,Physics of materials,2014-2015
 8783,8783,Physics of materials,2019-2020
 8784,8784,Physics of materials,2015-2016
+8785,8785,Énergie et société II,2010-2011
+8786,8786,Énergie et société II,2011-2012
+8787,8787,Énergie et société II,2009-2010
+8788,8788,Mass spectrometry,2008-2009
 8789,8789,Mass spectrometry,2007-2008
+8790,8790,Mass spectrometry,2009-2010
 8791,8791,Mass spectrometry,2006-2007
 8792,8792,Mass spectrometry,2010-2011
 8793,8793,Mass spectrometry,2011-2012
+8794,8794,Mass spectrometry,2017-2018
+8795,8795,Mass spectrometry,2016-2017
 8796,8796,Mass spectrometry,2005-2006
 8797,8797,Mass spectrometry,2004-2005
 8798,8798,Mass spectrometry,2013-2014
+8799,8799,Mass spectrometry,2012-2013
 8800,8800,Mass spectrometry,2015-2016
+8801,8801,Mass spectrometry,2014-2015
 8802,8802,Ecologie numérique,2012-2013
 8803,8803,Ecologie numérique,2011-2012
 8804,8804,Ecologie numérique,2010-2011
@@ -4963,7 +5319,6 @@
 8855,8855,Advanced diffusional separation processes,2006-2007
 8856,8856,Advanced diffusional separation processes,2013-2014
 8857,8857,Advanced diffusional separation processes,2015-2016
-8858,8858,Early detection: from weak signal analysis to algorithmic creativity,2011-2012
 8860,8860,IT security engineering TP,2012-2013
 8861,8861,IT security engineering TP,2014-2015
 8862,8862,IT security engineering TP,2013-2014
@@ -5100,6 +5455,7 @@
 9047,9047,UE J : Territoire et paysage,2005-2006
 9048,9048,UE J : Territoire et paysage,2006-2007
 9049,9049,Methods in Cognitive and Behavioural Neuroscience,2006-2007
+9050,9050,Methods in Cognitive and Behavioural Neuroscience,2007-2008
 9051,9051,Political Economy of Design,2017-2018
 9052,9052,Political Economy of Design,2019-2020
 9053,9053,Political Economy of Design,2018-2019
@@ -5107,7 +5463,6 @@
 9055,9055,TP de bioprocédés environnementaux,2017-2018
 9056,9056,TP de bioprocédés environnementaux,2018-2019
 9057,9057,TP de bioprocédés environnementaux,2009-2010
-9058,9058,TP de bioprocédés environnementaux,2012-2013
 9059,9059,TP de bioprocédés environnementaux,2008-2009
 9060,9060,TP de bioprocédés environnementaux,2015-2016
 9061,9061,TP de bioprocédés environnementaux,2011-2012
@@ -5229,6 +5584,7 @@
 9222,9222,Advanced NMR and imaging,2014-2015
 9223,9223,Advanced NMR and imaging,2016-2017
 9224,9224,Advanced NMR and imaging,2015-2016
+9225,9225,Histoire de l'art numérique I,2015-2016
 9249,9249,Photochemistry I,2007-2008
 9250,9250,Photochemistry I,2012-2013
 9251,9251,Photochemistry I,2013-2014
@@ -5240,11 +5596,6 @@
 9260,9260,Photochemistry I,2011-2012
 9261,9261,Photochemistry I,2009-2010
 9262,9262,Seminar in physiology and instrumentation,2015-2016
-9263,9263,Seminar in physiology and instrumentation,2018-2019
-9264,9264,Seminar in physiology and instrumentation,2019-2020
-9265,9265,Seminar in physiology and instrumentation,2017-2018
-9266,9266,Seminar in physiology and instrumentation,2014-2015
-9267,9267,Seminar in physiology and instrumentation,2013-2014
 9274,9274,Gestion intégrée des eaux,2006-2007
 9275,9275,Gestion intégrée des eaux,2005-2006
 9276,9276,Gestion intégrée des eaux,2009-2010
@@ -5259,6 +5610,7 @@
 9285,9285,Gestion du projet d'architecture II,2011-2012
 9286,9286,Gestion du projet d'architecture II,2006-2007
 9287,9287,Gestion du projet d'architecture II,2005-2006
+9288,9288,Landmark papers in Cognitive and Behavioural Neuroscience,2007-2008
 9289,9289,Glass structures and facades,2014-2015
 9306,9306,Histoire de l'habitation,2017-2018
 9307,9307,Histoire de l'habitation,2013-2014
@@ -5314,6 +5666,7 @@
 9381,9381,Computer vision,2012-2013
 9382,9382,Computer vision,2014-2015
 9383,9383,Computational quantum dynamics,2008-2009
+9384,9384,Computational quantum dynamics,2009-2010
 9385,9385,Mécanique quantique pour ingénieurs I,2006-2007
 9386,9386,Mécanique quantique pour ingénieurs I,2008-2009
 9387,9387,Mécanique quantique pour ingénieurs I,2005-2006
@@ -5321,6 +5674,9 @@
 9389,9389,Mécanique quantique pour ingénieurs I,2004-2005
 9390,9390,Mécanique quantique pour ingénieurs I,2007-2008
 9391,9391,Advanced biotechnology,2006-2007
+9423,9423,Methodology in instrumental chromatography,2016-2017
+9424,9424,Methodology in instrumental chromatography,2017-2018
+9425,9425,Methodology in instrumental chromatography,2015-2016
 9426,9426,Methodology in instrumental chromatography,2013-2014
 9427,9427,Methodology in instrumental chromatography,2014-2015
 9440,9440,Séries trigonométriques II,2004-2005
@@ -5336,7 +5692,6 @@
 9450,9450,Politique et mesures des relations science-industrie,2011-2012
 9451,9451,UE C : Architecture et archéologie,2015-2016
 9452,9452,UE C : Architecture et archéologie,2013-2014
-9453,9453,UE C : Architecture et archéologie,2012-2013
 9454,9454,UE C : Architecture et archéologie,2011-2012
 9472,9472,UE G : Expérimentation et arts plastiques II,2004-2005
 9473,9473,UE G : Expérimentation et arts plastiques II,2005-2006
@@ -5416,22 +5771,22 @@
 9573,9573,Mécanique analytique (pour SMA),2008-2009
 9574,9574,Développement territorial et urbanisme II,2009-2010
 9575,9575,Développement territorial et urbanisme II,2005-2006
-9576,9576,Développement territorial et urbanisme II,2008-2009
 9577,9577,Développement territorial et urbanisme II,2007-2008
 9578,9578,Développement territorial et urbanisme II,2006-2007
 9579,9579,Eco-friendly production and process intensification,2017-2018
 9580,9580,Eco-friendly production and process intensification,2016-2017
 9581,9581,Eco-friendly production and process intensification,2015-2016
 9582,9582,Eco-friendly production and process intensification,2014-2015
+9600,9600,"Énergie, climat, économie et société II",2014-2015
+9601,9601,"Énergie, climat, économie et société II",2012-2013
+9602,9602,"Énergie, climat, économie et société II",2013-2014
 9603,9603,Advanced energetics and engines,2008-2009
 9605,9605,Le noyau atomique,2006-2007
 9606,9606,Le noyau atomique,2004-2005
 9607,9607,Le noyau atomique,2005-2006
 9608,9608,Le noyau atomique,2007-2008
 9611,9611,Economics of Innovation,2010-2011
-9612,9612,Economics of Innovation,2015-2016
 9613,9613,Economics of Innovation,2014-2015
-9614,9614,Economics of Innovation,2013-2014
 9615,9615,Economics of Innovation,2016-2017
 9618,9618,Economie du développement territorial,2005-2006
 9619,9619,Economie du développement territorial,2006-2007
@@ -5441,6 +5796,8 @@
 9624,9624,Business plan for IT services,2013-2014
 9625,9625,Business plan for IT services,2014-2015
 9626,9626,Business plan for IT services,2012-2013
+9627,9627,Psychologie sociale : la motivation I,2010-2011
+9628,9628,Psychologie sociale : la motivation I,2009-2010
 9645,9645,Deep Learning for autonomous vehicles,2019-2020
 9646,9646,Derivatives,2018-2019
 9647,9647,Derivatives,2017-2018
@@ -5453,8 +5810,7 @@
 9654,9654,Derivatives,2014-2015
 9655,9655,Derivatives,2015-2016
 9656,9656,Derivatives,2012-2013
-9657,9657,Intercultural presentation skills,2018-2019
-9658,9658,Intercultural presentation skills,2019-2020
+9667,9667,"Ethique : technique-science, économie et développement I",2009-2010
 9668,9668,Large-area electronics: devices and materials,2018-2019
 9669,9669,Large-area electronics: devices and materials,2019-2020
 9670,9670,Large-area electronics: devices and materials,2017-2018
@@ -5465,6 +5821,7 @@
 9676,9676,Stochastic simulation,2017-2018
 9677,9677,Stochastic simulation,2019-2020
 9678,9678,Stochastic simulation,2018-2019
+9679,9679,Histoire et humanités digitales I,2015-2016
 9680,9680,Artificial Organs,2008-2009
 9681,9681,Artificial Organs,2007-2008
 9682,9682,Artificial Organs,2009-2010
@@ -5493,7 +5850,6 @@
 9707,9707,Groundwater and soil remediation,2019-2020
 9708,9708,Climate and climate change,2010-2011
 9709,9709,Climate and climate change,2009-2010
-9710,9710,Théorie et critique du projet MA2 (Kempe & Thill),2014-2015
 9716,9716,Techniques de navigation,2006-2007
 9717,9717,Techniques de navigation,2005-2006
 9718,9718,Techniques de navigation,2007-2008
@@ -5527,6 +5883,7 @@
 9768,9768,Intégration à l'environnement,2006-2007
 9769,9769,Intégration à l'environnement,2008-2009
 9770,9770,Intégration à l'environnement,2007-2008
+9776,9776,Governing global migration II,2019-2020
 9783,9783,Biosafety,2011-2012
 9784,9784,Biosafety,2012-2013
 9785,9785,Théorie et critique du projet MA2 (Jaccaud),2009-2010
@@ -5567,6 +5924,7 @@
 9869,9869,Histoire du béton,2016-2017
 9870,9870,Histoire du béton,2017-2018
 9871,9871,Histoire du béton,2013-2014
+9872,9872,Histoire et humanités digitales II,2015-2016
 9873,9873,Arts visuels et architecture II,2011-2012
 9874,9874,Arts visuels et architecture II,2010-2011
 9875,9875,Arts visuels et architecture II,2013-2014
@@ -5594,10 +5952,17 @@
 9901,9901,Lattice models,2018-2019
 9902,9902,Lattice models,2019-2020
 9903,9903,Lattice models,2017-2018
+9904,9904,Psychologie sociale : la motivation II,2010-2011
+9905,9905,Psychologie sociale : la motivation II,2009-2010
 9906,9906,Résolution numérique de grands systèmes algébriques et applications aux EDP,2005-2006
 9907,9907,Résolution numérique de grands systèmes algébriques et applications aux EDP,2004-2005
 9908,9908,Résolution numérique de grands systèmes algébriques et applications aux EDP,2006-2007
 9909,9909,Résolution numérique de grands systèmes algébriques et applications aux EDP,2007-2008
+9914,9914,Études musicales II,2016-2017
+9915,9915,Études musicales II,2015-2016
+9916,9916,Études musicales II,2017-2018
+9917,9917,Études musicales II,2019-2020
+9918,9918,Études musicales II,2018-2019
 9920,9920,Multidisciplinary organization of medtechs/biotechs,2010-2011
 9921,9921,Multidisciplinary organization of medtechs/biotechs,2014-2015
 9922,9922,Multidisciplinary organization of medtechs/biotechs,2015-2016
@@ -5662,15 +6027,7 @@
 10006,10006,"Risk, rare events and extremes",2019-2020
 10007,10007,"Risk, rare events and extremes",2015-2016
 10008,10008,"Risk, rare events and extremes",2013-2014
-10010,10010,Quantitative systems modeling techniques,2011-2012
 10011,10011,Quantitative systems modeling techniques,2019-2020
-10013,10013,Quantitative systems modeling techniques,2018-2019
-10014,10014,Quantitative systems modeling techniques,2015-2016
-10015,10015,Quantitative systems modeling techniques,2016-2017
-10016,10016,Quantitative systems modeling techniques,2014-2015
-10017,10017,Quantitative systems modeling techniques,2012-2013
-10018,10018,Quantitative systems modeling techniques,2017-2018
-10019,10019,Quantitative systems modeling techniques,2013-2014
 10020,10020,Quantum electrodynamics and quantum optics,2017-2018
 10021,10021,Quantum electrodynamics and quantum optics,2015-2016
 10022,10022,Quantum electrodynamics and quantum optics,2016-2017
@@ -5724,7 +6081,6 @@
 10101,10101,Experimental molecular sciences,2008-2009
 10102,10102,Experimental molecular sciences,2007-2008
 10120,10120,Algèbres de Lie,2005-2006
-10125,10125,UE G : In silico Building (Autumn),2013-2014
 10147,10147,Differential geometry of framed curves,2015-2016
 10148,10148,Differential geometry of framed curves,2016-2017
 10149,10149,Differential geometry of framed curves,2019-2020
@@ -5792,6 +6148,14 @@
 10252,10252,Landmark papers in Genetics,2007-2008
 10253,10253,Landmark papers in Genetics,2008-2009
 10254,10254,Landmark papers in Genetics,2009-2010
+10255,10255,Landmark papers in Genetics,2006-2007
+10256,10256,"Philosophy, epistemology and history of science II",2018-2019
+10257,10257,"Philosophy, epistemology and history of science II",2013-2014
+10258,10258,"Philosophy, epistemology and history of science II",2012-2013
+10259,10259,"Philosophy, epistemology and history of science II",2016-2017
+10260,10260,"Philosophy, epistemology and history of science II",2017-2018
+10261,10261,"Philosophy, epistemology and history of science II",2014-2015
+10262,10262,"Philosophy, epistemology and history of science II",2015-2016
 10263,10263,Advanced algorithms,2010-2011
 10264,10264,Advanced algorithms,2011-2012
 10265,10265,Advanced algorithms,2015-2016
@@ -5805,6 +6169,14 @@
 10273,10273,Advanced algorithms,2013-2014
 10274,10274,Advanced algorithms,2014-2015
 10275,10275,Gestion du régime hydrique des sols II,2005-2006
+10276,10276,Philosophy of life sciences I,2012-2013
+10277,10277,Philosophy of life sciences I,2015-2016
+10278,10278,Philosophy of life sciences I,2016-2017
+10279,10279,Philosophy of life sciences I,2014-2015
+10280,10280,Philosophy of life sciences I,2013-2014
+10281,10281,Philosophy of life sciences I,2018-2019
+10282,10282,Philosophy of life sciences I,2019-2020
+10283,10283,Philosophy of life sciences I,2017-2018
 10293,10293,Gestion foncière et droit foncier,2018-2019
 10294,10294,Gestion foncière et droit foncier,2014-2015
 10295,10295,Gestion foncière et droit foncier,2016-2017
@@ -5884,8 +6256,6 @@
 10401,10401,Production management,2018-2019
 10403,10403,UE G : Digital Design and Production (Spring),2010-2011
 10404,10404,UE G : Digital Design and Production (Spring),2009-2010
-10405,10405,UE G : Digital Design and Production (Spring),2012-2013
-10406,10406,UE G : Digital Design and Production (Spring),2011-2012
 10407,10407,Polyelectrolytes and biopolymers,2011-2012
 10408,10408,Polyelectrolytes and biopolymers,2007-2008
 10409,10409,Polyelectrolytes and biopolymers,2013-2014
@@ -5914,7 +6284,7 @@
 10448,10448,Quantitative methods in finance,2011-2012
 10449,10449,Quantitative methods in finance,2010-2011
 10450,10450,Quantitative methods in finance,2009-2010
-10462,10462,Executive lecture series,2010-2011
+10463,10463,"Image et mobilité : art, cinéma, exposition II",2011-2012
 10467,10467,Experimental methods in engineering mechanics,2018-2019
 10468,10468,Experimental methods in engineering mechanics,2019-2020
 10490,10490,Model-based system design,2015-2016
@@ -5932,6 +6302,9 @@
 10518,10518,Microélectronique et microsystèmes labos II,2005-2006
 10519,10519,Microélectronique et microsystèmes labos II,2007-2008
 10520,10520,Microélectronique et microsystèmes labos II,2010-2011
+10551,10551,Énergie et société I,2011-2012
+10552,10552,Énergie et société I,2009-2010
+10553,10553,Énergie et société I,2010-2011
 10569,10569,Advanced digital design,2004-2005
 10570,10570,Advanced digital design,2006-2007
 10571,10571,Advanced digital design,2005-2006
@@ -5991,6 +6364,7 @@
 10640,10640,"Physics of atoms, nuclei and elementary particles",2014-2015
 10641,10641,"Physics of atoms, nuclei and elementary particles",2016-2017
 10642,10642,De la structure à l'ornement: une histoire culturelle de la construction,2013-2014
+10644,10644,Histoire des technologies I,2013-2014
 10645,10645,Artificial photosynthesis,2010-2011
 10646,10646,Artificial photosynthesis,2017-2018
 10647,10647,Artificial photosynthesis,2016-2017
@@ -6041,6 +6415,7 @@
 10705,10705,Slope stability,2016-2017
 10706,10706,Slope stability,2018-2019
 10707,10707,Slope stability,2014-2015
+10723,10723,Optical communications,2015-2016
 10724,10724,Optical communications,2019-2020
 10725,10725,Optical communications,2016-2017
 10726,10726,Optical communications,2013-2014
@@ -6096,12 +6471,10 @@
 10810,10810,Biomécanique du système cardio-vasculaire,2005-2006
 10811,10811,Ateliers et théorie du projet VIII (Gazeau),2004-2005
 10812,10812,Sensor orientation,2012-2013
-10814,10814,Sensor orientation,2015-2016
+10813,10813,Sensor orientation,2017-2018
 10815,10815,Sensor orientation,2019-2020
 10816,10816,Sensor orientation,2018-2019
 10817,10817,Sensor orientation,2013-2014
-10818,10818,Sensor orientation,2014-2015
-10819,10819,Sensor orientation,2016-2017
 10822,10822,Eléments constructifs et matériaux VIIa (hiver),2005-2006
 10823,10823,Numerical methods in biomechanics,2018-2019
 10824,10824,Numerical methods in biomechanics,2011-2012
@@ -6154,7 +6527,6 @@
 10875,10875,Physical organic chemistry,2006-2007
 10876,10876,Economics of innovation and IP,2019-2020
 10877,10877,Economics of innovation and IP,2018-2019
-10878,10878,Economics of innovation and IP,2017-2018
 10879,10879,Multi-body simulation,2017-2018
 10880,10880,Multi-body simulation,2016-2017
 10881,10881,Laser microprocessing,2019-2020
@@ -6164,6 +6536,14 @@
 10885,10885,Laser microprocessing,2013-2014
 10886,10886,Laser microprocessing,2017-2018
 10887,10887,Laser microprocessing,2015-2016
+10888,10888,Psychologie sociale II,2012-2013
+10889,10889,Psychologie sociale II,2016-2017
+10890,10890,Psychologie sociale II,2014-2015
+10891,10891,Psychologie sociale II,2013-2014
+10892,10892,Psychologie sociale II,2015-2016
+10893,10893,Psychologie sociale II,2019-2020
+10894,10894,Psychologie sociale II,2017-2018
+10895,10895,Psychologie sociale II,2018-2019
 10896,10896,Interaction sol-structure,2013-2014
 10897,10897,Interaction sol-structure,2012-2013
 10898,10898,Interaction sol-structure,2014-2015
@@ -6173,8 +6553,6 @@
 10902,10902,Interaction sol-structure,2009-2010
 10903,10903,Interaction sol-structure,2011-2012
 10905,10905,Lasers et applications en chimie,2004-2005
-10919,10919,Early detection of innovation potential,2016-2017
-10920,10920,Early detection of innovation potential,2015-2016
 10922,10922,Early detection of innovation potential,2013-2014
 10923,10923,Early detection of innovation potential,2014-2015
 10924,10924,EDA TP,2011-2012
@@ -6184,6 +6562,7 @@
 10928,10928,Introduction au BIM (Building Information Modeling),2016-2017
 10929,10929,Introduction au BIM (Building Information Modeling),2017-2018
 10930,10930,Introduction au BIM (Building Information Modeling),2019-2020
+10931,10931,Etudes critiques cross-culturelles cybermédias II,2009-2010
 10932,10932,UE B : Critique architecturale,2017-2018
 10933,10933,UE B : Critique architecturale,2016-2017
 10934,10934,UE B : Critique architecturale,2009-2010
@@ -6225,6 +6604,7 @@
 10977,10977,Physique moléculaire,2010-2011
 10978,10978,Physique moléculaire,2015-2016
 10979,10979,Physique moléculaire,2007-2008
+10980,10980,Physique moléculaire,2014-2015
 10981,10981,Physique moléculaire,2013-2014
 10982,10982,Physique moléculaire,2012-2013
 10983,10983,Physique moléculaire,2006-2007
@@ -6267,7 +6647,6 @@
 11073,11073,Risques hydrologiques et aménagements,2012-2013
 11074,11074,Risques hydrologiques et aménagements,2019-2020
 11076,11076,IT and knowledge management,2004-2005
-11077,11077,IT and knowledge management,2005-2006
 11078,11078,Quantum field theory II,2017-2018
 11079,11079,Quantum field theory II,2019-2020
 11080,11080,Quantum field theory II,2018-2019
@@ -6284,6 +6663,7 @@
 11091,11091,Réseaux hydrauliques et énergétiques,2014-2015
 11092,11092,Réseaux hydrauliques et énergétiques,2012-2013
 11093,11093,Réseaux hydrauliques et énergétiques,2013-2014
+11094,11094,Politiques des images I,2010-2011
 11095,11095,Dielectric and optical properties of materials,2012-2013
 11096,11096,Dielectric and optical properties of materials,2006-2007
 11097,11097,Dielectric and optical properties of materials,2007-2008
@@ -6326,6 +6706,7 @@
 11144,11144,Selected topics in nuclear and particle physics,2015-2016
 11145,11145,Selected topics in nuclear and particle physics,2014-2015
 11146,11146,Selected topics in nuclear and particle physics,2013-2014
+11147,11147,Selected topics in nuclear and particle physics,2012-2013
 11148,11148,Selected topics in nuclear and particle physics,2018-2019
 11149,11149,Selected topics in nuclear and particle physics,2016-2017
 11150,11150,Selected topics in nuclear and particle physics,2019-2020
@@ -6341,6 +6722,7 @@
 11160,11160,Energy storage systems,2019-2020
 11161,11161,Energy storage systems,2017-2018
 11162,11162,Energy storage systems,2018-2019
+11163,11163,"Patrimoine, numérisation et projet collaboratif II",2019-2020
 11174,11174,Histoire de la technique I,2004-2005
 11191,11191,Geometric mechanics,2009-2010
 11213,11213,Conception mécanique I,2005-2006
@@ -6361,10 +6743,31 @@
 11239,11239,Advanced analog and RF integrated circuits design I,2008-2009
 11240,11240,Advanced analog and RF integrated circuits design I,2007-2008
 11241,11241,Advanced analog and RF integrated circuits design I,2009-2010
+11246,11246,Langue et culture : Mandarin,2015-2016
+11247,11247,Langue et culture : Mandarin,2014-2015
+11248,11248,Langue et culture : Mandarin,2010-2011
+11249,11249,Langue et culture : Mandarin,2009-2010
+11250,11250,Langue et culture : Mandarin,2012-2013
+11251,11251,Langue et culture : Mandarin,2011-2012
+11252,11252,Langue et culture : Mandarin,2013-2014
+11253,11253,Philosophy of life sciences II,2017-2018
+11254,11254,Philosophy of life sciences II,2014-2015
+11255,11255,Philosophy of life sciences II,2018-2019
+11256,11256,Philosophy of life sciences II,2012-2013
+11257,11257,Philosophy of life sciences II,2013-2014
+11258,11258,Philosophy of life sciences II,2019-2020
+11259,11259,Philosophy of life sciences II,2016-2017
+11260,11260,Philosophy of life sciences II,2015-2016
 11267,11267,Gestion et restauration des écosystèmes,2007-2008
 11268,11268,Gestion et restauration des écosystèmes,2008-2009
 11269,11269,Gestion et restauration des écosystèmes,2009-2010
 11270,11270,Gestion et restauration des écosystèmes,2010-2011
+11271,11271,"Philosophy, epistemology and history of science I",2017-2018
+11272,11272,"Philosophy, epistemology and history of science I",2013-2014
+11273,11273,"Philosophy, epistemology and history of science I",2012-2013
+11274,11274,"Philosophy, epistemology and history of science I",2015-2016
+11275,11275,"Philosophy, epistemology and history of science I",2016-2017
+11276,11276,"Philosophy, epistemology and history of science I",2018-2019
 11277,11277,"Philosophy, epistemology and history of science I",2014-2015
 11278,11278,Gestion du régime hydrique des sols,2008-2009
 11279,11279,Gestion du régime hydrique des sols,2007-2008
@@ -6374,6 +6777,7 @@
 11286,11286,Computer graphics,2004-2005
 11311,11311,Advanced biotechnology II,2007-2008
 11312,11312,Advanced biotechnology II,2008-2009
+11313,11313,Advanced biotechnology II,2009-2010
 11314,11314,Conception interactive des formes structurales,2016-2017
 11315,11315,Advanced analog and RF IC-design I,2017-2018
 11316,11316,Advanced analog and RF IC-design I,2018-2019
@@ -6381,6 +6785,7 @@
 11318,11318,Computer simulation of physical systems I,2015-2016
 11319,11319,Computer simulation of physical systems I,2014-2015
 11320,11320,Computer simulation of physical systems I,2013-2014
+11321,11321,Computer simulation of physical systems I,2009-2010
 11322,11322,Computer simulation of physical systems I,2017-2018
 11323,11323,Computer simulation of physical systems I,2012-2013
 11324,11324,Computer simulation of physical systems I,2010-2011
@@ -6389,6 +6794,7 @@
 11327,11327,Computer simulation of physical systems I,2016-2017
 11328,11328,Computer simulation of physical systems I,2018-2019
 11329,11329,Théorie de l'information,2004-2005
+11334,11334,Patrimoine et numérisation: Montreux Jazz Memories I,2019-2020
 11339,11339, Numerical approximation of PDE's II,2018-2019
 11340,11340, Numerical approximation of PDE's II,2017-2018
 11341,11341, Numerical approximation of PDE's II,2016-2017
@@ -6443,11 +6849,13 @@
 11401,11401,Politiques d'aménagement urbain,2008-2009
 11402,11402,Politiques d'aménagement urbain,2005-2006
 11403,11403,Politiques d'aménagement urbain,2006-2007
-11404,11404,Politiques d'aménagement urbain,2007-2008
 11405,11405,UE L : Le Palais de Rumine,2006-2007
 11406,11406,Manufacturing systems and supply chain dynamics,2018-2019
 11407,11407,Manufacturing systems and supply chain dynamics,2019-2020
 11408,11408,Politiques technologiques dans le monde,2004-2005
+11409,11409,Didactique des mathématiques au secondaire II,2016-2017
+11410,11410,Didactique des mathématiques au secondaire II,2014-2015
+11417,11417,"Image et mobilité : art, cinéma, exposition I",2011-2012
 11418,11418,Quantum optics and quantum information,2016-2017
 11419,11419,Quantum optics and quantum information,2015-2016
 11420,11420,Quantum optics and quantum information,2017-2018
@@ -6467,6 +6875,7 @@
 11435,11435,F elements,2004-2005
 11436,11436,F elements,2007-2008
 11437,11437,F elements,2006-2007
+11438,11438,F elements,2008-2009
 11479,11479,Théorie et critique du projet VIII (Jaccaud),2006-2007
 11480,11480,Systèmes mécatroniques II,2004-2005
 11481,11481,Systèmes mécatroniques II,2006-2007
@@ -6492,6 +6901,14 @@
 11521,11521,Advanced digital communications,2007-2008
 11522,11522,Advanced digital communications,2014-2015
 11523,11523,Advanced digital communications,2013-2014
+11533,11533,Design graphique VI,2019-2020
+11534,11534,Design graphique VI,2016-2017
+11535,11535,Design graphique VI,2014-2015
+11536,11536,Design graphique VI,2017-2018
+11537,11537,Design graphique VI,2018-2019
+11538,11538,Design graphique VI,2015-2016
+11539,11539,Design graphique VI,2013-2014
+11540,11540,"Ethique : technique-science, économie et développement II",2009-2010
 11546,11546,Quadratic forms over fields,2010-2011
 11547,11547,Quadratic forms over fields,2008-2009
 11548,11548,Quadratic forms over fields,2012-2013
@@ -6502,6 +6919,7 @@
 11569,11569,Développements en économie des transports,2016-2017
 11570,11570,Développements en économie des transports,2014-2015
 11571,11571,Développements en économie des transports,2015-2016
+11580,11580,Psychologie sociale : des dynamiques du conflit I,2011-2012
 11590,11590,Economie des réseaux d'infrastructures,2015-2016
 11591,11591,Economie des réseaux d'infrastructures,2018-2019
 11592,11592,Economie des réseaux d'infrastructures,2017-2018
@@ -6553,13 +6971,14 @@
 11648,11648,Ateliers et théorie du projet VII (Lamunière),2004-2005
 11659,11659,Sensorimotor neuroprosthetics,2017-2018
 11660,11660,Sensorimotor neuroprosthetics,2016-2017
-11661,11661,Sensorimotor neuroprosthetics,2018-2019
 11662,11662,Sensorimotor neuroprosthetics,2015-2016
 11663,11663,Sensorimotor neuroprosthetics,2013-2014
 11664,11664,Sensorimotor neuroprosthetics,2019-2020
 11665,11665,Sensorimotor neuroprosthetics,2014-2015
 11668,11668,Cinéma et architecture,2014-2015
 11669,11669,Ateliers et théorie du projet VIII (Lamunière),2004-2005
+11671,11671,Project in translational immunology,2013-2014
+11672,11672,Project in translational immunology,2012-2013
 11673,11673,Théorie et critique du projet MA2 (Graber et Pulver),2016-2017
 11674,11674,Bioprocesses and downstream processing,2016-2017
 11675,11675,Bioprocesses and downstream processing,2014-2015
@@ -6572,7 +6991,6 @@
 11682,11682,Electromechanical conversion,2013-2014
 11683,11683,Electromechanical conversion,2014-2015
 11684,11684,Optical methods in chemistry,2019-2020
-11703,11703,Théorie et critique du projet MA2 (Ortelli),2011-2012
 11704,11704,Théorie et critique du projet MA2 (Ortelli),2010-2011
 11705,11705,Neurosciences II : cellular neuroscience and networks,2009-2010
 11706,11706,Neurosciences II : cellular neuroscience and networks,2012-2013
@@ -6689,6 +7107,7 @@
 11867,11867,Lasers: theory and modern applications,2019-2020
 11868,11868,Lasers: theory and modern applications,2016-2017
 11869,11869,Lasers: theory and modern applications,2018-2019
+11870,11870,Psychologie sociale : des dynamiques du conflit II,2011-2012
 11879,11879,Design de SIG,2013-2014
 11880,11880,Design de SIG,2016-2017
 11881,11881,Design de SIG,2018-2019
@@ -6704,6 +7123,14 @@
 11892,11892,Advanced courses in immunology and microbiology,2006-2007
 11893,11893,Advanced courses in immunology and microbiology,2009-2010
 11894,11894,Advanced courses in immunology and microbiology,2008-2009
+11895,11895,Etudes critiques cross-culturelles cybermédias I,2009-2010
+11896,11896,Design graphique V,2017-2018
+11897,11897,Design graphique V,2015-2016
+11898,11898,Design graphique V,2016-2017
+11899,11899,Design graphique V,2018-2019
+11900,11900,Design graphique V,2014-2015
+11901,11901,Design graphique V,2013-2014
+11902,11902,Design graphique V,2019-2020
 11905,11905,"Wood structures, properties and uses",2018-2019
 11906,11906,"Wood structures, properties and uses",2008-2009
 11907,11907,"Wood structures, properties and uses",2017-2018
@@ -6795,6 +7222,7 @@
 12035,12035,Microstructures technology II,2015-2016
 12036,12036,Microstructures technology II,2014-2015
 12038,12038,IGEM project in synthetic biology II,2011-2012
+12039,12039,IGEM project in synthetic biology II,2012-2013
 12051,12051,Quantitative risk management,2008-2009
 12052,12052,Quantitative risk management,2009-2010
 12053,12053,Quantitative risk management,2010-2011
@@ -6809,25 +7237,21 @@
 12065,12065,UE M : Espace et lumière,2007-2008
 12066,12066,UE M : Espace et lumière,2008-2009
 12067,12067,UE M : Espace et lumière,2009-2010
-12068,12068,UE M : Espace et lumière,2010-2011
+12069,12069,Didactique des mathématiques,2015-2016
+12070,12070,Didactique des mathématiques,2018-2019
+12071,12071,Didactique des mathématiques,2017-2018
 12072,12072,Politiques publiques et politiques de l'environnement,2005-2006
 12073,12073,Politiques publiques et politiques de l'environnement,2007-2008
 12074,12074,Politiques publiques et politiques de l'environnement,2006-2007
 12075,12075,Politiques publiques et politiques de l'environnement,2008-2009
-12076,12076,Politique technologique et transition énergétique,2014-2015
-12077,12077,Politique technologique et transition énergétique,2013-2014
 12078,12078,Politique technologique et transition énergétique,2012-2013
 12079,12079,TP d'électromécanique,2004-2005
 12086,12086,UE D : Territoire et société,2017-2018
 12087,12087,UE D : Territoire et société,2016-2017
-12088,12088,UE D : Territoire et société,2018-2019
 12089,12089,UE D : Territoire et société,2015-2016
 12090,12090,UE D : Territoire et société,2019-2020
-12091,12091,UE D : Territoire et société,2006-2007
 12092,12092,UE D : Territoire et société,2007-2008
 12093,12093,UE D : Territoire et société,2013-2014
-12095,12095,UE D : Territoire et société,2011-2012
-12096,12096,UE D : Territoire et société,2010-2011
 12097,12097,UE D : Territoire et société,2014-2015
 12098,12098,UE D : Territoire et société,2012-2013
 12100,12100,UE D : Territoire et société,2005-2006
@@ -6914,13 +7338,10 @@
 12204,12204,Gestion et stratégie d'entreprise,2004-2005
 12211,12211,Théorie et critique du projet MA1 (Eliet & Lehmann),2014-2015
 12212,12212,Corporate and business strategy,2009-2010
-12213,12213,Corporate and business strategy,2008-2009
 12214,12214,Corporate and business strategy,2007-2008
 12215,12215,Corporate and business strategy,2004-2005
 12217,12217,Corporate and business strategy,2006-2007
 12218,12218,Entrepreneurship & new venture strategy (a),2016-2017
-12219,12219,Entrepreneurship & new venture strategy (a),2014-2015
-12220,12220,Entrepreneurship & new venture strategy (a),2015-2016
 12221,12221,Entrepreneurship & new venture strategy (a),2013-2014
 12222,12222,Entrepreneurship & new venture strategy (a),2012-2013
 12223,12223,Enterprise and service-oriented architecture,2010-2011
@@ -7016,7 +7437,6 @@
 12378,12378,Principles of dependable systems,2007-2008
 12379,12379,Principles of dependable systems,2006-2007
 12380,12380,Algebraic geometry,2007-2008
-12381,12381,Logistique et analyse de la demande,2010-2011
 12382,12382,Logistique et analyse de la demande,2019-2020
 12383,12383,Logistique et analyse de la demande,2011-2012
 12384,12384,Logistique et analyse de la demande,2016-2017
@@ -7025,7 +7445,6 @@
 12387,12387,Logistique et analyse de la demande,2012-2013
 12388,12388,Logistique et analyse de la demande,2015-2016
 12389,12389,Logistique et analyse de la demande,2013-2014
-12390,12390,Logistique et analyse de la demande,2014-2015
 12391,12391,Modelling and optimization of energy systems,2017-2018
 12392,12392,Modelling and optimization of energy systems,2018-2019
 12393,12393,Modelling and optimization of energy systems,2019-2020
@@ -7079,9 +7498,6 @@
 12490,12490,Chemical engineering product design,2018-2019
 12491,12491,Chemical engineering product design,2017-2018
 12492,12492,Chemical engineering product design,2016-2017
-12496,12496,Information Systems,2012-2013
-12497,12497,Information Systems,2011-2012
-12498,12498,Information Systems,2010-2011
 12508,12508,Mathematical modelling of DNA I,2005-2006
 12512,12512,Mathematical principles of signal processing (2014),2004-2005
 12526,12526,"Physique des surfaces, interfaces et clusters I",2006-2007
@@ -7095,10 +7511,7 @@
 12556,12556,Transient behaviour of electrical machines,2012-2013
 12557,12557,Matériaux biomimétiques,2004-2005
 12558,12558,Matériaux biomimétiques,2008-2009
-12559,12559,Matériaux biomimétiques,2009-2010
-12560,12560,Matériaux biomimétiques,2010-2011
 12561,12561,Matériaux biomimétiques,2012-2013
-12562,12562,Matériaux biomimétiques,2007-2008
 12563,12563,Matériaux biomimétiques,2011-2012
 12564,12564,Matériaux biomimétiques,2006-2007
 12565,12565,Matériaux biomimétiques,2005-2006
@@ -7106,20 +7519,11 @@
 12583,12583,Data visualization,2018-2019
 12584,12584,Data visualization,2019-2020
 12585,12585,Data visualization,2017-2018
-12586,12586,Supply chain management,2017-2018
-12587,12587,Supply chain management,2018-2019
 12588,12588,Supply chain management,2008-2009
 12589,12589,Supply chain management,2011-2012
 12590,12590,Supply chain management,2006-2007
-12591,12591,Supply chain management,2019-2020
 12592,12592,Supply chain management,2009-2010
 12593,12593,Supply chain management,2007-2008
-12594,12594,Supply chain management,2014-2015
-12595,12595,Supply chain management,2016-2017
-12596,12596,Supply chain management,2012-2013
-12597,12597,Supply chain management,2015-2016
-12598,12598,Supply chain management,2013-2014
-12599,12599,Supply chain management,2010-2011
 12600,12600,Infrastructures de transport II,2019-2020
 12601,12601,Environmental statistics (only for the first semester of master),2004-2005
 12602,12602,Environmental statistics (only for the first semester of master),2005-2006
@@ -7141,6 +7545,10 @@
 12641,12641,Organic and printed electronics,2019-2020
 12642,12642,Organic and printed electronics,2017-2018
 12643,12643,Optique II,2015-2016
+12653,12653,Archive / histoire / projet II ,2009-2010
+12654,12654,Humanités digitales II,2018-2019
+12655,12655,Humanités digitales II,2019-2020
+12656,12656,Humanités digitales II,2017-2018
 12657,12657,Humanités digitales II,2016-2017
 12658,12658,Cohérences aventureuses,2016-2017
 12659,12659,Cohérences aventureuses,2015-2016
@@ -7167,10 +7575,7 @@
 12692,12692,Structures existantes II : Interventions,2011-2012
 12693,12693,Structures existantes II : Interventions,2010-2011
 12694,12694,Structures existantes II : Interventions,2006-2007
-12695,12695,Introduction à la finance et à la comptabilité,2005-2006
 12696,12696,Introduction à la finance et à la comptabilité,2007-2008
-12697,12697,Introduction à la finance et à la comptabilité,2009-2010
-12698,12698,Introduction à la finance et à la comptabilité,2008-2009
 12699,12699,Introduction à la finance et à la comptabilité,2004-2005
 12700,12700,Introduction à la finance et à la comptabilité,2006-2007
 12707,12707,Géodésie,2009-2010
@@ -7192,7 +7597,6 @@
 12729,12729,Biomedical signal processing,2018-2019
 12730,12730,Solid state chemistry and energy applications,2019-2020
 12731,12731,Solid state chemistry and energy applications,2018-2019
-12732,12732,Introduction to quality management and management systems,2013-2014
 12733,12733,Introduction to quality management and management systems,2012-2013
 12748,12748,Corporate venturing in technology sectors,2007-2008
 12749,12749,Corporate venturing in technology sectors,2006-2007
@@ -7231,6 +7635,7 @@
 12814,12814,Théorie et critique du projet MA2 (Conen et Sigl),2019-2020
 12823,12823,IGEM project in synthetic biology,2010-2011
 12824,12824,IGEM project in synthetic biology,2009-2010
+12825,12825,IGEM project in synthetic biology,2013-2014
 12826,12826,Neuroprosthetics,2012-2013
 12827,12827,Théorie et critique du projet MA2 (Berger),2009-2010
 12828,12828,Théorie et critique du projet MA2 (Berger),2010-2011
@@ -7261,7 +7666,17 @@
 12858,12858,Hydraulique fluviale et aménagement de cours d'eau,2013-2014
 12859,12859,Hybrid systems,2013-2014
 12860,12860,Hybrid systems,2014-2015
+12861,12861,Archive / histoire / projet I,2009-2010
+12862,12862,Stratégie d'entreprise II,2009-2010
+12863,12863,Stratégie d'entreprise II,2011-2012
+12864,12864,Stratégie d'entreprise II,2010-2011
+12865,12865,Stratégie d'entreprise II,2012-2013
+12876,12876,Géopolitique et politique de la mondialisation I,2015-2016
+12877,12877,Géopolitique et politique de la mondialisation I,2009-2010
+12878,12878,Géopolitique et politique de la mondialisation I,2011-2012
+12879,12879,Géopolitique et politique de la mondialisation I,2016-2017
 12880,12880,Géopolitique et politique de la mondialisation I,2010-2011
+12881,12881,Géopolitique et politique de la mondialisation I,2014-2015
 12882,12882,Géopolitique et politique de la mondialisation I,2012-2013
 12883,12883,Géopolitique et politique de la mondialisation I,2013-2014
 12890,12890,Catalytic reaction engineering,2004-2005
@@ -7314,16 +7729,8 @@
 12945,12945,Advanced metallurgy,2018-2019
 12946,12946,Advanced metallurgy,2019-2020
 12947,12947,Advanced metallurgy,2016-2017
-12948,12948,Practical business law,2008-2009
 12949,12949,Practical business law,2012-2013
-12950,12950,Practical business law,2010-2011
-12951,12951,Practical business law,2009-2010
-12952,12952,Practical business law,2013-2014
-12953,12953,Practical business law,2011-2012
-12954,12954,Practical business law,2017-2018
-12955,12955,Practical business law,2019-2020
 12956,12956,Practical business law,2016-2017
-12957,12957,Practical business law,2014-2015
 12958,12958,Practical business law,2018-2019
 12960,12960,Venture capital,2017-2018
 12961,12961,Venture capital,2016-2017
@@ -7394,7 +7801,6 @@
 13068,13068,Principles of computer systems,2012-2013
 13069,13069,Principles of computer systems,2013-2014
 13070,13070,Principles of computer systems,2015-2016
-13071,13071,Principles of computer systems,2017-2018
 13072,13072,Principles of computer systems,2016-2017
 13073,13073,Principles of computer systems,2018-2019
 13074,13074,Principles of computer systems,2019-2020
@@ -7407,6 +7813,7 @@
 13103,13103,Mechanics of composites,2015-2016
 13104,13104,Financial econometrics,2019-2020
 13105,13105,Financial econometrics,2018-2019
+13123,13123,Contemporary Japan I,2019-2020
 13124,13124,Scientific computing applied to linear algebra (2011),2009-2010
 13126,13126,Scientific computing applied to linear algebra (2011),2010-2011
 13130,13130,Big Data,2013-2014
@@ -7416,6 +7823,7 @@
 13143,13143,Fundamentals of solid-state materials,2015-2016
 13144,13144,Fundamentals of solid-state materials,2017-2018
 13145,13145,Fundamentals of solid-state materials,2016-2017
+13146,13146,Theory and practice of cultural studies,2009-2010
 13147,13147,Scientific project design in translational oncology,2017-2018
 13148,13148,Scientific project design in translational oncology,2018-2019
 13149,13149,Scientific project design in translational oncology,2019-2020
@@ -7498,6 +7906,11 @@
 13280,13280,Composites polymères + TP,2016-2017
 13281,13281,Composites polymères + TP,2018-2019
 13282,13282,Composites polymères + TP,2019-2020
+13289,13289,Enjeux éthiques de l'ingénieur I,2018-2019
+13290,13290,Enjeux éthiques de l'ingénieur I,2019-2020
+13291,13291,Enjeux éthiques de l'ingénieur I,2016-2017
+13292,13292,Enjeux éthiques de l'ingénieur I,2015-2016
+13293,13293,Enjeux éthiques de l'ingénieur I,2017-2018
 13294,13294,Contact mechanics and nonsmooth tribology,2010-2011
 13295,13295,Contact mechanics and nonsmooth tribology,2011-2012
 13296,13296,Introduction to interacting particle systems,2006-2007
@@ -7522,7 +7935,6 @@
 13324,13324,Remote sensing of the Earth by satellites,2009-2010
 13325,13325,Remote sensing of the Earth by satellites,2006-2007
 13326,13326,Remote sensing of the Earth by satellites,2007-2008
-13327,13327,Remote sensing of the Earth by satellites,2010-2011
 13328,13328,Remote sensing of the Earth by satellites,2008-2009
 13333,13333,Diffraction physics and image formation in microscopy,2010-2011
 13334,13334,Diffraction physics and image formation in microscopy,2008-2009
@@ -7534,6 +7946,17 @@
 13340,13340,Algorithmes d'apprentissages et leurs applications,2004-2005
 13341,13341,Algorithmes d'apprentissages et leurs applications,2005-2006
 13343,13343,Fabrication associative assistée par ordinateur,2015-2016
+13358,13358,Droit et technique I,2013-2014
+13359,13359,Droit et technique I,2014-2015
+13360,13360,Droit et technique I,2019-2020
+13361,13361,Droit et technique I,2012-2013
+13362,13362,Droit et technique I,2011-2012
+13363,13363,Droit et technique I,2015-2016
+13364,13364,Droit et technique I,2017-2018
+13365,13365,Droit et technique I,2018-2019
+13366,13366,Droit et technique I,2009-2010
+13367,13367,Droit et technique I,2010-2011
+13368,13368,Droit et technique I,2016-2017
 13369,13369,Systèmes de transports,2011-2012
 13370,13370,Systèmes de transports,2012-2013
 13371,13371,Systèmes de transports,2014-2015
@@ -7592,7 +8015,6 @@
 13457,13457,Dynamique moléculaire et simulation Monte-Carlo,2016-2017
 13458,13458,Dynamique moléculaire et simulation Monte-Carlo,2018-2019
 13461,13461,Dynamique moléculaire et simulation Monte-Carlo,2017-2018
-13489,13489,Fundamentals of biochemical sensing systems,2011-2012
 13490,13490,Fundamentals of biochemical sensing systems,2010-2011
 13491,13491,Fundamentals of biochemical sensing systems,2012-2013
 13492,13492,Mathematical physiology,2017-2018
@@ -7614,6 +8036,7 @@
 13519,13519,Cartographie numérique,2005-2006
 13520,13520,Cartographie numérique,2006-2007
 13521,13521,Cartographie numérique,2007-2008
+13522,13522,Equations aux dérivées partielles d'évolution,2019-2020
 13523,13523,Cycle de vie des polymères,2008-2009
 13524,13524,Cycle de vie des polymères,2005-2006
 13525,13525,Cycle de vie des polymères,2010-2011
@@ -7639,6 +8062,7 @@
 13555,13555,Optique III,2008-2009
 13556,13556,Optique III,2017-2018
 13557,13557,Optique III,2015-2016
+13558,13558,Optique III,2014-2015
 13559,13559,Optique III,2004-2005
 13560,13560,Optique III,2012-2013
 13561,13561,Test of VLSI systems,2017-2018
@@ -7661,7 +8085,10 @@
 13579,13579,Hydraulique environnementale,2005-2006
 13580,13580,Hydraulique environnementale,2007-2008
 13581,13581,Hydraulique environnementale,2004-2005
+13589,13589,Humanités digitales I,2018-2019
+13590,13590,Humanités digitales I,2019-2020
 13591,13591,Humanités digitales I,2016-2017
+13592,13592,Humanités digitales I,2017-2018
 13593,13593,Géodésie I,2004-2005
 13594,13594,Théorie et critique du projet MA2 (Capaul et Blumenthal),2019-2020
 13606,13606,Electrochemistry for materials technology,2014-2015
@@ -7670,7 +8097,6 @@
 13609,13609,Electrochemistry for materials technology,2016-2017
 13610,13610,Electrochemistry for materials technology,2015-2016
 13611,13611,Electrochemistry for materials technology,2019-2020
-13612,13612,Optics laboratories II,2019-2020
 13613,13613,Optics laboratories II,2018-2019
 13614,13614,Electrical filters,2018-2019
 13615,13615,Electrical filters,2014-2015
@@ -7688,8 +8114,6 @@
 13652,13652,Introduction to quantum mechanics for engineers,2019-2020
 13653,13653,Project in biomechanical engineering,2013-2014
 13654,13654,Théorie et critique du projet MA1 (Souto de Moura & Da Cunha),2010-2011
-13655,13655,Option studio Urban planning,2011-2012
-13656,13656,Option studio Urban planning,2010-2011
 13674,13674,Théorie et critique du projet MA1 (Tombesi et Pathijara),2017-2018
 13675,13675,Commande d'actionneurs à l'aide d'un microprocesseur + TP,2006-2007
 13676,13676,Commande d'actionneurs à l'aide d'un microprocesseur + TP,2007-2008
@@ -7704,13 +8128,10 @@
 13685,13685,Commande d'actionneurs à l'aide d'un microprocesseur + TP,2016-2017
 13686,13686,Commande d'actionneurs à l'aide d'un microprocesseur + TP,2005-2006
 13687,13687,Commande d'actionneurs à l'aide d'un microprocesseur + TP,2004-2005
-13688,13688,Corporate strategy,2016-2017
 13689,13689,Corporate strategy,2017-2018
 13690,13690,Corporate strategy,2018-2019
-13691,13691,Corporate strategy,2010-2011
 13692,13692,Corporate strategy,2011-2012
 13693,13693,Corporate strategy,2013-2014
-13694,13694,Corporate strategy,2014-2015
 13695,13695,Corporate strategy,2015-2016
 13696,13696,Corporate strategy,2019-2020
 13697,13697,Corporate strategy,2012-2013
@@ -7746,10 +8167,9 @@
 13731,13731,Théorie et critique du projet MA2 (Barros Falcâo de Campos),2015-2016
 13732,13732,Théorie et critique du projet MA2 (Claus),2012-2013
 13733,13733,Géodésie II,2004-2005
+13734,13734,Project in nanoscale bioengineering,2013-2014
 13735,13735,Optics laboratories I,2016-2017
 13736,13736,Optics laboratories I,2017-2018
-13737,13737,Optics laboratories I,2019-2020
-13738,13738,Optics laboratories I,2018-2019
 13740,13740,Architectures de systèmes de traitement de l'information,2006-2007
 13741,13741,Architectures de systèmes de traitement de l'information,2007-2008
 13742,13742,Architectures de systèmes de traitement de l'information,2008-2009
@@ -7767,7 +8187,12 @@
 13759,13759,"Organic electronic materials - synthesis, applications, properties",2019-2020
 13760,13760,"Organic electronic materials - synthesis, applications, properties",2015-2016
 13762,13762,Architecture et métropole I,2004-2005
+13764,13764,Stratégie d'entreprise I,2012-2013
+13765,13765,Stratégie d'entreprise I,2010-2011
+13766,13766,Stratégie d'entreprise I,2011-2012
+13767,13767,Stratégie d'entreprise I,2009-2010
 13768,13768,Optique TP,2007-2008
+13769,13769,Optique TP,2008-2009
 13770,13770,Optique TP,2005-2006
 13771,13771,Optique TP,2004-2005
 13772,13772,Optique TP,2006-2007
@@ -7801,7 +8226,6 @@
 13814,13814,Monte-Carlo methods,2010-2011
 13819,13819,Equations dérivées partielles hyperboliques,2005-2006
 13820,13820,Value chain management in practice,2019-2020
-13821,13821,Value chain management in practice,2017-2018
 13822,13822,Value chain management in practice,2018-2019
 13823,13823,Dynamical system theory for engineers,2016-2017
 13824,13824,Dynamical system theory for engineers,2015-2016
@@ -7831,6 +8255,7 @@
 13848,13848,Ville et transport II,2004-2005
 13849,13849,Ville et transport II,2005-2006
 13850,13850,Functional materials,2009-2010
+13856,13856,Développement durable II : conception pour l'environnement,2004-2005
 13857,13857,Physique des plasmas II,2006-2007
 13858,13858,Physique des plasmas II,2007-2008
 13859,13859,Physique des plasmas II,2004-2005
@@ -7879,6 +8304,7 @@
 13931,13931,Modeling of emerging electron devices,2010-2011
 13932,13932,Femtochemistry,2007-2008
 13933,13933,Femtochemistry,2010-2011
+13934,13934,Femtochemistry,2008-2009
 13935,13935,Femtochemistry,2009-2010
 13957,13957,Dispositifs électroniques et optiques à semi-conducteurs II,2004-2005
 13958,13958,Dispositifs électroniques et optiques à semi-conducteurs II,2006-2007
@@ -7887,7 +8313,6 @@
 13961,13961,Modèles linéaires et plans d'expérience,2007-2008
 13985,13985,UE R : Introduction au BIM (Building Information Modeling),2018-2019
 13986,13986,UE R : Introduction au BIM (Building Information Modeling),2015-2016
-13987,13987,UE R : Introduction au BIM (Building Information Modeling),2014-2015
 13988,13988,UE R : Introduction au BIM (Building Information Modeling),2016-2017
 13989,13989,UE R : Introduction au BIM (Building Information Modeling),2019-2020
 13990,13990,Digital 3D geometry processing,2016-2017
@@ -7900,6 +8325,11 @@
 13997,13997,Digital 3D geometry processing,2012-2013
 13998,13998,Digital 3D geometry processing,2014-2015
 14019,14019,Approximation numérique des équations aux dérivées partielles,2007-2008
+14029,14029,Enjeux éthiques de l'ingénieur II,2017-2018
+14030,14030,Enjeux éthiques de l'ingénieur II,2015-2016
+14031,14031,Enjeux éthiques de l'ingénieur II,2019-2020
+14032,14032,Enjeux éthiques de l'ingénieur II,2018-2019
+14033,14033,Enjeux éthiques de l'ingénieur II,2016-2017
 14034,14034,Scientific literature analysis in bioengineering,2019-2020
 14035,14035,Scientific literature analysis in bioengineering,2017-2018
 14036,14036,Scientific literature analysis in bioengineering,2018-2019
@@ -7933,6 +8363,7 @@
 14089,14089,Bioanalytics and analytical sensors,2015-2016
 14090,14090,Bioanalytics and analytical sensors,2013-2014
 14091,14091,Bioanalytics and analytical sensors,2014-2015
+14094,14094,Méthodes de l'assurance de qualité,2004-2005
 14095,14095,Gaussian processes,2019-2020
 14096,14096,Engineering geology for geo-energy,2016-2017
 14097,14097,Engineering geology for geo-energy,2015-2016
@@ -8015,12 +8446,15 @@
 14186,14186,Théorie et critique du projet MA1 (Geers),2019-2020
 14187,14187,Théorie et critique du projet MA1 (Geers),2018-2019
 14188,14188,Théorie et critique du projet MA1 (Geers),2014-2015
-14189,14189,Entrepreneurship and emerging economies (course),2008-2009
 14190,14190,Entrepreneurship and emerging economies (course),2009-2010
-14196,14196,Introduction to electronic structure methods,2015-2016
+14205,14205,Contemporary Japan II,2019-2020
+14206,14206,L'image de la nature : du paysage au développement durable I,2010-2011
+14207,14207,L'image de la nature : du paysage au développement durable I,2011-2012
 14210,14210,Construction et durabilité VII,2011-2012
 14211,14211,Construction et durabilité VII,2012-2013
 14212,14212,Ouvrages souterrains,2005-2006
+14213,14213,Enjeux socio-politiques du numérique II,2018-2019
+14214,14214,Enjeux socio-politiques du numérique II,2017-2018
 14225,14225,Construction en bois,2016-2017
 14226,14226,Construction en bois,2015-2016
 14227,14227,Construction en bois,2013-2014
@@ -8039,6 +8473,7 @@
 14254,14254,Bio-ingénierie des cours d'eau et des systèmes naturels II,2004-2005
 14255,14255,Bio-ingénierie des cours d'eau et des systèmes naturels II,2005-2006
 14256,14256,Genetic and developmental computing architectures,2005-2006
+14273,14273,Parabolic and hyperbolic PDE's,2017-2018
 14274,14274,Parabolic and hyperbolic PDE's,2016-2017
 14275,14275,Parabolic and hyperbolic PDE's,2018-2019
 14277,14277,Algebraic K-theory,2012-2013
@@ -8065,12 +8500,11 @@
 14307,14307,Modélisation des systèmes énergétiques,2019-2020
 14308,14308,Modélisation des systèmes énergétiques,2018-2019
 14309,14309,Modélisation des systèmes énergétiques,2017-2018
+14310,14310,Création musicale et biographie I,2009-2010
 14311,14311,Digital systems modelling,2004-2005
 14312,14312,Financial & managerial accounting,2016-2017
-14313,14313,Financial & managerial accounting,2015-2016
 14314,14314,Financial & managerial accounting,2017-2018
 14315,14315,Financial & managerial accounting,2014-2015
-14316,14316,Financial & managerial accounting,2019-2020
 14317,14317,Financial & managerial accounting,2018-2019
 14318,14318,Financial & managerial accounting,2011-2012
 14319,14319,Financial & managerial accounting,2012-2013
@@ -8117,9 +8551,6 @@
 14376,14376,Information technology and e-business strategy,2008-2009
 14377,14377,Information technology and e-business strategy,2009-2010
 14378,14378,Information technology and e-business strategy,2012-2013
-14379,14379,Information technology and e-business strategy,2013-2014
-14380,14380,Information technology and e-business strategy,2015-2016
-14381,14381,Information technology and e-business strategy,2014-2015
 14398,14398,Real-time networks,2017-2018
 14399,14399,Real-time networks,2016-2017
 14400,14400,Real-time networks,2018-2019
@@ -8143,6 +8574,7 @@
 14418,14418,Tissue engineering,2013-2014
 14419,14419,Tissue engineering,2019-2020
 14420,14420,Tissue engineering,2018-2019
+14422,14422,Droit de la propriété intellectuelle I,2004-2005
 14433,14433,"Droit de l'architecte, approfondissements : la réalisation d'une construction",2013-2014
 14434,14434,"Droit de l'architecte, approfondissements : la réalisation d'une construction",2015-2016
 14435,14435,"Droit de l'architecte, approfondissements : la réalisation d'une construction",2018-2019
@@ -8178,6 +8610,7 @@
 14466,14466,Foundations and tools for processing tree structured data,2019-2020
 14467,14467,Foundations and tools for processing tree structured data,2018-2019
 14468,14468,Topics in Molecular and Cellular Neuroscience,2006-2007
+14469,14469,Topics in Molecular and Cellular Neuroscience,2007-2008
 14475,14475,Ville africaine: introduction à la planification,2014-2015
 14476,14476,Ville africaine: introduction à la planification,2018-2019
 14477,14477,Ville africaine: introduction à la planification,2015-2016
@@ -8203,7 +8636,6 @@
 14537,14537,Water quality modeling,2007-2008
 14538,14538,Water quality modeling,2014-2015
 14539,14539,Water quality modeling,2018-2019
-14540,14540,Innovation & entrepreneurship in engineering,2019-2020
 14546,14546,Frontiers in nanosciences II,2008-2009
 14547,14547,Frontiers in nanosciences II,2007-2008
 14548,14548,Catalysis for energy storage,2019-2020
@@ -8253,12 +8685,9 @@
 14612,14612,Human computer interaction,2012-2013
 14613,14613,Strategic marketing & technology commercialization,2017-2018
 14614,14614,Strategic marketing & technology commercialization,2018-2019
-14616,14616,Strategic marketing & technology commercialization,2015-2016
 14617,14617,Strategic marketing & technology commercialization,2014-2015
 14618,14618,Strategic marketing & technology commercialization,2012-2013
 14619,14619,Strategic marketing & technology commercialization,2010-2011
-14620,14620,Strategic marketing & technology commercialization,2011-2012
-14621,14621,Strategic marketing & technology commercialization,2019-2020
 14622,14622,Strategic marketing & technology commercialization,2013-2014
 14623,14623,Optique quantique I,2011-2012
 14624,14624,Optique quantique I,2010-2011
@@ -8278,6 +8707,8 @@
 14649,14649,Programming concepts in scientific computing,2016-2017
 14650,14650,Programming concepts in scientific computing,2015-2016
 14651,14651,Programming concepts in scientific computing,2012-2013
+14652,14652,Communication et culture médiatique I,2009-2010
+14653,14653,Communication et culture médiatique I,2010-2011
 14665,14665,Electrodynamique et Optique quantique,2013-2014
 14666,14666,Electrodynamique et Optique quantique,2012-2013
 14686,14686,Théorie et critique du projet MA2 (Eliet & Lehmann),2014-2015
@@ -8319,15 +8750,15 @@
 14769,14769,Génie électrochimique,2010-2011
 14770,14770,Neuroengineering of vision,2018-2019
 14771,14771,Neuroengineering of vision,2019-2020
+14772,14772,Communication et culture médiatique II,2009-2010
+14773,14773,Communication et culture médiatique II,2010-2011
 14774,14774,Project in chemical engineering or in biotechnology,2005-2006
-14799,14799,Théorie et critique du projet MA1 (Lamunière),2010-2011
 14800,14800,Théorie et critique du projet MA1 (Lamunière),2011-2012
 14801,14801,Théorie et critique du projet MA1 (Lamunière),2015-2016
 14802,14802,Théorie et critique du projet MA1 (Lamunière),2017-2018
 14803,14803,Théorie et critique du projet MA1 (Lamunière),2012-2013
 14804,14804,Théorie et critique du projet MA1 (Lamunière),2016-2017
 14805,14805,Théorie et critique du projet MA1 (Lamunière),2013-2014
-14806,14806,Théorie et critique du projet MA1 (Lamunière),2014-2015
 14807,14807,Géométrie hyperbolique et groupes discrets,2016-2017
 14808,14808,Opérateurs de Fredholm,2007-2008
 14812,14812,Optique quantique,2004-2005
@@ -8359,6 +8790,7 @@
 14848,14848,Instability and turbulence,2011-2012
 14849,14849,Instability and turbulence,2010-2011
 14850,14850,Instability and turbulence,2014-2015
+14861,14861,"Science, technologie et société : dynamiques de l'innovation I",2011-2012
 14878,14878,Frontiers in nanosciences I,2007-2008
 14879,14879,Frontiers in nanosciences I,2008-2009
 14892,14892,Advanced topics in software analysis and verification,2008-2009
@@ -8379,13 +8811,11 @@
 14907,14907,"Physique des surfaces, interfaces et clusters II",2006-2007
 14908,14908,"Physique des surfaces, interfaces et clusters II",2005-2006
 14909,14909,"Physique des surfaces, interfaces et clusters II",2004-2005
-14911,14911,Advanced satellite positioning,2015-2016
 14912,14912,Advanced satellite positioning,2012-2013
 14913,14913,Advanced satellite positioning,2018-2019
 14914,14914,Advanced satellite positioning,2019-2020
 14915,14915,Advanced satellite positioning,2013-2014
 14916,14916,Advanced satellite positioning,2014-2015
-14917,14917,Advanced satellite positioning,2017-2018
 14918,14918,Déformation et rupture TP,2005-2006
 14919,14919,Déformation et rupture TP,2004-2005
 14920,14920,Déformation et rupture TP,2007-2008
@@ -8398,16 +8828,14 @@
 14927,14927,Systèmes hybrides II,2006-2007
 14928,14928,Systèmes hybrides II,2005-2006
 14929,14929,Systèmes hybrides II,2007-2008
+14948,14948,Foundation of digital humanities,2017-2018
 14949,14949,Foundation of digital humanities,2018-2019
 14950,14950,Foundation of digital humanities,2019-2020
 14951,14951,"Modelling problem solving, computing and visualisation I",2015-2016
 14952,14952,"Modelling problem solving, computing and visualisation I",2018-2019
 14953,14953,"Modelling problem solving, computing and visualisation I",2016-2017
 14954,14954,"Modelling problem solving, computing and visualisation I",2017-2018
-14970,14970,Information technology & digital strategy,2018-2019
-14971,14971,Information technology & digital strategy,2019-2020
-14972,14972,Information technology & digital strategy,2016-2017
-14973,14973,Information technology & digital strategy,2017-2018
+14969,14969,Droit de la propriété intellectuelle II,2004-2005
 14974,14974,Real-time programming,2006-2007
 14977,14977,Real-time programming,2007-2008
 14978,14978,Chemical dynamics,2007-2008
@@ -8498,6 +8926,8 @@
 15143,15143,L'ingénieur dans R&D industriels II,2005-2006
 15144,15144,L'ingénieur dans R&D industriels II,2006-2007
 15145,15145,L'ingénieur dans R&D industriels II,2007-2008
+15146,15146,Enjeux socio-politiques du numérique I,2018-2019
+15147,15147,Enjeux socio-politiques du numérique I,2017-2018
 15148,15148,Introduction to econometrics,2018-2019
 15149,15149,Introduction to econometrics,2019-2020
 15150,15150,Introduction to econometrics,2017-2018
@@ -8510,7 +8940,6 @@
 15170,15170,Enquêtes et méthodes quantitatives,2005-2006
 15171,15171,Enquêtes et méthodes quantitatives,2006-2007
 15172,15172,Enquêtes et méthodes quantitatives,2008-2009
-15173,15173,Enquêtes et méthodes quantitatives,2014-2015
 15174,15174,Enquêtes et méthodes quantitatives,2010-2011
 15175,15175,Enquêtes et méthodes quantitatives,2012-2013
 15176,15176,Nanomaterials for chemical engineering application,2019-2020
@@ -8562,6 +8991,8 @@
 15230,15230,Architecture autonome,2018-2019
 15231,15231,Architecture autonome,2017-2018
 15232,15232,Architecture autonome,2014-2015
+15241,15241,L'image de la nature : du paysage au développement durable II,2010-2011
+15242,15242,L'image de la nature : du paysage au développement durable II,2011-2012
 15243,15243,Méthodes optiques de mesure,2006-2007
 15244,15244,Méthodes optiques de mesure,2011-2012
 15245,15245,Méthodes optiques de mesure,2010-2011
@@ -8571,6 +9002,7 @@
 15251,15251,Parallel computing and pthreads,2011-2012
 15252,15252,Parallel computing and pthreads,2012-2013
 15253,15253,Parallel computing and pthreads,2014-2015
+15276,15276,Méthodes de séparation,2004-2005
 15277,15277,Bio-ingénierie des cours d'eau et des systèmes naturels I,2004-2005
 15278,15278,Bio-ingénierie des cours d'eau et des systèmes naturels I,2005-2006
 15279,15279,Thermodynamics of comfort in buildings,2018-2019
@@ -8587,16 +9019,21 @@
 15295,15295,Energétique du bâtiment,2005-2006
 15296,15296,Energétique du bâtiment,2006-2007
 15297,15297,Energétique du bâtiment,2004-2005
-15308,15308,Principles of finance,2018-2019
-15309,15309,Principles of finance,2017-2018
-15310,15310,Principles of finance,2015-2016
-15311,15311,Principles of finance,2014-2015
 15312,15312,Principles of finance,2012-2013
 15313,15313,Principles of finance,2013-2014
 15314,15314,Principles of finance,2019-2020
-15315,15315,Principles of finance,2016-2017
 15316,15316,Algebraic K-theory,2010-2011
+15317,15317,Understanding modern Switzerland I,2017-2018
+15318,15318,Understanding modern Switzerland I,2015-2016
+15319,15319,Understanding modern Switzerland I,2018-2019
+15320,15320,Understanding modern Switzerland I,2019-2020
 15321,15321,Understanding modern Switzerland I,2014-2015
+15322,15322,Understanding modern Switzerland I,2016-2017
+15323,15323,Understanding modern Switzerland I,2011-2012
+15324,15324,Understanding modern Switzerland I,2010-2011
+15325,15325,Understanding modern Switzerland I,2009-2010
+15326,15326,Understanding modern Switzerland I,2013-2014
+15327,15327,Understanding modern Switzerland I,2012-2013
 15328,15328,Media security,2018-2019
 15329,15329,Media security,2009-2010
 15330,15330,Media security,2015-2016
@@ -8607,11 +9044,15 @@
 15335,15335,Media security,2011-2012
 15336,15336,Media security,2017-2018
 15337,15337,Media security,2010-2011
+15338,15338,Media security,2019-2020
 15339,15339,Media security,2014-2015
 15340,15340,Media security,2006-2007
 15341,15341,Media security,2007-2008
 15342,15342,Media security,2005-2006
 15343,15343,Media security,2004-2005
+15345,15345,Digital humanities I,2015-2016
+15346,15346,Digital humanities I,2014-2015
+15347,15347,Digital humanities I,2013-2014
 15352,15352,Modélisation des procédés d'élaboration et des structures,2005-2006
 15353,15353,Modélisation des procédés d'élaboration et des structures,2006-2007
 15354,15354,Modélisation des procédés d'élaboration et des structures,2009-2010
@@ -8694,7 +9135,6 @@
 15477,15477,"D. Thinking: real problems, human-focused solutions",2017-2018
 15478,15478,"D. Thinking: real problems, human-focused solutions",2019-2020
 15479,15479,"D. Thinking: real problems, human-focused solutions",2018-2019
-15480,15480,"D. Thinking: real problems, human-focused solutions",2015-2016
 15481,15481,"D. Thinking: real problems, human-focused solutions",2016-2017
 15482,15482,Advanced techniques for the risk analysis of technical systems,2019-2020
 15484,15484,Advanced topics in nuclear reactor materials,2014-2015
@@ -8710,11 +9150,6 @@
 15494,15494,Physique des nouveaux matériaux,2016-2017
 15498,15498,Physique des nouveaux matériaux,2014-2015
 15499,15499,Physique des nouveaux matériaux,2015-2016
-15501,15501,Innovation & management in the energy industry,2014-2015
-15502,15502,Innovation & management in the energy industry,2010-2011
-15503,15503,Innovation & management in the energy industry,2011-2012
-15504,15504,Innovation & management in the energy industry,2013-2014
-15505,15505,Innovation & management in the energy industry,2012-2013
 15506,15506,Cavitation et phénomènes d'interface,2011-2012
 15507,15507,Cavitation et phénomènes d'interface,2010-2011
 15508,15508,Cavitation et phénomènes d'interface,2018-2019
@@ -8763,7 +9198,6 @@
 15574,15574,Optoelectronics,2007-2008
 15576,15576,Géométrie intégrale,2009-2010
 15577,15577,Géométrie intégrale,2005-2006
-15578,15578,Strategic marketing management,2005-2006
 15579,15579,Strategic marketing management,2004-2005
 15580,15580,Optique et information quantique,2012-2013
 15582,15582,Commande non linéaire,2016-2017
@@ -8779,7 +9213,6 @@
 15592,15592,Commande non linéaire,2013-2014
 15593,15593,Biomechanics of the cardiovascular system,2018-2019
 15594,15594,Biomechanics of the cardiovascular system,2010-2011
-15595,15595,Biomechanics of the cardiovascular system,2011-2012
 15596,15596,Biomechanics of the cardiovascular system,2013-2014
 15597,15597,Biomechanics of the cardiovascular system,2019-2020
 15598,15598,Biomechanics of the cardiovascular system,2009-2010
@@ -8799,11 +9232,9 @@
 15622,15622,Théorie et critique du projet MA1 (Weinand),2016-2017
 15623,15623,Théorie et critique du projet MA1 (Weinand),2012-2013
 15624,15624,Théorie et critique du projet MA1 (Weinand),2019-2020
-15625,15625,Théorie et critique du projet MA1 (Weinand),2015-2016
 15626,15626,Théorie et critique du projet MA1 (Weinand),2008-2009
 15627,15627,Théorie et critique du projet MA1 (Weinand),2013-2014
 15628,15628,Biological modeling of neural networks,2015-2016
-15629,15629,Biological modeling of neural networks,2017-2018
 15630,15630,Biological modeling of neural networks,2018-2019
 15631,15631,Biological modeling of neural networks,2014-2015
 15632,15632,Biological modeling of neural networks,2013-2014
@@ -8835,12 +9266,10 @@
 15673,15673,"Structures en béton, chapitres choisis",2013-2014
 15680,15680,Optimal decision making,2017-2018
 15681,15681,Optimal decision making,2015-2016
-15682,15682,Optimal decision making,2016-2017
 15683,15683,Optimal decision making,2018-2019
 15684,15684,Optimal decision making,2019-2020
 15689,15689,Combinatorial statistics,2019-2020
 15690,15690,Combinatorial statistics,2018-2019
-15691,15691,Théorie et critique du projet MA2 (FAR),2019-2020
 15703,15703,Optimal decision analysis,2011-2012
 15704,15704,Optimal decision analysis,2012-2013
 15705,15705,Optimal decision analysis,2010-2011
@@ -8871,10 +9300,8 @@
 15736,15736,Optimisation des réseaux,2006-2007
 15737,15737,Optimisation des réseaux,2007-2008
 15738,15738,Théorie et critique du projet MA1 (Zuber),2015-2016
-15739,15739,Biomatériaux,2011-2012
 15740,15740,Biomatériaux,2008-2009
 15741,15741,Biomatériaux,2007-2008
-15742,15742,Biomatériaux,2010-2011
 15743,15743,Biomatériaux,2012-2013
 15744,15744,Biomatériaux,2009-2010
 15745,15745,Biomatériaux,2006-2007
@@ -8883,35 +9310,20 @@
 15748,15748,Commande embarquée de moteurs,2018-2019
 15749,15749,Commande embarquée de moteurs,2019-2020
 15750,15750,Commande embarquée de moteurs,2017-2018
-15751,15751,Corporate governance,2011-2012
 15752,15752,Corporate governance,2006-2007
-15753,15753,Corporate governance,2008-2009
 15754,15754,Corporate governance,2007-2008
-15755,15755,Corporate governance,2012-2013
 15756,15756,Corporate governance,2018-2019
 15757,15757,Corporate governance,2004-2005
-15758,15758,Corporate governance,2010-2011
 15759,15759,Corporate governance,2005-2006
-15760,15760,Corporate governance,2014-2015
-15761,15761,Corporate governance,2013-2014
-15762,15762,Corporate governance,2016-2017
-15763,15763,Corporate governance,2017-2018
-15764,15764,Corporate governance,2015-2016
 15775,15775,Courbes algébriques,2007-2008
 15776,15776,Project in communication for SV,2011-2012
 15777,15777,Géométrie des groupes,2005-2006
 15778,15778,Negotiation techniques,2016-2017
-15779,15779,Negotiation techniques,2010-2011
-15780,15780,Negotiation techniques,2011-2012
-15781,15781,Negotiation techniques,2015-2016
-15782,15782,Negotiation techniques,2014-2015
-15783,15783,Negotiation techniques,2013-2014
 15784,15784,Negotiation techniques,2012-2013
-15785,15785,Negotiation techniques,2019-2020
-15786,15786,Negotiation techniques,2018-2019
 15787,15787,Negotiation techniques,2017-2018
 15788,15788,Géométrie riemannienne,2007-2008
 15790,15790,Géométrie riemannienne,2008-2009
+15791,15791,Géométrie riemannienne,2010-2011
 15792,15792,Optique intégrée,2004-2005
 15793,15793,Optique intégrée,2005-2006
 15794,15794,Optique intégrée,2006-2007
@@ -8947,6 +9359,7 @@
 15849,15849,Traitement des eaux usées urbaines I,2004-2005
 15850,15850,Advanced strategies for the synthesis of bioactive compounds,2007-2008
 15851,15851,D. Thinking: human-centered solutions to real world problems,2014-2015
+15852,15852,"Science, technologie et société : dynamiques de l'innovation II",2011-2012
 15853,15853,Déformation et rupture à haute température,2007-2008
 15854,15854,Déformation et rupture à haute température,2006-2007
 15855,15855,Déformation et rupture à haute température,2004-2005
@@ -8990,10 +9403,10 @@
 15918,15918,"Modelling problem solving, computing and visualisation II",2018-2019
 15919,15919,"Modelling problem solving, computing and visualisation II",2015-2016
 15920,15920,Time series,2017-2018
+15923,15923,Time series,2019-2020
 15924,15924,Time series,2008-2009
 15927,15927,Time series,2009-2010
 15928,15928,Time series,2010-2011
-15929,15929,Time series,2012-2013
 15932,15932,"Droit de l'architecte I, introduction : contrats et concours",2008-2009
 15933,15933,"Droit de l'architecte I, introduction : contrats et concours",2007-2008
 15934,15934,"Droit de l'architecte I, introduction : contrats et concours",2005-2006
@@ -9055,8 +9468,10 @@
 16008,16008,Mechanical product design and development,2016-2017
 16009,16009,Mechanical product design and development,2018-2019
 16010,16010,Mechanical product design and development,2017-2018
+16012,16012,Digital humanities II,2015-2016
+16013,16013,Digital humanities II,2013-2014
+16014,16014,Digital humanities II,2014-2015
 16015,16015,First aid - art and architecture after 1940,2015-2016
-16016,16016,Principles of finance (jusqu'en 2012),2010-2011
 16017,16017,Principles of finance (jusqu'en 2012),2011-2012
 16018,16018,Understanding advanced molecular simulation,2018-2019
 16019,16019,Understanding advanced molecular simulation,2019-2020
@@ -9084,7 +9499,6 @@
 16067,16067,Therapeutic Applications of Particle Physics: Principles and Practice of Particle Therapy,2019-2020
 16074,16074,Architecture and existing buildings,2016-2017
 16075,16075,Théorie et critique du projet MA1 (Barros Falcâo de Campos),2015-2016
-16091,16091,Entrepreneurship (Spring),2008-2009
 16092,16092,Entrepreneurship (Spring),2007-2008
 16093,16093,Entrepreneurship (Spring),2009-2010
 16094,16094,Gödel and recursivity,2014-2015
