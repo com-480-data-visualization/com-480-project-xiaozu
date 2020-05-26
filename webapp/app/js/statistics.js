@@ -25,7 +25,7 @@ function getHostUrl() {
     }
     return host
   }
-  
+
 
 function fill_course_prof(course_name) {
     var course_prof_url = getHostUrl() + "/course_prof/?course_name=" + course_name;
@@ -48,7 +48,75 @@ function fill_course_prof(course_name) {
 }
 
 
+function fill_stud_by_major(course_name, course_year){
+  // Set text content
+  var html_year = "in " + course_year
+  if(html_year.indexOf("cumulative") != -1)
+    html_year = ""
+  var div = document.getElementById("stud_by_major");
+  div.innerHTML = `
+  <h3> Number of enrolled students by major ${html_year} <h3>
+  `;
 
+  // Set margin and dimesion
+  var margin = {top: 10, right: 30, bottom: 30, left: 60};
+  var width = 460 - margin.left - margin.right;
+  var height = 400 - margin.top - margin.bottom;
+
+  var svg = d3.select("#stud_by_major")
+    .append("svg")
+      .attr("width", width + margin.left + margin.right)
+      .attr("height", height + margin.top + margin.bottom)
+    .append("g")
+      .attr("transform",
+            "translate(" + margin.left + "," + margin.top + ")");
+
+  var stud_by_year_url = getHostUrl() + "/course_stats/?course_name=" + course_name + "&year=" + course_year + "&major=1";
+  d3.json(stud_by_year_url, function (error, data) {
+    if (error) throw error;
+    console.log(data)
+
+    var max_enrolled = get_max_nr_students(data);
+    console.log(max_enrolled)
+
+    // Sorting majors form themost common (on top)
+    data.sort(function(a,b) {
+      return b.nr_students - a.nr_students;
+    })
+
+    // Add X axis
+    var x = d3.scaleLinear()
+      .domain([0, max_enrolled])
+      .range([ 0, width]);
+    svg.append("g")
+      .attr("transform", "translate(0," + height + ")")
+      .call(d3.axisBottom(x))
+      .selectAll("text")
+        .attr("transform", "translate(-10,0)rotate(-45)")
+        .style("text-anchor", "end");
+
+    // Y axis
+    var y = d3.scaleBand()
+      .range([ 0, height ])
+      .domain(data.map(function(d) { return d.major; }))
+      .padding(.1);
+    svg.append("g")
+      .call(d3.axisLeft(y))
+
+    //Bars
+    svg.selectAll("myRect")
+      .data(data)
+      .enter()
+      .append("rect")
+      .attr("x", x(0) )
+      .attr("y", function(d) { return y(d.major); })
+      .attr("width", function(d) { return x(d.nr_students); })
+      .attr("height", y.bandwidth() )
+      .attr("fill", "#2699b2")
+
+  });
+
+}
 
 function fill_stud_by_year(course_name) {
     // Set text content

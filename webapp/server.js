@@ -17,6 +17,7 @@ course_network = require("./models/course_network")
 course_enroll = require("./models/course_enroll")
 course_prof = require("./models/course_prof")
 course_stats = require("./models/course_stats")
+course_short_name = require("./models/course_short_name")
 
 var app = express();
 const router = express.Router();
@@ -117,11 +118,15 @@ router.route("/course_network").get(function(req, res) {
   if (!req.query.student) {
     res.send("Please specify the student (e.g., url/course_network/?student=Rocchi%20Eleonora")
   }
-  students.aggregate([
+  students.aggregate([ // Q0
     { $match : { student_name : req.query.student } },
+
+    // Join with enrollment tableover student_id
     { $lookup: { from: "enrollment", localField: "student_id", foreignField: "student_id", as: "from_course"} },
     { $unwind: "$from_course"},
     { $replaceRoot: { newRoot: { $mergeObjects: "$from_course" } }},
+
+    // Join with course table over course_id
     { $lookup: { from: "course", localField: "course_id", foreignField: "course_id", as: "course" }},
     { $unwind: "$course"},
     { $replaceRoot: { newRoot: { $mergeObjects: "$course" } }},
@@ -131,29 +136,50 @@ router.route("/course_network").get(function(req, res) {
         if (err) {
           res.send(err);
         } else {
+          // Obtain a list of course names in which we are interested
           course_lst = course_names.map(d => d.course_name)
-          course_network.aggregate([
+
+          // Check for all connection involving those nodes
+          course_network.aggregate([ // Q1
             { $match : { course_name_x : {$in: course_lst}} }
           ]).exec(
               function(err, result) {
                 if (err) {
                   res.send(err);
                 } else {
+
+                  // Init empty list of nodes
                   nodes = []
+
+                  // Populate the nodes with the results for the original nodes of Q0
                   map_nodes_to_idx = {}
                   for(i in course_lst){
                     nodes[nodes.length] = {"id": i, "name": course_lst[i], "taken": 1}
                     map_nodes_to_idx[course_lst[i]] = i
                   }
 
+                  // Init empty list of links
                   links = []
+
+                  // Populate the links
                   for(i in result){
+
+                    course_name_x = result[i].course_name_x
                     course_name_y = result[i].course_name_y
+
+                    // Populate the nodes with the results for the neighbours nodes (Q1)
                     if(!course_lst.includes(course_name_y)){
                       course_lst[course_lst.length] =  course_name_y
-                      nodes[nodes.length] = {"id": course_lst.length, "name": course_name_y, "taken": 0}
+                      nodes[nodes.length] = {"id": course_lst.length, "name": course_name_y, "taken": 0,
+                                              "short_name": result[i].short_name_y}
                       map_nodes_to_idx[course_name_y] = course_lst.length
                     }
+
+                    var idx = course_lst.indexOf(course_name_x)
+                    nodes[idx] = {"id": nodes[idx].id, "name": nodes[idx].name, "taken": nodes[idx].taken,
+                                    "short_name": result[i].short_name_x}
+
+                    // Adding the connection to the list of edges of the network
                     links[links.length] = {
                       "source": map_nodes_to_idx[result[i].course_name_x],
                       "target": map_nodes_to_idx[course_name_y],
@@ -275,17 +301,53 @@ router.route("/course_prof").get(function(req, res) {
 });
 
 router.route("/course_stats").get(function(req, res) {
-  if (!req.query.course_name) {
-    res.send("Please specify the numbers of courses (e.g., url/course_stats/?course_name=Machine%20learning)")
+  if (!req.query.course_name || !req.query.year || !req.query.major) {
+    res.send("Please specify the numbers of courses (e.g., url/course_stats/?course_name=Machine%20learning&year=cumulative&major=0)")
   }
-  course_stats.find({"course_name" : req.query.course_name}, function(err, result) {
-    if (err) {
-      res.send(err);
-    } else {
-      res.send(result);
+  if(req.query.year == "cumulative"){
+    if(req.query.major == "0"){
+      course_stats.aggregate([
+        { $match: { course_name : req.query.course_name } },
+        { $group: { _id : "$year", nr_students: { $sum: "$nr_students" } } },
+        { $addFields : {"year": "$_id"} }
+      ]).exec(function(err, result) {
+        if (err) {
+          res.send(err);
+        } else {
+          res.send(result);
+        }
+      })
     }
-  });
-
+    else {
+      course_stats.aggregate([
+        { $match: { course_name : req.query.course_name } },
+        // adding number of students over different semester (MA1, MA2 etc.)
+        { $group: { _id : "$section", nr_students: { $sum: "$nr_students" } } },
+        { $addFields : {"major": "$_id"} }
+      ]).exec(function(err, result) {
+        if (err) {
+          res.send(err);
+        } else {
+          res.send(result);
+        }
+      });
+    }
+  }
+  else {
+    course_stats.aggregate([
+      { $match: { course_name : req.query.course_name } },
+      { $match: { year : req.query.year } },
+      // adding number of students over different semester (MA1, MA2 etc.)
+      { $group: { _id : "$section", nr_students: { $sum: "$nr_students" } } },
+      { $addFields : {"major": "$_id"} }
+    ]).exec(function(err, result) {
+      if (err) {
+        res.send(err);
+      } else {
+        res.send(result);
+      }
+    });
+  }
 });
 
 
