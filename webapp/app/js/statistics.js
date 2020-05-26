@@ -72,6 +72,23 @@ function fill_stud_by_major(course_name, course_year, id){
       .attr("transform",
             "translate(" + margin.left + "," + margin.top + ")");
 
+    // Initialize the X axis
+  var x = d3.scaleLinear()
+    .domain([0, 1000])
+    .range([ 0, width ]);
+  var xAxis = svg.append("g")
+    .attr("transform", "translate(0," + height + ")")
+    .selectAll("text")
+      .attr("transform", "translate(-10,0)rotate(-45)")
+      .style("text-anchor", "end");
+
+  // Initialize the Y axis
+  var y = d3.scaleBand()
+    .range([ 0, height])
+    .padding(0.1);
+  var yAxis = svg.append("g")
+    .attr("class", "myYaxis")
+
   var stud_by_year_url = getHostUrl() + "/course_stats/?course_name=" + course_name + "&year=" + course_year + "&major=1";
   d3.json(stud_by_year_url, function (error, data) {
     if (error) throw error;
@@ -174,7 +191,7 @@ function fill_stud_by_year(course_name, id) {
       .attr("stroke", "#2699b2")
       .attr("stroke-width", 1.5)
       .attr("d", d3.line()
-        .x(function(d) {console.log(x(parseInt(d.year.substring(0,4)))); return x(parseInt(d.year.substring(0,4))) })
+        .x(function(d) { return x(parseInt(d.year.substring(0,4))) })
         .y(function(d) { return y(parseInt(d.nr_students)) })
       )
 
@@ -213,21 +230,21 @@ function fill_stud_by_year(course_name, id) {
         .attr("cy", function(d) { return y(parseInt(d.nr_students)) } )
         .attr("r", 5)
         .attr("fill", "#2699b2")
-        .attr("stroke","black")
+        .attr("stroke", false)
         .attr("stroke-width", 0.25)
         .on("mouseover", mouseover)
         .on("mousemove", mousemove)
         .on("mouseleave", mouseleave)
         .on("click", function(d) { // Selecting deselecting and updating bars
           if(!d3.select(this).classed("selected")){
-            d3.selectAll(".selected").classed("selected", false).attr("stroke","black");
+            d3.selectAll(".selected").classed("selected", false).attr("stroke", false);
             d3.select(this).classed("selected", true);
             d3.select(this).transition().attr("stroke","red").attr("stroke-width", 2);
             fill_stud_by_major(course_name, d.year)
           }
           else {
             d3.select(this).classed("selected", false);
-            d3.select(this).transition().attr("stroke","black").attr("stroke-width", 0.25);
+            d3.select(this).transition().attr("stroke", false).attr("stroke-width", 0.25);
             fill_stud_by_major(course_name, "cumulative")
           }
         })
