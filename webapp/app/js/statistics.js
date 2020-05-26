@@ -15,22 +15,22 @@ function getHostUrl() {
   return host
 }
 
-function fill_course_prof(course_name) {
+function fill_course_prof(course_name, id) {
   var course_prof_url = getHostUrl() + "/course_prof/?course_name=" + course_name;
   d3.json(course_prof_url, function (error, res) { //TODO: should return just a json
     if (error) throw error;
-    var div = document.getElementById("course_prof");
+    var div = document.getElementById(id+"-course_prof");
     var lst_prof = res[0].prof.substring(1, res[0].prof.length - 1).split(",")
-    var prof_str = ""
-    var padding = 1
+    var prof_str = "";
+    var padding = 1;
     for (var i = 0; i < lst_prof.length; i++) {
       prof_str = prof_str.concat(lst_prof[i].substring(padding, lst_prof[i].length - 1))
       if(i < lst_prof.length - 1)
-        prof_str = prof_str.concat(", ")
-      padding = 2
+        prof_str = prof_str.concat(", ");
+      padding = 2;
     }
     div.innerHTML = `
-    <h3> Prof: <i> ${prof_str} </i>  <h3>
+    <p> Prof: <i> ${prof_str} </i>  <p>
     `;
 
   });
@@ -49,14 +49,14 @@ function get_max_nr_students(data) {
   return max_enrolled;
 }
 
-function fill_stud_by_major(course_name, course_year){
+function fill_stud_by_major(course_name, course_year, id){
   // Set text content
   var html_year = "in " + course_year
   if(html_year.indexOf("cumulative") != -1)
     html_year = ""
-  var div = document.getElementById("stud_by_major");
+  var div = document.getElementById(id+"-stud_by_major");
   div.innerHTML = `
-  <h3> Number of enrolled students by major ${html_year} <h3>
+  <p> Number of enrolled students by major ${html_year} <p>
   `;
 
   // Set margin and dimesion
@@ -64,7 +64,7 @@ function fill_stud_by_major(course_name, course_year){
   var width = 460 - margin.left - margin.right;
   var height = 400 - margin.top - margin.bottom;
 
-  var svg = d3.select("#stud_by_major")
+  var svg = d3.select(`#${id}-stud_by_major`)
     .append("svg")
       .attr("width", width + margin.left + margin.right)
       .attr("height", height + margin.top + margin.bottom)
@@ -119,11 +119,11 @@ function fill_stud_by_major(course_name, course_year){
 
 }
 
-function fill_stud_by_year(course_name) {
+function fill_stud_by_year(course_name, id) {
   // Set text content
-  var div = document.getElementById("stud_by_year");
+  var div = document.getElementById(id+"-stud_by_year");
   div.innerHTML = `
-  <h3> Number of enrolled students by year<h3>
+  <p> Number of enrolled students by year<p>
   `;
 
   // Set margin and dimesion
@@ -131,7 +131,7 @@ function fill_stud_by_year(course_name) {
   width = 460 - margin.left - margin.right,
   height = 400 - margin.top - margin.bottom;
 
-  var svg = d3.select("#stud_by_year")
+  var svg = d3.select(`#${id}-stud_by_year`)
     .append("svg")
       .attr("width", width + margin.left + margin.right)
       .attr("height", height + margin.top + margin.bottom)
@@ -178,7 +178,7 @@ function fill_stud_by_year(course_name) {
         .y(function(d) { return y(parseInt(d.nr_students)) })
       )
 
-      var tooltip = d3.select("#stud_by_year")
+      var tooltip = d3.select(`#${id}-stud_by_year`)
         .append("div")
         .style("opacity", 0)
         .attr("class", "tooltip")
@@ -216,9 +216,9 @@ function fill_stud_by_year(course_name) {
         .on("mouseover", mouseover)
         .on("mousemove", mousemove)
         .on("mouseleave", mouseleave)
-        .on("click", function(d) {fill_stud_by_major(course_name, d.year)})
+        .on("click", function(d) {fill_stud_by_major(course_name, d.year, id)})
 
-    fill_stud_by_major(course_name, "cumulative")
+    fill_stud_by_major(course_name, "cumulative", id)
 
 
 
@@ -230,16 +230,13 @@ export function generate_statistics(d, id) {
     var div = document.getElementById(id);
     div.innerHTML = `
                       <div class="showStatistics" style="width: 18rem;">
-                        <h1> ${d.name} </h1>
-                        <br>
-                        <div id="course_prof"></div>
-                        <br>
-                        <div id="stud_by_year"></div>
-                        <br>
-                        <div id="stud_by_major"></div>
+                        <h5> ${d.name} </h5>
+                        <div id="${id}-course_prof"></div>
+                        <div id="${id}-stud_by_year"></div>
+                        <div id="${id}-stud_by_major"></div>
                       </div>
                       `;
 
-    fill_course_prof(d.name);
-    fill_stud_by_year(d.name);
+    fill_course_prof(d.name, id);
+    fill_stud_by_year(d.name, id);
 }
