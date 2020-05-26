@@ -160,7 +160,7 @@ $('.typeahead').typeahead({
                         .style("opacity", 0)
                     }
 
-                    var radius = 20
+                    var radius = 5
                     var svg = d3.select("#course_network")
                         .append("svg")
                         //.attr("style", "height: 100%;")
@@ -177,10 +177,14 @@ $('.typeahead').typeahead({
                         .domain(d3.range(10))
                         .range(["#6B9AC4", "#96C9DC"])
 
+                    console.log(graph)
                     var simulation = d3.forceSimulation()
-                        .force("link", d3.forceLink().id(function (d) { return d.id; }).distance(radius * 5))
-                        .force("charge", d3.forceManyBody().strength(-50))
-                        .force("center", d3.forceCenter(width / 2, height / 2));
+                        .force("link", d3.forceLink().id(function (d) { return d.id; }).distance(radius * 15))
+                        .force("x", d3.forceX().strength(0.005))
+                        .force("y", d3.forceY().strength(0.005))
+                        .force("charge", d3.forceManyBody().distanceMax(height/2).strength(-60))
+                        .force("collide", d3.forceCollide(radius).iterations(45))
+                        .force("center", d3.forceCenter(width / 2, height / 2))
 
                     var link = svg.append("g")
                         .attr("class", "links")
@@ -205,10 +209,13 @@ $('.typeahead').typeahead({
                             .on("end", dragended));
 
                     var lables = node.append("text")
-                        .text(function (d) { return d.short_name;})
+                        .text(function (d) { if(!d.short_name) return d.name;
+                          else return "\n" + d.short_name;})
                         .attr('text-anchor', 'middle')
-                        .attr('x', 0)
-                        .attr('y', 0);
+                        .attr('x', radius)
+                        .attr("stroke", "#ffffff")
+                        .attr("stroke-width", 0.25)
+                        .attr('y', radius * 3);
 
                     node.append("title")
                         .text(function (d) { return d.name; });
@@ -240,8 +247,8 @@ $('.typeahead').typeahead({
                             .attr("transform", function (d) {
                                 return "translate(" + d.x + "," + d.y + ")";
                             })
-                            .attr("cx", function(d) { return d.x = Math.max(2 * radius, Math.min(width - radius, d.x)); })
-                            .attr("cy", function(d) { return d.y = Math.max(2 * radius, Math.min(height - radius, d.y)); });
+                            .attr("cx", function(d) { return d.x = Math.max(8 * radius, Math.min(width - 8 * radius, d.x)); })
+                            .attr("cy", function(d) { return d.y = Math.max(6 * radius, Math.min(height - 8 * radius, d.y)); });
                     }
 
                     function dragstarted(d) {
