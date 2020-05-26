@@ -1,0 +1,136 @@
+export function generate_statistics(d, id) {
+    var div = document.getElementById(id);
+    div.innerHTML = `
+                      <div class="showStatistics" style="width: 18rem;">
+                        <h1> ${d.name} </h1>
+                        <br>
+                        <div id="course_prof"></div>
+                        <br>
+                        <div id="stud_by_year"></div>
+                      </div>
+                      `;
+
+    fill_course_prof(d.name);
+    fill_stud_by_year(d.name);
+}
+
+function getHostUrl() {
+    var host = window.location.hostname;
+    if (host.indexOf('localhost') > -1) {
+        //is development
+        host = "http://" + host + ":3000";
+    } else {
+        // is production
+        host = "https://" + host;
+    }
+    return host
+  }
+  
+
+function fill_course_prof(course_name) {
+    var course_prof_url = getHostUrl() + "/course_prof/?course_name=" + course_name;
+    d3.json(course_prof_url, function (error, res) { //TODO: should return just a json
+        if (error) throw error;
+        var div = document.getElementById("course_prof");
+        var lst_prof = res[0].prof.substring(1, res[0].prof.length - 1).split(",")
+        var prof_str = ""
+        var padding = 1
+        for (var i = 0; i < lst_prof.length; i++) {
+            prof_str = prof_str.concat(lst_prof[i].substring(padding, lst_prof[i].length - 1))
+            if (i < lst_prof.length - 1)
+                prof_str = prof_str.concat(", ")
+            padding = 2
+        }
+        div.innerHTML = `
+          <h2> <b> Prof: </b> <i> ${prof_str} </i>  <h2>
+          `;
+    });
+}
+
+
+
+
+function fill_stud_by_year(course_name) {
+    // Set text content
+    var div = document.getElementById("stud_by_year");
+    div.innerHTML = `
+        <h2> <b> Number of enrolled students by year</b> <h2>
+        `;
+
+    // Set margin and dimesion
+    var margin = { top: 10, right: 30, bottom: 30, left: 60 },
+        width = 460 - margin.left - margin.right,
+        height = 400 - margin.top - margin.bottom;
+
+    var svg = d3.select("#stud_by_year")
+        .append("svg")
+        .attr("width", width + margin.left + margin.right)
+        .attr("height", height + margin.top + margin.bottom)
+        .append("g")
+        .attr("transform",
+            "translate(" + margin.left + "," + margin.top + ")");
+
+    // Dra the scatter plot
+    var stud_by_year_url = getHostUrl() + "/stud_by_year/?course_name=" + course_name;
+    d3.json(stud_by_year_url, function (error, data) { //TODO: should return just a json
+        if (error) throw error;
+
+        // Get max number of students enrolled
+        var max_enrolled = 10;
+        for (var i = 0; i < data.length; i++) {
+            var nr_students = parseInt(data[i].nr_students)
+            if (nr_students > max_enrolled)
+                max_enrolled = nr_students;
+        }
+        // Set the max to the 110% of the original one to avoid points at the very top of the plot
+        max_enrolled = max_enrolled + Math.trunc(max_enrolled / 10);
+
+        // Sorting by year
+        data.sort(function (a, b) {
+            var year_a = parseInt(a.year.substring(0, 4))
+            var year_b = parseInt(b.year.substring(0, 4))
+            return year_a - year_b;
+        });
+
+
+        var x = d3.scaleTime()
+            .domain(d3.extent(data, function (d) { return parseInt(d.year.substring(0, 4)); }))
+            .range([0, width]);
+        svg.append("g")
+            .attr("transform", "translate(0," + height + ")")
+            .call(d3.axisBottom(x));
+        // Add Y axis
+        var y = d3.scaleLinear()
+            .domain([0, max_enrolled])
+            .range([height, 0]);
+        svg.append("g")
+            .call(d3.axisLeft(y));
+        // Add the line
+        svg.append("path")
+            .datum(data)
+            .attr("fill", "none")
+            .attr("stroke", "#69b3a2")
+            .attr("stroke-width", 1.5)
+            .attr("d", d3.line()
+                .x(function (d) { return x(parseInt(d.year.substring(0, 4))) })
+                .y(function (d) { return y(parseInt(d.nr_students)) })
+            )
+
+        // Add the points
+        svg
+            .append("g")
+            .selectAll("dot")
+            .data(data)
+            .enter()
+            .append("circle")
+            .attr("cx", function (d) { return x(parseInt(d.year.substring(0, 4))) })
+            .attr("cy", function (d) { return y(parseInt(d.nr_students)) })
+            .attr("r", 5)
+            .attr("fill", "#69b3a2")
+
+
+
+
+
+    });
+}
