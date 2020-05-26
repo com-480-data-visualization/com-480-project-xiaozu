@@ -213,12 +213,27 @@ function fill_stud_by_year(course_name, id) {
         .attr("cy", function(d) { return y(parseInt(d.nr_students)) } )
         .attr("r", 5)
         .attr("fill", "#2699b2")
+        .attr("stroke","black")
+        .attr("stroke-width", 0.25)
         .on("mouseover", mouseover)
         .on("mousemove", mousemove)
         .on("mouseleave", mouseleave)
-        .on("click", function(d) {fill_stud_by_major(course_name, d.year, id)})
+        .on("click", function(d) { // Selecting deselecting and updating bars
+          if(!d3.select(this).classed("selected")){
+            d3.selectAll(".selected").classed("selected", false).attr("stroke","black");
+            d3.select(this).classed("selected", true);
+            d3.select(this).transition().attr("stroke","red").attr("stroke-width", 2);
+            fill_stud_by_major(course_name, d.year)
+          }
+          else {
+            d3.select(this).classed("selected", false);
+            d3.select(this).transition().attr("stroke","black").attr("stroke-width", 0.25);
+            fill_stud_by_major(course_name, "cumulative")
+          }
+        })
 
-    fill_stud_by_major(course_name, "cumulative", id)
+
+    fill_stud_by_major(course_name, "cumulative")
 
 
 
