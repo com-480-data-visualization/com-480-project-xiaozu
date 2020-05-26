@@ -38,6 +38,7 @@ body{
 
 #network-graph{
   z-index: 0;
+  overflow: auto;
 }
 
 #personal-data-network{
@@ -80,20 +81,20 @@ body{
  }
 
 .buttons-icon-lock{
-  background-color:transparent; 
-  padding: 0; 
-  vertical-align: unset; 
-  line-height: 0; 
-  color: #1993AE; 
+  background-color:transparent;
+  padding: 0;
+  vertical-align: unset;
+  line-height: 0;
+  color: #1993AE;
   font-size: 15px;
 }
 
 #slide-courses{
-  background-color:transparent; 
-  padding: 0; 
-  vertical-align: unset; 
-  line-height: 0; 
-  color: #1993AE; 
+  background-color:transparent;
+  padding: 0;
+  vertical-align: unset;
+  line-height: 0;
+  color: #1993AE;
   font-size: 15px;
   visibility: hidden;
 }
@@ -106,10 +107,10 @@ body{
     -o-border-radius: 3px 3px 0 0;
     border-radius: 3px 3px 0 0;
     background: #89a3a8;
-    border-left: 1px solid #333333!important; 
-    border-top: 1px solid #333333!important; 
-    border-right: 1px solid #333333!important; 
-    border-bottom: 1px solid #333333!important; 
+    border-left: 1px solid #333333!important;
+    border-top: 1px solid #333333!important;
+    border-right: 1px solid #333333!important;
+    border-bottom: 1px solid #333333!important;
     font-weight: bold;
     color: #fff;
     margin-left: 2px;
@@ -121,15 +122,15 @@ body{
 }
 
 .nav-link.active{
-    background-color: #e6e9e9 !important; 
-    border-color: #333333 #333333 #e6e9e9 !important; 
-    font-weight:700 !important; 
+    background-color: #e6e9e9 !important;
+    border-color: #333333 #333333 #e6e9e9 !important;
+    font-weight:700 !important;
     margin-left: 2px;
     margin-right: 2px;
 }
 
 .card-header{
-    border-bottom: 1px solid #333333 !important; 
+    border-bottom: 1px solid #333333 !important;
 }
 
 #content-tab{

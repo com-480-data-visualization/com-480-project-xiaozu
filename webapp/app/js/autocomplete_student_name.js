@@ -120,8 +120,8 @@ $('.typeahead').typeahead({
                     if (error) throw error;
 
                     // TODO: @Roele1955 change the size to adapt to the box size
-                    var width = 500;//$(window).width();
-                    var height = 500; //$(window).height();
+                    var width = 800;//$(window).width();
+                    var height = 800; //$(window).height();
 
                     document.getElementById("course_network").innerHTML = "";
 
@@ -144,7 +144,7 @@ $('.typeahead').typeahead({
 
                     var simulation = d3.forceSimulation()
                         .force("link", d3.forceLink().id(function (d) { return d.id; }).distance(radius * 5))
-                        .force("charge", d3.forceManyBody())
+                        .force("charge", d3.forceManyBody().strength(-50))
                         .force("center", d3.forceCenter(width / 2, height / 2));
 
                     var link = svg.append("g")
@@ -246,7 +246,7 @@ $('.typeahead').typeahead({
                     }
 
                     function showStatistics(d) {
-                      generate_statistics(d, "statistics-network");                  
+                      generate_statistics(d, "statistics-network");
                     }
 
                     hideLoaderBadges();
