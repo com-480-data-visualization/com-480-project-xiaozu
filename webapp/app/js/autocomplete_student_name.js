@@ -119,11 +119,45 @@ $('.typeahead').typeahead({
                     d3.json(personal_url, function (error, graph) {
                     if (error) throw error;
 
-                    // TODO: @Roele1955 change the size to adapt to the box size
                     var width = 800;//$(window).width();
                     var height = 800; //$(window).height();
 
                     document.getElementById("course_network").innerHTML = "";
+
+                    // -1- Create a tooltip div that is hidden by default:
+                    var tooltip = d3.select("#course_network")
+                      .append("div")
+                      .style("opacity", 0)
+                      .attr("class", "tooltip")
+                      .style("background-color", "black")
+                      .style("border-radius", "5px")
+                      .style("padding", "10px")
+                      .style("color", "white")
+                      .style("position", "absolute")
+
+
+                    // -2- Create 3 functions to show / update (when mouse move but stay on same circle) / hide the tooltip
+                    var showTooltip = function (d) {
+                      tooltip
+                        .transition()
+                        .duration(200)
+                      tooltip
+                        .style("opacity", 1)
+                        .html([d.name])
+                        .style("left", d.x +"px")
+                        .style("top", d.y + "px")
+                    }
+                    var moveTooltip = function (d) {
+                      tooltip
+                      .style("left", (d.x  + d.vx) + "px")
+                      .style("top", (d.y + d.vy) + "px")
+                    }
+                    var hideTooltip = function (d) {
+                      tooltip
+                        .transition()
+                        .duration(200)
+                        .style("opacity", 0)
+                    }
 
                     var radius = 20
                     var svg = d3.select("#course_network")
@@ -211,8 +245,12 @@ $('.typeahead').typeahead({
                         .links(graph.links);
 
 
-                    // Registering hovering
+                    // Registering click to show statistics for the course/node
                     node.on("click", showStatistics)
+                    // -3- Trigger the functions for hovering
+                      .on("mouseover", showTooltip)
+                      .on("mousemove", moveTooltip)
+                      .on("mouseleave", hideTooltip)
 
 
                     function ticked() {
@@ -226,6 +264,8 @@ $('.typeahead').typeahead({
                             .attr("transform", function (d) {
                                 return "translate(" + d.x + "," + d.y + ")";
                             })
+                            .attr("cx", function(d) { return d.x = Math.max(2 * radius, Math.min(width - radius, d.x)); })
+                            .attr("cy", function(d) { return d.y = Math.max(2 * radius, Math.min(height - radius, d.y)); });
                     }
 
                     function dragstarted(d) {

@@ -17,7 +17,6 @@ course_network = require("./models/course_network")
 course_enroll = require("./models/course_enroll")
 course_prof = require("./models/course_prof")
 course_stats = require("./models/course_stats")
-course_short_name = require("./models/course_short_name")
 
 var app = express();
 const router = express.Router();
