@@ -1,19 +1,3 @@
-export function generate_statistics(d, id) {
-    var div = document.getElementById(id);
-    div.innerHTML = `
-                      <div class="showStatistics" style="width: 18rem;">
-                        <h1> ${d.name} </h1>
-                        <br>
-                        <div id="course_prof"></div>
-                        <br>
-                        <div id="stud_by_year"></div>
-                      </div>
-                      `;
-
-    fill_course_prof(d.name);
-    fill_stud_by_year(d.name);
-}
-
 /********************************************************
 *****************  COURSE STATISTIC *********************
 ********************************************************/
@@ -161,7 +145,7 @@ function fill_stud_by_year(course_name) {
     if (error) throw error;
 
     // Get max number of students enrolled
-    max_enrolled = get_max_nr_students(data)
+    var max_enrolled = get_max_nr_students(data)
 
     // Sorting by year
     var sort_by_year = function (a,b){
@@ -239,4 +223,23 @@ function fill_stud_by_year(course_name) {
 
 
   });
+}
+
+
+export function generate_statistics(d, id) {
+    var div = document.getElementById(id);
+    div.innerHTML = `
+                      <div class="showStatistics" style="width: 18rem;">
+                        <h1> ${d.name} </h1>
+                        <br>
+                        <div id="course_prof"></div>
+                        <br>
+                        <div id="stud_by_year"></div>
+                        <br>
+                        <div id="stud_by_major"></div>
+                      </div>
+                      `;
+
+    fill_course_prof(d.name);
+    fill_stud_by_year(d.name);
 }
