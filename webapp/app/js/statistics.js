@@ -174,7 +174,7 @@ function fill_stud_by_year(course_name, id) {
       .attr("stroke", "#2699b2")
       .attr("stroke-width", 1.5)
       .attr("d", d3.line()
-        .x(function(d) { return x(parseInt(d.year.substring(0,4))) })
+        .x(function(d) {console.log(x(parseInt(d.year.substring(0,4)))); return x(parseInt(d.year.substring(0,4))) })
         .y(function(d) { return y(parseInt(d.nr_students)) })
       )
 
