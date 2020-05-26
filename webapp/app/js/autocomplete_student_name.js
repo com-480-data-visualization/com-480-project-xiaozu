@@ -204,32 +204,7 @@ $('.typeahead').typeahead({
                             .on("end", dragended));
 
                     var lables = node.append("text")
-                        .text(function (d) {
-                            var words = d.name.split(" ");
-                            var str = "";
-                            const lower_separator = new Set(['of', 'du', 'de', 'dans', 'le', 'pour', 'la', 'les', 'the', 'for', 'to']);
-                            const union_separator = new Set(['and', 'et']);
-                            const numbers = new Set(['I', 'II', 'III', 'IV', 'V', 'VI', 'VII', '1', '2', '3', '4', '5', '6', '7']);
-                            if(words.length == 1) {
-                              return [words[0][0].toUpperCase().concat(words[0].substring(1, Math.min(3, words[0].length)))];
-                            }
-                            for (var i = 0; i < words.length; i++) {
-                              if(lower_separator.has(words[i])) {
-                                str = str.concat(words[i][0]);
-                              }
-                              else if(union_separator.has(words[i])){
-                                str = str.concat("\&");
-                              }
-                              else if(numbers.has(words[i])){
-                                str = str.concat(" ").concat(words[i]);
-                              }
-                              else{
-                                str = str.concat(words[i][0].toUpperCase());
-                              }
-
-                            }
-                            return [str]
-                        })
+                        .text(function (d) { return d.short_name;})
                         .attr('text-anchor', 'middle')
                         .attr('x', 0)
                         .attr('y', 0);
