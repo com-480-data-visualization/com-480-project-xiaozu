@@ -56,44 +56,57 @@
                   href="https://isa.epfl.ch/">IS-ACADEMIA</a>.</div>
             </div>
 
-            <div class="tab-pane mt-3 mb-3" id="explore" role="tabpanel" aria-labelledby="history-tab">
-              <div id="loading1"></div>
-              <div class="col-8">
-                <input type="text" class="js-range-slider" name="my_range" value="" />
-              </div>
-              <div class="row" style="height: 100%;">
-                <div>
-                  <input type="checkbox" class="checkbox" value="AR" checked><label>AR</label>
-                  <input type="checkbox" class="checkbox" value="BIO" checked><label>BIO</label>
-                  <input type="checkbox" class="checkbox" value="BIOENG" checked><label>BIOENG</label>
-                  <input type="checkbox" class="checkbox" value="COM" checked><label>COM</label>
-                  <input type="checkbox" class="checkbox" value="CS" checked><label>CS</label>
-                  <input type="checkbox" class="checkbox" value="EE" checked><label>EE</label>
-                  <input type="checkbox" class="checkbox" value="FIN" checked><label>FIN</label>
-                  <input type="checkbox" class="checkbox" value="MICRO" checked><label>MICRO</label>
-                  <input type="checkbox" class="checkbox" value="CIVIL" checked><label>CIVIL</label>
-                  <input type="checkbox" class="checkbox" value="ME" checked><label>ME</label>
-                  <input type="checkbox" class="checkbox" value="ChE" checked><label>ChE</label>
-                  <input type="checkbox" class="checkbox" value="CH" checked><label>CH</label>
-                  <input type="checkbox" class="checkbox" value="MSE" checked><label>MSE</label>
-                  <input type="checkbox" class="checkbox" value="MATH" checked><label>MATH</label>
-                  <input type="checkbox" class="checkbox" value="ENV" checked><label>ENV</label>
-                  <input type="checkbox" class="checkbox" value="MGT" checked><label>MGT</label>
-                  <input type="checkbox" class="checkbox" value="PHYS" checked><label>PHYS</label>
-                  <input type="checkbox" class="checkbox" value="ENG" checked><label>ENG</label>
-                  <input type="checkbox" class="checkbox" value="HUM" checked><label>HUM</label>
-                  <!-- <input type="checkbox" class="checkbox" value="" checked><label>CS</label> -->
+            <div class="tab-pane" id="explore" role="tabpanel" aria-labelledby="history-tab">
+
+              <div class="container-fluid graph-container" id="bubble-container">
+                <div class="row" style="height: 100%">
+                  <div class="col-8 graph" id="bubble-graph">
+                    <input type="text" class="js-range-slider" name="my_range" value="" />
+                    <div id="bubbleCourses"></div>
+                  </div>
+                  <div class="col-4" style="background-color: #ffffff;">
+                      <div class="col personal-data" id="personal-data-bubble">
+                        <div class="dropdown">
+                          <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown"><span class="dropdown-text"> Select Options</span>
+                          <span class="caret"></span></button>
+                          <ul class="dropdown-menu">
+                            <li><input type="checkbox" class="selectall" /><span class="select-text"> Select</span> All</label></li>
+                            <li class="divider"></li>
+                            <li><label><input name='options[]' type="checkbox" class="option justone checkbox" value='AR'/>Architecture (AR)</label></li>
+                            <li><label><input name='options[]' type="checkbox" class="option justone checkbox" value='BIO'/>BIO</label></li>
+                            <li><label><input name='options[]' type="checkbox" class="option justone checkbox" value='BIOENG'/>BIOENG</label></li>
+                            <li><label><input name='options[]' type="checkbox" class="option justone checkbox" value='COM'/>COM</label></li>
+                            <li><label><input name='options[]' type="checkbox" class="option justone checkbox" value='CS'/>Computer Science (CS)</label></li>
+                            <li><label><input name='options[]' type="checkbox" class="option justone checkbox" value='EE'/>EE</label></li>
+                            <li><label><input name='options[]' type="checkbox" class="option justone checkbox" value='FIN'/>FIN</label></li>
+                            <li><label><input name='options[]' type="checkbox" class="option justone checkbox" value='MICRO'/>MICRO</label></li>
+                            <li><label><input name='options[]' type="checkbox" class="option justone checkbox" value='CIVIL'/>CIVIL</label></li>
+                            <li><label><input name='options[]' type="checkbox" class="option justone checkbox" value='ChE'/>ChE</label></li>
+                            <li><label><input name='options[]' type="checkbox" class="option justone checkbox" value='ME'/>ME</label></li>
+                            <li><label><input name='options[]' type="checkbox" class="option justone checkbox" value='CH'/>CH</label></li>
+                            <li><label><input name='options[]' type="checkbox" class="option justone checkbox" value='MSE'/>MSE</label></li>
+                            <li><label><input name='options[]' type="checkbox" class="option justone checkbox" value='MATH'/>MATH</label></li>
+                            <li><label><input name='options[]' type="checkbox" class="option justone checkbox" value='ENV'/>ENV</label></li>
+                            <li><label><input name='options[]' type="checkbox" class="option justone checkbox" value='MGT'/>MGT</label></li>
+                            <li><label><input name='options[]' type="checkbox" class="option justone checkbox" value='PHYS'/>PHYS</label></li>
+                            <li><label><input name='options[]' type="checkbox" class="option justone checkbox" value='ENG'/>ENG</label></li>
+                            <li><label><input name='options[]' type="checkbox" class="option justone checkbox" value='HUM'/>HUM</label></li>
+                          </ul>
+                        </div>
+                        </div>
+                      <div class="w-100"></div>
+                      <div class="col statistics" id="showStatisticCourse">
+                        Click on a course's node to discover more information about that course.
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div class="col-8" id="bubbleCourses"></div>
-                <!-- <div id="bubbleLegend" class="legend-container"></div> -->
-                <div class="col-4" id="showStatisticCourse"></div>
-              </div>
             </div>
 
             <div class="tab-pane" id="personal" role="tabpanel" aria-labelledby="deals-tab">
-              <div class="container-fluid" id="network-container">
+              <div class="container-fluid graph-container" id="network-container">
                 <div class="row" style="height: 100%">
-                  <div class="col-8" id="network-graph">
+                  <div class="col-8 graph" id="network-graph">
                     <div id="course_network"></div>
                     <div id="selected-courses" class="col-12" style="margin-left: 100%;">
                       <h6>Courses that you have done:</h6>
@@ -102,7 +115,7 @@
                     </div>
                   </div>
                   <div class="col-4" style="background-color: #ffffff;">
-                      <div class="col" id="personal-data-network">
+                      <div class="col personal-data" id="personal-data-network">
                         <input id="studentNameAutocomplete" type="text" class="typeahead tt-query" autocomplete="off"
                           spellcheck="false">
                           <div class="w-100"></div>
@@ -112,7 +125,7 @@
                           </div>
                         </div>
                       <div class="w-100"></div>
-                      <div class="col" id="statistics-network">
+                      <div class="col statistics" id="statistics-network">
                         Click on a course's node to discover more information about that course.
                       </div>
                     </div>

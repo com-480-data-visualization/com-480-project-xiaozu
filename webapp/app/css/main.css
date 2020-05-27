@@ -27,7 +27,7 @@ body{
     margin-top: 5px;
 }
 
-#network-container{
+.graph-container{
   height: calc(70vh - 2px);
   padding: 0px;
 
@@ -36,12 +36,18 @@ body{
   overflow-x:hidden;
 }
 
-#network-graph{
+
+#bubble-graph{
   z-index: 0;
   overflow: auto;
 }
 
-#personal-data-network{
+.graph{
+  z-index: 0;
+  overflow: auto;
+}
+
+.personal-data{
   border-bottom: 1px #1993AE solid;
   border-left: 1px #1993AE solid;
   padding: 10px;
@@ -51,7 +57,7 @@ body{
   text-align: center;
 }
 
-#statistics-network{
+.statistics{
   background-color: #FFFFFF;
   border-left: 1px #1993AE solid;
   z-index: 2;
@@ -59,6 +65,7 @@ body{
   overflow: auto;
   font-size: 10px;
 }
+
 
 
 #selected-courses {
@@ -280,11 +287,6 @@ body{
     padding-left: 15px;
   }
 
-  #explore{
-    padding-right: 15px;
-    padding-left: 15px;
-  }
-
   .btn.focus, .btn:focus {
     outline: 0;
     box-shadow: unset;
@@ -292,4 +294,10 @@ body{
 
 .twitter-typeahead{
   display: unset !important;
+}
+
+.dropdown-menu{
+  min-height:190px; 
+  overflow-y :auto; 
+  overflow-x:hidden;
 }
