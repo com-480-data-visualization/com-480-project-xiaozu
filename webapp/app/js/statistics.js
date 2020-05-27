@@ -624,13 +624,13 @@ export function generate_statistics(d, id, network_stats=true) {
     div.innerHTML = `
                     <div class="showStatistics" style="width: 18rem;">
                     <h5> ${d.name}
-
+                    ${network_stats ? `
                     <button type="button" class="btn buttons-icon-lock"
                             value="${d.name}" id="lock_button">
-                            <i class="fas ${locked_courses.indexOf(d.name) == -1 && network_stats? "fa-lock-open": "fa-lock"}"></i>
+                            <i class="fas ${locked_courses.indexOf(d.name) == -1? "fa-lock-open": "fa-lock"}"></i>
 
                     </button>
-
+                    ` : ""}
                     </h5>
 
                     <div id="${id}-course_prof"></div>
