@@ -87,11 +87,6 @@ var aaaa = 0
           .style("transition", "opacity 5s ease-in-out;")
       }
 
-      var svg = d3.select("#bubbleCourses").append("svg")
-          .attr("width", width)
-          .attr("height", height)
-        .append('g')
-          .attr('transform', 'translate(' + width / 2 + ',' + height / 2 + ')')
 
       if(aaaa==0){
         data.forEach(function(d){
@@ -133,7 +128,29 @@ var aaaa = 0
       if (!clusters[i] || (r > clusters[i].radius)) clusters[i] = d;
       return d;
     };
+    function drag(simulation){
+      function dragstarted(d) {
+        if (!d3.event.active) simulation.alphaTarget(0.3).restart();
+        d.fx = d.x;
+        d.fy = d.y;
+      }
 
+      function dragged(d) {
+        d.fx = d3.event.x;
+        d.fy = d3.event.y;
+      }
+
+      function dragended(d) {
+        if (!d3.event.active) simulation.alphaTarget(0);
+        d.fx = null;
+        d.fy = null;
+      }
+
+      return d3.drag()
+          .on("start", dragstarted)
+          .on("drag", dragged)
+          .on("end", dragended);
+    }
     var forceCollide = d3.forceCollide()
         .radius(function(d) { return d.radius/nodes.length*650 + 1.5;})
         .iterations(1);
@@ -156,6 +173,11 @@ var aaaa = 0
         .force("x", d3.forceX().strength(.3))
         .force("y", d3.forceY().strength(.9))
         .on("tick", tick);
+        var svg = d3.select("#bubbleCourses").append("svg")
+            .attr("width", width)
+            .attr("height", height)
+          .append('g')
+            .attr('transform', 'translate(' + width / 2 + ',' + height / 2 + ')')
 
   var circle = svg.selectAll("circle")
       .data(nodes)
@@ -179,6 +201,7 @@ var aaaa = 0
           d3.select(this).transition().attr("stroke", false).attr("stroke-width", 0.25);
           generate_statistics(d, "showStatisticCourse");
         }})
+        .call(drag(force))
 
   var a = new Array(20);
   for(var i =0;i<a.length;i++){
