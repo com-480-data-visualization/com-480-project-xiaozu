@@ -51,17 +51,11 @@ function get_max_nr_students(data) {
 }
 
 function fill_stud_by_major(course_name, course_year, id){
-  // Set text content
-  var html_year = "in " + course_year
-  if(html_year.indexOf("cumulative") != -1)
-    html_year = "over all years"
   var div = document.getElementById(id+"-stud_by_major");
-  div.innerHTML = `
-  <p> Most represented majors ${html_year} <p>
-  `;
+  div.innerHTML = "";
 
   // Set margin and dimesion
-  var margin = {top: 10, right: 40, bottom: 30, left: 40};
+  var margin = {top: 20, right: 40, bottom: 30, left: 200};
   var width = 300 - margin.left - margin.right;
   var height = 200 - margin.top - margin.bottom;
 
@@ -81,7 +75,8 @@ function fill_stud_by_major(course_name, course_year, id){
     .attr("transform", "translate(0," + height + ")")
     .selectAll("text")
       .attr("transform", "translate(-10,0)rotate(-45)")
-      .style("text-anchor", "end");
+      .style("text-anchor", "start")
+      .style("font-size", "5px");
 
   // Initialize the Y axis
   var y = d3.scaleBand()
@@ -95,18 +90,42 @@ function fill_stud_by_major(course_name, course_year, id){
     if (error) throw error;
 
     if(data.length < 1){
-      var div = document.getElementById(id+"-stud_by_major");
-      div.innerHTML = "";
       return;
     }
 
-    var max_enrolled = get_max_nr_students(data);
+    // Set text content
+    var html_year = "in " + course_year
+    if(html_year.indexOf("cumulative") != -1)
+      html_year = "over all years"
+
+    svg.append("text")
+        .attr("x", 10 - margin.left)
+        .attr("y", 0 - (margin.top - 10))
+        .attr("text-anchor", "right")
+        .style("font-size", "12px")
+        .style("font-family", "sans-serif")
+        .text("Most represented majors " + html_year);
+
 
     // Sorting majors form themost common (on top)
     data.sort(function(a,b) {
       return b.nr_students - a.nr_students;
     })
 
+    if(data.length > 5){
+      var top_5 = []
+      for(var i = 0; i < 5; i++)
+        top_5[top_5.length] = data[i]
+      data = top_5
+    }
+
+    var max_enrolled = get_max_nr_students(data);
+
+    for(var i = 0; i < data.length; i++){
+      if(data[i].major && data[i].major.length > 30){
+        data[i].major = data[i].major.substring(0,27) + "...";
+      }
+    }
     // Update the X axis
     x.domain([0, d3.max(data, function(d) { return d.nr_students }) ]);
     xAxis.call(d3.axisBottom(x))
@@ -131,7 +150,6 @@ function fill_stud_by_major(course_name, course_year, id){
         .attr("height", y.bandwidth() )
         .attr("fill", "#2699b2")
 
-
     // If less group in the new dataset, I delete the ones not in use anymore
     u
       .exit()
@@ -142,16 +160,11 @@ function fill_stud_by_major(course_name, course_year, id){
 }
 
 function fill_stud_by_year(course_name, id) {
-  // Set text content
-  var div = document.getElementById(id+"-stud_by_year");
-  div.innerHTML = `
-  <p> Number of enrolled students by year</p>
-  `;
 
   // Set margin and dimesion
-  var margin = {top: 10, right: 40, bottom: 70, left: 40},
+  var margin = {top: 40, right: 40, bottom: 70, left: 40},
   width = 300 - margin.left - margin.right,
-  height = 200 - margin.top - margin.bottom;
+  height = 250 - margin.top - margin.bottom;
 
   var svg = d3.select(`#${id}-stud_by_year`)
     .append("svg")
@@ -167,10 +180,16 @@ function fill_stud_by_year(course_name, id) {
     if (error) throw error;
 
     if (data.length < 1) {
-      var div = document.getElementById(id+"-stud_by_year");
-      div.innerHTML = "Not enough informations for this course to be able to show statistics."
       return;
     }
+
+    svg.append("text")
+        .attr("x", 0)
+        .attr("y", 0 - (margin.top - 10))
+        .attr("text-anchor", "right")
+        .style("font-size", "12px")
+        .style("font-family", "sans-serif")
+        .text("Number of enrolled students by year");
 
     // Get max number of students enrolled
     var max_enrolled = get_max_nr_students(data)
@@ -241,7 +260,7 @@ function fill_stud_by_year(course_name, id) {
         .append("div")
         .style("opacity", 0)
         .attr("class", "tooltip")
-        .style("position", "absolute")
+        .style("position", "fixed")
         .style("background-color", "black")
         .style("border-radius", "5px")
         .style("padding", "10px")
@@ -250,16 +269,19 @@ function fill_stud_by_year(course_name, id) {
       var mouseover = function(d) {
         tooltip
           .style("opacity", 1)
+          .style("left", d3.event.pageX + "px")
+          .style("top", d3.event.pageY + "px")
       }
       var mousemove = function(d) {
         tooltip
           .html( "" + d.nr_students + " students")
-          .style("left", (d3.mouse(this)[0]) + "px")
-          .style("top", (d3.mouse(this)[1]) + "px")
+          .style("left", d3.event.pageX + "px")
+          .style("top", d3.event.pageY + "px")
       }
       var mouseleave = function(d) {
         tooltip
           .style("opacity", 0)
+          .style("transition", "opacity 5s ease-in-out;")
       }
 
     // Add the points

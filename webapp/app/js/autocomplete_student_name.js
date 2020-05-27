@@ -134,7 +134,7 @@ $('.typeahead').typeahead({
                       .style("border-radius", "5px")
                       .style("padding", "10px")
                       .style("color", "white")
-                      .style("position", "absolute")
+                      .style("position", "fixed")
 
 
                     // -2- Create 3 functions to show / update (when mouse move but stay on same circle) / hide the tooltip
@@ -145,13 +145,13 @@ $('.typeahead').typeahead({
                       tooltip
                         .style("opacity", 1)
                         .html([d.name])
-                        .style("left", d.x +"px")
-                        .style("top", d.y + "px")
+                        .style("left", (d3.event.pageX  + radius * 2) +"px")
+                        .style("top",  (d3.event.pageY  + radius * 2) + "px")
                     }
                     var moveTooltip = function (d) {
                       tooltip
-                      .style("left", (d.x  + d.vx) + "px")
-                      .style("top", (d.y + d.vy) + "px")
+                      .style("left",  (d3.event.pageX  + radius * 2) + "px")
+                      .style("top",  (d3.event.pageY  + radius * 2) + "px")
                     }
                     var hideTooltip = function (d) {
                       tooltip
