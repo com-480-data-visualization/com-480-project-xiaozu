@@ -1,6 +1,7 @@
-import { generate_statistics } from "./statistics.js";
 import { section_colors } from "./section_colors.js";
 import { all_sections } from "./section_colors.js";
+import { removeCourse } from "./statistics.js";
+import { generate_statistics  } from "./statistics.js";
 
 $.get('app/students.txt',{},function(content){
 
@@ -20,21 +21,6 @@ function showLoader2() {
     $('#loading2').css("visibility", "visible");
 }
 
-function removeCourse(e){
-    var course = e.getAttribute("value"); // TODO: name of the course for information
-    var icon = e.children[0];
-
-
-    if(icon.classList.contains("fa-lock-open")){ // course is removed and need to be readded
-        icon.classList.remove("fa-lock-open");
-        icon.classList.add("fa-lock");
-        e.style.color = "#1993AE"; // hide tag
-    } else {
-        icon.classList.remove("fa-lock");
-        icon.classList.add("fa-lock-open");
-        e.style.color = "gray"; // hide tag
-    }
-}
 
 /********************************************************
 *****************  COURSE STATISTIC *********************

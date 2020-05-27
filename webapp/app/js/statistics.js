@@ -1,3 +1,21 @@
+
+export function removeCourse(e){
+  console.log(e)
+    var course = e.parentNode.value; // TODO: name of the course for information
+    var icon = e;
+    console.log(course, icon)
+
+    if(icon.classList.contains("fa-lock-open")){ // course is removed and need to be readded
+        icon.classList.remove("fa-lock-open");
+        icon.classList.add("fa-lock");
+        e.style.color = "#1993AE"; // hide tag
+    } else {
+        icon.classList.remove("fa-lock");
+        icon.classList.add("fa-lock-open");
+        e.style.color = "gray"; // hide tag
+    }
+}
+
 /********************************************************
 *****************  COURSE STATISTIC *********************
 ********************************************************/
@@ -324,12 +342,26 @@ export function generate_statistics(d, id) {
     var div = document.getElementById(id);
     div.innerHTML = `
                     <div class="showStatistics" style="width: 18rem;">
-                    <h5> ${d.name} </h5>
+                    <h5> ${d.name}
+
+                    <button type="button" class="btn buttons-icon-lock"
+                            value="${d.name}" id="lock_button">
+                            <i class="fas fa-lock"></i>
+                    </button>
+
+                    </h5>
+
                     <div id="${id}-course_prof"></div>
                     <div id="${id}-stud_by_year"></div>
                     <br>
                     <div id="${id}-stud_by_major"></div>
                       `;
+
+    var lockButton = document.getElementById("lock_button");
+
+    lockButton.addEventListener("click", function(event) {
+      removeCourse(event.target);
+    });
 
     fill_course_prof(d.name, id);
     fill_stud_by_year(d.name, id);
