@@ -14,9 +14,12 @@ courses = require("./models/course")
 teachers = require("./models/teacher")
 jaccard = require("./models/jaccard")
 course_network = require("./models/course_network")
+
 course_enroll = require("./models/course_enroll")
 course_prof = require("./models/course_prof")
 course_stats = require("./models/course_stats")
+section = require("./models/course_bubble")
+
 
 var app = express();
 const router = express.Router();
@@ -35,7 +38,6 @@ app.use(
 app.use('/app', express.static(__dirname + '/app'));
 
 app.use("/", router);
-
 
 // HANDLERS (e.g. GET, POST requests)
 app.get('/', (req, res) => {
@@ -186,7 +188,6 @@ router.route("/course_network").get(function(req, res) {
                     };
                   }
                   res.send({ "nodes": nodes, "links": links})
-
                 }
               }
           );
@@ -203,7 +204,6 @@ router.route("/courses").get(function(req, res) {
   if (!req.query.student) {
     res.send("Please specify the numbers of courses (e.g., url/courses/?student=Rocchi%20Eleonora")
   }
-
   // select students set from course name
   students.aggregate([
     { $match : { student_name : req.query.student } },
@@ -220,60 +220,33 @@ router.route("/courses").get(function(req, res) {
           res.send(err);
         } else {
           res.send(result)
-
         }
       }
   );
 });
 
-router.route("/courses_enroll").get(function(req, res) {
+router.route("/course_bubble").get(function(req, res) {
   // just for us --> to generate file for db
-
+  // if (!req.query.section || !req.query.year) {
+  //   res.send("Please specify the numbers of courses and the academic year (e.g., url/top_courses/?max=5&year=2008-2009)")
+  // }
   // from 2015 - 2020 extract:
   // 2014-2015, 2015-2016, 2016-2017, 2017-2018, 2018-2019, 2019-2020, 2020-2021
   var list_years = [];
   for (var i = 2004; i <= 2020; i++) {
     list_years.push(i.toString());
   }
-
-  // 1. group e assegnare un count ad ogni enrollment, poi 2. join con courses e dopo di che
+  // if (!req.query.section) {
+  //   res.send("Please specify the section")}
+  // }  // 1. group e assegnare un count ad ogni enrollment, poi 2. join con courses e dopo di che
   // 3. filter by year e ordinare tutto a seconda del count trovato prima e dopo
   // fare limit (#maxcourses)
-
   //TODO: check names and delete the smallest one in case of repetition of same name!
-  enrollments.aggregate([
-    {
-    $group: { // group by
-            _id: "$course_id",
-            count: { $sum: 1 }
-      }
-    },
-    { // join and pick just element of correct year
-      $lookup: {
-          from: "course", // collection name in db
-          localField: "_id",
-          foreignField: "course_id",
-          as: "courses_detail"
-      }
-    },
-    {
-      $replaceRoot: { newRoot: { $mergeObjects: [ { $arrayElemAt: [ "$courses_detail", 0 ] }, "$$ROOT" ] } }
-   },
-   { $project: { courses_detail: 0 } },
-    { // filter by date (some data have space etc)
-      $match: {
-        $expr: {
-
-          $or: [
-            {$in: [{$arrayElemAt:[{ $split: ["$year", "-"] }, 0]}, list_years]},
-            {$in: [{$arrayElemAt:[{ $split: ["$year", "-"] }, 1]}, list_years]}
-          ]
-      }
-     }
-    },
+  section.aggregate([
+     // { $match : {  section : req.query.section }},
+    { $match: { year: req.query.year } },
   ]
-)
-  .exec(
+).exec(
       function(err, result) {
         if (err) {
           res.send(err);
@@ -357,7 +330,6 @@ router.route("/top_courses").get(function(req, res) {
   }
   top_N_courses = +req.query.max;
   ay = req.query.year
-
   // 1. group e assegnare un count ad ogni enrollment, poi 2. join con courses e dopo di che
   // 3. filter by year e ordinare tutto a seconda del count trovato prima e dopo
   // fare limit (#maxcourses)
