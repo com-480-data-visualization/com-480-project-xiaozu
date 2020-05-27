@@ -1,4 +1,6 @@
 import { generate_statistics } from "./statistics.js";
+import { section_colors } from "./section_colors.js";
+import { all_sections } from "./section_colors.js";
 
 $.get('app/students.txt',{},function(content){
 
@@ -174,8 +176,8 @@ $('.typeahead').typeahead({
 
                     // var color = d3.scaleOrdinal(d3.schemeCategory20);
                     var color = d3.scaleOrdinal()
-                        .domain(d3.range(10))
-                        .range(["#6B9AC4", "#96C9DC"])
+                        .domain(d3.range(20))
+                        .range(section_colors)
 
                     console.log(graph)
                     var simulation = d3.forceSimulation()
@@ -202,7 +204,10 @@ $('.typeahead').typeahead({
 
                     var circle = node.append("circle")
                         .attr("r", radius)
-                        .attr("fill", function (d) { return color(d.taken); })
+                        .attr("fill", function (d) {
+                          if(!d.short_name) return color(20);
+                          return color(all_sections.indexOf(d.short_name.substring(0, d.short_name.indexOf("-"))))
+                        })
                         .call(d3.drag()
                             .on("start", dragstarted)
                             .on("drag", dragged)
