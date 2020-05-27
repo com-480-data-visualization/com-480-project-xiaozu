@@ -36,10 +36,14 @@ body{
   overflow-x:hidden;
 }
 
+#bubbleCourses{
+  height: 55vh;
+}
+
 
 #bubble-graph{
   z-index: 0;
-  overflow: auto;
+  /* overflow: auto; */
 }
 
 .graph{
