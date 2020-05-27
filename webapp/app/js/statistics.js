@@ -19,6 +19,7 @@ function fill_course_prof(course_name, id) {
   var course_prof_url = getHostUrl() + "/course_prof/?course_name=" + course_name;
   d3.json(course_prof_url, function (error, res) { //TODO: should return just a json
     if (error) throw error;
+    if (res.length < 1) return;
     var div = document.getElementById(id+"-course_prof");
     var lst_prof = res[0].prof.substring(1, res[0].prof.length - 1).split(",")
     var prof_str = ""
@@ -56,7 +57,7 @@ function fill_stud_by_major(course_name, course_year, id){
     html_year = "over all years"
   var div = document.getElementById(id+"-stud_by_major");
   div.innerHTML = `
-  <p> Number of enrolled students by major ${html_year} <p>
+  <p> Most represented majors ${html_year} <p>
   `;
 
   // Set margin and dimesion
@@ -92,10 +93,14 @@ function fill_stud_by_major(course_name, course_year, id){
   var stud_by_year_url = getHostUrl() + "/course_stats/?course_name=" + course_name + "&year=" + course_year + "&major=1";
   d3.json(stud_by_year_url, function (error, data) {
     if (error) throw error;
-    console.log(data)
+
+    if(data.length < 1){
+      var div = document.getElementById(id+"-stud_by_major");
+      div.innerHTML = "";
+      return;
+    }
 
     var max_enrolled = get_max_nr_students(data);
-    console.log(max_enrolled)
 
     // Sorting majors form themost common (on top)
     data.sort(function(a,b) {
@@ -161,6 +166,12 @@ function fill_stud_by_year(course_name, id) {
   d3.json(stud_by_year_url, function (error, data) {
     if (error) throw error;
 
+    if (data.length < 1) {
+      var div = document.getElementById(id+"-stud_by_year");
+      div.innerHTML = "Not enough informations for this course to be able to show statistics."
+      return;
+    }
+
     // Get max number of students enrolled
     var max_enrolled = get_max_nr_students(data)
 
@@ -173,6 +184,7 @@ function fill_stud_by_year(course_name, id) {
     data.sort(sort_by_year);
 
     // Domain for x-axis
+    if(data.length < 1) return;
     var min_year = parseInt(data[0].year.substring(0,4))
     var max_year = parseInt(data[data.length - 1].year.substring(0,4))
     var year_lst = []
@@ -243,7 +255,7 @@ function fill_stud_by_year(course_name, id) {
         tooltip
           .html( "" + d.nr_students + " students")
           .style("left", (d3.mouse(this)[0]) + "px")
-          .style("bottom", (d3.mouse(this)[1]) + "px")
+          .style("top", (d3.mouse(this)[1]) + "px")
       }
       var mouseleave = function(d) {
         tooltip
