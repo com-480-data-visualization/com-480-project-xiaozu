@@ -209,7 +209,7 @@ body{
 	line-height: 30px;
 	outline: medium none;
 	padding: 8px 12px;
-	width: 350px;
+	width: 100%;
 }
 .typeahead {
 	background-color: #FFFFFF;
@@ -230,7 +230,7 @@ body{
 	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 	margin-top: 12px;
 	padding: 8px 0;
-  width: 350px;
+  width: 100%;
   text-align: start;
 }
 .tt-suggestion {
@@ -288,4 +288,8 @@ body{
   .btn.focus, .btn:focus {
     outline: 0;
     box-shadow: unset;
+}
+
+.twitter-typeahead{
+  display: unset !important;
 }
