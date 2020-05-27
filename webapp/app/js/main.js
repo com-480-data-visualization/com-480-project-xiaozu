@@ -22,4 +22,7 @@ $('#slide-courses').click(function (e) {
   });
 
 q = d3.queue();
+
+// Keeping track of which courses have been locked
 locked_courses = []
+saved_student_name = ""

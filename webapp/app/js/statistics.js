@@ -16,19 +16,84 @@ function getHostUrl() {
   return host
 }
 
+export function load_side_bar(student_name){
 
-export function course_network(personal_url) {
+  var courses_by_student_url = getHostUrl() + "/courses/?student=" + encodeURI(student_name);
 
+  $.ajax({
+      url: courses_by_student_url, success: function (courses_by_stud) {
+          // show btn
+          $("#slide-courses").css("visibility", "visible");
+
+          // hideLoaderBadges();
+          document.getElementById("coursesbadges").innerHTML = ""; // reset
+
+          // show badges
+          courses_by_stud.forEach((course, idx) => {
+              $("#coursesbadges").append(
+                  `<li style="margin-bottom: 10px;">
+                      <div class="row">
+                          <div class="col-1">
+                              <button type="button" id="small_lock_button_${idx}" class="btn buttons-icon-lock"
+                              value="${course.course_name}">
+                                  <i class="fas ${locked_courses.indexOf(course.course_name) == -1 ? "fa-lock-open": "fa-lock"}"></i>
+                              </button>
+                          </div>
+                          <div class="col-11">
+                              ${course.course_name}
+                          </div>
+                      </div>
+                  </li>`
+                  );
+          });
+          courses_by_stud.forEach((_, idx) => {
+            var lockButton = document.getElementById("small_lock_button_" + idx.toString());
+            lockButton.addEventListener("click", function(event) {
+              removeCourse(event.target);
+            })
+          });
+
+      }
+  });
+
+}
+// Concatenate courses name for the URL
+// We put $ in the middle as we are sure it is not contained in any course name
+function extract_query_courses(course_lst){
+  var str_lst = ""
+  course_lst.forEach(item => {
+    if(item)
+      str_lst = str_lst + "$" + encodeURI(item.replace("&", "%26"));
+  });
+  return str_lst.substring(1, str_lst.length)
+}
+
+
+export function course_network(student_name) {
+    var personal_url = getHostUrl() + "/course_network/";
+    if(student_name != ""){
+      personal_url = personal_url + "?student=" + student_name;
+    }
+    else {
+      personal_url = personal_url + "?courses=" + extract_query_courses(locked_courses);
+      console.log("MAD")
+    }
     console.log(personal_url)
 
     d3.json(personal_url, function (error, graph) {
     if (error) throw error;
 
-    locked_courses = []
-    for(var i = 0; i < graph.nodes.length; i++) {
-      locked_courses[locked_courses.length] = graph.nodes[i].name
+    if(student_name != ""){
+      saved_student_name = student_name;
+      locked_courses = [];
+      graph.nodes.forEach(function(node){
+        if(node.taken == 1){
+          locked_courses[locked_courses.length] = node.name;
+        }
+      })
     }
-    console.log(locked_courses)
+    console.log(student_name)
+    console.log("locked", locked_courses)
 
     var width = 800;//$(window).width();
     var height = 800; //$(window).height();
@@ -87,7 +152,7 @@ export function course_network(personal_url) {
         .domain(d3.range(20))
         .range(section_colors)
 
-    console.log("ciao", graph)
+    console.log("grafo", graph)
     var simulation = d3.forceSimulation()
         .force("link", d3.forceLink().id(function (d) { return d.id; }).distance(radius * 15))
         .force("x", d3.forceX().strength(0.005))
@@ -161,6 +226,11 @@ export function course_network(personal_url) {
       .on("mouseleave", hideTooltip)
 
 
+    if(student_name != "")
+      load_side_bar(student_name);
+    else
+      load_side_bar(saved_student_name);
+
     function ticked() {
         link
             .attr("x1", function (d) { return d.source.x; })
@@ -216,19 +286,24 @@ export function removeCourse(e){
         icon.classList.remove("fa-lock-open");
         icon.classList.add("fa-lock");
         e.style.color = "#1993AE"; // hide tag
-        //locked_courses[locked_courses.length] = course;
+        if(locked_courses.indexOf(course) == -1)
+          locked_courses[locked_courses.length] = course;
     } else {
         icon.classList.remove("fa-lock");
         icon.classList.add("fa-lock-open");
         e.style.color = "gray"; // hide tag
-        // var new_locked_courses = []
-        // for(var i = 0; i < locked_courses.length; i++){
-        //   if(locked_courses[i] != course)
-        //     new_locked_courses[new_locked_courses.length] = locked_courses[i]
-        // }
+
+        if(locked_courses.indexOf(course) != -1){
+          var new_locked_courses = [];
+          locked_courses.forEach(item => {
+            if(item != course)
+              new_locked_courses[new_locked_courses.length] = item;
+          })
+          locked_courses = new_locked_courses;
+        }
     }
-    //console.log("qua", new_locked_courses)
-    course_network(getHostUrl() + "/course_network/?student=" + "Rocchi%20Eleonora")
+    console.log("qua", locked_courses)
+    course_network("")
 }
 
 
@@ -552,7 +627,8 @@ export function generate_statistics(d, id) {
 
                     <button type="button" class="btn buttons-icon-lock"
                             value="${d.name}" id="lock_button">
-                            <i class="fas fa-lock"></i>
+                            <i class="fas ${locked_courses.indexOf(d.name) == -1 ? "fa-lock-open": "fa-lock"}"></i>
+
                     </button>
 
                     </h5>
@@ -565,12 +641,11 @@ export function generate_statistics(d, id) {
 
     fill_course_prof(d.name, id);
     fill_stud_by_year(d.name, id);
-    var lockButton = document.getElementById("lock_button");
 
+    var lockButton = document.getElementById("lock_button");
     lockButton.addEventListener("click", function(event) {
       removeCourse(event.target);
     });
-
 
 
 }

@@ -113,87 +113,96 @@ router.route("/teachers").get(function(req, res) {
   });
 });
 
-router.route("/course_network").get(function(req, res) {
-  // Build the personal graph for a specific student
-  // If student is not specified return an error
-  if (!req.query.student) {
-    res.send("Please specify the student (e.g., url/course_network/?student=Rocchi%20Eleonora")
-  }
-  students.aggregate([ // Q0
-    { $match : { student_name : req.query.student } },
-
-    // Join with enrollment tableover student_id
-    { $lookup: { from: "enrollment", localField: "student_id", foreignField: "student_id", as: "from_course"} },
-    { $unwind: "$from_course"},
-    { $replaceRoot: { newRoot: { $mergeObjects: "$from_course" } }},
-
-    // Join with course table over course_id
-    { $lookup: { from: "course", localField: "course_id", foreignField: "course_id", as: "course" }},
-    { $unwind: "$course"},
-    { $replaceRoot: { newRoot: { $mergeObjects: "$course" } }},
-    { $project : { "course_name": 1 } }
+function query_course_network(course_lst, res) {
+  // Check for all connection involving those nodes
+  course_network.aggregate([ // Q1
+    { $match : { course_name_x : {$in: course_lst}} }
   ]).exec(
-      function(err, course_names) {
+      function(err, result) {
         if (err) {
           res.send(err);
         } else {
-          // Obtain a list of course names in which we are interested
-          course_lst = course_names.map(d => d.course_name)
 
-          // Check for all connection involving those nodes
-          course_network.aggregate([ // Q1
-            { $match : { course_name_x : {$in: course_lst}} }
-          ]).exec(
-              function(err, result) {
-                if (err) {
-                  res.send(err);
-                } else {
+          // Init empty list of nodes
+          nodes = []
 
-                  // Init empty list of nodes
-                  nodes = []
+          // Populate the nodes with the results for the original nodes of Q0
+          map_nodes_to_idx = {}
+          for(i in course_lst){
+            nodes[nodes.length] = {"id": i, "name": course_lst[i], "taken": 1}
+            map_nodes_to_idx[course_lst[i]] = i
+          }
 
-                  // Populate the nodes with the results for the original nodes of Q0
-                  map_nodes_to_idx = {}
-                  for(i in course_lst){
-                    nodes[nodes.length] = {"id": i, "name": course_lst[i], "taken": 1}
-                    map_nodes_to_idx[course_lst[i]] = i
-                  }
+          // Init empty list of links
+          links = []
 
-                  // Init empty list of links
-                  links = []
+          // Populate the links
+          for(i in result){
 
-                  // Populate the links
-                  for(i in result){
+            course_name_x = result[i].course_name_x
+            course_name_y = result[i].course_name_y
 
-                    course_name_x = result[i].course_name_x
-                    course_name_y = result[i].course_name_y
+            // Populate the nodes with the results for the neighbours nodes (Q1)
+            if(!course_lst.includes(course_name_y)){
+              course_lst[course_lst.length] =  course_name_y
+              nodes[nodes.length] = {"id": course_lst.length, "name": course_name_y, "taken": 0,
+                                      "short_name": result[i].short_name_y}
+              map_nodes_to_idx[course_name_y] = course_lst.length
+            }
 
-                    // Populate the nodes with the results for the neighbours nodes (Q1)
-                    if(!course_lst.includes(course_name_y)){
-                      course_lst[course_lst.length] =  course_name_y
-                      nodes[nodes.length] = {"id": course_lst.length, "name": course_name_y, "taken": 0,
-                                              "short_name": result[i].short_name_y}
-                      map_nodes_to_idx[course_name_y] = course_lst.length
-                    }
+            var idx = course_lst.indexOf(course_name_x)
+            nodes[idx] = {"id": nodes[idx].id, "name": nodes[idx].name, "taken": nodes[idx].taken,
+                            "short_name": result[i].short_name_x}
 
-                    var idx = course_lst.indexOf(course_name_x)
-                    nodes[idx] = {"id": nodes[idx].id, "name": nodes[idx].name, "taken": nodes[idx].taken,
-                                    "short_name": result[i].short_name_x}
-
-                    // Adding the connection to the list of edges of the network
-                    links[links.length] = {
-                      "source": map_nodes_to_idx[result[i].course_name_x],
-                      "target": map_nodes_to_idx[course_name_y],
-                      "value": Math.max(1, Math.round(result[i].jaccard * 10))
-                    };
-                  }
-                  res.send({ "nodes": nodes, "links": links})
-                }
-              }
-          );
+            // Adding the connection to the list of edges of the network
+            links[links.length] = {
+              "source": map_nodes_to_idx[result[i].course_name_x],
+              "target": map_nodes_to_idx[course_name_y],
+              "value": Math.max(1, Math.round(result[i].jaccard * 10))
+            };
+          }
+          res.send({ "nodes": nodes, "links": links})
         }
       }
   );
+}
+
+router.route("/course_network").get(function(req, res) {
+  // Build the personal graph for a specific student
+  // If student is not specified return an error
+  if (!req.query.student && !req.query.courses) {
+    res.send("Please specify the student (e.g., url/course_network/?student=Rocchi%20Eleonora");
+  }
+  if(req.query.student) {
+    students.aggregate([ // Q0
+      { $match : { student_name : req.query.student } },
+
+      // Join with enrollment tableover student_id
+      { $lookup: { from: "enrollment", localField: "student_id", foreignField: "student_id", as: "from_course"} },
+      { $unwind: "$from_course"},
+      { $replaceRoot: { newRoot: { $mergeObjects: "$from_course" } }},
+
+      // Join with course table over course_id
+      { $lookup: { from: "course", localField: "course_id", foreignField: "course_id", as: "course" }},
+      { $unwind: "$course"},
+      { $replaceRoot: { newRoot: { $mergeObjects: "$course" } }},
+      { $project : { "course_name": 1 } }
+    ]).exec(
+        function(err, course_names) {
+          if (err) {
+            res.send(err);
+          } else {
+            // Obtain a list of course names in which we are interested
+            course_lst = course_names.map(d => d.course_name)
+            query_course_network(course_lst, res)
+          }
+        }
+    );
+  }
+  else {
+    query_course_network(req.query.courses.split("$"), res);
+  }
+
 });
 
 router.route("/courses").get(function(req, res) {
