@@ -208,6 +208,18 @@ $('.typeahead').typeahead({
                           if(!d.short_name) return color(20);
                           return color(all_sections.indexOf(d.short_name.substring(0, d.short_name.indexOf("-"))))
                         })
+                        .style("stroke", function (d) {
+                          return "green";
+                        })
+                        .style("stroke-width", function (d) {
+                          if(d.taken == 1) return "1.5"
+                          return false
+                        })
+                        .style("stroke-opacity", function (d) {
+                          if(d.taken == 1) return 1
+                          return 0.1
+                        })
+                        .attr("opacity", 1)
                         .call(d3.drag()
                             .on("start", dragstarted)
                             .on("drag", dragged)
