@@ -175,18 +175,16 @@ var cs = [];
       var div = document.getElementById("showStatisticCourse");
       div.innerHTML = "";
       div.innerHTML = `
-      <div class="card" style="width: 18rem;">
+      <div class="card" style="width: 100%;">
         <div class="card-body">
           <h5 class="card-title">${d.name}</h5>
           <h6 class="card-subtitle mb-2 text-muted">Number of enrollments: ${d.enrol}</h6>
-          <div id="chord-course-loading"></div>
+        <!--  <div id="chord-course-loading"></div> -->
           <div id="chord-course"></div>
-          <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
-          <a href="#" class="card-link">Card link</a>
         </div>
       </div>
       `;
-    generate_statistics(d, "showStatisticCourse");
+    generate_statistics(d, "chord-course");
       // call chord code it will be inserted in id: chord-course (defined above)
     //  chord(d.name, "chord-course");
     }
