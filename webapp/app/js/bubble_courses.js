@@ -201,12 +201,12 @@ var aaaa = 0
           d3.selectAll(".selected").classed("selected", false).attr("stroke", false);
           d3.select(this).classed("selected", true);
           d3.select(this).transition().attr("stroke", colors(d.cluster)).attr("stroke-width", 2);
-          generate_statistics(d, "showStatisticCourse");
+          generate_statistics(d, "showStatisticCourse", false);
         }
         else {
           d3.select(this).classed("selected", false);
           d3.select(this).transition().attr("stroke", false).attr("stroke-width", 0.25);
-          generate_statistics(d, "showStatisticCourse");
+          generate_statistics(d, "showStatisticCourse", false);
         }})
         .call(drag(force))
 
