@@ -21,13 +21,13 @@ function fill_course_prof(course_name, id) {
     if (error) throw error;
     var div = document.getElementById(id+"-course_prof");
     var lst_prof = res[0].prof.substring(1, res[0].prof.length - 1).split(",")
-    var prof_str = "";
-    var padding = 1;
+    var prof_str = ""
+    var padding = 1
     for (var i = 0; i < lst_prof.length; i++) {
       prof_str = prof_str.concat(lst_prof[i].substring(padding, lst_prof[i].length - 1))
       if(i < lst_prof.length - 1)
-        prof_str = prof_str.concat(", ");
-      padding = 2;
+        prof_str = prof_str.concat(", ")
+      padding = 2
     }
     div.innerHTML = `
     <p> Prof: <i> ${prof_str} </i>  <p>
@@ -53,16 +53,16 @@ function fill_stud_by_major(course_name, course_year, id){
   // Set text content
   var html_year = "in " + course_year
   if(html_year.indexOf("cumulative") != -1)
-    html_year = ""
+    html_year = "over all years"
   var div = document.getElementById(id+"-stud_by_major");
   div.innerHTML = `
   <p> Number of enrolled students by major ${html_year} <p>
   `;
 
   // Set margin and dimesion
-  var margin = {top: 10, right: 30, bottom: 30, left: 60};
-  var width = 460 - margin.left - margin.right;
-  var height = 400 - margin.top - margin.bottom;
+  var margin = {top: 10, right: 40, bottom: 30, left: 40};
+  var width = 300 - margin.left - margin.right;
+  var height = 200 - margin.top - margin.bottom;
 
   var svg = d3.select(`#${id}-stud_by_major`)
     .append("svg")
@@ -102,35 +102,35 @@ function fill_stud_by_major(course_name, course_year, id){
       return b.nr_students - a.nr_students;
     })
 
-    // Add X axis
-    var x = d3.scaleLinear()
-      .domain([0, max_enrolled])
-      .range([ 0, width]);
-    svg.append("g")
-      .attr("transform", "translate(0," + height + ")")
-      .call(d3.axisBottom(x))
-      .selectAll("text")
-        .attr("transform", "translate(-10,0)rotate(-45)")
-        .style("text-anchor", "end");
+    // Update the X axis
+    x.domain([0, d3.max(data, function(d) { return d.nr_students }) ]);
+    xAxis.call(d3.axisBottom(x))
 
-    // Y axis
-    var y = d3.scaleBand()
-      .range([ 0, height ])
-      .domain(data.map(function(d) { return d.major; }))
-      .padding(.1);
-    svg.append("g")
-      .call(d3.axisLeft(y))
+    // Update the Y axis
+    y.domain(data.map(function(d) { return d.major; }));
+    yAxis.transition().duration(1000).call(d3.axisLeft(y));
 
-    //Bars
-    svg.selectAll("myRect")
+    // Create the u variable
+    var u = svg.selectAll("rect")
       .data(data)
+
+    u
       .enter()
-      .append("rect")
-      .attr("x", x(0) )
-      .attr("y", function(d) { return y(d.major); })
-      .attr("width", function(d) { return x(d.nr_students); })
-      .attr("height", y.bandwidth() )
-      .attr("fill", "#2699b2")
+      .append("rect") // Add a new rect for each new elements
+      .merge(u) // get the already existing elements as well
+      .transition() // and apply changes to all of them
+      .duration(1000)
+        .attr("x", x(0) )
+        .attr("y", function(d) { return y(d.major); })
+        .attr("width", function(d) { return x(d.nr_students); })
+        .attr("height", y.bandwidth() )
+        .attr("fill", "#2699b2")
+
+
+    // If less group in the new dataset, I delete the ones not in use anymore
+    u
+      .exit()
+      .remove()
 
   });
 
@@ -140,13 +140,13 @@ function fill_stud_by_year(course_name, id) {
   // Set text content
   var div = document.getElementById(id+"-stud_by_year");
   div.innerHTML = `
-  <p> Number of enrolled students by year<p>
+  <p> Number of enrolled students by year</p>
   `;
 
   // Set margin and dimesion
-  var margin = {top: 10, right: 30, bottom: 30, left: 60},
-  width = 460 - margin.left - margin.right,
-  height = 400 - margin.top - margin.bottom;
+  var margin = {top: 10, right: 40, bottom: 70, left: 40},
+  width = 300 - margin.left - margin.right,
+  height = 200 - margin.top - margin.bottom;
 
   var svg = d3.select(`#${id}-stud_by_year`)
     .append("svg")
@@ -172,33 +172,64 @@ function fill_stud_by_year(course_name, id) {
     }
     data.sort(sort_by_year);
 
-    var x = d3.scaleTime()
-      .domain(d3.extent(data, function(d) { var k = parseInt(d.year.substring(0,4)); console.log(k);return k; }))
+    // Domain for x-axis
+    var min_year = parseInt(data[0].year.substring(0,4))
+    var max_year = parseInt(data[data.length - 1].year.substring(0,4))
+    var year_lst = []
+    for(var i = min_year; i <= max_year; i++) {
+      year_lst[year_lst.length] = i;
+    }
+
+    var x = d3.scaleLinear()
+      .domain(d3.extent(year_lst, function(d) { return d; }))
       .range([0, width]);
     svg.append("g")
       .attr("transform", "translate(0," + height + ")")
-      .call(d3.axisBottom(x));
+      .call(d3.axisBottom(x)
+        .tickFormat(function(d, i) {
+        //Reformat as academic year
+        if(d.toString(10).indexOf(".") > -1) return null;
+        var year = parseInt(d.toString(10).substring(0,4));
+        if(year_lst.length > 5 && year_lst.length < 10) {
+          if(year_lst.indexOf(year) % 2 != 0) return null
+        }
+        else if(year_lst.length > 10){
+          if(year_lst.indexOf(year) % 3 != 0) return null
+        }
+        return year.toString(10) + "-" + (year+1).toString(10);
+      }))
+      .selectAll("text")
+        .style("text-anchor", "end")
+        .attr("dx", "-.8em")
+        .attr("dy", ".15em")
+        .attr("transform", "rotate(-65)");
     // Add Y axis
     var y = d3.scaleLinear()
       .domain( [0, max_enrolled])
       .range([ height, 0 ]);
+
+                    ;
     svg.append("g")
-      .call(d3.axisLeft(y));
+      .call(d3.axisLeft(y).tickFormat(function(d, i) {
+        return i % 3 === 0 ? d : null;
+      }))
+
     // Add the line
     svg.append("path")
       .datum(data)
       .attr("fill", "none")
-      .attr("stroke", "#2699b2")
+      .attr("stroke", "#9FD1DE")
       .attr("stroke-width", 1.5)
       .attr("d", d3.line()
-        .x(function(d) { return x(parseInt(d.year.substring(0,4))) })
-        .y(function(d) { return y(parseInt(d.nr_students)) })
+        .x(function(d) { return x(parseInt(d.year.substring(0,4))); })
+        .y(function(d) { return y(parseInt(d.nr_students)); })
       )
 
       var tooltip = d3.select(`#${id}-stud_by_year`)
         .append("div")
         .style("opacity", 0)
         .attr("class", "tooltip")
+        .style("position", "absolute")
         .style("background-color", "black")
         .style("border-radius", "5px")
         .style("padding", "10px")
@@ -211,8 +242,8 @@ function fill_stud_by_year(course_name, id) {
       var mousemove = function(d) {
         tooltip
           .html( "" + d.nr_students + " students")
-          .style("left", (d3.mouse(this)[0]+ 40) + "px")
-          .style("top", (d3.mouse(this)[1] + 300) + "px")
+          .style("left", (d3.mouse(this)[0]) + "px")
+          .style("bottom", (d3.mouse(this)[1]) + "px")
       }
       var mouseleave = function(d) {
         tooltip
@@ -220,6 +251,7 @@ function fill_stud_by_year(course_name, id) {
       }
 
     // Add the points
+
     svg
       .append("g")
       .selectAll("dot")
@@ -229,7 +261,7 @@ function fill_stud_by_year(course_name, id) {
         .attr("cx", function(d) { return x(parseInt(d.year.substring(0,4))) } )
         .attr("cy", function(d) { return y(parseInt(d.nr_students)) } )
         .attr("r", 5)
-        .attr("fill", "#2699b2")
+        .attr("fill", "#2699b2") // path 72B4C4
         .attr("stroke", false)
         .attr("stroke-width", 0.25)
         .on("mouseover", mouseover)
@@ -239,20 +271,16 @@ function fill_stud_by_year(course_name, id) {
           if(!d3.select(this).classed("selected")){
             d3.selectAll(".selected").classed("selected", false).attr("stroke", false);
             d3.select(this).classed("selected", true);
-            d3.select(this).transition().attr("stroke","red").attr("stroke-width", 2);
-            fill_stud_by_major(course_name, d.year)
+            d3.select(this).transition().attr("stroke","#1911F0").attr("stroke-width", 2);
+            fill_stud_by_major(course_name, d.year, id);
           }
           else {
             d3.select(this).classed("selected", false);
             d3.select(this).transition().attr("stroke", false).attr("stroke-width", 0.25);
-            fill_stud_by_major(course_name, "cumulative")
+            fill_stud_by_major(course_name, "cumulative", id);
           }
         })
-
-
-    fill_stud_by_major(course_name, "cumulative")
-
-
+    fill_stud_by_major(course_name, "cumulative", id);
 
   });
 }
@@ -261,14 +289,15 @@ function fill_stud_by_year(course_name, id) {
 export function generate_statistics(d, id) {
     var div = document.getElementById(id);
     div.innerHTML = `
-                      <div class="showStatistics" style="width: 18rem;">
-                        <h5> ${d.name} </h5>
-                        <div id="${id}-course_prof"></div>
-                        <div id="${id}-stud_by_year"></div>
-                        <div id="${id}-stud_by_major"></div>
-                      </div>
+                    <div class="showStatistics" style="width: 18rem;">
+                    <h5> ${d.name} </h5>
+                    <div id="${id}-course_prof"></div>
+                    <div id="${id}-stud_by_year"></div>
+                    <br>
+                    <div id="${id}-stud_by_major"></div>
                       `;
 
     fill_course_prof(d.name, id);
     fill_stud_by_year(d.name, id);
+
 }

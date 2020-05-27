@@ -57,6 +57,7 @@ body{
   z-index: 2;
   height: calc(55vh - 2px);
   overflow: auto;
+  font-size: 10px;
 }
 
 
