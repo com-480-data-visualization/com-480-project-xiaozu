@@ -118,3 +118,5 @@ Prototype: [Website](https://xiaozuepfl.herokuapp.com/)
  - `npm run dev`: Run project
  - `open "http://localhost:3000/"`: Start website   
 
+`Getting Started`: git clone 
+

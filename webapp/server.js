@@ -13,7 +13,13 @@ enrollments = require("./models/enrollment")
 courses = require("./models/course")
 teachers = require("./models/teacher")
 jaccard = require("./models/jaccard")
-personal_graph = require("./models/personalgraph")
+course_network = require("./models/course_network")
+
+course_enroll = require("./models/course_enroll")
+course_prof = require("./models/course_prof")
+course_stats = require("./models/course_stats")
+section = require("./models/course_bubble")
+
 
 var app = express();
 const router = express.Router();
@@ -32,7 +38,6 @@ app.use(
 app.use('/app', express.static(__dirname + '/app'));
 
 app.use("/", router);
-
 
 // HANDLERS (e.g. GET, POST requests)
 app.get('/', (req, res) => {
@@ -108,65 +113,98 @@ router.route("/teachers").get(function(req, res) {
   });
 });
 
-router.route("/personal_graph").get(function(req, res) {
-  console.log("here ")
-  // Build the personal graph for a specific student
-  // If student is not specified return an error
-  if (!req.query.student) {
-    res.send("Please specify the student (e.g., url/personal_graph/?student=Rocchi%20Eleonora")
-  }
-  students.aggregate([
-    { $match : { student_name : req.query.student } },
-    { $lookup: { from: "enrollment", localField: "student_id", foreignField: "student_id", as: "from_course"} },
-    { $unwind: "$from_course"},
-    { $replaceRoot: { newRoot: { $mergeObjects: "$from_course" } }},
-    { $lookup: { from: "course", localField: "course_id", foreignField: "course_id", as: "course" }},
-    { $unwind: "$course"},
-    { $replaceRoot: { newRoot: { $mergeObjects: "$course" } }},
-    { $project : { "course_name": 1 } }
+function query_course_network(course_lst, res) {
+  // Check for all connection involving those nodes
+  course_network.aggregate([ // Q1
+    { $match : { course_name_x : {$in: course_lst}} }
   ]).exec(
-      function(err, course_names) {
+      function(err, result) {
         if (err) {
           res.send(err);
         } else {
-          course_lst = course_names.map(d => d.course_name)
-          console.log(course_lst)
-          personal_graph.aggregate([
-            { $match : { course_name_x : {$in: course_lst}} }
-          ]).exec(
-              function(err, result) {
-                if (err) {
-                  res.send(err);
-                } else {
-                  nodes = []
-                  map_nodes_to_idx = {}
-                  for(i in course_lst){
-                    nodes[nodes.length] = {"id": i, "name": course_lst[i], "taken": 1}
-                    map_nodes_to_idx[course_lst[i]] = i
-                  }
 
-                  links = []
-                  for(i in result){
-                    course_name_y = result[i].course_name_y
-                    if(!course_lst.includes(course_name_y)){
-                      course_lst[course_lst.length] =  course_name_y
-                      nodes[nodes.length] = {"id": course_lst.length, "name": course_name_y, "taken": 0}
-                      map_nodes_to_idx[course_name_y] = course_lst.length
-                    }
-                    links[links.length] = {
-                      "source": map_nodes_to_idx[result[i].course_name_x],
-                      "target": map_nodes_to_idx[course_name_y],
-                      "value": Math.max(1, Math.round(result[i].jaccard * 10))
-                    };
-                  }
-                  res.send({ "nodes": nodes, "links": links})
+          // Init empty list of nodes
+          nodes = []
 
-                }
-              }
-          );
+          // Populate the nodes with the results for the original nodes of Q0
+          map_nodes_to_idx = {}
+          for(i in course_lst){
+            nodes[nodes.length] = {"id": i, "name": course_lst[i], "taken": 1}
+            map_nodes_to_idx[course_lst[i]] = i
+          }
+
+          // Init empty list of links
+          links = []
+
+          // Populate the links
+          for(i in result){
+
+            course_name_x = result[i].course_name_x
+            course_name_y = result[i].course_name_y
+
+            // Populate the nodes with the results for the neighbours nodes (Q1)
+            if(!course_lst.includes(course_name_y)){
+              course_lst[course_lst.length] =  course_name_y
+              nodes[nodes.length] = {"id": course_lst.length, "name": course_name_y, "taken": 0,
+                                      "short_name": result[i].short_name_y}
+              map_nodes_to_idx[course_name_y] = course_lst.length
+            }
+
+            if(result[i].short_name_x) {
+              var idx = course_lst.indexOf(course_name_x)
+              nodes[idx] = {"id": nodes[idx].id, "name": nodes[idx].name, "taken": nodes[idx].taken,
+                              "short_name": result[i].short_name_x}
+            }
+
+            // Adding the connection to the list of edges of the network
+            links[links.length] = {
+              "source": map_nodes_to_idx[result[i].course_name_x],
+              "target": map_nodes_to_idx[course_name_y],
+              "value": Math.max(1, Math.round(result[i].jaccard * 10))
+            };
+          }
+          res.send({ "nodes": nodes, "links": links})
         }
       }
   );
+}
+
+router.route("/course_network").get(function(req, res) {
+  // Build the personal graph for a specific student
+  // If student is not specified return an error
+  if (!req.query.student && !req.query.courses) {
+    res.send("Please specify the student (e.g., url/course_network/?student=Rocchi%20Eleonora");
+  }
+  if(req.query.student) {
+    students.aggregate([ // Q0
+      { $match : { student_name : req.query.student } },
+
+      // Join with enrollment tableover student_id
+      { $lookup: { from: "enrollment", localField: "student_id", foreignField: "student_id", as: "from_course"} },
+      { $unwind: "$from_course"},
+      { $replaceRoot: { newRoot: { $mergeObjects: "$from_course" } }},
+
+      // Join with course table over course_id
+      { $lookup: { from: "course", localField: "course_id", foreignField: "course_id", as: "course" }},
+      { $unwind: "$course"},
+      { $replaceRoot: { newRoot: { $mergeObjects: "$course" } }},
+      { $project : { "course_name": 1 } }
+    ]).exec(
+        function(err, course_names) {
+          if (err) {
+            res.send(err);
+          } else {
+            // Obtain a list of course names in which we are interested
+            course_lst = Array.from(new Set(course_names.map(d => d.course_name)))
+            query_course_network(course_lst, res)
+          }
+        }
+    );
+  }
+  else {
+    query_course_network(req.query.courses.split("$"), res);
+  }
+
 });
 
 router.route("/courses").get(function(req, res) {
@@ -177,7 +215,6 @@ router.route("/courses").get(function(req, res) {
   if (!req.query.student) {
     res.send("Please specify the numbers of courses (e.g., url/courses/?student=Rocchi%20Eleonora")
   }
-
   // select students set from course name
   students.aggregate([
     { $match : { student_name : req.query.student } },
@@ -194,45 +231,120 @@ router.route("/courses").get(function(req, res) {
           res.send(err);
         } else {
           res.send(result)
-
         }
       }
   );
 });
 
+router.route("/course_bubble").get(function(req, res) {
+  // just for us --> to generate file for db
+  // if (!req.query.section || !req.query.year) {
+  //   res.send("Please specify the numbers of courses and the academic year (e.g., url/top_courses/?max=5&year=2008-2009)")
+  // }
+  // from 2015 - 2020 extract:
+  // 2014-2015, 2015-2016, 2016-2017, 2017-2018, 2018-2019, 2019-2020, 2020-2021
+  var list_years = [];
+  for (var i = 2004; i <= 2020; i++) {
+    list_years.push(i.toString());
+  }
+  // if (!req.query.section) {
+  //   res.send("Please specify the section")}
+  // }  // 1. group e assegnare un count ad ogni enrollment, poi 2. join con courses e dopo di che
+  // 3. filter by year e ordinare tutto a seconda del count trovato prima e dopo
+  // fare limit (#maxcourses)
+  //TODO: check names and delete the smallest one in case of repetition of same name!
+  section.aggregate([
+     // { $match : {  section : req.query.section }},
+    { $match: { year: req.query.year } },
+  ]
+).exec(
+      function(err, result) {
+        if (err) {
+          res.send(err);
+        } else {
+          res.send(result)
+          }
+      }
+  );
+});
+
+
+router.route("/course_prof").get(function(req, res) {
+  if (!req.query.course_name) {
+    res.send("Please specify the numbers of courses (e.g., url/course_prof/?course_name=Machine%20learning)")
+  }
+  course_prof.find({"course_name" : req.query.course_name}, function(err, result) {
+    if (err) {
+      res.send(err);
+    } else {
+      res.send(result);
+    }
+  });
+
+});
+
+router.route("/course_stats").get(function(req, res) {
+  if (!req.query.course_name || !req.query.year || !req.query.major) {
+    res.send("Please specify the numbers of courses (e.g., url/course_stats/?course_name=Machine%20learning&year=cumulative&major=0)")
+  }
+  if(req.query.year == "cumulative"){
+    if(req.query.major == "0"){
+      course_stats.aggregate([
+        { $match: { course_name : req.query.course_name } },
+        { $group: { _id : "$year", nr_students: { $sum: "$nr_students" } } },
+        { $addFields : {"year": "$_id"} }
+      ]).exec(function(err, result) {
+        if (err) {
+          res.send(err);
+        } else {
+          res.send(result);
+        }
+      })
+    }
+    else {
+      course_stats.aggregate([
+        { $match: { course_name : req.query.course_name } },
+        // adding number of students over different semester (MA1, MA2 etc.)
+        { $group: { _id : "$section", nr_students: { $sum: "$nr_students" } } },
+        { $addFields : {"major": "$_id"} }
+      ]).exec(function(err, result) {
+        if (err) {
+          res.send(err);
+        } else {
+          res.send(result);
+        }
+      });
+    }
+  }
+  else {
+    course_stats.aggregate([
+      { $match: { course_name : req.query.course_name } },
+      { $match: { year : req.query.year } },
+      // adding number of students over different semester (MA1, MA2 etc.)
+      { $group: { _id : "$section", nr_students: { $sum: "$nr_students" } } },
+      { $addFields : {"major": "$_id"} }
+    ]).exec(function(err, result) {
+      if (err) {
+        res.send(err);
+      } else {
+        res.send(result);
+      }
+    });
+  }
+});
+
+
 router.route("/top_courses").get(function(req, res) {
-  console.log("here ")
   // http://localhost:3000/top_courses/?max=5&year=2008-2009
   if (!req.query.max || !req.query.year) {
     res.send("Please specify the numbers of courses and the academic year (e.g., url/top_courses/?max=5&year=2008-2009)")
   }
-  // case we have a query with max courses to return
-  // filter.max = req.query.max;
   top_N_courses = +req.query.max;
   ay = req.query.year
-
   // 1. group e assegnare un count ad ogni enrollment, poi 2. join con courses e dopo di che
   // 3. filter by year e ordinare tutto a seconda del count trovato prima e dopo
   // fare limit (#maxcourses)
-  enrollments.aggregate([
-    {
-    $group: { // group by
-            _id: "$course_id",
-            count: { $sum: 1 }
-      }
-    },
-    { // join and pick just element of correct year
-      $lookup: {
-          from: "course", // collection name in db
-          localField: "_id",
-          foreignField: "course_id",
-          as: "courses_detail"
-      }
-    },
-    {
-      $replaceRoot: { newRoot: { $mergeObjects: [ { $arrayElemAt: [ "$courses_detail", 0 ] }, "$$ROOT" ] } }
-   },
-   { $project: { courses_detail: 0 } },
+  course_enroll.aggregate([
     { // filter by date (some data have space etc)
       $match: {
         $expr: {
@@ -247,8 +359,8 @@ router.route("/top_courses").get(function(req, res) {
           ]
         }
      }
-    }
-   //{ $sort : {"count" : -1 } }, //need to find a solution, sort it is extremely slow!
+    },
+   { $sort : {"count" : -1 } }, //need to find a solution, sort it is extremely slow!
   ]
 ).limit(top_N_courses)
   .exec(
@@ -256,6 +368,9 @@ router.route("/top_courses").get(function(req, res) {
         if (err) {
           res.send(err);
         } else {
+          // Sum enrollments of courses of same name
+          // sort and then limit
+
           // console.log(result)
           res.send(result)
           }
@@ -264,7 +379,6 @@ router.route("/top_courses").get(function(req, res) {
 });
 
 router.route("/courses_related").get(function(req, res) {
-  console.log("here ")
   // Pick the courses that are most related to 'course' (at most 'max')
   // http://localhost:3000/courses_related/?course=Machine%20learning&max=20
   if (!req.query.course || !req.query.max) {
@@ -273,7 +387,8 @@ router.route("/courses_related").get(function(req, res) {
 
   jaccard.aggregate([
     { $match : { course_name : req.query.course } },
-    { $lookup: { from: "jaccard", pipeline: [], as: "courses" } }
+    { $lookup: { from: "jaccard", pipeline: [], as: "courses" } },
+
   ]).exec(
       function(err, result) {
         if (err) {
@@ -301,7 +416,6 @@ router.route("/courses_related").get(function(req, res) {
           for(i in most_related){
             most_related_courses[most_related_courses.length] = most_related[i][1]
           }
-          console.log(most_related_courses)
           jaccard.aggregate([
             {$match :{ course_name : {"$in": most_related_courses }}}
           ]).exec(

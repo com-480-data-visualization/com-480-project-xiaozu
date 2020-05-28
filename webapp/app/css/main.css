@@ -1,3 +1,8 @@
+body{
+  width: 100%;
+  height: 100%;
+}
+
 #header-ban{
     position: relative;
     top: 0;
@@ -22,6 +27,104 @@
     margin-top: 5px;
 }
 
+.graph-container{
+  height: calc(70vh - 2px);
+  padding: 0px;
+
+  /* disable scrolling */
+  overflow-y:hidden;
+  overflow-x:hidden;
+}
+
+#bubbleCourses{
+  height: 45vh;
+  overflow: auto; 
+}
+
+
+#bubble-graph{
+  z-index: 0;
+  /* overflow: auto; */
+}
+
+.graph{
+  z-index: 0;
+  overflow: auto;
+}
+
+.personal-data{
+  border-bottom: 1px #1993AE solid;
+  border-left: 1px #1993AE solid;
+  padding: 10px;
+  background-color: #FFFFFF;
+  z-index: 3;
+  height: 15vh;
+  text-align: center;
+}
+
+.statistics{
+  background-color: #FFFFFF;
+  border-left: 1px #1993AE solid;
+  z-index: 2;
+  height: calc(55vh - 2px);
+  overflow: auto;
+  font-size: 10px;
+}
+
+#showStatisticCourse{
+  height: 10vh;
+  font-size: 10px;
+}
+
+#statistic-tutorial-bubble{
+  overflow-x: hidden;
+  padding-top: 15px;
+  padding-bottom: 25px;
+  /* padding-left: 0px; */
+}
+
+
+
+#selected-courses {
+  position: absolute;
+  left: 3;
+  bottom: 0;
+  height: 100%;
+  padding: 10px;
+  border-left: 1px #1993AE solid;
+  background-color: #fff;
+  z-index: 1;
+  font-size: 10px;
+}
+
+.ul-courses-lock {
+  list-style-type: none;
+  padding: 5px;
+  overflow: auto;
+  height: 100%;
+  width: 100%;
+ }
+
+.buttons-icon-lock{
+  background-color:transparent;
+  padding: 0;
+  vertical-align: unset;
+  line-height: 0;
+  color: #1993AE;
+  font-size: 15px;
+}
+
+#slide-courses{
+  background-color:transparent;
+  padding: 0;
+  vertical-align: unset;
+  line-height: 0;
+  color: #1993AE;
+  font-size: 15px;
+  visibility: hidden;
+}
+
+
 .nav-link{
     -webkit-border-radius: 3px 3px 0 0;
     -moz-border-radius: 3px 3px 0 0;
@@ -29,10 +132,10 @@
     -o-border-radius: 3px 3px 0 0;
     border-radius: 3px 3px 0 0;
     background: #89a3a8;
-    border-left: 1px solid #333333!important; 
-    border-top: 1px solid #333333!important; 
-    border-right: 1px solid #333333!important; 
-    border-bottom: 1px solid #333333!important; 
+    border-left: 1px solid #333333!important;
+    border-top: 1px solid #333333!important;
+    border-right: 1px solid #333333!important;
+    border-bottom: 1px solid #333333!important;
     font-weight: bold;
     color: #fff;
     margin-left: 2px;
@@ -44,21 +147,22 @@
 }
 
 .nav-link.active{
-    background-color: #e6e9e9 !important; 
-    border-color: #333333 #333333 #e6e9e9 !important; 
-    font-weight:700 !important; 
+    background-color: #e6e9e9 !important;
+    border-color: #333333 #333333 #e6e9e9 !important;
+    font-weight:700 !important;
     margin-left: 2px;
     margin-right: 2px;
 }
 
 .card-header{
-    border-bottom: 1px solid #333333 !important; 
+    border-bottom: 1px solid #333333 !important;
 }
 
 #content-tab{
     background-color: #fff;
     border: 1px #1993AE solid;
-    min-height: 74vh;
+    min-height: 68vh;
+    padding: 0px;
 }
 
 
@@ -67,8 +171,22 @@
   stroke-width: 2px;
   stroke: white;
 }
+
 .bubbles:hover {
   stroke: black;
+}
+
+.legend-container {
+  align-items: center;
+  flex: 0 1 auto;
+  align-self: center;
+  margin: 0 auto;
+}
+
+
+.selectedBubble{
+  stroke: black !important;
+  stroke-width: 3px !important;
 }
 
 #loading1 {
@@ -88,6 +206,14 @@
     visibility: hidden;
 }
 
+#chord-course-loading {
+  background: url(/app/images/loading.gif) no-repeat center center;
+  height: 150px;
+  width: 150px;
+  z-index: 9999999;
+  margin: auto;
+}
+
 
 
 #loading-badges {
@@ -102,12 +228,12 @@
 .typeahead, .tt-query, .tt-hint {
 	border: 2px solid #CCCCCC;
 	border-radius: 8px;
-	font-size: 22px; /* Set input font size */
+	font-size: inherit; /* Set input font size */
 	height: 30px;
 	line-height: 30px;
 	outline: medium none;
 	padding: 8px 12px;
-	width: 396px;
+	width: 100%;
 }
 .typeahead {
 	background-color: #FFFFFF;
@@ -128,11 +254,13 @@
 	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 	margin-top: 12px;
 	padding: 8px 0;
-	width: 422px;
+  width: 100%;
+  text-align: start;
 }
 .tt-suggestion {
-	font-size: 22px;  /* Set suggestion dropdown font size */
-	padding: 3px 20px;
+	font-size: inherit;  /* Set suggestion dropdown font size */
+  padding: 3px 20px;
+  z-index: 9999;
 }
 .tt-suggestion:hover {
 	cursor: pointer;
@@ -161,13 +289,83 @@
   }
 
   #copyright{
-    right: 30px;
-    bottom: 30px;
-    position: absolute;
     color: gray;
     font-size: 12px;
+    right: 0px;
+    text-align: end;
   }
 
   #isa-link {
     color: #2699b2 !important;
   }
+
+  #home{
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  .btn.focus, .btn:focus {
+    outline: 0;
+    box-shadow: unset;
+}
+
+.twitter-typeahead{
+  display: unset !important;
+}
+
+#dropdown-filtered{
+  min-height: 190px;
+  overflow-y :auto;
+  overflow-x:hidden;
+  height: 200px !important;
+  position: absolute !important;
+  transform: translate3d(0px, 38px, 0px) !important;
+  top: 0px !important;
+  left: 0px !important;
+  will-change: transform !important;
+}
+
+.btn-tutorial{
+  background-color: rgb(38, 153, 178)!important;
+  color: white!important;
+  border-left-color: rgb(38, 153, 178)!important;
+  border-top-color: rgb(38, 153, 178)!important;
+  border-right-color: rgb(38, 153, 178)!important;
+  border-bottom-color: rgb(38, 153, 178)!important;
+}
+
+.btn-tutorial:hover{
+  background-color: rgb(137, 163, 168) !important;
+  color: white!important;
+  border-left-color: rgb(38, 153, 178) !important;
+  border-top-color: rgb(38, 153, 178)!important;
+  border-right-color: rgb(38, 153, 178)!important;
+  border-bottom-color: rgb(38, 153, 178)!important;
+}
+
+.btn-tutorial:focus{
+  background-color: rgb(137, 163, 168)!important;
+  color: white!important;
+  border-left-color: rgb(38, 153, 178)!important;
+  border-top-color: rgb(38, 153, 178)!important;
+  border-right-color: rgb(38, 153, 178)!important;
+  border-bottom-color: rgb(38, 153, 178)!important;
+}
+
+.btn-tutorial:hover:active{
+  background-color: rgb(137, 163, 168)!important;
+  color: white!important;
+  border-left-color: rgb(38, 153, 178)!important;
+  border-top-color: rgb(38, 153, 178)!important;
+  border-right-color: rgb(38, 153, 178)!important;
+  border-bottom-color: rgb(38, 153, 178)!important;
+}
+
+.btn-tutorial:active{
+  background-color: rgb(137, 163, 168)!important;
+  color: white!important;
+  border-left-color: rgb(38, 153, 178)!important;
+  border-top-color: rgb(38, 153, 178)!important;
+  border-right-color: rgb(38, 153, 178)!important;
+  border-bottom-color: rgb(38, 153, 178)!important;
+}

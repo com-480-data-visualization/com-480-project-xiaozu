@@ -1,87 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Data Visualization</title>
-    </head>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="app/css/main.css">
-  <body>
-    <div class="container-fluid" style="padding:0px;">
-      <div class="row" id="header-ban">
-          <div class="col" id="header-ban-left"></div>
-      </div>
-    </div>
-    <div class="container-fluid" style="padding:0px;">
-          <div class="card" style="border-radius: 0px; min-height: 87.6vh;">
-            <div class="card-header">
-              <ul class="nav nav-tabs card-header-tabs" id="menuList" role="tablist">
-                <li class="nav-item">
-                  <a class="nav-link active" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link"  href="#explore" role="tab" aria-controls="explore" aria-selected="false">Explore</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#personal" role="tab" aria-controls="personal" aria-selected="false">Personal</a>
-                </li>
-              </ul>
-            </div>
-            <div class="card-body" style="background: #e6e9e9;">
-              <div class="container-fluid" id="content-tab">
 
-              <div class="tab-content mt-3">
-                <div class="tab-pane active" id="home" role="tabpanel">
-                  <h4 class="card-title mh-100">Hi!</h4>
-                  <p class="card-text">
-                    We have made ISN'T ACADEMIA to <i>help students to select courses</i> at EPFL. </br>
-                    We will provide general information to give an overview of courses and give customized suggestions by combining it with their personal data.
-                  </p>
-                  <p>So let me <i>introduce our website</i> quickly. </br>
-                    You will notice 3 tabs on the top, our main visualizations will be in the Explore and General tabs. </br>
-                    Feel free to take a look at them!
-                  </p><p>
-                    Enjoy! </br> Costanza, Eleonora and Wei</p>
-                  <div id="copyright">Dataset and style taken/inspired from: <a id="isa-link" target="_blank" href="https://isa.epfl.ch/">IS-ACADEMIA</a>.</div>
-                </div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Visualization</title>
+</head>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+  integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css" />
+<link href="/app/fontawesome/css/all.css" rel="stylesheet">
+<link href="app/css/introjs.css" rel="stylesheet">
+<!--load all styles -->
+<link rel="stylesheet" type="text/css" href="app/css/main.css">
 
-                <div class="tab-pane" id="explore" role="tabpanel" aria-labelledby="history-tab">
-                  <h4 class="card-title mh-100">It is time to explore the trend of EPFL courses!</h4>
-                  <p class="card-text">
-                    On this page, you will be able to compare course popularity through the changes in the number of student enrollments over the years. </p>
-                    <div id="loading1"></div>
-                    <div id="bubbleCourses"></div>
-                </div>
-
-              <div class="tab-pane" id="personal" role="tabpanel" aria-labelledby="deals-tab">
-                <h4 class="card-title mh-100">Which course should I do this semester?</h4>
-                <p class="card-text">
-                  We have created the course network to give suggestions on course selection. Just insert your name and remove the courses you didn't love (or the ones that you would have preferred to skip in the past).
-                </p>
-                <div>
-                  <h6>Type the student name:</h6>
-                      <input id="studentNameAutocomplete" type="text" class="typeahead tt-query" autocomplete="off" spellcheck="false">
-                    <div id="loading-badges"> </div>
-                      <div id="coursesbadges" style="margin-top: 15px;"></div>
-                      <div id="personalGraph"></div>
-                </div>
-                  <div id="loading2"></div>
-                  <div id="relationsCourse"></div>
-              </div>
-            </div>
-            </div>
-          </div>
+<body>
+  <div class="container-fluid" style="padding:0px;">
+    <div class="row" id="header-ban">
+      <div class="col" id="header-ban-left"></div>
     </div>
   </div>
+  <div class="container-fluid" style="padding:0px;">
+    <div class="card" style="border-radius: 0px; min-height: 87.6vh; height: 100%;">
+      <div class="card-header">
+        <ul class="nav nav-tabs card-header-tabs" id="menuList" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#explore" role="tab" aria-controls="explore" aria-selected="false" id="explore-btn">Popular Courses</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#personal" role="tab" aria-controls="personal" aria-selected="false" id="network-btn">Personal Network</a>
+          </li>
+        </ul>
+      </div>
+      <div class="card-body" style="background: #e6e9e9; height: 100%;">
+        <div class="container-fluid" id="content-tab">
+          <div class="tab-content">
+            <div class="tab-pane active mt-3 mb-3" id="home" role="tabpanel">
+              <h4 class="card-title mh-100">Hi!</h4>
+              <p class="card-text">
+                We have made ISN'T ACADEMIA to <i>help students to select courses</i> at EPFL. </br>
+                We will provide general information to give an overview of courses and give customized suggestions by
+                combining it with their personal data.
+              </p>
+              <p>So let me <i>introduce our website</i> quickly. </br>
+                You will notice 3 tabs on the top, our main visualizations will be in the <i>Popular Courses</i> and <i>Personal Network</i> tabs.
+                </br>
+                Feel free to take a look at them!
+              </p>
+              <p>
+                <a class="btn btn-large btn-success btn-start btn-tutorial" id="start-the-tutorial" data-intro='Learn how to use'>Learn how to use</a>
+              </p>
+              <p>
+                Enjoy! </br> Costanza, Eleonora and Wei</p>
+              <div id="copyright" style="position: absolute;
+              right: 3%;
+              bottom: 10%;">Dataset and style taken/inspired from: <a id="isa-link" target="_blank"
+                  href="https://isa.epfl.ch/">IS-ACADEMIA</a>.</div>
+            </div>
+
+            <div class="tab-pane" id="explore" role="tabpanel" aria-labelledby="history-tab">
+
+              <div class="container-fluid graph-container" id="bubble-container">
+                <div class="row" style="height: 100%">
+                  <div class="col-8" id="bubble-graph" style="padding-right: 0px;">
+                    <div class="col-12" id="personal-data-bubble" style="margin-top: 15px;">
+                      <div class="dropdown" style="margin-top: 0px; left: 87%;">
+                        <button class="btn btn-secondary dropdown-toggle btn-tutorial" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Sections
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" id="dropdown-filtered" style="z-index:9999">
+                          <button class="dropdown-item" href="#"><label><input type="checkbox" class="checkbox" value='AR' id="checkbox-tutorial" checked/> AR</label></button>
+                          <button class="dropdown-item" href="#"><label><input type="checkbox" class="checkbox" value='BIO' checked/> BIO</label></button>
+                          <button class="dropdown-item" href="#"><label><input type="checkbox" class="checkbox" value='BIOENG' checked/> BIOENG</label></button>
+                          <button class="dropdown-item" href="#"><label><input type="checkbox" class="checkbox" value='COM' checked/> COM</label></button>
+                          <button class="dropdown-item" href="#"><label><input type="checkbox" class="checkbox" value='CS' checked/> CS</label></button>
+                          <button class="dropdown-item" href="#"><label><input type="checkbox" class="checkbox" value='EE' checked/> EE</label></button>
+                          <button class="dropdown-item" href="#"><label><input type="checkbox" class="checkbox" value='FIN' checked/> FIN</label></button>
+                          <button class="dropdown-item" href="#"><label><input type="checkbox" class="checkbox" value='MICRO' checked/> MICRO</label></button>
+                          <button class="dropdown-item" href="#"><label><input type="checkbox" class="checkbox" value='CIVIL' checked/> CIVIL</label></button>
+                          <button class="dropdown-item" href="#"><label><input type="checkbox" class="checkbox" value='ChE' checked/> ChE</label></button>
+                          <button class="dropdown-item" href="#"><label><input type="checkbox" class="checkbox" value='ME' checked/> ME</label></button>
+                          <button class="dropdown-item" href="#"><label><input type="checkbox" class="checkbox" value='CH' checked/> CH</label></button>
+                          <button class="dropdown-item" href="#"><label><input type="checkbox" class="checkbox" value='MSE' checked/> MSE</label></button>
+                          <button class="dropdown-item" href="#"><label><input type="checkbox" class="checkbox" value='MATH' checked/> MATH</label></button>
+                          <button class="dropdown-item" href="#"><label><input type="checkbox" class="checkbox" value='ENV' checked/> ENV</label></button>
+                          <button class="dropdown-item" href="#"><label><input type="checkbox" class="checkbox" value='MGT' checked/> MGT</label></button>
+                          <button class="dropdown-item" href="#"><label><input type="checkbox" class="checkbox" value='PHYS' checked/> PHYS</label></button>
+                          <button class="dropdown-item" href="#"><label><input type="checkbox" class="checkbox" value='ENG' checked/> ENG</label></button>
+                          <button class="dropdown-item" href="#"><label><input type="checkbox" class="checkbox" value='HUM' checked/> HUM</label></button>
+                        </div>
+                      </div>
+                      </div>
+                    <div class="w-100"></div>
+                    <div class="col" id="bubbleCourses"></div>
+                    <div class="w-100"></div>
+                    <div class="col" id="slide-tutorial">
+                      <input type="text" class="js-range-slider" name="my_range" value="" />
+                    </div>
+                  </div>
+                  <div class="col-4 statistics" id="statistic-tutorial-bubble" style="background-color: #ffffff; height: 100% !important; z-index: 0;">
+                      <div class="col" id="showStatisticCourse">
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+
+            <div class="tab-pane" id="personal" role="tabpanel" aria-labelledby="deals-tab">
+              <div class="container-fluid graph-container" id="network-container">
+                <div class="row" style="height: 100%">
+                  <div class="col-8 graph" id="network-graph">
+                    <div id="course_network"></div>
+                    <div id="selected-courses" class="col-12" style="margin-left: 100%;">
+                      <h6>Courses that you have done:</h6>
+                      <ul class="ul-courses-lock" id="coursesbadges">
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-4" style="background-color: #ffffff; padding-left: 0px;">
+                      <div class="col personal-data" id="personal-data-network">
+                        <input id="studentNameAutocomplete" type="text" class="typeahead tt-query" autocomplete="off"
+                          spellcheck="false">
+                          <div class="w-100"></div>
+                          <div class="col">
+                            <button type="button" id="slide-courses" class="btn"><i class="fas fa-columns"></i> Show
+                              my courses</button>
+                          </div>
+                        </div>
+                      <div class="w-100"></div>
+                      <div class="col statistics" id="statistics-network" style="padding-left: 15px;">
+                        <h5> Insert your name in the bar above!</h5>
+                        <p style="font-size: 16px;"> You can start exploring your personal network inserting your name, or a friend's name if you want to see his study plan. </p>
+                        <p style="font-size: 16px;"> If you are still reading and wondering which name to insert, try "Volpini Costanza" and see what courses she is enrolled in!</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <!-- <div>
+                  <h6>Type the student name:</h6>
+                      <input id="studentNameAutocomplete" type="text" class="typeahead tt-query" autocomplete="off" spellcheck="false">
+                      <div id="loading-badges"></div>
+                      <div id="coursesbadges" style="margin-top: 15px;"></div>
+                      <div id="course_network"></div>
+                </div>
+                  <div id="loading2"></div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<script type="text/javascript" src="app/js/intro.js"></script>
 </body>
 <script src="https://code.jquery.com/jquery-3.4.0.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+  integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+  integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 <script src="https://d3js.org/d3.v4.js"></script>
-<script  type="text/javascript" src="app/js/typeahead.bundle.js"></script>
+<script type="text/javascript" src="app/js/typeahead.bundle.js"></script>
 <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
 <script src="app/js/main.js"></script>
-<script src="app/js/bubble_courses.js"></script>
-<script src="app/js/autocomplete_student_name.js"></script>
-<script src="app/js/relations_course.js"></script>
+<script src="app/js/relations_course.js" type="module"></script>
+<script src="app/js/bubble_courses.js" type="module"></script>
+<script src="app/js/section_colors.js" type="module"></script>
+<script src="app/js/statistics.js" type="module"></script>
+<script src="app/js/autocomplete_student_name.js" type="module"></script>
 </html>
