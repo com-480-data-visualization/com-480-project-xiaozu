@@ -9,8 +9,34 @@ var introguide = introJs();
 
 introguide.onchange(function(targetElement) {
   console.log(targetElement);
-  if(targetElement.id != "start-the-tutorial")
+  if(targetElement.id == "studentNameAutocomplete"){
     targetElement.click();
+    var word = "Volpini Costanza";
+    var n = 0;
+    var x = targetElement;
+    var v = "";
+    $(".tt-menu")[0].classList.add("tt-open");
+    $(".tt-menu")[0].setAttribute("style", "display: block");
+    (function loop() {
+      v += word[n];
+      $(".typeahead").typeahead('val', v)
+      if (++n < word.length) {
+        setTimeout(loop, 300);
+      } else {
+        $(".tt-menu")[0].setAttribute("style", "display: none");
+
+        // call course_network!!
+          // showLoaderBadges();
+  
+          // course_network(v);
+      }
+    })();
+
+  }
+  else {
+    if(targetElement.id != "start-the-tutorial")
+    targetElement.click();
+  }
 });
 
 
@@ -47,11 +73,14 @@ introguide.setOptions({
         intro: 'Here you can see some statistics.',
         position: 'bottom'
       },
-
-
       {
         element: '#network-btn',
         intro: 'In this tab you can explore suggested courses for a specific student.',
+        position: 'bottom'
+      },
+      {
+        element: '#studentNameAutocomplete',
+        intro: 'Insert the student name and click the corresponding one from the menu.',
         position: 'bottom'
       }
   ]
