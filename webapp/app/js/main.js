@@ -129,11 +129,11 @@ $('#slide-courses').click(function (e) {
   var toExpand = false;
   if(contentBtn.innerHTML.includes("Show")){
     contentBtn.innerHTML = `<i class="fas fa-columns"></i> Hide
-    courses done`;
+    my courses`;
     toExpand = true;
   } else {
     contentBtn.innerHTML = `<i class="fas fa-columns"></i> Show
-    courses done`;
+    my courses`;
     toExpand = false;
   }
 

@@ -395,9 +395,9 @@ function fill_stud_by_major(course_name, course_year, id){
       html_year = "over all years"
 
     svg.append("text")
-        .attr("x", 10 - margin.left)
+        .attr("x", 0 - margin.left)
         .attr("y", 0 - (margin.top - 10))
-        .attr("text-anchor", "right")
+        .attr("text-anchor", "left")
         .style("font-size", "12px")
         .style("font-family", "sans-serif")
         .text("Most represented majors " + html_year);
@@ -480,9 +480,9 @@ function fill_stud_by_year(course_name, id) {
     }
 
     svg.append("text")
-        .attr("x", 0)
+        .attr("x", 0 - margin.left)
         .attr("y", 0 - (margin.top - 10))
-        .attr("text-anchor", "right")
+        .attr("text-anchor", "left")
         .style("font-size", "12px")
         .style("font-family", "sans-serif")
         .text("Number of enrolled students by year");
