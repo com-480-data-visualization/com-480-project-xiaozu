@@ -317,3 +317,39 @@ body{
   left: 0px !important;
   will-change: transform !important;
 }
+
+.btn-tutorial{
+  background-color: rgb(38, 153, 178);
+  color: white;
+  border-left-color: rgb(38, 153, 178);
+  border-top-color: rgb(38, 153, 178);
+  border-right-color: rgb(38, 153, 178);
+  border-bottom-color: rgb(38, 153, 178);
+}
+
+.btn-tutorial:hover{
+  background-color: rgb(137, 163, 168);
+  color: white;
+  border-left-color: rgb(38, 153, 178);
+  border-top-color: rgb(38, 153, 178);
+  border-right-color: rgb(38, 153, 178);
+  border-bottom-color: rgb(38, 153, 178);
+}
+
+.btn-tutorial:focus{
+  background-color: rgb(137, 163, 168);
+  color: white;
+  border-left-color: rgb(38, 153, 178);
+  border-top-color: rgb(38, 153, 178);
+  border-right-color: rgb(38, 153, 178);
+  border-bottom-color: rgb(38, 153, 178);
+}
+
+.btn-tutorial:hover:active{
+  background-color: rgb(137, 163, 168);
+  color: white;
+  border-left-color: rgb(38, 153, 178);
+  border-top-color: rgb(38, 153, 178);
+  border-right-color: rgb(38, 153, 178);
+  border-bottom-color: rgb(38, 153, 178);
+}

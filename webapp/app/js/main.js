@@ -5,32 +5,23 @@ $('#menuList a').on('click', function (e) {
 
 var introguide = introJs();
 introguide.setOptions({
+  'showButtons': false,
   steps: [
       {
         element: '.btn-start',
-        intro: 'This guided tour will explain the Hongkiat demo page interface.<br><br>Use the arrow keys for navigation or hit ESC to exit the tour immediately.',
+        intro: 'We will guide you around our website for a full immersive experience. <br><br>Use the arrow keys for navigation or hit ESC to exit the tour immediately.',
         position: 'bottom'
       },
-      // {
-      //   element: '.nav-logo',
-      //   intro: 'Click this main logo to view a list of all Hongkiat demos.',
-      //   position: 'bottom'
-      // },
-      // {
-      //   element: '.nav-title',
-      //   intro: 'Hover over each title to display a longer description.',
-      //   position: 'bottom'
-      // },
-      // {
-      //   element: '.readtutorial a',
-      //   intro: 'Click this orange button to view the tutorial article in a new tab.',
-      //   position: 'right'
-      // },
-      // {
-      //   element: '.nav-menu',
-      //   intro: "Each demo will link to the previous & next entries.",
-      //   position: 'bottom'
-      // }
+      {
+        element: '#explore-btn',
+        intro: 'Click this tab to see which are the popular courses over the years.',
+        position: 'bottom'
+      },
+      {
+        element: '#network-btn',
+        intro: 'Click this tab to explore suggested courses for a specific student.',
+        position: 'bottom'
+      }
   ]
 });
 
