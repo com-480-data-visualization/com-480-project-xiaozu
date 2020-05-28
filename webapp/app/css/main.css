@@ -75,6 +75,13 @@ body{
   font-size: 10px;
 }
 
+#statistic-tutorial-bubble{
+  overflow-x: hidden;
+  padding-top: 15px;
+  padding-bottom: 25px;
+  /* padding-left: 0px; */
+}
+
 
 
 #selected-courses {

@@ -16,14 +16,14 @@ function course_l(node, id) {
 //TODO: should return just a json
     var div = document.getElementById(id+"-course_l");
     div.innerHTML = `
-    <div> Details of sections: <div>
+    <div><h6> Details of sections: </h6><div>
     `;
 }
 function course_total(node, id) {
 //TODO: should return just a json
     var div = document.getElementById(id+"-course_total");
     div.innerHTML = `
-    <div> Total number of courses in the sections: <i> ${node.length} </i>  <div>
+    <div><h6>Total number of courses in the sections: <i> ${node.length} </i></h6><div>
     `;
 }
 function section_total(node, id) {
@@ -35,7 +35,7 @@ for(var i = 0;i<node.length;i++){
 }
     var div = document.getElementById(id+"-section_total");
     div.innerHTML = `
-    <div> Number of section you choose: <i> ${section_list.size} </i>  <div>
+    <div><h6>Number of section you choose: <i> ${section_list.size} </i></h6><div>
     `;
 }
 function course_section(node, id){
