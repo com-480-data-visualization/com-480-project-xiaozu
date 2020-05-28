@@ -1,16 +1,24 @@
 export function bubble_statistics(node, id) {
     var div = document.getElementById(id);
     div.innerHTML = `
-                    <div class="showStatistics" style="width: 18rem;">
-                    <div id="${id}-section_total"></div>
-                    <div id="${id}-course_total"></div>
+                    <div class="showStatistics" style="width: 30rem;">
+                    <div style="font-size:20px;" id="${id}-section_total"></div>
+                    <div style="font-size:20px;" id="${id}-course_total"></div>
+                    <div style="font-size:20px;" id="${id}-course_l"></div>
                     <div id="${id}-course_section"></div>
                       `;
-    section_total(node, id)                  
+    course_l(node, id)
+    section_total(node, id)
     course_total(node, id);
     course_section(node, id);
 }
-
+function course_l(node, id) {
+//TODO: should return just a json
+    var div = document.getElementById(id+"-course_l");
+    div.innerHTML = `
+    <div> Details of sections: <div>
+    `;
+}
 function course_total(node, id) {
 //TODO: should return just a json
     var div = document.getElementById(id+"-course_total");
@@ -21,7 +29,7 @@ function course_total(node, id) {
 function section_total(node, id) {
 //TODO: should return just a json
 var section_list = new Set()
-console.log("aaaaa");
+
 for(var i = 0;i<node.length;i++){
   section_list.add(node[i].section)
 }
@@ -87,14 +95,14 @@ for(var i=0;i<section_list.size;i++){
       {
 
           var value = this.value;
-          console.log(value);
+
           if (value == "Course")
           {
               change(datasetCourse);
           }
           else if (value == "Enrollments")
           {
-            console.log("here");
+
               change(datasetEnroll);
           }
 
@@ -122,7 +130,7 @@ var yAxis = svg.append("g")
 change(datasetCourse);
 
    function change(dataset) {
-     console.log(dataset);
+
     y.domain(dataset.map(function(d) { return d.label; }));
     x.domain([0, d3.max(dataset, function(d) { return d.value; })]);
     xAxis.call(d3.axisBottom(x))
