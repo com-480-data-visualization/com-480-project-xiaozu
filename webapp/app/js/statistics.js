@@ -354,7 +354,7 @@ function fill_stud_by_major(course_name, course_year, id){
   div.innerHTML = "";
 
   // Set margin and dimesion
-  var margin = {top: 20, right: 40, bottom: 30, left: 200};
+  var margin = {top: 20, right: 40, bottom: 40, left: 200};
   var width = 300 - margin.left - margin.right;
   var height = 200 - margin.top - margin.bottom;
 
@@ -621,9 +621,10 @@ function fill_stud_by_year(course_name, id) {
 
 export function generate_statistics(d, id, network_stats=true) {
     var div = document.getElementById(id);
+    console.log("D", d)
     div.innerHTML = `
                     <div class="showStatistics" style="width: 18rem;">
-                    <h5> ${d.name}
+                    <h5> ${d.short_name}  ${d.name}
                     ${network_stats ? `
                     <button type="button" class="btn buttons-icon-lock"
                             value="${d.name}" id="lock_button">
