@@ -1,0 +1,4 @@
+NODE_ENV=development
+PORT=3000
+URL="http://localhost:3000/"
+MONGO="mongodb+srv://costanzaMongo:2sFcLtMzv7CDJ7kd@cluster0-dq18h.mongodb.net/test"

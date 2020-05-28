@@ -1,0 +1,1359 @@
+,section,course_name,id
+0,AR,Théorie et critique du projet MA1 (Vigano),401
+1,AR,Théorie et critique du projet MA1 (Gugger),401
+2,AR,Théorie et critique du projet MA1 (Geers),401
+3,AR,Théorie et critique du projet MA1 (Weinand),401
+4,AR,Théorie et critique du projet MA1 (FAR),401
+5,AR,Théorie et critique du projet MA1 (Floris),401
+6,AR,Théorie et critique du projet MA1 (Capaul et Blumenthal),401
+7,AR,Théorie et critique du projet MA1 (Födinger),401
+8,AR,Théorie et critique du projet MA1 (Conen et Sigl),401
+9,AR,Théorie et critique du projet MA1 (Huang),401
+10,AR,Théorie et critique du projet MA2 (Vigano),402
+11,AR,Théorie et critique du projet MA2 (Gugger),402
+12,AR,Théorie et critique du projet MA2 (Weinand),402
+13,AR,Théorie et critique du projet MA2 (FAR),402
+14,AR,Théorie et critique du projet MA2 (Floris),402
+15,AR,Théorie et critique du projet MA2 (Capaul et Blumenthal),402
+16,AR,Théorie et critique du projet MA2 (Conen et Sigl),402
+17,AR,Théorie et critique du projet MA2 (Huang),402
+18,AR,UE A : Art and architecture,404
+19,AR,Visions et Utopies,407
+20,AR,UE L : Art and architecture: constructing the view I,415
+21,AR,UE N : Art et architecture: constructing the view II,416
+22,AR,Ecrire / Construire. Allers retours,417
+23,AR,Théorie de l'architecture VII,421
+24,AR,Histoire du béton,425
+25,AR,Histoire de l'habitation,427
+26,AR,UE B : Critique architecturale,432
+27,AR,UE H : Graphie,433
+28,AR,Théories et techniques du projet de sauvegarde,434
+29,AR,UE R : Introduction au BIM (Building Information Modeling),435
+30,AR,A history of abstraction in architecture,437
+31,AR,UE F : Architecture et réhabilitation,439
+32,AR,UE K : Architecture et durabilité : études de performances,440
+33,AR,Comfort and architecture: sustainable strategies,442
+34,AR,UE P : Béton. Construction et préfabrication,448
+35,AR,Architecture et énergie solaire,449
+36,AR,Architecture et construction de la ville I,451
+37,AR,Architecture et construction de la ville II,452
+38,AR,Aménagement du territoire,454
+39,AR,Urbanisme et territoires,455
+40,AR,Urbanisme en Asie,456
+41,AR,Caractères architecturaux et urbanismes de l'Islam,457
+42,AR,Ville et mobilité,458
+43,AR,Ville africaine: introduction à la planification,462
+44,AR,UE D : Territoire et société,466
+45,AR,UE J : Territoire et paysage,471
+46,AR,UE U : Cartography,476
+47,AR,Michelangelo and the experience of space,477
+48,AR,UE X : Experience design,480
+49,AR,Introduction au BIM (Building Information Modeling),484
+50,AR,Political Economy of Design,485
+51,AR,Technological Innovation,487
+52,AR,Sociologie urbaine,489
+53,AR,Economie spatiale et régionale,492
+54,AR,Critique du projet urbain contemporain,493
+55,AR,Apparent realities - Constructing the view,495
+56,AR,Building design in the circular economy,497
+57,AR,La nouvelle architecture internationale en Suisse,498
+58,AR,De la structure à l'ornement,521
+59,AR,Structures complexes,535
+60,AR,Superstudio,597
+61,AR,Enoncé théorique de master,598
+62,CIVIL,Structure et architecture,434
+63,PENS,Projet ENAC,490
+64,PENS,Summer workshop,491
+66,CIVIL,Structural stability,369
+67,CIVIL,Geomechanics,402
+68,CIVIL,Géologie de la construction et de l'environnement,403
+69,CIVIL,Travaux souterrains,404
+70,CIVIL,Hydraulique fluviale et aménagement de cours d'eau,410
+71,CIVIL,Barrages et ouvrages hydrauliques annexes,411
+72,CIVIL,Ouvrages hydrauliques et aménagements hydroélectriques,412
+73,CIVIL,Urban hydraulic systems,413
+74,CIVIL,Advanced design of concrete structures,414
+75,CIVIL,Dynamique des structures,420
+76,CIVIL,Advanced continuum mechanics,422
+77,CIVIL,Computational geomechanics,423
+78,CIVIL,Innovation for construction and the environment,424
+79,CIVIL,Engineering geology for geo-energy,428
+80,CIVIL,Ponts en béton,430
+81,CIVIL,Conception des constructions en bois,433
+83,CIVIL,Advanced steel design,435
+84,CIVIL,"Structures existantes, bases",436
+85,CIVIL,"Structures existantes, chapitres choisis",437
+86,CIVIL,Analyse et gestion de risques,438
+87,CIVIL,Economie hydraulique,441
+88,CIVIL,Planification intégrée des infrastructures d'énergie,442
+89,CIVIL,Advanced composites in engineering structures,443
+90,CIVIL,Energy geostructures,444
+91,CIVIL,Modélisation des systèmes énergétiques,447
+92,CIVIL,Geophysics for engineers,448
+93,CIVIL,Nonlinear analysis of structures,449
+94,CIVIL,Thermodynamics of comfort in buildings,450
+95,CIVIL,Villes et transports,451
+96,CIVIL,Infrastructures de transport II,454
+97,CIVIL,Transportation economics,455
+98,CIVIL,Fundamentals of traffic operations and control,457
+99,CIVIL,Deep Learning for autonomous vehicles,459
+100,CIVIL,Indoor air quality and ventilation,460
+101,CIVIL,Public transportation systems,461
+102,CIVIL,Sustainable logistics systems,462
+103,CIVIL,Infrastructures de transport I,463
+104,CIVIL,UE génie civil: construction durable,474
+105,CIVIL,Esthétique des ouvrages de génie civil,476
+106,CIVIL,Projet de construction,490
+107,CIVIL,Projet de systèmes civils,491
+108,CIVIL,Laboratoire GC,492
+109,CIVIL,Projet interdisciplinaire à option,493
+110,CIVIL,Ondes de crue et de rupture de barrage,515
+111,CIVIL,Seismic engineering,522
+112,CIVIL,"Structures en béton, chapitres choisis",525
+113,CIVIL,"Structures en métal, chapitres choisis",526
+114,CIVIL,Selected topics in mechanics of solids and structures,527
+115,CIVIL,Slope stability,530
+116,CIVIL,Matériaux et structures,532
+117,CIVIL,Decision-aid methodologies in transportation,557
+118,CIVIL,Stage d'ingénieur crédité avec le PDM (master en Génie civil),597
+119,CIVIL,Pré-étude projet de master,598
+120,ENG,Building energetics,445
+121,ENG,Droit de la construction pour ingénieurs I,470
+122,ENG,Droit de la construction pour ingénieurs II,471
+123,ENG,Etudes d'impact,474
+124,ENV,Eco-morphologie fluviale,418
+125,ENV,Analyse et management des risques industriels,508
+126,MATH,Programming concepts in scientific computing,458
+127,MGT,Management de projet et analyse du risque,427
+130,ME,Projet Génie mécanique I,401
+131,ME,Projet Génie mécanique II,402
+132,ME,Applied mechanical design,403
+133,ME,Mechanical product design and development,410
+134,ME,Mechanics of slender structures,411
+135,ME,Experimental methods in engineering mechanics,412
+136,ME,Introduction to additive manufacturing,413
+137,ME,Computational multi-scale modeling of solids,414
+138,ME,Fundamentals of computer aided manufacturing,416
+139,ME,Conception mécanique intégrée,418
+140,ME,Production management,419
+141,ME,System identification,421
+142,ME,Multivariable control,422
+143,ME,Systèmes mécatroniques,424
+144,ME,Model predictive control,425
+145,ME,Micro/Nanomechanical devices,426
+146,ME,Networked control systems,427
+147,ME,Fracture mechanics,432
+148,ME,Aéroélasticité et interaction fluide-structure,435
+149,ME,Micro/Nano robotics,436
+150,ME,Advanced solid mechanics,437
+151,ME,Hydrodynamique acoustique,443
+152,ME,Hydrodynamics,444
+153,ME,Aerodynamics,445
+154,ME,Two-phase flows and heat transfer,446
+155,ME,Advanced energetics,451
+156,ME,Hydraulic turbomachines,453
+157,ME,Modelling and optimization of energy systems,454
+158,ME,Turbomachines thermiques,455
+159,ME,Thermal power cycles and heat pump systems,459
+160,ME,Renewable energy (for ME),460
+161,ME,Cavitation et phénomènes d'interface,462
+162,ME,Introduction to nuclear engineering,464
+163,ME,Advanced heat transfer,465
+164,ME,Instability,466
+165,ME,Turbulence,467
+166,ME,Dynamique numérique des solides et des structures,473
+167,ME,Numerical flow simulation,474
+168,ME,Multi-body simulation,475
+169,ME,Particle-based methods,476
+170,ME,Biomechanics of the cardiovascular system,481
+171,ME,Biomechanics of the musculoskeletal system,482
+172,ME,Numerical methods in biomechanics,484
+173,ME,Continuous improvement of manufacturing systems,498
+174,ME,Lifecycle performance of product systems,516
+175,ME,Commande non linéaire,523
+176,ME,Advanced control systems,524
+177,ME,Engines and fuel cells,551
+178,ME,Stage d'ingénieur crédité avec le PDM (master en Génie mécanique),597
+179,MICRO,Advanced additive manufacturing technologies,413
+180,MICRO,Bases de la robotique,450
+181,MICRO,Robotique industrielle et appliquée,451
+182,MSE,Composites polymères + TP,340
+183,BIO,Cellular and molecular biology I,205
+184,BIO,Physiologie par systèmes I,376
+185,BIO,Biological modeling of neural networks,465
+186,BIOENG,Fundamentals of neuroengineering,448
+187,COM,Information theory and coding,404
+188,COM,Mobile networks,405
+189,COM,TCP/IP networking,407
+190,COM,Data visualization,480
+191,CS,Computer architecture,208
+192,CS,Architecture des systems-on-chip,209
+193,CS,Introduction to computer graphics,341
+194,CS,Applied data analysis,401
+195,CS,Computational photography,413
+196,CS,Distributed information systems,423
+197,CS,Machine learning,433
+198,CS,Advanced computer architecture,470
+199,CS,Advanced multiprocessor architecture,471
+200,CS,Design technologies for integrated systems,472
+201,CS,Embedded systems,473
+202,CS,Real-time embedded systems,476
+203,CS,Industrial automation,487
+204,EE,Low power electronics: analog mixed signal design,423
+205,EE,HF and VHF circuits and techniques I,425
+206,EE,Hardware systems modeling I,432
+207,EE,Hardware systems modeling II,433
+208,EE,Photonic systems and technology,440
+209,EE,Microwaves,445
+210,EE,Image analysis and pattern recognition,451
+211,EE,Hydropower plants: generating and pumping units,456
+212,EE,Industrial electronics I,465
+213,EE,Energy storage systems,466
+214,EE,Power systems dynamics,470
+215,EE,Smart grids technologies,472
+216,EE,Multivariable control and coordination systems,477
+217,EE,Lab in acoustics,490
+218,EE,Lab in EDA based design,490
+219,EE,Lab in electrical energy systems,490
+220,EE,Lab in microwaves,490
+221,EE,Lab in signal and image processing,490
+222,EE,Lab on app development for tablets and smartphones,490
+223,EE,Lab in data science,490
+224,EE,Sensors in medical instrumentation,511
+225,EE,Biomedical signal processing,512
+226,EE,Fundamentals of biosensors and electronic biochips,515
+227,EE,Bio-nano-chip design,517
+228,EE,Analog circuits for biochip,518
+229,EE,Bioelectronics and biomedical microelectronics,519
+230,EE,HF and VHF circuits and techniques II,525
+231,EE,Test of VLSI systems,530
+232,EE,Integrated circuits technology,532
+233,EE,Nanoelectronics,535
+234,EE,Physical models for micro and nanosystems,536
+235,EE,Electrical filters,539
+236,EE,Optical communications,540
+237,EE,Audio,548
+238,EE,Image and video processing,550
+239,EE,Media security,552
+240,EE,Automatic speech processing,554
+241,EE,Systems and architectures for signal processing,555
+242,EE,Mathematics of data: from theory to computation,556
+243,EE,Semiconductor devices I,557
+244,EE,A network tour of data science,558
+245,EE,Deep learning,559
+246,EE,Industrial electronics II,565
+247,EE,Adaptation and learning,566
+248,EE,Semiconductor devices II,567
+249,EE,Power system restructuring and deregulation,570
+250,EE,Wave propagation along transmission lines,575
+251,EE,Electromagnetic compatibility,576
+252,EE,Conception de mécanismes spatiaux : introduction,580
+253,EE,Spacecraft avionics architectures,583
+254,EE,Spacecraft design and system engineering,584
+255,EE,Space mission design and operations,585
+256,EE,Introduction to planetary sciences,586
+257,EE,Advanced lab in electrical energy systems,588
+258,EE,Projet en technologies spatiales,589
+259,EE,Social media,593
+260,EE,Stage d'ingénieur (master en Génie électrique et électronique),596
+261,EE,Stage d'ingénieur crédité avec le PDM (master en Génie électrique et électronique),597
+262,EE,Advanced lab in electrical engineering,598
+263,ENG,Distributed intelligent systems,466
+264,MATH,Discrete optimization,261
+265,MATH,Statistics for data science,413
+266,ME,Energy conversion and renewable energy,409
+269,MGT,Convex optimization,418
+270,MGT,Optimal decision making,483
+271,MICRO,Selected topics in advanced optics,420
+272,MICRO,Imaging optics,421
+273,MICRO,Lasers: theory and modern applications,422
+274,MICRO,Optics laboratories I,423
+275,MICRO,Applied machine learning,455
+276,MICRO,Low-power radio design for IoT,461
+277,MICRO,Scaling laws & simulations in micro & nanosystems,470
+278,MICRO,Photonic micro- and nanosystems,504
+279,MICRO,Signal processing for functional brain imaging,513
+280,MICRO,Flexible bioelectronics,514
+281,MICRO,Optical detectors,523
+282,MICRO,BioMEMS,560
+283,MICRO,Biomicroscopy I,561
+284,MICRO,Biomicroscopy II,562
+285,MICRO,Fundamentals & processes for photovoltaic devices,565
+286,MICRO,Seminar in physiology and instrumentation,568
+287,MICRO,Deep Learning for Optical Imaging,723
+289,PHYS,Semiconductor physics and light-matter interaction,433
+290,PHYS,Physics of photonic semiconductor devices,434
+291,PHYS,Fundamentals of biomedical imaging,438
+292,PHYS,Optique III,449
+293,PHYS,Quantum electrodynamics and quantum optics,453
+294,PHYS,Quantum optics and quantum information,454
+302,COM,Information theory and signal processing,406
+303,COM,Audio and acoustic signal processing,415
+306,CS,Digital education & learning analytics,411
+308,CS,Database systems,422
+310,CS,Introduction to natural language processing,431
+312,CS,Advanced computer graphics,440
+313,CS,Computer vision,442
+314,CS,Virtual reality,444
+315,CS,Digital 3D geometry processing,446
+316,CS,Human computer interaction,486
+317,DH,Digital musicology,401
+318,DH,Cultural data sculpting,404
+319,DH,Foundation of digital humanities,405
+320,DH,Machine learning for DH,406
+321,DH,Design research for digital innovation,411
+322,DH,History and the digital,412
+323,DH,Stage d'ingénieur (master en Humanités digitales),490
+327,EE,Computational Social Media,727
+328,ENG,Spatial statistics and analysis,440
+329,ENV,Exploratory data analysis and geovisualization,444
+330,MATH,Linear models,341
+331,MGT,Strategic marketing & technology commercialization,401
+332,MGT,Technology & innovation strategy,414
+333,MICRO,Image processing I,511
+334,MICRO,Image processing II,512
+335,BIO,Cellular biology and biochemistry for engineers,105
+337,COM,Cryptography and security,401
+338,COM,Information security and privacy,402
+343,COM,Advanced probability and applications,417
+344,COM,Modern digital communications: a hands-on approach,430
+346,COM,Statistical signal and data processing through applications,500
+347,COM,Dynamical system theory for engineers,502
+348,COM,Performance evaluation,503
+349,COM,Networks out of control,512
+350,COM,Mathematical foundations of signal processing,514
+351,COM,Markov chains and algorithmic applications,516
+353,CS,Technology ventures in IC,410
+355,CS,Software security,412
+357,CS,Advanced compiler construction,420
+360,CS,Intelligent agents,430
+363,CS,Decentralized systems engineering,438
+364,CS,Optimization for machine learning,439
+369,CS,Sublinear algorithms for big data analysis,448
+370,CS,Advanced algorithms,450
+371,CS,Distributed algorithms,451
+372,CS,Foundations of software,452
+373,CS,Concurrent algorithms,453
+374,CS,Topics in theoretical computer science,455
+375,CS,Artificial neural networks,456
+383,CS,Experience design,489
+384,CS,Business design for IT services,490
+385,CS,Enterprise and service-oriented architecture,491
+386,CS,Projet en informatique II,498
+387,CS,Principles of computer systems,522
+388,CS,Advanced topics on privacy enhancing technologies,523
+389,CS,Computational complexity,524
+390,CS,Foundations and tools for processing tree structured data,525
+391,CS,Learning theory,526
+392,CS,Formal verification,550
+393,CS,Stage d'ingénieur crédité avec le PDM (master en Informatique),595
+394,CS,Optional project in computer science,596
+403,MATH,Set theory,318
+404,MATH,Algebraic curves and cryptography,409
+405,MATH,Probabilistic methods,467
+406,MATH,Gödel and recursivity,483
+407,MATH,Number theory in cryptography,489
+408,MATH,Applied biostatistics,493
+411,BIO,Biomolecular structure and mechanics,315
+412,BIO,Scientific project design in synthetic biology (iGEM),318
+413,BIO,Bioimage informatics,410
+414,BIO,Nutrition: from molecules to health,441
+415,BIO,Fundamentals of biophotonics,443
+416,BIO,Stem cell biology and technology,447
+417,BIO,Understanding statistics and experimental design,449
+418,BIO,Molecular endocrinology,450
+419,BIO,Introduction au droit et à l'éthique,455
+420,BIO,Genomics and bioinformatics,463
+421,BIO,Scientific project design in cell and developmental biology,464
+423,BIO,Scientific literature analysis in bioengineering,467
+424,BIO,Scientific literature analysis in computational molecular biology,468
+425,BIO,Cancer biology I,471
+426,BIO,Cancer biology II,472
+427,BIO,Infection biology,477
+428,BIO,Pharmacology and pharmacokinetics,478
+429,BIO,Immunology,479
+430,BIO,Neuroscience: from molecular mechanisms to disease,480
+431,BIO,Neuroscience: cellular and circuit mechanisms,482
+432,BIO,Neuroscience: behavior and cognition,483
+433,BIO,Scientific project design in translational neurosciences,487
+434,BIO,Scientific project design in translational oncology,488
+435,BIO,New tools & research strategies in personalized health,491
+436,BIO,Scientific project design in integrative neurosciences,493
+437,BIO,Scientific project design in drug discovery,494
+438,BIO,Lab immersion I,501
+439,BIO,Lab immersion II,502
+440,BIO,Lab immersion III,503
+441,BIO,Lab immersion academic (outside EPFL),504
+442,BIO,Lab immersion in industry,506
+443,BIOENG,Immunoengineering,399
+444,BIOENG,Analysis and modelling of locomotion,404
+445,BIOENG,Single cell biology,420
+446,BIOENG,Biomaterials,442
+447,BIOENG,Advanced bioengineering methods laboratory,444
+448,BIOENG,Biomedical optics,445
+450,BIOENG,Tissue engineering,449
+451,BIOENG,In silico neuroscience,450
+452,BIOENG,Scientific literature analysis in neuroscience,451
+453,BIOENG,Computational cell biology,455
+454,BIOENG,Controlling behavior in animals and robots,456
+455,BIOENG,Neuroengineering of vision,457
+456,BIOENG,Sensorimotor neuroprosthetics,486
+457,BIOENG,Lab methods : animal experimentation,511
+458,BIOENG,Lab methods : bioactive compounds screening,512
+459,BIOENG,Lab methods : biosafety,513
+460,BIOENG,Lab methods : flow cytometry,514
+461,BIOENG,Lab methods : histology,516
+462,BIOENG,Lab methods : proteomics,517
+463,BIOENG,Industry internship,596
+464,CH,Frontiers in chemical biology,412
+465,CH,Nanobiotechnology and biophysics,413
+466,COM,Modèles stochastiques pour les communications,300
+468,CS,Introduction à l'informatique visuelle,211
+470,CS,Computational motor control,432
+472,CS,Unsupervised & reinforcement learning in neural networks,434
+473,ChE,Principles and applications of systems biology,411
+477,EE,Brain computer interaction,514
+479,EE,Data analysis and model classification,516
+482,MATH,Mathematical physiology,475
+484,ME,Structural mechanics (for SV),231
+490,MGT,Applied probability & stochastic processes,484
+491,MICRO,Fundamentals of microfabrication,331
+501,MSE,Nanomaterials,477
+502,PHYS,Biophysics : physics of biological systems,302
+504,PHYS,Statistical physics of biomacromolecules,441
+510,EE,Apprentissage et intelligence artificielle,311
+511,FIN,Introduction to finance,401
+512,FIN,Econometrics,403
+513,FIN,Derivatives,404
+514,FIN,Investments,405
+515,FIN,Macrofinance,406
+516,FIN,Financial econometrics,407
+517,FIN,Real options and financial structuring,410
+518,FIN,Accounting for finance,411
+519,FIN,Financial applications of blockchains and distributed ledgers,413
+520,FIN,Optimization methods,414
+521,FIN,Stochastic calculus,415
+522,FIN,Interest rate and credit risk models,416
+523,FIN,Quantitative risk management,417
+524,FIN,Machine learning for finance,418
+525,FIN,Computational finance,472
+526,FIN,Advanced derivatives,503
+527,FIN,Venture capital,522
+528,FIN,Global business environment,523
+529,FIN,Financial big data,525
+530,FIN,Engineering internship credited with master project (master in Financial Engineering),598
+531,MATH,Time series,342
+532,MATH,Advanced numerical analysis,351
+533,MATH,Modern regression methods,408
+534,MATH,Statistical machine learning,412
+535,MATH,"Risk, rare events and extremes",447
+536,MATH,Numerical integration of stochastic differential equations,450
+537,MATH,Numerical approximation of PDEs,451
+538,MATH,Numerical analysis and computational mathematics,456
+539,MATH,Mathematical modelling of behavior,463
+540,MGT,Data science in practice,415
+541,MGT,Network analytics,416
+542,MGT,Data science for business,432
+543,MGT,Principles of microeconomics,454
+544,MICRO,Machine learning programming,401
+546,MICRO,Advanced machine learning,570
+557,MGT,Corporate strategy,400
+559,MGT,Economics of innovation and IP,404
+560,MGT,Economics of innovation & management in energy,407
+561,MGT,Technology policy and the energy transition,408
+562,MGT,"D. Thinking: real problems, human-focused solutions",409
+563,MGT,Applied corporate & industry analysis,410
+564,MGT,Innovation management,411
+565,MGT,Organizational behavior,412
+566,MGT,Entrepreneurship & new venture strategy,413
+570,MGT,Value chain management in practice,417
+572,MGT,Systemic & strategic problem solving,419
+573,MGT,Logistique et analyse de la demande,426
+575,MGT,Quantitative systems modeling techniques,430
+577,MGT,Information technology & digital strategy,439
+578,MGT,"Industry dynamics, models & trends",453
+580,MGT,Practical business law,455
+581,MGT,Negotiation techniques,466
+582,MGT,Leading and managing in a global context,468
+583,MGT,Intercultural presentation skills,469
+584,MGT,Financial & managerial accounting,481
+585,MGT,Principles of finance,482
+588,MGT,Supply chain management,526
+589,MGT,Operations: economics & strategy,528
+590,MGT,Innovation & entrepreneurship in engineering,555
+591,MGT,Introduction to econometrics,581
+592,MGT,Engineering internship credited with master project (master in Management of Technology and Entrepreneurship),597
+599,EE,Circuits intégrés I,320
+601,EE,Transducteurs et entraînements intégrés,461
+609,ENV,Advanced satellite positioning,542
+619,MICRO,Products design & systems engineering,406
+625,MICRO,Optics laboratories II,424
+626,MICRO,Laser fundamentals and applications for engineers,426
+627,MICRO,Materials and technology of microfabrication,431
+628,MICRO,Techniques d'assemblage,440
+629,MICRO,Analyse de produits et systèmes,443
+630,MICRO,Manufacturing systems and supply chain dynamics,448
+632,MICRO,Basics of mobile robotics,452
+636,MICRO,Projet microtechnique I,498
+637,MICRO,Projet microtechnique II,499
+638,MICRO,MEMS practicals I,501
+639,MICRO,Aerial robotics,502
+640,MICRO,MEMS practicals II,503
+642,MICRO,Organic and printed electronics,505
+643,MICRO,Legged robots,507
+644,MICRO,Commande embarquée de moteurs,510
+649,MICRO,Evolutionary robotics,515
+650,MICRO,Laser microprocessing,520
+652,MICRO,Nanotechnology,530
+653,MICRO,Advanced MEMS & microsystems,534
+654,MICRO,Haptic human robot interfaces,553
+659,MICRO,Large-area electronics: devices and materials,566
+661,MICRO,Stage d'ingénieur crédité avec le PDM (master en Microtechnique),597
+663,PHYS,Nonlinear optics,501
+664,CH,Atoms and radiation,360
+667,PHYS,Physics of materials,307
+668,PHYS,Physics of novel electronic materials,328
+669,PHYS,Selected topics in nuclear and particle physics,400
+670,PHYS,Astrophysics III : stellar and galactic dynamics,401
+671,PHYS,Astrophysics IV : observational cosmology,402
+672,PHYS,Computer simulation of physical systems I,403
+673,PHYS,Experimental methods in physics,405
+674,PHYS,Frontiers in nanosciences,407
+675,PHYS,"Physics of atoms, nuclei and elementary particles",411
+676,PHYS,Particle physics I,415
+677,PHYS,Particle physics II,416
+678,PHYS,Solid state physics III,419
+679,PHYS,Solid state physics IV,420
+680,PHYS,Laboratoire de physique IVa,421
+681,PHYS,Laboratoire de physique IVb,422
+682,PHYS,Plasma physics II,423
+683,PHYS,Plasma physics III,424
+684,PHYS,Quantum physics III,425
+685,PHYS,Quantum physics IV,426
+686,PHYS,Relativity and cosmology I,427
+687,PHYS,Relativity and cosmology II,428
+688,PHYS,Quantum field theory I,431
+689,PHYS,Quantum field theory II,432
+692,PHYS,Statistical physics III,435
+693,PHYS,Statistical physics IV,436
+695,PHYS,Introduction à la physique des astroparticules,439
+696,PHYS,Particle detection,440
+698,PHYS,Méthodologie des plans d'expériences,442
+699,PHYS,Physics of nuclear reactors,443
+700,PHYS,Nuclear fusion and plasma physics,445
+701,PHYS,Reactor technology,447
+702,PHYS,Introduction to particle accelerators,448
+704,PHYS,"Radiation biology, protection and applications",450
+705,PHYS,Radiation detection,452
+708,PHYS,"Nonlinear dynamics, chaos and complex systems",460
+709,PHYS,Travail de spécialisation pour master en physique,597
+710,MSE,Surface analysis,351
+711,MSE,Cementitious materials (advanced),420
+712,MSE,Statistical mechanics,421
+713,MSE,Advanced metallurgy,422
+714,MSE,Fundamentals of solid-state materials,423
+715,MSE,Fracture of materials,424
+716,MSE,Soft matter,425
+717,MSE,Life cycle engineering of polymers,430
+718,MSE,Physical chemistry of polymeric materials,431
+719,MSE,Introduction to magnetic materials in modern technologies,432
+720,MSE,Polymer chemistry and macromolecular engineering,437
+721,MSE,Composites technology,440
+722,MSE,Electrochemistry for materials technology,441
+723,MSE,Introduction to crystal growth by epitaxy,442
+724,MSE,"Modelling problem solving, computing and visualisation I",443
+725,MSE,"Modelling problem solving, computing and visualisation II",443
+726,MSE,Polymer morphological characterization techniques,451
+727,MSE,Powder technology,462
+728,MSE,Recycling of materials,463
+729,MSE,Assembly techniques,464
+730,MSE,Atomistic and quantum simulations of materials,468
+731,MSE,Seminar series on advances in materials (autumn),470
+732,MSE,Seminar series on advances in materials (spring),470
+733,MSE,Biomaterials (pour MX),471
+734,MSE,Materials selection,474
+736,MSE,Organic semiconductors,478
+737,MSE,Dielectric properties of materials,480
+738,MSE,Properties of semiconductors and related nanostructures,484
+739,MSE,Tribology,485
+740,MSE,"Organic electronic materials - synthesis, applications, properties",486
+741,MSE,Research project in materials I,490
+742,MSE,Research project in materials II,491
+743,MSE,Research project in materials III,492
+744,MSE,Stage d'ingénieur crédité avec le PDM (master en Science et génie des matériaux),597
+747,CS,Introduction to database systems,322
+749,ENG,Water quality modeling,400
+750,ENG,Environmental transport phenomena,420
+753,ENG,Experimental design and data analysis with R,467
+755,ENV,Air pollution and climate change,400
+756,ENV,Sanitary engineering in developing countries,402
+757,ENV,Water and wastewater treatment,405
+758,ENV,Biomineralization: from nature to application,406
+759,ENV,Hydrologie urbaine,417
+761,ENV,Bio-ingénierie des cours d'eau et milieux naturels,420
+762,ENV,Water resources engineering,424
+763,ENV,Limnology,425
+764,ENV,Fluvial biogeosciences,426
+765,ENV,Spatial decision support systems,443
+767,ENV,Geomonitoring,445
+768,ENV,Gestion foncière et droit foncier,460
+769,ENV,Sustainability assessment of urban systems,461
+770,ENV,Droit : contrats et responsabilité professionnelle,466
+771,ENV,"Environnements de travail, risques professionnels",468
+772,ENV,Systèmes de management environnementaux,469
+773,ENV,Development engineering,470
+774,ENV,Solid waste engineering,500
+775,ENV,Material and energy flow analysis,501
+776,ENV,Groundwater and soil remediation,504
+777,ENV,TP de bioprocédés environnementaux,506
+778,ENV,Fate and behaviour of environmental contaminants,507
+780,ENV,Applied wastewater engineering,509
+781,ENV,Statistiques multivariables avec R,521
+782,ENV,Hydrogeophysics,523
+783,ENV,Risques hydrologiques et aménagements,524
+784,ENV,Physics and hydrology of snow,525
+785,ENV,Image processing for Earth observation,540
+787,ENV,Design de SIG et Web-SIG,547
+788,ENV,Sensor orientation,548
+789,ENV,Design project,596
+790,ENV,Projet SIE,597
+791,ENV,Stage d'ingénieur crédité avec le PDM (master en Sciences et ingénierie de l'environnement),598
+802,COM,Projet de semestre en data science,412
+806,COM,Advanced cryptography,501
+808,COM,Student seminar: security protocols and applications,506
+809,COM,Optional project in data science,508
+813,COM,Stage d'ingénieur crédité avec le PDM (master en Data sciences),596
+826,CS,Systems for data science,449
+845,MATH,Graph theory,360
+847,MATH,Robust and nonparametric statistics,441
+848,MATH,Statistical theory,442
+850,MATH,Computational linear algebra,453
+851,MATH,Combinatorial optimization,460
+861,COM,Projet en systèmes de communication II,416
+870,COM,Optional project in communication systems,507
+874,COM,Stage d'ingénieur crédité avec le PDM (master en Systèmes de communication),597
+931,CH,Analysis of ancient materials and their degradation,406
+932,CH,Cellular signalling,411
+935,CH,Chemistry of small biological molecules,415
+936,CH,Chemical biology of cell imaging,416
+937,CH,Protein mass spectrometry and proteomics,419
+938,CH,Catalysis for energy storage,421
+939,CH,Supramolecular chemistry,424
+940,CH,Artificial photosynthesis,426
+941,CH,Chemistry of f elements,427
+942,CH,Physical and computational organic chemistry,431
+943,CH,Structure and reactivity,432
+944,CH,Catalytic asymmetric reactions in organic chemistry,435
+945,CH,Total synthesis of natural products,438
+946,CH,Photochemistry II,443
+947,CH,Electronic spectroscopy,444
+948,CH,Advanced materials for photovoltaics and lighting,447
+949,CH,Photomedicine,448
+950,CH,Computational methods in molecular quantum mechanics,452
+951,CH,Molecular quantum dynamics,453
+952,CH,Project in molecular sciences Ib,491
+953,CH,Project in molecular sciences Ia,492
+954,CH,Project in molecular sciences II,590
+956,ENG,Risk management,430
+957,ENG,Chimie des denrées alimentaires,433
+958,ENG,Chemistry of food processes,435
+963,BIOENG,Selected topics in life sciences,430
+968,ChE,Advanced diffusional processes,402
+969,ChE,Heterogenous reaction engineering,403
+970,ChE,Electrochemical engineering,407
+971,ChE,Process intensification and green chemistry,408
+972,ChE,Chemical engineering lab & project,409
+973,ChE,Catalysis for emission control and energy processes,410
+975,ChE,Chemical engineering product design,413
+976,ChE,Thermodynamics of energy conversion and storage,414
+977,ChE,Nanomaterials for chemical engineering application,430
+978,ChE,Pharmaceutical biotechnology,436
+979,ChE,Bioprocesses and downstream processing,437
+980,ChE,Process development I,451
+981,ChE,Process development II,452
+982,ChE,Stage d'ingénieur (master en Génie chimique et Biotechnologie),596
+984,ENG,Safety of chemical processes,431
+987,ENG,Food biotechnology,436
+992,AR,Studio MA1 (Gugger),401
+993,AR,Théorie et critique du projet MA1 (Dietz),401
+995,AR,Théorie et critique du projet MA1 (Lamunière),401
+996,AR,Studio MA1 (Bosshard Vaquer),401
+997,AR,Studio MA1 (Giuliani et Hönger),401
+998,AR,Studio MA1 (Streich),401
+999,AR,Théorie et critique du projet MA1 (Vigano),401
+1000,AR,Théorie et critique du projet MA1 (Cache),401
+1001,AR,Studio MA2 (Gugger),402
+1002,AR,Théorie et critique du projet MA2 (Dietz),402
+1004,AR,Théorie et critique du projet MA2 (Lamunière),402
+1005,AR,Studio MA2 (Bosshard Vaquer),402
+1006,AR,Studio MA2 (Streich),402
+1007,AR,Théorie et critique du projet MA2 (Vigano),402
+1008,AR,Théorie et critique du projet MA2 (Cutellic),402
+1009,AR,La perruque d'Andy Warhol,403
+1010,AR,In Silico Design Research I,405
+1011,AR,In Silico Design Research II,406
+1013,AR,Représentation de l'espace,408
+1014,AR,UE R : Lecture paramétrique de l'Underweysung der Messung de Dürer,409
+1015,AR,Arts visuels et architecture II,410
+1016,AR,Modélisation et représentation informatique I,411
+1017,AR,Modélisation et représentation informatique II,412
+1018,AR,UE I : Analogue-Digital-Virtuel,414
+1019,AR,UE L : Art et architecture I,415
+1020,AR,UE N : Art et architecture II,416
+1021,AR,UE G : In silico Building (Autumn),417
+1022,AR,UE G : In silico Building (Spring),418
+1023,AR,Arts visuels et architecture I,419
+1024,AR,UE C : Architecture et archéologie,420
+1026,AR,Histoire de l'architecture VII,423
+1027,AR,Histoire de l'architecture VIII,424
+1030,AR,Magma et principes,430
+1034,AR,UE E : Architecture et structures,438
+1037,AR,UE M : Espace et lumière: le projet d'éclairage,441
+1038,AR,Qualité de l'environnement intérieur et architecture: stratégies durables,442
+1039,AR,UE Q : Composants et assemblages,446
+1040,AR,UE O : Béton. Matière de construction,447
+1044,AR,Art et histoire des jardins,453
+1049,AR,Sciences de la ville I,459
+1050,AR,Sciences de la ville II,460
+1051,AR,Théorie de l'espace,461
+1052,AR,Habitat et développement urbain,465
+1054,AR,Les voies de l'eau,468
+1056,AR,Citégraphie / Devenir urbain,477
+1058,AR,"Foncier, immobilier, logement",491
+1060,AR,Studio MA3 (Gugger),501
+1061,AR,Théorie et critique du projet MA3 (Dietz),501
+1062,AR,Théorie et critique du projet MA3 (Weinand),501
+1063,AR,Théorie et critique du projet MA3 (Lamunière),501
+1064,AR,Studio MA3 (Bosshard Vaquer),501
+1065,AR,Studio MA3 (Giuliani et Hönger),501
+1066,AR,Studio MA3 (Streich),501
+1067,AR,Théorie et critique du projet MA3 (Vigano),501
+1068,AR,Théorie et critique du projet MA3 (Cache),501
+1069,AR,Histoire assistée par ordinateur (HAO),520
+1070,AR,De la structure à l'ornement: une histoire culturelle de la construction,521
+1071,AR,Difficult Double Double Histories,522
+1072,AR,Superarchitecture / Superactualité,524
+1076,ENG,"Droit de l'architecte, approfondissements: la réalisation d'une construction",484
+1077,ENG,Enquêtes et méthodes quantitatives,485
+1078,ENV,Projet ENAC,494
+1079,CH,Advanced NMR and imaging,401
+1080,CH,Bioanalytics and analytical sensors,402
+1081,CH,Mass spectrometry,403
+1082,CH,Laboratory information management systems (LIMS),404
+1083,CH,Methodology in instrumental chromatography,405
+1084,CH,Nuclear magnetic resonance,409
+1086,CH,Chemical biology,412
+1088,CH,Pharmacological chemistry,414
+1090,CH,Catalysis for energy production,421
+1091,CH,Catalyst design for synthesis,422
+1092,CH,Inorganic reactivity,423
+1099,CH,Statistical theories and electronic of solids,441
+1100,CH,Photochemistry I,442
+1103,CH,Lasers and applications in chemistry,446
+1104,CH,Advanced materials for photovoltaics and lighting applications,447
+1105,CH,Applied molecular quantum chemistry,451
+1108,CH,Spectroscopie analytique,460
+1109,CH,Experimental molecular sciences,490
+1110,CH,Project in molecular sciences,491
+1114,MSE,Polymer physical chemistry and materials properties,431
+1116,MSE,Introduction to nanomaterials,479
+1118,MSE,Supramolecular aspects of polymeric materials,488
+1119,AR,Introduction à l'architecture,429
+1120,CIVIL,Géomécanique,402
+1123,CIVIL,Voies de circulation,406
+1126,CIVIL,Aménagements hydrauliques II,412
+1130,CIVIL,Ponts en métal,431
+1131,CIVIL,Construction en bois,433
+1133,CIVIL,Structures existantes I : Sécurité et durabilité,436
+1134,CIVIL,Structures existantes II : Interventions,437
+1135,CIVIL,Analyse de risques,438
+1139,CIVIL,Réseaux hydrauliques et énergétiques,445
+1141,CIVIL,Exploitation ferroviaire,452
+1142,CIVIL,Systèmes de transports,453
+1143,CIVIL,Transport et télématique,454
+1144,CIVIL,Gestion de la maintenance des infrastructures,455
+1145,CIVIL,Economie des transports,456
+1147,CIVIL,UE : Environnement et GC,472
+1153,CIVIL,Interaction sol-structure,500
+1156,CIVIL,Advanced methods in computational solid mechanics,523
+1163,ENG,Energétique du bâtiment,445
+1164,ENG,"Organisation, économie et droit de la construction I",470
+1165,ENG,"Organisation, économie et droit de la construction II",471
+1171,ME,Methods for rapid production and development,415
+1172,ME,Fabrication assistée par ordinateur,416
+1173,ME,Computer-aided engineering,417
+1179,ME,Mechanics of composites,430
+1181,ME,Aeroelasticity and fluid-structure interaction,435
+1184,ME,Aérodynamique,445
+1190,ME,Powerplants and heat pumps,459
+1191,ME,Renewable energy,460
+1192,ME,Instability and turbulence,461
+1194,ME,Flow of dispersed media,463
+1197,ME,Simulation multi-corps assistée par ordinateur,475
+1202,ME,"Conception, modélisation et simulation de systèmes de production",499
+1203,ME,Lifecycle economic and environmental performance of product systems,516
+1207,ME,Numerical methods in heat transfer,571
+1209,MGT,Management of Enterprise Networks and Supply Chain Management,527
+1216,COM,IT security engineering,418
+1222,CS,Microelectronics for systems on chips,474
+1225,EE,Analog circuits design I,420
+1226,EE,Analog circuits design II,421
+1228,EE,VLSI design I,430
+1229,EE,VLSI design II,431
+1233,EE,Wireless receivers: algorithms and architectures,442
+1235,EE,Advanced signal processing,450
+1237,EE,"Hydropower plants : hydraulic turbines, storage pumps, and pump turbines",456
+1238,EE,Electromechanical conversion,460
+1243,EE,Dynamic coordination,477
+1244,EE,Emerging renewable power,480
+1247,EE,Lab in microelectronics,490
+1251,EE,Project in electrical energy systems,491
+1252,EE,Project in information technologies,491
+1253,EE,Project in micro and nanoelectronics,491
+1254,EE,Lab in electrical energy systems,492
+1258,EE,Advanced analog and RF integrated circuits design I,520
+1259,EE,Advanced analog and RF integrated circuits design II,521
+1266,EE,Advanced wireless communications: algorithms and architectures,543
+1267,EE,Propagation of electromagnetic waves,545
+1269,EE,Propagation of acoustic waves,549
+1271,EE,Image communication,551
+1273,EE,Speech processing,553
+1274,EE,"Systems, architectures and methodologies for information and signal processing",555
+1275,EE,Hybrid systems,562
+1287,ME,Energy conversion,452
+1288,MGT,Optimal decision analysis,483
+1289,MICRO,Advanced optics,420
+1291,MICRO,Lasers and optics of nanostructures,422
+1296,MICRO,Optical waves propagation,567
+1304,COM,Real-time networks,413
+1305,COM,Signal processing for audio and acoustics,415
+1306,COM,Advanced probability,417
+1308,COM,IT security engineering TP,418
+1309,COM,Statistical neurosciences,421
+1312,COM,Software-defined radio: a hands-on course,511
+1315,COM,Random walks,516
+1317,CS,Big Data,422
+1319,CS,Program parallelization on PC clusters,425
+1322,CS,Pattern classification and machine learning,433
+1325,CS,Color reproduction,441
+1328,CS,Foundations of imaging science,445
+1341,CS,Model-based system design,478
+1342,CS,Computer-supported cooperative work,485
+1345,CS,Business plan for IT services,490
+1349,CS,Computational molecular biology,551
+1358,ENG,Distributed intelligent systems project,466
+1360,BIO,IGEM project in synthetic biology,318
+1361,BIO,Multidisciplinary organization of medtechs/biotechs,430
+1364,BIO,Introduction au droit et à l'éthique en STV,455
+1367,BIO,Project in genomics and bioinformatics,466
+1370,BIO,Project in translational infectiology,473
+1373,BIO,Immunology (advanced topics),479
+1374,BIO,Neurosciences I : molecular neuroscience and neurodegeneration,480
+1375,BIO,Neurosciences II : cellular neuroscience and networks,482
+1376,BIO,Neurosciences III : behavioral and cognitive neuroscience,483
+1377,BIO,Laboratory in molecular neuroscience,485
+1378,BIO,Laboratory in single-cell electrophysiology,486
+1379,BIO,Project in translational neurosciences,487
+1380,BIO,Project in translational oncology,488
+1381,BIO,New tools and research strategies in personalized medicine,491
+1382,BIO,Project in integrative neurosciences,493
+1383,BIO,Project in drug discovery,494
+1387,BIOENG,Project in biophotonics and bioimaging,411
+1388,BIOENG,Chemical biology - tools and methods,447
+1390,BIOENG,Project in translational immunology,476
+1396,BIOENG,Lab methods : genetherapy in neurological diseases,515
+1399,BIOENG,Stage d'ingénieur (master en Sciences et technologie du vivant),596
+1407,ChE,Advanced principles and applications of systems biology,421
+1409,MATH,Advanced analysis I,400
+1410,MATH,Advanced analysis II,401
+1411,MGT,Economics of innovation in the biomedical industry,403
+1416,PHYS,Diffraction methods in structural biology,437
+1434,BIOENG,Project in biomechanical engineering,412
+1435,BIOENG,Project in nanoscale bioengineering,414
+1436,BIOENG,Project in regenerative medicine,415
+1437,BIOENG,Project in systems bioengineering,416
+1438,BIOENG,Project in translational bioengineering,438
+1439,BIOENG,Artificial organs and systems,441
+1463,ME,Mécanique des structures II,232
+1473,MSE,Materials science,403
+1474,PHYS,Biophysique I,301
+1475,PHYS,Biophysics II,302
+1480,CS,Computational game theory & applications,436
+1482,FIN,Quantitative methods in finance,402
+1487,FIN,Empirical methods in Finance,407
+1488,FIN,Stochastic calculus I,408
+1489,FIN,Stochastic calculus II,409
+1491,FIN,Behavioral finance,422
+1493,FIN,Credit risk,504
+1494,FIN,Fixed income analysis,505
+1495,FIN,Advanced topics in financial econometrics,521
+1498,FIN,Securitization & the financial crisis,524
+1501,MATH,Quantitative risk management,471
+1503,COM,Applied probability & stochastic processes,419
+1510,MGT,B2B - high-tech marketing,402
+1511,MGT,Technology & innovation management (a),405
+1512,MGT,Technology & innovation management (b),405
+1513,MGT,Innovation & management in the energy industry,407
+1514,MGT,Politique technologique et transition énergétique,408
+1515,MGT,Entrepreneurship & new venture strategy (a),413
+1516,MGT,Entrepreneurship & new venture strategy (b),413
+1519,MGT,Introduction to quality management and management systems,428
+1520,MGT,Business information systems,429
+1522,MGT,Information: strategy & economics,431
+1523,MGT,Information technology and e-business strategy,439
+1528,MGT,Leadership & human resource management in a global context,468
+1529,MGT,Presentation skills,469
+1533,MGT,Early detection of innovation potential,500
+1534,MGT,Economics of Innovation,501
+1535,MGT,Technology strategy & corporate entrepreneurship,503
+1536,MGT,Entrepreneurship laboratory (e-lab),517
+1540,MGT,Corporate governance,552
+1541,MGT,Econometrics: data analysis & empirical methods,581
+1544,COM,Signal processing for communications,303
+1549,MATH,Analyse fonctionnelle II,404
+1550,MATH,Elliptic partial differential equations,406
+1551,MATH,Analysis on groups,416
+1552,MATH,Topics in number theory,417
+1553,MATH,Riemannian geometry I,422
+1554,MATH,Introduction to algebraic geometry,428
+1555,MATH,Riemannian geometry II,429
+1556,MATH,Théorie du calcul stochastique,431
+1557,MATH,Probability theory,432
+1558,MATH,Contrôle stochastique,433
+1561,MATH,Statistique multivariée,444
+1563,MATH,Numerical approximation of PDE's I,451
+1564,MATH,Numerical integration of dynamical systems,452
+1566,MATH,Numerical approximation of PDE's II,457
+1567,MATH,Numerical methods for conservation laws,459
+1570,MATH,Packing and covering,465
+1571,MATH,Martingales in financial mathematics,470
+1572,MATH,Representations of quivers,473
+1573,MATH,Representations of the symmetric group,486
+1574,MATH,Projet de Mathématiques III,498
+1575,MATH,Projet Analyse de données,498
+1576,MATH,Projet de mathématiques IV,499
+1581,CH,Dynamique moléculaire et simulation Monte-Carlo,351
+1582,CH,Introduction to electronic structure methods,353
+1588,CS,Algorithms,250
+1589,CS,Software engineering,305
+1601,MATH,Computer algebra,316
+1602,MATH,Introduction to the finite elements method,350
+1607,MATH,Parallel computing and pthreads,454
+1613,MATH,Projet CSE I,591
+1614,MATH,Projet CSE II,592
+1615,MATH,Projet CSE III,593
+1616,MATH,Stage d'ingénieur (master en Sciences et ingénierie computationnelles),595
+1622,MSE,Quantum simulations of materials: Properties and spectroscopies,468
+1623,PHYS,Computational physics III,332
+1625,PHYS,Computer simulation of physical systems II,404
+1648,MICRO,Optique TP,423
+1649,MICRO,Scaling laws in micro- and nanosystems,430
+1650,MICRO,Technologie des microstructures II,431
+1651,MICRO,Microelectronics,432
+1652,MICRO,Microsystèmes et capteurs TP I,433
+1653,MICRO,Techniques d'assemblage I,440
+1654,MICRO,Assemblage et robotique TP,442
+1658,MICRO,Robotics practicals,453
+1659,MICRO,Mobile robots,454
+1663,MICRO,Commande d'actionneurs à l'aide d'un microprocesseur + TP,510
+1666,MICRO,Integrated optics,522
+1667,MICRO,Méthodes de détection optique,523
+1669,MICRO,Reliability of MEMS,533
+1671,MICRO,A guided tour for engineers in applied stochastic modelling,541
+1677,MICRO,Opto- and macroelectronic materials,566
+1682,CH,Physique moléculaire,462
+1683,ME,Advanced Fossil and Renewable Energy Systems,442
+1690,PHYS,Experimental methods in physics I,405
+1691,PHYS,Experimental methods in physics II,406
+1694,PHYS,Particules élémentaires I,415
+1695,PHYS,Particules élémentaires II,416
+1696,PHYS,Physique du solide III,419
+1706,PHYS,Relativistic quantum fields I,431
+1707,PHYS,Relativistic quantum fields II,432
+1708,PHYS,Semiconductor electronic and optoelectronic devices I,433
+1709,PHYS,Semiconductor electronic and optoelectronic devices II,434
+1717,PHYS,Neutronics,443
+1720,PHYS,Optics III,449
+1721,PHYS,Electrodynamique et Optique quantique,453
+1726,ChE,Introduction to chemical engineering I,201
+1727,ChE,Introduction au génie chimique II,202
+1728,ChE,Polyelectrolytes and biopolymers,412
+1731,ENV,"Analyse du cycle de vie, écobilan",370
+1732,ME,Conception pour X,312
+1733,ME,Mécanique vibratoire,332
+1739,MICRO,Composants semiconducteurs,312
+1740,MICRO,Capteurs,330
+1741,MICRO,Technologie des microstructures I,331
+1742,MICRO,Méthodes de production,340
+1750,MSE,Experimental data analysis and modelization,400
+1751,MSE,Mathematical modelling for materials science and engineering,404
+1752,MSE,Deformation and fracture Laboratory Work,411
+1758,MSE,Electron microscopy: advanced methods,450
+1760,MSE,Micro and nanostructuration of materials,461
+1764,MSE,Thin film fabrication processes,465
+1765,MSE,"Wood structures, properties and uses",466
+1767,MSE,Seminar series on advances in materials,470
+1769,MSE,Matériaux pierreux et conservation du patrimoine bâti,472
+1770,MSE,Materials for sport,473
+1772,MSE,Advanced nanomaterials,477
+1774,MSE,Dielectric and optical properties of materials,480
+1775,MSE,"Semiconductor materials and properties, from the bulk to the nanostructure",484
+1778,MSE,Advanced semiconductor nanomaterials,487
+1780,MSE,Research project in materials I,490
+1781,MSE,Research project in materials II,490
+1784,PHYS,Optique I,317
+1794,COM,Satellite communications systems and networks,414
+1806,COM,Advanced digital communications,510
+1845,EE,Biometrics,513
+1855,HUM,Études musicales,209
+1856,HUM,Études musicales,228
+1857,HUM,Études musicales,309
+1858,HUM,Études musicales,331
+1859,HUM,Pratiques artistiques I,401
+1860,HUM,Pratiques artistiques II,401
+1861,HUM,Going East I,402
+1862,HUM,Going East II,402
+1863,HUM,Experimental cognitive psychology I,403
+1864,HUM,Experimental cognitive psychology II,403
+1865,HUM,Culture médiatique I,404
+1866,HUM,Culture médiatique II,404
+1867,HUM,"Internet : enjeux sociaux, enjeux mondiaux I",405
+1868,HUM,"Internet : enjeux sociaux, enjeux mondiaux II",405
+1869,HUM,"Musique, politique, société I",406
+1870,HUM,"Musique, politique, société II",406
+1871,HUM,Design graphique V,407
+1872,HUM,Design graphique VI,407
+1873,HUM,Design industriel V,408
+1874,HUM,Design industriel VI,408
+1875,HUM,Images de la nature I,409
+1876,HUM,Images de la nature II,409
+1877,HUM,Droit et technique I,410
+1878,HUM,Droit et technique II,410
+1879,HUM,"Énergie, climat, économie et société I",411
+1880,HUM,"Énergie, climat, économie et société II",411
+1881,HUM,Enjeux éthiques contemporains I,412
+1882,HUM,Enjeux éthiques contemporains II,412
+1883,HUM,Études musicales,414
+1884,HUM,Études musicales,414
+1885,HUM,Géopolitique et politique de la mondialisation I,415
+1886,HUM,Géopolitique et politique de la mondialisation II,415
+1887,HUM,Hommes/machines I,416
+1888,HUM,Hommes/machines II,416
+1889,HUM,"Philosophy, epistemology and history of science I",417
+1890,HUM,"Philosophy, epistemology and history of science II",417
+1891,HUM,Histoire de l'image I,418
+1892,HUM,Histoire de l'image II,418
+1893,HUM,Mythes de la Méditerranée ancienne I,419
+1894,HUM,Mythes de la Méditerranée ancienne II,419
+1895,HUM,Psychologie sociale I,420
+1896,HUM,Psychologie sociale II,420
+1897,HUM,Understanding modern Switzerland II,422
+1898,HUM,Langue et culture : Hindi,423
+1899,HUM,Langue et culture : Mandarin,424
+1900,HUM,Histoire des technologies I,426
+1901,HUM,Histoire des technologies II,426
+1902,HUM,Histoire de la mondialisation I,427
+1903,HUM,Histoire de la mondialisation II,427
+1904,HUM,"Science, technologie et société I",428
+1905,HUM,"Science, technologie et société II",428
+1906,HUM,Philosophy of life sciences I,429
+1907,HUM,Philosophy of life sciences II,429
+1908,HUM,Langue et culture : Arabe,431
+1909,HUM,How people learn I,432
+1910,HUM,How people learn II,432
+1911,HUM,Digital humanities I,433
+1912,HUM,Digital humanities II,433
+1913,HUM,Chine: la renaissance d'une grande puissance I,434
+1914,HUM,Chine: la renaissance d'une grande puissance II,434
+1915,HUM,Gestion des organisations I,435
+1916,HUM,Gestion des organisations II,435
+1917,AR,Théorie et critique du projet MA1 (Eliet & Lehmann),401
+1922,AR,Théorie et critique du projet MA1 (Kempe & Thill),401
+1923,AR,Théorie et critique du projet MA1 (Rollet),401
+1925,AR,Théorie et critique du projet MA1 (Giuliani et Hönger),401
+1926,AR,Théorie et critique du projet MA2 (Eliet & Lehmann),402
+1928,AR,Théorie et critique du projet MA2 (Geers),402
+1931,AR,Théorie et critique du projet MA2 (Kempe & Thill),402
+1932,AR,Théorie et critique du projet MA2 (Rollet & Tirone),402
+1934,AR,Théorie et critique du projet MA2 (Giuliani & Hönger),402
+1939,AR,UE L : Art et architecture: construire l'image I,415
+1955,AR,Confort et architecture: stratégies durables,442
+1972,AR,Les quatre éléments et l'architecture,470
+1978,AR,UE S : Architectures / dessins / hétérotopies,510
+1979,AR,Théorie et critique de l'art,511
+1980,AR,UE T : Techniques tridimensionnelles,512
+1981,AR,Cinéma et architecture,513
+1985,AR,Architecture autonome,526
+1986,AR,Passer à l'acte,528
+2030,CIVIL,Modélisation des systèmes de transports,446
+2036,ChE,Chemical processes of sustainable and renewable energy,406
+2056,ENG,Project in energy management and sustainability I,472
+2057,ENG,Project in energy management and sustainability II,472
+2064,ENV,Advanced solid waste treatment,500
+2066,ENV,Fate and behaviour of organic pollutants,507
+2069,ENV,Geocomputation,546
+2071,ENV,Stage d'ingénieur crédité avec le PDM (master en Gestion de l'énergie et construction durable),593
+2094,MICRO,L'ingénieur dans R&D industriels,540
+2106,CIVIL,Hydraulic and hydroelectric structures and schemes,412
+2125,CIVIL,Développements en économie des transports,456
+2127,CIVIL,Economie des réseaux d'infrastructures,458
+2140,CIVIL,Glass structures and facades,528
+2142,CIVIL,Analysis and mitigation of geohazards,531
+2160,ME,Design methodology,420
+2214,EE,Fundamentals of VLSI design,429
+2253,EE,Modeling of emerging electron devices,537
+2296,COM,Audio signal processing and virtual acoustics,415
+2309,CS,Discrete computational geometry,412
+2327,CS,Convex optimization and applications,454
+2342,CS,"Synthesis, analysis and verification",550
+2369,BIO,Neurosciences II : cellular mechanisms of brain function,482
+2375,BIO,Scientific literature analysis in molecular medicine,489
+2379,BIO,Semester project in life sciences & technology,496
+2423,BIO,Scientific project design in regenerative medicine and diagnostics,469
+2436,BIOENG,Semester project in Bioengineering,489
+2450,ME,Mécanique des structures (pour GM),232
+2463,PHYS,Biophysics I,301
+2491,MATH,Computational finance,472
+2499,MGT,Technology & innovation management,405
+2502,MGT,D. Thinking: human-centered solutions to real world problems,409
+2538,MATH,Linear PDE's,407
+2541,MATH,Algebraic K-theory,419
+2542,MATH,Géométrie riemanienne I,422
+2554,MATH,Geometric graph theory,466
+2557,MATH,Arithmetic groups,487
+2558,MATH,Finite-dimensional algebras,488
+2559,MATH,Numerical integration of stochastic differential equations,490
+2560,MATH,Topics in geometry,491
+2561,MATH,Projet de Mathématiques (master),498
+2637,MICRO,Optics laboratories,423
+2639,MICRO,Microstructures technology II,431
+2642,MICRO,Microsystèmes et capteurs TP II,434
+2644,MICRO,Techniques d'assemblage II,441
+2666,MICRO,Bio-inspired artificial intelligence,551
+2682,PHYS,Physique des nouveaux matériaux,328
+2719,PHYS,Radiation protection & radiation applications,450
+2728,PHYS,Optique II,318
+2752,PHYS,Semiconductor physics and fundamentals of electronic devices,433
+2827,PHYS,Cold atoms and quantum simulation,410
+2916,ChE,Introduction au génie chimique TP,203
+2932,MICRO,Industrialisation,343
+2977,PHYS,Metrology I,458
+2978,PHYS,Metrology II,459
+3014,MSE,Specialisation project in materials,490
+3102,ME,Modélisation et simulation par éléments finis,373
+3250,CS,Analytic methods in algorithms and complexity,435
+3270,CS,Personal interaction studio,489
+3327,CS,Analytic algorithms,435
+3400,CS,Algebraic coding theory,437
+3443,UNIL,Biometrics,402
+3523,BIOENG,Introduction to cellular and molecular biotechnology,430
+3527,ChE,Equilibrium-stage separation processes,401
+3528,ChE,Advanced diffusional separation processes,402
+3529,ChE,Chemical engineering of heterogenous reaction,403
+3530,ChE,Environment chemical and biological technology,404
+3533,ChE,Eco-friendly production and process intensification,408
+3541,ChE,Process development project,459
+3546,ENG,Management of industrial production,434
+3626,AR,Bioclimatic buildings and districts,403
+3631,ChE,Energy systems engineering,304
+3634,EE,Fundamentals of electrical circuits and systems,405
+3640,EE,Principles of power systems,473
+3646,EE,Stage d'ingénieur crédité avec le PDM (master en Energy science and technology),595
+3647,ENG,"Energy supply, economics and transition",410
+3659,ENV,Life cycle assessment in energy systems,510
+3661,ME,Heat and mass transfer,341
+3690,EE,Hardware systems modeling,434
+3699,EE,Stage d'ingénieur crédité avec le PDM (master en Génie électrique et électronique),597
+3700,EE,Projet de master MNIS pour étudiants de Grenoble,599
+3701,EE,Projet de master MNIS pour étudiants de Turin,599
+3784,BIOENG,Industry internship in bioengineering,596
+3819,MATH,Combinatorial geometry,402
+3820,MATH,Low-rank approximation techniques,403
+3822,MATH,Harmonic analysis,405
+3825,MATH,Riemann surfaces,410
+3827,MATH,Stochastic simulation,414
+3830,MATH,Equations aux dérivées partielles d'évolution,421
+3831,MATH,Introduction à la géométrie riemannienne,422
+3832,MATH,Differential geometry of framed curves,423
+3833,MATH,Spatial statistics,425
+3834,MATH,Gaussian processes,426
+3836,MATH,Lie groups,429
+3839,MATH,Lattice models,434
+3840,MATH,Bayesian computation,435
+3841,MATH,Homotopical algebra,436
+3842,MATH,Calculus of variations,437
+3843,MATH,Statistical genetics,438
+3846,MATH,Multivariate statistics,444
+3848,MATH,Statistical analysis of network data,448
+3849,MATH,Biostatistics,449
+3852,MATH,Combinatorial statistics,455
+3855,MATH,Convexity,461
+3857,MATH,TNT: Automorphic forms and L-functions,464
+3860,MATH,Parabolic and hyperbolic PDE's,469
+3862,MATH,Complex manifolds,473
+3863,MATH,Statistics for genomic data analysis,474
+3865,MATH,Optimal transport,476
+3866,MATH,Dispersive PDEs,478
+3867,MATH,Linear algebraic groups,479
+3868,MATH,Mathematical modelling of DNA,481
+3870,MATH,Statistical mechanics and Gibbs measures,486
+3871,MATH,Algebraic K-theory,488
+3873,MATH,Representation theory of semisimple lie algebras,492
+3876,MATH,Stage d'ingénieur (master en Ingénierie mathématique),596
+3877,MATH,Stage d'ingénieur crédité avec le PDM (master en Ingénierie mathématique),597
+3878,ETH,Nuclear energy systems,401
+3879,ETH,Nuclear fuels and materials,402
+3880,ETH,Safety of nuclear power plants,403
+3881,ETH,Biomedical imaging,427
+3882,ETH,"Renewable energy technologies II, energy storage and conversion",431
+3883,ETH,Computational multiphase thermal fluid dynamics,433
+3884,ETH,Multi-phase flow,434
+3885,ETH,Computational neuroimaging clinic,444
+3886,ETH,Introduction to quantum mechanics for engineers,445
+3887,ETH,Magnetic resonance imaging in medicine,446
+3888,ETH,Monte Carlo in medical physics,447
+3889,ETH,Radiation imaging for industrial applications,448
+3890,ETH,Therapeutic Applications of Particle Physics: Principles and Practice of Particle Therapy,449
+3891,ETH,Technology and policy of electrical energy storage,450
+3892,ETH,"The energy challenge - the role of technology, business and society",451
+3893,ETH,Medical physics II,452
+3894,ETH,Micro and nano-tomography of biological tissues,453
+3895,ETH,Advanced topics in nuclear reactor materials,530
+3896,ETH,Nuclear computations lab,531
+3897,ETH,Beyond-design-basis safety,532
+3898,ETH,Decommissioning of nuclear power plants,533
+3899,ETH,Semester project nuclear engineering,590
+3908,PHYS,Radiation and reactor experiments,451
+3910,PHYS,Introduction to medical radiation physics,455
+3911,PHYS,Elective project,490
+3912,PHYS,Stage d'ingénieur (master en Génie nucléaire),595
+3958,PHYS,Stage d'ingénieur (master en Ingénierie physique),596
+3959,HUM,Pratiques artistiques I,401
+3960,HUM,Experimental cognitive psychology I,403
+3961,HUM,Culture médiatique I,404
+3962,HUM,Culture médiatique II,405
+3963,HUM,"Musique, politique, société I",406
+3964,HUM,Design graphique V,407
+3965,HUM,Design industriel V,408
+3966,HUM,Images de la nature I,409
+3967,HUM,Droit et technique I,410
+3968,HUM,Design graphique VI,411
+3969,HUM,Enjeux éthiques de l'ingénieur I,412
+3970,HUM,Design industriel VI,413
+3971,HUM,Droit et technique II,414
+3972,HUM,Études musicales II,415
+3973,HUM,Hommes/machines I,416
+3974,HUM,Philosophical perspectives on the exact sciences I,417
+3975,HUM,Histoire de l'image I,418
+3976,HUM,Mythes de la Méditerranée ancienne I,419
+3977,HUM,Psychologie sociale I,420
+3978,HUM,Psychologie sociale II,421
+3979,HUM,Understanding modern Switzerland I,422
+3980,HUM,"Science, technologie et société II",426
+3981,HUM,History of globalization I,427
+3982,HUM,"Science, technologie et société I",428
+3983,HUM,Philosophy of life sciences I,429
+3984,HUM,Philosophy of life sciences II,430
+3985,HUM,How people learn I,432
+3986,HUM,How people learn II,433
+3987,HUM,Chine: la renaissance d'une grande puissance I,434
+3988,HUM,Gestion des organisations I,435
+3989,HUM,Sciences et religions I,436
+3990,HUM,La recherche dans tous ses états I,437
+3991,HUM,Chine: la renaissance d'une grande puissance II,438
+3992,HUM,Humanités digitales I,439
+3993,HUM,"Global perspectives, local realities I",440
+3994,HUM,Création collective: arts-impro & ingénierie I,441
+3995,HUM,Enjeux socio-politiques du numérique I,442
+3996,HUM,Création collective: arts-impro & ingénierie II,443
+3997,HUM,Contemporary Japan I,444
+3998,HUM,Contemporary Japan II,445
+3999,HUM,Governing global migration I,446
+4000,HUM,Governing global migration II,447
+4001,HUM,Sciences et religions II,448
+4002,HUM,Enjeux socio-politiques du numérique II,449
+4003,HUM,Pratiques artistiques II,451
+4004,HUM,Mythes de la Méditerranée ancienne II,452
+4005,HUM,Philosophical perspectives on the exact sciences II,453
+4006,HUM,La recherche dans tous ses états II,455
+4007,HUM,Humanités digitales II,456
+4008,HUM,Experimental cognitive psychology II,457
+4009,HUM,"Musique, politique, société II",458
+4010,HUM,Enjeux éthiques de l'ingénieur II,459
+4011,HUM,"Global perspectives, local realities II",460
+4012,HUM,Gestion des organisations II,461
+4013,HUM,History of globalization II,462
+4014,HUM,Hommes/machines II,463
+4015,HUM,Images de la nature II,464
+4016,HUM,Understanding modern Switzerland II,465
+4017,HUM,Histoire de l'image II,467
+4018,HUM,Patrimoine et numérisation: Montreux Jazz Memories I,468
+4019,HUM,"Patrimoine, numérisation et projet collaboratif II",469
+4020,HUM,Economic growth and sustainability II,470
+4021,HUM,Economic growth and sustainability I,471
+4040,HUM,Economie et politique de l'énergie I,411
+4041,HUM,Economie et politique de l'énergie II,411
+4042,HUM,Enjeux éthiques de l'ingénieur I,412
+4043,HUM,Enjeux éthiques de l'ingénieur II,412
+4044,HUM,Études musicales II,414
+4055,HUM,Understanding modern Switzerland I,422
+4057,HUM,History of globalization I,427
+4058,HUM,History of globalization II,427
+4069,HUM,Sciences et religions I,436
+4070,HUM,Sciences et religions II,436
+4071,HUM,La recherche dans tous ses états I,437
+4072,HUM,La recherche dans tous ses états II,437
+4073,HUM,Humanités digitales I,439
+4074,HUM,Humanités digitales II,439
+4075,HUM,"Global perspectives, local realities I",440
+4076,HUM,"Global perspectives, local realities II",440
+4077,HUM,Création collective: arts-impro & ingénierie I,441
+4078,HUM,Création collective: arts-impro & ingénierie II,441
+4079,HUM,Enjeux socio-politiques du numérique I,442
+4080,HUM,Enjeux socio-politiques du numérique II,442
+4127,HUM,Histoire sociale des technologies I,426
+4128,HUM,Histoire sociale des technologies II,426
+4213,AR,Théorie et critique du projet MA1 (Boltshauser),401
+4214,AR,Théorie et critique du projet MA1 (Escher et GuneWardena),401
+4215,AR,Théorie et critique du projet MA1 (Graber et Pulver),401
+4217,AR,Théorie et critique du projet MA1 (Lütjens et Padmanabhan),401
+4222,AR,Théorie et critique du projet MA2 (Boltshauser),402
+4223,AR,Théorie et critique du projet MA2 (Escher et GuneWardena),402
+4224,AR,Théorie et critique du projet MA2 (Graber et Pulver),402
+4226,AR,Théorie et critique du projet MA2 (Lütjens et Padmanabhan),402
+4235,AR,Projets métaphoriques d'Archizoom à Koolhaas,423
+4236,AR,Architecture and existing buildings,424
+4249,AR,Cohérences aventureuses,444
+4252,AR,Energie solaire et architecture,449
+4260,AR,Sciences de la ville,459
+4266,AR,L'architecture du paysage,478
+4267,AR,L'hyperréalité,479
+4268,AR,UE V : Architecture et bois,480
+4269,AR,UE W : Reading construction,482
+4270,AR,Conception interactive des formes structurales,483
+4284,PENS,Solar decathlon summer workshop,491
+4285,PENS,Swiss Living Challenge,492
+4286,AR,Théorie et critique du projet MA1 (Dreier et Frenzel),401
+4291,AR,Théorie et critique du projet MA1 (Tombesi et Pathijara),401
+4292,AR,Théorie et critique du projet MA1 (Lacaton et Druot),401
+4298,AR,Théorie et critique du projet MA2 (Tombesi et Vannucci),402
+4299,AR,Théorie et critique du projet MA2 (Lacaton et Druot),402
+4309,AR,Theories of Postmodern Architecture,424
+4312,AR,Le projet du confort dans l'architecture du XXe s.,428
+4336,AR,Theory as a Device for Design Processes,474
+4339,AR,Interactive conceptual design of structural forms,483
+4344,AR,Construction des système porteurs,490
+4347,AR,Critique du projet et des théories urbanistiques,493
+4348,AR,Nature inspired architecture,494
+4350,AR,Difficult Double: Trouble with Classicists,522
+4363,AR,Théorie et critique du projet MA1 (Tombesi),401
+4365,AR,Théorie et critique du projet MA1 (Dedobbeleer),401
+4366,AR,Théorie et critique du projet MA1 (Linazasoro et Sanchez),401
+4372,AR,Théorie et critique du projet MA2 (Tombesi),402
+4374,AR,Théorie et critique du projet MA2 (Linazasoro et Sanchez),402
+4376,AR,UE A : Site-specific consolidations on architecture,404
+4382,AR,Why care? Une introduction à l'art contemporain,424
+4391,AR,A Political History of Urban Form,436
+4407,AR,UE Y : Description: Operations,468
+4420,AR,Behind/Beyond future cities,496
+4423,AR,"Visionnaires éclectiques. Architectures, 2000-2018",499
