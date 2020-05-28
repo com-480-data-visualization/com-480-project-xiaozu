@@ -3,18 +3,20 @@ $('#menuList a').on('click', function (e) {
   $(this).tab('show')
 })
 
+
+
 var introguide = introJs();
 introguide.setOptions({
   'showButtons': false,
   steps: [
       {
         element: '.btn-start',
-        intro: 'We will guide you around our website for a full immersive experience. <br><br>Use the arrow keys for navigation or hit ESC to exit the tour immediately.',
+        intro: 'We will guide you around our website for a full immersive experience. <br><br>Use the arrow keys for navigation or hit ESC to exit.',
         position: 'bottom'
       },
       {
         element: '#explore-btn',
-        intro: 'Click this tab to see which are the popular courses over the years.',
+        intro: '<b>Click</b> this tab to see which are the popular courses over the years.',
         position: 'bottom'
       },
       {
@@ -43,7 +45,10 @@ $('#slide-courses').click(function (e) {
     marginLeft: toExpand ? "55%" : "100%" });
   });
 
-  introguide.start();
+  $('#start-the-tutorial').on('click', function (e) {
+    introguide.start();
+  })
+
 
 q = d3.queue();
 

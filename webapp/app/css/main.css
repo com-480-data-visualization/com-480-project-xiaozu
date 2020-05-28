@@ -319,37 +319,46 @@ body{
 }
 
 .btn-tutorial{
-  background-color: rgb(38, 153, 178);
-  color: white;
-  border-left-color: rgb(38, 153, 178);
-  border-top-color: rgb(38, 153, 178);
-  border-right-color: rgb(38, 153, 178);
-  border-bottom-color: rgb(38, 153, 178);
+  background-color: rgb(38, 153, 178)!important;
+  color: white!important;
+  border-left-color: rgb(38, 153, 178)!important;
+  border-top-color: rgb(38, 153, 178)!important;
+  border-right-color: rgb(38, 153, 178)!important;
+  border-bottom-color: rgb(38, 153, 178)!important;
 }
 
 .btn-tutorial:hover{
-  background-color: rgb(137, 163, 168);
-  color: white;
-  border-left-color: rgb(38, 153, 178);
-  border-top-color: rgb(38, 153, 178);
-  border-right-color: rgb(38, 153, 178);
-  border-bottom-color: rgb(38, 153, 178);
+  background-color: rgb(137, 163, 168) !important;
+  color: white!important;
+  border-left-color: rgb(38, 153, 178) !important;
+  border-top-color: rgb(38, 153, 178)!important;
+  border-right-color: rgb(38, 153, 178)!important;
+  border-bottom-color: rgb(38, 153, 178)!important;
 }
 
 .btn-tutorial:focus{
-  background-color: rgb(137, 163, 168);
-  color: white;
-  border-left-color: rgb(38, 153, 178);
-  border-top-color: rgb(38, 153, 178);
-  border-right-color: rgb(38, 153, 178);
-  border-bottom-color: rgb(38, 153, 178);
+  background-color: rgb(137, 163, 168)!important;
+  color: white!important;
+  border-left-color: rgb(38, 153, 178)!important;
+  border-top-color: rgb(38, 153, 178)!important;
+  border-right-color: rgb(38, 153, 178)!important;
+  border-bottom-color: rgb(38, 153, 178)!important;
 }
 
 .btn-tutorial:hover:active{
-  background-color: rgb(137, 163, 168);
-  color: white;
-  border-left-color: rgb(38, 153, 178);
-  border-top-color: rgb(38, 153, 178);
-  border-right-color: rgb(38, 153, 178);
-  border-bottom-color: rgb(38, 153, 178);
+  background-color: rgb(137, 163, 168)!important;
+  color: white!important;
+  border-left-color: rgb(38, 153, 178)!important;
+  border-top-color: rgb(38, 153, 178)!important;
+  border-right-color: rgb(38, 153, 178)!important;
+  border-bottom-color: rgb(38, 153, 178)!important;
+}
+
+.btn-tutorial:active{
+  background-color: rgb(137, 163, 168)!important;
+  color: white!important;
+  border-left-color: rgb(38, 153, 178)!important;
+  border-top-color: rgb(38, 153, 178)!important;
+  border-right-color: rgb(38, 153, 178)!important;
+  border-bottom-color: rgb(38, 153, 178)!important;
 }
