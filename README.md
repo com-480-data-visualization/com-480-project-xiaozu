@@ -107,11 +107,10 @@ Prototype: [Website](https://xiaozuepfl.herokuapp.com/)
 **80% of the final grade**
 ### ISN'T academia web https://xiaozuepfl.herokuapp.com/
 #### Getting Started for local run
-- `setup`
- - `node` v.12.16.2  
+###### setup`
  - `npm` 6.14.4  
  - `d3` v4  
-- `command`
+###### command
  - `git clone`: Clone the project
  - `cd com-480-project-xiaozu/webapp`: Go to the web directory 
  - `npm install`: Install all the packages
