@@ -115,7 +115,7 @@ introguide.setOptions({
       
       {
         element: '#statistics-network',
-        intro: 'Here you can find all the statistic for a course.',
+        intro: 'Here you can find all the statistic for a course. Enjoy our website! Press ESC.',
         position: 'bottom'
       }
 
