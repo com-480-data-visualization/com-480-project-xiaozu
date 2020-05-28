@@ -108,7 +108,8 @@ Prototype: [Website](https://xiaozuepfl.herokuapp.com/)
 ### ISN'T academia web https://xiaozuepfl.herokuapp.com/
 #### Getting Started for local run
 ##### setup
- - `npm` 6.14.4  
+ - `npm` 6.14.4 
+ - `node` v.12.16.2
  - `d3` v4  
 ##### command
  - `git clone`: Clone the project
