@@ -306,13 +306,12 @@ body{
 }
 
 #dropdown-filtered{
-  min-height: 190px; 
-  overflow-y :auto; 
+  min-height: 190px;
+  overflow-y :auto;
   overflow-x:hidden;
-
   height: 200px !important;
   position: absolute !important;
-  transform: translate3d(97.2166px, 38px, 0px) !important;
+  transform: translate3d(0px, 38px, 0px) !important;
   top: 0px !important;
   left: 0px !important;
   will-change: transform !important;

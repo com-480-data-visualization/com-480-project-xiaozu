@@ -1,15 +1,24 @@
 export function bubble_statistics(node, id) {
     var div = document.getElementById(id);
     div.innerHTML = `
-                    <div class="showStatistics" style="width: 18rem;">
-                    <div id="${id}-course_total"></div>
+                    <div class="showStatistics" style="width: 30rem;">
+                    <div style="font-size:20px;" id="${id}-section_total"></div>
+                    <div style="font-size:20px;" id="${id}-course_total"></div>
+                    <div style="font-size:20px;" id="${id}-course_l"></div>
                     <div id="${id}-course_section"></div>
                       `;
-
+    course_l(node, id)
+    section_total(node, id)
     course_total(node, id);
     course_section(node, id);
 }
-
+function course_l(node, id) {
+//TODO: should return just a json
+    var div = document.getElementById(id+"-course_l");
+    div.innerHTML = `
+    <div> Details of sections: <div>
+    `;
+}
 function course_total(node, id) {
 //TODO: should return just a json
     var div = document.getElementById(id+"-course_total");
@@ -17,7 +26,18 @@ function course_total(node, id) {
     <div> Total number of courses in the sections: <i> ${node.length} </i>  <div>
     `;
 }
+function section_total(node, id) {
+//TODO: should return just a json
+var section_list = new Set()
 
+for(var i = 0;i<node.length;i++){
+  section_list.add(node[i].section)
+}
+    var div = document.getElementById(id+"-section_total");
+    div.innerHTML = `
+    <div> Number of section you choose: <i> ${section_list.size} </i>  <div>
+    `;
+}
 function course_section(node, id){
   var div = document.getElementById(id+"-course_section");
   div.innerHTML = `
@@ -25,7 +45,7 @@ function course_section(node, id){
     <label><input type="radio" class="dataset" name="dataset" id="dataset" value="Enrollments"> Average number of enrollments</label>`;
 
   // Set margin and dimesion
-  var margin = {top: 10, right: 10, bottom: 10, left: 60};
+  var margin = {top: 20, right: 10, bottom: 10, left: 60};
   var width = 300 - margin.left - margin.right;
   var height =400 - margin.top - margin.bottom;
 
@@ -75,14 +95,14 @@ for(var i=0;i<section_list.size;i++){
       {
 
           var value = this.value;
-          console.log(value);
+
           if (value == "Course")
           {
               change(datasetCourse);
           }
           else if (value == "Enrollments")
           {
-            console.log("here");
+
               change(datasetEnroll);
           }
 
@@ -110,7 +130,7 @@ var yAxis = svg.append("g")
 change(datasetCourse);
 
    function change(dataset) {
-     console.log(dataset);
+
     y.domain(dataset.map(function(d) { return d.label; }));
     x.domain([0, d3.max(dataset, function(d) { return d.value; })]);
     xAxis.call(d3.axisBottom(x))
@@ -166,13 +186,6 @@ t.exit().remove();
                  .attr("y", function(d){
                     return y(d.label)+ y.bandwidth()/2+2;
                  })
-
-
-//
-// svg.selectAll("textt").transition().duration(1000).attr("x", function(d) { console.log("aaaaaa");return 0; })
-// .attr("y", function(d) { return y(d.label); }).style("opacity", 0).attr("font-size" , "0px")
-
-  // };
 
 }
 }

@@ -1,6 +1,6 @@
 import { generate_statistics } from "./statistics.js";
 import { bubble_statistics } from "./bubble_stats.js";
-import { chord } from "./relations_course.js";
+// import { chord } from "./relations_course.js";
 let default_year = [2019, 2020];
 let num_courses_to_show = 5;
 
@@ -18,7 +18,6 @@ $('body').on("click", ".dropdown-menu", function (e) {
 });
 
 
-var node_list = new Map();
 $(".js-range-slider").ionRangeSlider({
   type: "double", //2 handlers
   skin: "flat",
@@ -33,7 +32,6 @@ $(".js-range-slider").ionRangeSlider({
   min_interval: 1,
   max_interval: 1,
   onFinish: function(data){
-    default_year = [data.from, data.to];
     showLoaderBubble();
     courses_url = host + `/course_bubble/?year=${default_year[0]}-${default_year[1]}`
     q.defer(bubbleGraph);
@@ -54,13 +52,13 @@ var cs = new Set();
 var aaaa = 0
  function bubbleGraph() {
    Math.seedrandom = 0
-   console.log(cs);
+
   //console.log("new", node_list); //output is correct
   d3.json(courses_url, function (error, data) {
 
     hideLoaderBubble(); // hide loading
     document.getElementById("bubbleCourses").innerHTML = "";
-    const margin = { top: 10, right: 20, bottom: 0, left: 20 };
+    const margin = { top: 0, right: 30, bottom: 40, left: 10 };
     var width = 1000 - margin.left - margin.right;
     var height = 500 - margin.top - margin.bottom;
     var padding = 1.5, // separation between same-color nodes
@@ -76,11 +74,10 @@ var aaaa = 0
         .style("padding", "10px")
         .style("color", "white")
 
-
       var mouseover = function(d) {
         svg.selectAll("."+d.section).transition().duration(50).style("opacity", 1).attr("r", function(d){
 
-            return 1.5*d.radius}
+            return 1.3*d.radius}
 )
         tooltip
           .style("opacity", 1)
@@ -185,7 +182,7 @@ var aaaa = 0
         .force("cluster", forceCluster)
         .force("gravity", d3.forceManyBody(50))
         .force("x", d3.forceX().strength(.3))
-        .force("y", d3.forceY().strength(.9))
+        .force("y", d3.forceY().strength(1))
         .on("tick", tick);
         var svg = d3.select("#bubbleCourses").append("svg")
             .attr("width", width)
@@ -216,7 +213,7 @@ var aaaa = 0
           generate_statistics(d, "showStatisticCourse", false);
           //bubble_statistics(nodes, "showStatisticCourse");
         }})
-        .call(drag(force))
+        //.call(drag(force))
 
   var a = new Array(20);
   for(var i =0;i<a.length;i++){
@@ -254,13 +251,13 @@ var aaaa = 0
     texts.attr('x', function(d) { return d.x; })
       .attr('y', function(d) { return d.y; });
   }
+
 function update(){
   d3.selectAll(".checkbox").each(function(d){
   var cb = d3.select(this);
   var grp = cb.property("value")
-
   // If the box is check, I show the group
-  if(cb.property("checked")){
+if(cb.property("checked")){
     cs.add(grp)
     svg.selectAll("."+grp).transition().duration(1000).style("opacity", 1).attr("r", function(d){ return d.radius })
     var new_nodes = nodes.filter(d=>cs.has(d.section));
@@ -278,6 +275,6 @@ d3.selectAll(".checkbox").on("change",update);
 // And I initialize it at the beginning
 update()
 
- })};
+});}
 
   q.defer(bubbleGraph);
