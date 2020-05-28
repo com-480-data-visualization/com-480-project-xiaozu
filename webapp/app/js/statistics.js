@@ -18,10 +18,12 @@ function getHostUrl() {
 
 export function load_side_bar(student_name){
 
-  var courses_by_student_url = getHostUrl() + "/courses/?student=" + encodeURI(student_name);
+  // console.log("encoded", encodeURI(student_name))
+
+  var courses_by_student_url = getHostUrl() + "/courses/?student=" + student_name;
 
   $.ajax({
-      url: courses_by_student_url, success: function (courses_by_stud) {
+      url: courses_by_student_url, type: "GET", success: function (courses_by_stud) {
           // show btn
           $("#slide-courses").css("visibility", "visible");
 
@@ -34,7 +36,7 @@ export function load_side_bar(student_name){
           courses_by_stud.forEach((course, idx) => {
               $("#coursesbadges").append(
                   `<li style="margin-bottom: 10px;">
-                      <div class="row">
+                      <div class="row" id="lock-demo-${idx}" style="z-index: 3">
                           <div class="col-1">
                               <button type="button" id="small_lock_button_${idx}" class="btn buttons-icon-lock"
                               value="${course.course_name}">
@@ -78,7 +80,6 @@ export function course_network(student_name) {
     }
     else {
       personal_url = personal_url + "?courses=" + extract_query_courses(locked_courses);
-      console.log("MAD")
     }
     console.log(personal_url)
 

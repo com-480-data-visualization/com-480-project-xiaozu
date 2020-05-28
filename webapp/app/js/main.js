@@ -7,7 +7,7 @@ $('#menuList a').on('click', function (e) {
 
 var introguide = introJs();
 
-introguide.onchange(function(targetElement) {
+introguide.onbeforechange(function(targetElement) {
   if(targetElement.id == "studentNameAutocomplete"){
     targetElement.click();
     var word = "Volpini Costanza";
@@ -20,7 +20,7 @@ introguide.onchange(function(targetElement) {
       v += word[n];
       $(".typeahead").typeahead('val', v)
       if (++n < word.length) {
-        setTimeout(loop, 300);
+        setTimeout(loop, 1);
       } else {
         $(".tt-selectable")[0].click()
       }
@@ -28,14 +28,22 @@ introguide.onchange(function(targetElement) {
 
   }
   else {
-    if(targetElement.id != "start-the-tutorial")
-    targetElement.click();
+    if(targetElement.id == "lock-demo-8"){
+      var icon = targetElement.children[0].children[0].children[0];
+      icon.click();
+      // small_lock_button_8
+    }
+    if(targetElement.id != "start-the-tutorial"){
+      targetElement.click();
+    }
   }
 });
 
 
 introguide.setOptions({
   'showButtons': false,
+  // 'data-disable-interaction': true,
+  // 'tooltipPosition': "auto",
   steps: [
       // {
       //   element: '.btn-start',
@@ -74,19 +82,19 @@ introguide.setOptions({
       },
       {
         element: '#studentNameAutocomplete',
-        intro: 'Insert the student name and click the corresponding one from the menu.',
+        intro: 'Insert the student name.',
         position: 'bottom'
       },
       {
         element: '#slide-courses',
-        intro: 'Click here to see which courses are you doing.',
+        intro: 'Click here to see which courses are you doing. The menu on your left let you lock or unlock some courses by clicking on the corresponding icon.',
         position: 'bottom'
       },
       // add explanation on lock and unlock
       // {
-      //   element: '#small_lock_button_0',
-      //   intro: 'Click here to unlock a course. Do it anytime you don't want to see courses related to this one. Like when you didn't enjoy the course!',
-      //   position: 'bottom'
+      //   element: '#small_lock_button_8',
+      //   // intro: 'Click her',
+      //   // position: 'top'
       // },
       // add explanation on lock and unlock
       // {
