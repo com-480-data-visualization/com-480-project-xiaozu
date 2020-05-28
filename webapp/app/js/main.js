@@ -109,7 +109,7 @@ introguide.setOptions({
       },
       {
         element: '#course_network',
-        intro: 'Click on a node to see its statistics and (un)lock it.',
+        intro: 'Click on a node to see its statistics and (un)lock it. The locked nodes have a wider stroke.',
         position: 'bottom'
       },
 
