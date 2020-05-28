@@ -1,4 +1,5 @@
 import { generate_statistics } from "./statistics.js";
+import { bubble_statistics } from "./bubble_stats.js";
 import { chord } from "./relations_course.js";
 let default_year = [2019, 2020];
 let num_courses_to_show = 5;
@@ -34,8 +35,8 @@ $(".js-range-slider").ionRangeSlider({
   onFinish: function(data){
     default_year = [data.from, data.to];
     showLoaderBubble();
-    q.defer(bubbleGraph);
     courses_url = host + `/course_bubble/?year=${default_year[0]}-${default_year[1]}`
+    q.defer(bubbleGraph);
   }
 });
 var css = new Set()
@@ -59,7 +60,7 @@ var aaaa = 0
 
     hideLoaderBubble(); // hide loading
     document.getElementById("bubbleCourses").innerHTML = "";
-    const margin = { top: 10, right: 20, bottom: 0, left: 30 };
+    const margin = { top: 10, right: 20, bottom: 0, left: 20 };
     var width = 1000 - margin.left - margin.right;
     var height = 500 - margin.top - margin.bottom;
     var padding = 1.5, // separation between same-color nodes
@@ -77,6 +78,10 @@ var aaaa = 0
 
 
       var mouseover = function(d) {
+        svg.selectAll("."+d.section).transition().duration(50).style("opacity", 1).attr("r", function(d){
+
+            return 1.5*d.radius}
+)
         tooltip
           .style("opacity", 1)
           .style("left", d3.event.pageX + "px")
@@ -89,6 +94,7 @@ var aaaa = 0
           .style("top", d3.event.pageY + "px")
       }
       var mouseleave = function(d) {
+        svg.selectAll("."+d.section).transition().duration(3000).style("opacity", 1).attr("r", function(d){ return d.radius })
         tooltip
           .style("opacity", 0)
           .style("transition", "opacity 5s ease-in-out;")
@@ -108,9 +114,9 @@ var aaaa = 0
       var clusters = new Array(m);
       var nodes = [];
       for (var i = 0; i<n; i++){
-        if(cs.has(data[i].section)){
-          nodes.push(create_nodes(data,i));
-        }
+
+        nodes.push(create_nodes(data,i));
+
       }
 
       var colors = d3.scaleOrdinal(d3.schemeCategory20)
@@ -127,6 +133,7 @@ var aaaa = 0
               enrol: data[node_counter].enrollments,
               radius: 1.2*Math.sqrt(data[node_counter].enrollments),
               text: id,
+              short_name: id,
               name: data[node_counter].course_name,
               x: Math.cos(i / 21 * 2 * Math.PI) * 100 + width/10 + Math.random(),
               y: Math.sin(i / 21 * 2 * Math.PI) * 100 + height/10+ Math.random(),
@@ -159,7 +166,7 @@ var aaaa = 0
           .on("end", dragended);
     }
     var forceCollide = d3.forceCollide()
-        .radius(function(d) { return d.radius/nodes.length*650 + 1.5;})
+        .radius(function(d) { return d.radius + 1.5;})
         .iterations(1);
 
     function forceCluster(alpha) {
@@ -190,7 +197,7 @@ var aaaa = 0
       .data(nodes)
     .enter().append("circle")
     .attr("class" , function(d){ return d.section; })
-      .attr("r", function(d) { return d.radius/nodes.length*650; })
+      .attr("r", function(d) { return d.radius; })
       .style("fill", function(d) { return colors(d.cluster); })
       .attr("fill-opacity", .8)
       .on("mouseover", mouseover)
@@ -201,12 +208,13 @@ var aaaa = 0
           d3.selectAll(".selected").classed("selected", false).attr("stroke", false);
           d3.select(this).classed("selected", true);
           d3.select(this).transition().attr("stroke", colors(d.cluster)).attr("stroke-width", 2);
-          generate_statistics(d, "showStatisticCourse", false);
+          bubble_statistics(nodes, "showStatisticCourse");
         }
         else {
           d3.select(this).classed("selected", false);
-          d3.select(this).transition().attr("stroke", false).attr("stroke-width", 0.25);
+          d3.select(this).transition().attr("stroke", false).attr("stroke-width", 0.5);
           generate_statistics(d, "showStatisticCourse", false);
+          //bubble_statistics(nodes, "showStatisticCourse");
         }})
         .call(drag(force))
 
@@ -216,28 +224,29 @@ var aaaa = 0
   }
   var b = new Array(20);
   for(var i=0;i<nodes.length;i++){
-    var j = Array.from(cs).indexOf(nodes[i].section)
+    var j = Array.from(css).indexOf(nodes[i].section)
     if(a[j] < nodes[i].radius){
       a[j] = nodes[i].radius
       b[j] = nodes[i].text
     }
-  } //Doesn't not have to be a hash map, any key/value map is fine
+  }
+//Doesn't not have to be a hash map, any key/value map is fine
     let texts = svg.selectAll('texts')
         .data(nodes)
         .enter()
         .append('text')
         .attr("class" , function(d){ return d.section; })
-       .text(function(d) {if(b.includes(d.text)|d.radius/nodes.length*650>15){
-         var aa = b.indexOf(d.text);
-         delete b[aa];
-         return d.text}} )
-        .attr('color', 'black')
-        .attr('font-size', 15)
-        .attr('text-anchor', 'middle')
-                        .attr('x',function(d) {d.x} )
-                        .attr("stroke", "#ffffff")
-                        .attr("stroke-width", 0.25)
-                        .attr('y', function(d) {d.y} );
+       .text(function(d) {if(b.includes(d.text)|d.radius>15){
+     var aa = b.indexOf(d.text);
+     delete b[aa];
+     return d.text}} )
+    .attr('color', 'black')
+    .attr('font-size', 15)
+    .attr('text-anchor', 'middle')
+                    .attr('x',function(d) {d.x} )
+                    .attr("stroke", "#ffffff")
+                    .attr("stroke-width", 0.25)
+                    .attr('y', function(d) {d.y} );
 
   function tick() {
     circle.attr("cx", function(d) { return d.x; })
@@ -253,10 +262,14 @@ function update(){
   // If the box is check, I show the group
   if(cb.property("checked")){
     cs.add(grp)
-    svg.selectAll("."+grp).transition().duration(1000).style("opacity", 1).attr("r", function(d){ return d.radius/nodes.length*650 })
+    svg.selectAll("."+grp).transition().duration(1000).style("opacity", 1).attr("r", function(d){ return d.radius })
+    var new_nodes = nodes.filter(d=>cs.has(d.section));
+    bubble_statistics(new_nodes, "showStatisticCourse");
 }else{
   cs.delete(grp)
-  svg.selectAll("."+grp).transition().duration(1000).style("opacity", 0).attr("r", 0)
+  svg.selectAll("."+grp).transition().duration(1000).style("opacity", 0).attr("r", 0);
+  var new_nodes = nodes.filter(d=>cs.has(d.section));
+  bubble_statistics(new_nodes, "showStatisticCourse");
 }
 })}
 
