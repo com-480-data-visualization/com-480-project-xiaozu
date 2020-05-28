@@ -67,7 +67,6 @@ function extract_query_courses(course_lst){
     if(item)
       str_lst = str_lst + "$" + encodeURI(item.replace("&", "%26"));
   });
-  console.log("Q", str_lst)
   return str_lst.substring(1, str_lst.length)
 }
 
@@ -80,7 +79,6 @@ export function course_network(student_name) {
     else {
       personal_url = personal_url + "?courses=" + extract_query_courses(locked_courses);
     }
-    console.log(personal_url)
 
     d3.json(personal_url, function (error, graph) {
     if (error) throw error;
@@ -94,8 +92,6 @@ export function course_network(student_name) {
         }
       })
     }
-    console.log(student_name)
-    console.log("locked", locked_courses)
 
     var width = 800;//$(window).width();
     var height = 800; //$(window).height();
@@ -154,7 +150,7 @@ export function course_network(student_name) {
         .domain(d3.range(20))
         .range(section_colors)
 
-    console.log("grafo", graph)
+
     var simulation = d3.forceSimulation()
         .force("link", d3.forceLink().id(function (d) { return d.id; }).distance(radius * 15))
         .force("x", d3.forceX().strength(0.005))
@@ -283,7 +279,7 @@ export function course_network(student_name) {
 export function removeCourse(e){
     var course = e.parentNode.value; // TODO: name of the course for information
     var icon = e;
-    console.log(locked_courses)
+
     if(icon.classList.contains("fa-lock-open")){ // course is removed and need to be readded
         icon.classList.remove("fa-lock-open");
         icon.classList.add("fa-lock");
@@ -304,7 +300,6 @@ export function removeCourse(e){
           locked_courses = new_locked_courses;
         }
     }
-    console.log("qua", locked_courses)
     course_network("")
 }
 
@@ -623,7 +618,6 @@ function fill_stud_by_year(course_name, id) {
 
 export function generate_statistics(d, id, network_stats=true) {
     var div = document.getElementById(id);
-    console.log("D", d)
     div.innerHTML = `
                     <div class="showStatistics" style="width: 18rem;">
                     <h5> ${d.short_name ? d.short_name : ""}  ${d.name}
