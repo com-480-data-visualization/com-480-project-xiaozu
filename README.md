@@ -106,8 +106,8 @@ Prototype: [Website](https://xiaozuepfl.herokuapp.com/)
 
 **80% of the final grade**
 ### ISN'T academia web https://xiaozuepfl.herokuapp.com/
-### Getting Started for local run
-##### setup
+#### Getting Started for local run
+#### setup
 - `node` v.12.16.2  
 - `npm` 6.14.4  
 - `d3` v4  
