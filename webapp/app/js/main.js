@@ -37,36 +37,36 @@ introguide.onchange(function(targetElement) {
 introguide.setOptions({
   'showButtons': false,
   steps: [
-      {
-        element: '.btn-start',
-        intro: 'We will guide you around our website for a full immersive experience. <br><br>Use the arrow keys for navigation or hit ESC to exit.',
-        position: 'bottom'
-      },
-      {
-        element: '#explore-btn',
-        intro: 'In this tab you can see which are the popular courses over the years.',
-        position: 'bottom'
-      },
-      {
-        element: '#dropdownMenuButton',
-        intro: 'Select the sections that you want to show on the bubble graph.',
-        position: 'bottom'
-      },
-      {
-        element: '#checkbox-tutorial',
-        intro: 'Check/Uncheck to show/hide a section from the graph.',
-        position: 'bottom'
-      },
-      {
-        element: '#slide-tutorial',
-        intro: 'Slide to navigate over different years.',
-        position: 'bottom'
-      },
-      {
-        element: '#statistic-tutorial-bubble',
-        intro: 'Here you can see some statistics.',
-        position: 'bottom'
-      },
+      // {
+      //   element: '.btn-start',
+      //   intro: 'We will guide you around our website for a full immersive experience. <br><br>Use the arrow keys for navigation or hit ESC to exit.',
+      //   position: 'bottom'
+      // },
+      // {
+      //   element: '#explore-btn',
+      //   intro: 'In this tab you can see which are the popular courses over the years.',
+      //   position: 'bottom'
+      // },
+      // {
+      //   element: '#dropdownMenuButton',
+      //   intro: 'Select the sections that you want to show on the bubble graph.',
+      //   position: 'bottom'
+      // },
+      // {
+      //   element: '#checkbox-tutorial',
+      //   intro: 'Check/Uncheck to show/hide a section from the graph.',
+      //   position: 'bottom'
+      // },
+      // {
+      //   element: '#slide-tutorial',
+      //   intro: 'Slide to navigate over different years.',
+      //   position: 'bottom'
+      // },
+      // {
+      //   element: '#statistic-tutorial-bubble',
+      //   intro: 'Here you can see some statistics.',
+      //   position: 'bottom'
+      // },
       {
         element: '#network-btn',
         intro: 'In this tab you can explore suggested courses for a specific student.',
@@ -76,7 +76,33 @@ introguide.setOptions({
         element: '#studentNameAutocomplete',
         intro: 'Insert the student name and click the corresponding one from the menu.',
         position: 'bottom'
+      },
+      {
+        element: '#slide-courses',
+        intro: 'Click here to see which courses are you doing.',
+        position: 'bottom'
+      },
+      // add explanation on lock and unlock
+      // {
+      //   element: '#small_lock_button_0',
+      //   intro: 'Click here to unlock a course. Do it anytime you don't want to see courses related to this one. Like when you didn't enjoy the course!',
+      //   position: 'bottom'
+      // },
+      // add explanation on lock and unlock
+      // {
+      //   element: '#small_lock_button_0',
+      //   intro: 'Click here again to lock it.',
+      //   position: 'bottom'
+      // },
+      {
+        element: '#slide-courses',
+        intro: 'Click here to hide the courses.',
+        position: 'bottom'
       }
+
+      
+
+     
   ]
 });
 

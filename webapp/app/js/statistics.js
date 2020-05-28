@@ -28,6 +28,8 @@ export function load_side_bar(student_name){
           // hideLoaderBadges();
           document.getElementById("coursesbadges").innerHTML = ""; // reset
 
+          console.log("i am here", courses_by_stud)
+
           // show badges
           courses_by_stud.forEach((course, idx) => {
               $("#coursesbadges").append(
