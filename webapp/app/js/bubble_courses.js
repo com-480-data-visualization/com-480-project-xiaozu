@@ -55,9 +55,9 @@ var aaaa = 0
   d3.json(courses_url, function (error, data) {
     hideLoaderBubble(); // hide loading
     document.getElementById("bubbleCourses").innerHTML = "";
-    const margin = { top: 0, right: 30, bottom: 40, left: 10 };
+    const margin = { top: 10, right: 0, bottom: 0, left: 30 };
     var width = 1000 - margin.left - margin.right;
-    var height = 500 - margin.top - margin.bottom;
+    var height = 400 - margin.top - margin.bottom;
     var padding = 1.5, // separation between same-color nodes
         clusterPadding = 6, // separation between different-color nodes
         maxRadius = 12;
