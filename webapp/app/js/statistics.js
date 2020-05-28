@@ -30,10 +30,8 @@ export function load_side_bar(student_name){
           // hideLoaderBadges();
           document.getElementById("coursesbadges").innerHTML = ""; // reset
 
-          console.log("i am here", courses_by_stud)
-
           // show badges
-          courses_by_stud.forEach((course, idx) => {
+          Array.from(new Set(courses_by_stud)).forEach((course, idx) => {
               $("#coursesbadges").append(
                   `<li style="margin-bottom: 10px;">
                       <div class="row" id="lock-demo-${idx}" style="z-index: 3">
@@ -69,6 +67,7 @@ function extract_query_courses(course_lst){
     if(item)
       str_lst = str_lst + "$" + encodeURI(item.replace("&", "%26"));
   });
+  console.log("Q", str_lst)
   return str_lst.substring(1, str_lst.length)
 }
 
@@ -76,7 +75,7 @@ function extract_query_courses(course_lst){
 export function course_network(student_name) {
     var personal_url = getHostUrl() + "/course_network/";
     if(student_name != ""){
-      personal_url = personal_url + "?student=" + student_name;
+      personal_url = personal_url + "?student=" + encodeURI(student_name);
     }
     else {
       personal_url = personal_url + "?courses=" + extract_query_courses(locked_courses);
@@ -90,7 +89,7 @@ export function course_network(student_name) {
       saved_student_name = student_name;
       locked_courses = [];
       graph.nodes.forEach(function(node){
-        if(node.taken == 1){
+        if(node.taken == 1 && locked_courses.indexOf(node.name) == -1){
           locked_courses[locked_courses.length] = node.name;
         }
       })
@@ -185,10 +184,10 @@ export function course_network(student_name) {
           return color(all_sections.indexOf(d.short_name.substring(0, d.short_name.indexOf("-"))))
         })
         .style("stroke", function (d) {
-          return "green";
+          return "black";
         })
         .style("stroke-width", function (d) {
-          if(d.taken == 1) return "1.5"
+          if(d.taken == 1) return "2.0"
           return false
         })
         .style("stroke-opacity", function (d) {
@@ -299,7 +298,7 @@ export function removeCourse(e){
         if(locked_courses.indexOf(course) != -1){
           var new_locked_courses = [];
           locked_courses.forEach(item => {
-            if(item != course)
+            if(item != course && new_locked_courses.indexOf(item) == -1)
               new_locked_courses[new_locked_courses.length] = item;
           })
           locked_courses = new_locked_courses;
@@ -607,7 +606,7 @@ function fill_stud_by_year(course_name, id) {
           if(!d3.select(this).classed("selected")){
             d3.selectAll(".selected").classed("selected", false).attr("stroke", false);
             d3.select(this).classed("selected", true);
-            d3.select(this).transition().attr("stroke","#1911F0").attr("stroke-width", 2);
+            d3.select(this).transition().attr("stroke","red").attr("stroke-width", 2);
             fill_stud_by_major(course_name, d.year, id);
           }
           else {
@@ -627,7 +626,7 @@ export function generate_statistics(d, id, network_stats=true) {
     console.log("D", d)
     div.innerHTML = `
                     <div class="showStatistics" style="width: 18rem;">
-                    <h5> ${d.short_name}  ${d.name}
+                    <h5> ${d.short_name ? d.short_name : ""}  ${d.name}
                     ${network_stats ? `
                     <button type="button" class="btn buttons-icon-lock"
                             value="${d.name}" id="lock_button">

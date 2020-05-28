@@ -150,9 +150,11 @@ function query_course_network(course_lst, res) {
               map_nodes_to_idx[course_name_y] = course_lst.length
             }
 
-            var idx = course_lst.indexOf(course_name_x)
-            nodes[idx] = {"id": nodes[idx].id, "name": nodes[idx].name, "taken": nodes[idx].taken,
-                            "short_name": result[i].short_name_x}
+            if(result[i].short_name_x) {
+              var idx = course_lst.indexOf(course_name_x)
+              nodes[idx] = {"id": nodes[idx].id, "name": nodes[idx].name, "taken": nodes[idx].taken,
+                              "short_name": result[i].short_name_x}
+            }
 
             // Adding the connection to the list of edges of the network
             links[links.length] = {
@@ -193,7 +195,7 @@ router.route("/course_network").get(function(req, res) {
             res.send(err);
           } else {
             // Obtain a list of course names in which we are interested
-            course_lst = course_names.map(d => d.course_name)
+            course_lst = Array.from(new Set(course_names.map(d => d.course_name)))
             query_course_network(course_lst, res)
           }
         }
