@@ -98,7 +98,26 @@ introguide.setOptions({
         element: '#slide-courses',
         intro: 'Click here to hide the courses.',
         position: 'bottom'
-      }
+      },
+      // check how pick 1st element
+      // {
+      //   element: '.circle-tutorial',
+      //   intro: 'Click on a node to see its statistics and (un)lock it.',
+      //   position: 'bottom'
+      // },
+      //
+      // {
+      //   element: '#statistics-network',
+      //   intro: 'Here you can find all the statistic for a course.',
+      //   position: 'bottom'
+      // },
+      // {
+      //   element: '#lock_button',
+      //   intro: 'Click the icon to unlock it. Enjoy our application!',
+      //   position: 'bottom'
+      // }
+
+      
 
       
 
