@@ -1,6 +1,6 @@
 import { generate_statistics } from "./statistics.js";
 import { bubble_statistics } from "./bubble_stats.js";
-import { chord } from "./relations_course.js";
+// import { chord } from "./relations_course.js";
 let default_year = [2019, 2020];
 let num_courses_to_show = 5;
 
@@ -32,7 +32,6 @@ $(".js-range-slider").ionRangeSlider({
   min_interval: 1,
   max_interval: 1,
   onFinish: function(data){
-    default_year = [data.from, data.to];
     showLoaderBubble();
     courses_url = host + `/course_bubble/?year=${default_year[0]}-${default_year[1]}`
     q.defer(bubbleGraph);
@@ -74,7 +73,6 @@ var aaaa = 0
         .style("border-radius", "5px")
         .style("padding", "10px")
         .style("color", "white")
-
 
       var mouseover = function(d) {
         svg.selectAll("."+d.section).transition().duration(50).style("opacity", 1).attr("r", function(d){
@@ -253,13 +251,13 @@ var aaaa = 0
     texts.attr('x', function(d) { return d.x; })
       .attr('y', function(d) { return d.y; });
   }
+
 function update(){
   d3.selectAll(".checkbox").each(function(d){
   var cb = d3.select(this);
   var grp = cb.property("value")
-
   // If the box is check, I show the group
-  if(cb.property("checked")){
+if(cb.property("checked")){
     cs.add(grp)
     svg.selectAll("."+grp).transition().duration(1000).style("opacity", 1).attr("r", function(d){ return d.radius })
     var new_nodes = nodes.filter(d=>cs.has(d.section));
@@ -277,6 +275,6 @@ d3.selectAll(".checkbox").on("change",update);
 // And I initialize it at the beginning
 update()
 
- })};
+});}
 
   q.defer(bubbleGraph);

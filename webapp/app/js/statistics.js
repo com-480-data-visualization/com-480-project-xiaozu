@@ -523,7 +523,7 @@ function fill_stud_by_year(course_name, id) {
         if(year_lst.length > 5 && year_lst.length < 10) {
           if(year_lst.indexOf(year) % 2 != 0) return null
         }
-        else if(year_lst.length > 10){
+        else if(year_lst.length > 10){
           if(year_lst.indexOf(year) % 3 != 0) return null
         }
         return year.toString(10) + "-" + (year+1).toString(10);
@@ -629,11 +629,9 @@ export function generate_statistics(d, id, network_stats=true) {
                     <button type="button" class="btn buttons-icon-lock"
                             value="${d.name}" id="lock_button">
                             <i class="fas ${locked_courses.indexOf(d.name) == -1? "fa-lock-open": "fa-lock"}"></i>
-
                     </button>
                     ` : ""}
                     </h5>
-
                     <div id="${id}-course_prof"></div>
                     <div id="${id}-stud_by_year"></div>
                     <br>

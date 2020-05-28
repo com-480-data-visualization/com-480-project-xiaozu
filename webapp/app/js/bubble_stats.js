@@ -187,12 +187,5 @@ t.exit().remove();
                     return y(d.label)+ y.bandwidth()/2+2;
                  })
 
-
-//
-// svg.selectAll("textt").transition().duration(1000).attr("x", function(d) { console.log("aaaaaa");return 0; })
-// .attr("y", function(d) { return y(d.label); }).style("opacity", 0).attr("font-size" , "0px")
-
-  // };
-
 }
 }
