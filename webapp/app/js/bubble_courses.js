@@ -60,7 +60,7 @@ var aaaa = 0
 
     hideLoaderBubble(); // hide loading
     document.getElementById("bubbleCourses").innerHTML = "";
-    const margin = { top: 10, right: 20, bottom: 0, left: 20 };
+    const margin = { top: 0, right: 30, bottom: 40, left: 10 };
     var width = 1000 - margin.left - margin.right;
     var height = 500 - margin.top - margin.bottom;
     var padding = 1.5, // separation between same-color nodes
@@ -216,7 +216,7 @@ var aaaa = 0
           generate_statistics(d, "showStatisticCourse", false);
           //bubble_statistics(nodes, "showStatisticCourse");
         }})
-        .call(drag(force))
+        //.call(drag(force))
 
   var a = new Array(20);
   for(var i =0;i<a.length;i++){

@@ -2,10 +2,11 @@ export function bubble_statistics(node, id) {
     var div = document.getElementById(id);
     div.innerHTML = `
                     <div class="showStatistics" style="width: 18rem;">
+                    <div id="${id}-section_total"></div>
                     <div id="${id}-course_total"></div>
                     <div id="${id}-course_section"></div>
                       `;
-
+    section_total(node, id)                  
     course_total(node, id);
     course_section(node, id);
 }
@@ -17,7 +18,18 @@ function course_total(node, id) {
     <div> Total number of courses in the sections: <i> ${node.length} </i>  <div>
     `;
 }
-
+function section_total(node, id) {
+//TODO: should return just a json
+var section_list = new Set()
+console.log("aaaaa");
+for(var i = 0;i<node.length;i++){
+  section_list.add(node[i].section)
+}
+    var div = document.getElementById(id+"-section_total");
+    div.innerHTML = `
+    <div> Number of section you choose: <i> ${section_list.size} </i>  <div>
+    `;
+}
 function course_section(node, id){
   var div = document.getElementById(id+"-course_section");
   div.innerHTML = `
@@ -25,7 +37,7 @@ function course_section(node, id){
     <label><input type="radio" class="dataset" name="dataset" id="dataset" value="Enrollments"> Average number of enrollments</label>`;
 
   // Set margin and dimesion
-  var margin = {top: 10, right: 10, bottom: 10, left: 60};
+  var margin = {top: 20, right: 10, bottom: 10, left: 60};
   var width = 300 - margin.left - margin.right;
   var height =400 - margin.top - margin.bottom;
 
