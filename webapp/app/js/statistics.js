@@ -157,7 +157,7 @@ export function course_network(student_name) {
         .force("y", d3.forceY().strength(0.005))
         .force("charge", d3.forceManyBody().distanceMax(height/2).strength(-60))
         .force("collide", d3.forceCollide(radius).iterations(45))
-        .force("center", d3.forceCenter(width / 2, height / 2))
+        .force("center", d3.forceCenter(width / 2, graph.nodes.length > 25? height/2 : height/4))
 
     var link = svg.append("g")
         .attr("class", "links")
