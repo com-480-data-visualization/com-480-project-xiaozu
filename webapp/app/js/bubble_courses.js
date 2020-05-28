@@ -77,6 +77,9 @@ var aaaa = 0
             return 1.3*d.radius}
 )
         tooltip
+          .transition()
+          .duration(200)
+        tooltip
           .style("opacity", 1)
           .style("left", d3.event.pageX + "px")
           .style("top", d3.event.pageY + "px")
@@ -89,6 +92,9 @@ var aaaa = 0
       }
       var mouseleave = function(d) {
         svg.selectAll("."+d.section).transition().duration(3000).style("opacity", 1).attr("r", function(d){ return d.radius })
+        tooltip
+          .transition()
+          .duration(200)
         tooltip
           .style("opacity", 0)
           .style("transition", "opacity 5s ease-in-out;")
@@ -200,7 +206,7 @@ var aaaa = 0
           d3.selectAll(".selected").classed("selected", false).attr("stroke", false);
           d3.select(this).classed("selected", true);
           d3.select(this).transition().attr("stroke", colors(d.cluster)).attr("stroke-width", 2);
-          bubble_statistics(nodes, "showStatisticCourse");
+          generate_statistics(d, "showStatisticCourse", false);
         }
         else {
           d3.select(this).classed("selected", false);

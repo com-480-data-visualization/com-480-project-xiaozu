@@ -112,14 +112,14 @@ introguide.setOptions({
         intro: 'Click on a node to see its statistics and (un)lock it.',
         position: 'bottom'
       },
-      
+
       {
         element: '#statistics-network',
         intro: 'Here you can find all the statistic for a course. Enjoy our website! Press ESC.',
         position: 'bottom'
       }
 
-     
+
   ]
 });
 

@@ -38,6 +38,7 @@ body{
 
 #bubbleCourses{
   height: 45vh;
+  overflow: auto;
 }
 
 

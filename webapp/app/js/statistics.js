@@ -564,6 +564,10 @@ function fill_stud_by_year(course_name, id) {
 
       var mouseover = function(d) {
         tooltip
+          .transition()
+          .duration(200)
+
+        tooltip
           .style("opacity", 1)
           .style("left", d3.event.pageX + "px")
           .style("top", d3.event.pageY + "px")
@@ -575,6 +579,10 @@ function fill_stud_by_year(course_name, id) {
           .style("top", d3.event.pageY + "px")
       }
       var mouseleave = function(d) {
+        tooltip
+          .transition()
+          .duration(200)
+
         tooltip
           .style("opacity", 0)
           .style("transition", "opacity 5s ease-in-out;")
@@ -620,7 +628,7 @@ export function generate_statistics(d, id, network_stats=true) {
     var div = document.getElementById(id);
     div.innerHTML = `
                     <div class="showStatistics" style="width: 18rem;">
-                    <h5> ${d.short_name ? d.short_name : ""}  ${d.name}
+                    <h5> ${d.short_name ? d.short_name : ""}  ${d.name ? d.name : "Not enough information about this course to show statistics"}
                     ${network_stats ? `
                     <button type="button" class="btn buttons-icon-lock"
                             value="${d.name}" id="lock_button">
