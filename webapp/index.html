@@ -11,6 +11,7 @@
 <link rel="stylesheet"
   href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css" />
 <link href="/app/fontawesome/css/all.css" rel="stylesheet">
+<link href="app/css/introjs.css" rel="stylesheet">
 <!--load all styles -->
 <link rel="stylesheet" type="text/css" href="app/css/main.css">
 
@@ -49,6 +50,7 @@
                 You will notice 3 tabs on the top, our main visualizations will be in the Explore and General tabs.
                 </br>
                 Feel free to take a look at them!
+                <a class="btn btn-large btn-success btn-start" href="javascript:void(0);" data-intro='Hello step one!'>Show me how</a>
               </p>
               <p>
                 Enjoy! </br> Costanza, Eleonora and Wei</p>
@@ -61,43 +63,43 @@
               <div class="container-fluid graph-container" id="bubble-container">
                 <div class="row" style="height: 100%">
                   <div class="col-8" id="bubble-graph">
+                    <div class="col-12" id="personal-data-bubble">
+                      <div class="dropdown" style="margin-top: 20px; left: 50%;">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Sections
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" id="dropdown-filtered" style="z-index:9999">
+                          <button class="dropdown-item" href="#"><label><input type="checkbox" class="checkbox" value='AR' checked/> Architecture (AR)</label></button>
+                          <button class="dropdown-item" href="#"><label><input type="checkbox" class="checkbox" value='BIO' checked/> BIO</label></button>
+                          <button class="dropdown-item" href="#"><label><input type="checkbox" class="checkbox" value='BIOENG' checked/> BIOENG</label></button>
+                          <button class="dropdown-item" href="#"><label><input type="checkbox" class="checkbox" value='COM' checked/> COM</label></button>
+                          <button class="dropdown-item" href="#"><label><input type="checkbox" class="checkbox" value='CS' checked/> Computer Science (CS)</label></button>
+                          <button class="dropdown-item" href="#"><label><input type="checkbox" class="checkbox" value='EE' checked/> EE</label></button>
+                          <button class="dropdown-item" href="#"><label><input type="checkbox" class="checkbox" value='FIN' checked/> FIN</label></button>
+                          <button class="dropdown-item" href="#"><label><input type="checkbox" class="checkbox" value='MICRO' checked/> MICRO</label></button>
+                          <button class="dropdown-item" href="#"><label><input type="checkbox" class="checkbox" value='CIVIL' checked/> CIVIL</label></button>
+                          <button class="dropdown-item" href="#"><label><input type="checkbox" class="checkbox" value='ChE' checked/> ChE</label></button>
+                          <button class="dropdown-item" href="#"><label><input type="checkbox" class="checkbox" value='ME' checked/> ME</label></button>
+                          <button class="dropdown-item" href="#"><label><input type="checkbox" class="checkbox" value='CH' checked/> CH</label></button>
+                          <button class="dropdown-item" href="#"><label><input type="checkbox" class="checkbox" value='MSE' checked/> MSE</label></button>
+                          <button class="dropdown-item" href="#"><label><input type="checkbox" class="checkbox" value='MATH' checked/> MATH</label></button>
+                          <button class="dropdown-item" href="#"><label><input type="checkbox" class="checkbox" value='ENV' checked/> ENV</label></button>
+                          <button class="dropdown-item" href="#"><label><input type="checkbox" class="checkbox" value='MGT' checked/> MGT</label></button>
+                          <button class="dropdown-item" href="#"><label><input type="checkbox" class="checkbox" value='PHYS' checked/> PHYS</label></button>
+                          <button class="dropdown-item" href="#"><label><input type="checkbox" class="checkbox" value='ENG' checked/> ENG</label></button>
+                          <button class="dropdown-item" href="#"><label><input type="checkbox" class="checkbox" value='HUM' checked/> HUM</label></button>                        
+                        </div>
+                      </div>
+                      </div>
+                    <div class="w-100"></div>
                     <div class="col" id="bubbleCourses"></div>
                     <div class="w-100"></div>
                     <div class="col">
                       <input type="text" class="js-range-slider" name="my_range" value="" />
                     </div>
                   </div>
-                  <div class="col-4" style="background-color: #ffffff;">
-                      <div class="col personal-data" id="personal-data-bubble">
-                        <div class="dropdown">
-                          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Sections
-                          </button>
-                          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" id="dropdown-filtered">
-                            <button class="dropdown-item" href="#"><label><input type="checkbox" class="checkbox" value='AR' checked/> Architecture (AR)</label></button>
-                            <button class="dropdown-item" href="#"><label><input type="checkbox" class="checkbox" value='BIO' checked/> BIO</label></button>
-                            <button class="dropdown-item" href="#"><label><input type="checkbox" class="checkbox" value='BIOENG' checked/> BIOENG</label></button>
-                            <button class="dropdown-item" href="#"><label><input type="checkbox" class="checkbox" value='COM' checked/> COM</label></button>
-                            <button class="dropdown-item" href="#"><label><input type="checkbox" class="checkbox" value='CS' checked/> Computer Science (CS)</label></button>
-                            <button class="dropdown-item" href="#"><label><input type="checkbox" class="checkbox" value='EE' checked/> EE</label></button>
-                            <button class="dropdown-item" href="#"><label><input type="checkbox" class="checkbox" value='FIN' checked/> FIN</label></button>
-                            <button class="dropdown-item" href="#"><label><input type="checkbox" class="checkbox" value='MICRO' checked/> MICRO</label></button>
-                            <button class="dropdown-item" href="#"><label><input type="checkbox" class="checkbox" value='CIVIL' checked/> CIVIL</label></button>
-                            <button class="dropdown-item" href="#"><label><input type="checkbox" class="checkbox" value='ChE' checked/> ChE</label></button>
-                            <button class="dropdown-item" href="#"><label><input type="checkbox" class="checkbox" value='ME' checked/> ME</label></button>
-                            <button class="dropdown-item" href="#"><label><input type="checkbox" class="checkbox" value='CH' checked/> CH</label></button>
-                            <button class="dropdown-item" href="#"><label><input type="checkbox" class="checkbox" value='MSE' checked/> MSE</label></button>
-                            <button class="dropdown-item" href="#"><label><input type="checkbox" class="checkbox" value='MATH' checked/> MATH</label></button>
-                            <button class="dropdown-item" href="#"><label><input type="checkbox" class="checkbox" value='ENV' checked/> ENV</label></button>
-                            <button class="dropdown-item" href="#"><label><input type="checkbox" class="checkbox" value='MGT' checked/> MGT</label></button>
-                            <button class="dropdown-item" href="#"><label><input type="checkbox" class="checkbox" value='PHYS' checked/> PHYS</label></button>
-                            <button class="dropdown-item" href="#"><label><input type="checkbox" class="checkbox" value='ENG' checked/> ENG</label></button>
-                            <button class="dropdown-item" href="#"><label><input type="checkbox" class="checkbox" value='HUM' checked/> HUM</label></button>                        
-                          </div>
-                        </div>
-                        </div>
-                      <div class="w-100"></div>
-                      <div class="col statistics" id="showStatisticCourse">
+                  <div class="col-4 statistics" style="background-color: #ffffff; height: 100% !important; z-index: 0;">
+                      <div class="col" id="showStatisticCourse">
                         Click on a course's node to discover more information about that course.
                       </div>
                     </div>
@@ -150,6 +152,7 @@
       </div>
     </div>
   </div>
+<script type="text/javascript" src="app/js/intro.js"></script>
 </body>
 <script src="https://code.jquery.com/jquery-3.4.0.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
