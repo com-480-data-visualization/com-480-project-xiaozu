@@ -120,4 +120,4 @@ Prototype: [Website](https://xiaozuepfl.herokuapp.com/)
  - `open "http://localhost:3000/"`: Start website   
 
 `Getting Started`: git clone 
-
+Video: https://youtu.be/Re1K1QFFP3Q
