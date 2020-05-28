@@ -8,7 +8,6 @@ $('#menuList a').on('click', function (e) {
 var introguide = introJs();
 
 introguide.onchange(function(targetElement) {
-  console.log(targetElement);
   if(targetElement.id == "studentNameAutocomplete"){
     targetElement.click();
     var word = "Volpini Costanza";
@@ -23,12 +22,7 @@ introguide.onchange(function(targetElement) {
       if (++n < word.length) {
         setTimeout(loop, 300);
       } else {
-        $(".tt-menu")[0].setAttribute("style", "display: none");
-
-        // call course_network!!
-          // showLoaderBadges();
-  
-          // course_network(v);
+        $(".tt-selectable")[0].click()
       }
     })();
 
