@@ -105,16 +105,16 @@ Prototype: [Website](https://xiaozuepfl.herokuapp.com/)
 ## Milestone 3 (Thursday 28th May, 5pm)
 
 **80% of the final grade**
-ISN'T academia web https://xiaozuepfl.herokuapp.com/
+- ISN'T academia web https://xiaozuepfl.herokuapp.com/
 ### Getting Started for local run
 ##### install
-node v.12.16.2  
-npm 6.14.4  
-d3 v4  
+- node v.12.16.2  
+- npm 6.14.4  
+- d3 v4  
 #### command
-git clone   
-cd com-480-project-xiaozu/webapp  
-npm install   
-npm run dev
-open "http://localhost:3000/"   
+- git clone   
+- cd com-480-project-xiaozu/webapp  
+- npm install   
+- npm run dev
+- open "http://localhost:3000/"   
 
