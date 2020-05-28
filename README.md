@@ -106,3 +106,5 @@ Prototype: [Website](https://xiaozuepfl.herokuapp.com/)
 
 **80% of the final grade**
 
+`Getting Started`: git clone 
+
