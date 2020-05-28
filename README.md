@@ -106,6 +106,7 @@ Prototype: [Website](https://xiaozuepfl.herokuapp.com/)
 
 **80% of the final grade**
 ### ISN'T academia web https://xiaozuepfl.herokuapp.com/
+[process book](https://github.com/com-480-data-visualization/com-480-project-xiaozu/process_book.pdf)
 #### Getting Started for local run
 ##### setup
  - `npm` 6.14.4 
