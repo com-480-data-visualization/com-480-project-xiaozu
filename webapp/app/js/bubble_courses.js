@@ -1,6 +1,5 @@
 import { generate_statistics } from "./statistics.js";
 import { bubble_statistics } from "./bubble_stats.js";
-// import { chord } from "./relations_course.js";
 let default_year = [2019, 2020];
 let num_courses_to_show = 5;
 
@@ -37,6 +36,7 @@ $(".js-range-slider").ionRangeSlider({
     q.defer(bubbleGraph);
   }
 });
+
 var css = new Set()
 $("span.irs-grid-pol.small").hide(); //hide ticks ionRangeSlider
 var host = window.location.hostname;
@@ -48,14 +48,11 @@ if (host.indexOf('localhost') > -1) {
   host = "https://" + host;
 }
 var cs = new Set();
- let courses_url = host + `/course_bubble/?year=${default_year[0]}-${default_year[1]}`
+let courses_url = host + `/course_bubble/?year=${default_year[0]}-${default_year[1]}`
 var aaaa = 0
  function bubbleGraph() {
    Math.seedrandom = 0
-
-  //console.log("new", node_list); //output is correct
   d3.json(courses_url, function (error, data) {
-
     hideLoaderBubble(); // hide loading
     document.getElementById("bubbleCourses").innerHTML = "";
     const margin = { top: 0, right: 30, bottom: 40, left: 10 };
@@ -96,8 +93,6 @@ var aaaa = 0
           .style("opacity", 0)
           .style("transition", "opacity 5s ease-in-out;")
       }
-
-
       if(aaaa==0){
         data.forEach(function(d){
         cs.add(d.section);
@@ -211,9 +206,8 @@ var aaaa = 0
           d3.select(this).classed("selected", false);
           d3.select(this).transition().attr("stroke", false).attr("stroke-width", 0.5);
           generate_statistics(d, "showStatisticCourse", false);
-          //bubble_statistics(nodes, "showStatisticCourse");
         }})
-        //.call(drag(force))
+
 
   var a = new Array(20);
   for(var i =0;i<a.length;i++){
@@ -227,7 +221,7 @@ var aaaa = 0
       b[j] = nodes[i].text
     }
   }
-//Doesn't not have to be a hash map, any key/value map is fine
+
     let texts = svg.selectAll('texts')
         .data(nodes)
         .enter()
@@ -256,7 +250,7 @@ function update(){
   d3.selectAll(".checkbox").each(function(d){
   var cb = d3.select(this);
   var grp = cb.property("value")
-  // If the box is check, I show the group
+
 if(cb.property("checked")){
     cs.add(grp)
     svg.selectAll("."+grp).transition().duration(1000).style("opacity", 1).attr("r", function(d){ return d.radius })
@@ -270,9 +264,8 @@ if(cb.property("checked")){
 }
 })}
 
-// When a button change, I run the update function
+
 d3.selectAll(".checkbox").on("change",update);
-// And I initialize it at the beginning
 update()
 
 });}
