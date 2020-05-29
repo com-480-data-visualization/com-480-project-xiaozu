@@ -55,10 +55,10 @@ var aaaa = 0
   d3.json(courses_url, function (error, data) {
     hideLoaderBubble(); // hide loading
     document.getElementById("bubbleCourses").innerHTML = "";
-    const margin = { top: 10, right: 0, bottom: 0, left: 30 };
+    const margin = { top: 10, right: 10, bottom: 0, left: 0 };
     var width = 1000 - margin.left - margin.right;
-    var height = 400 - margin.top - margin.bottom;
-    var padding = 1.5, // separation between same-color nodes
+    var height = 300 - margin.top - margin.bottom;
+    var padding = 1.2, // separation between same-color nodes
         clusterPadding = 6, // separation between different-color nodes
         maxRadius = 12;
       var tooltip = d3.select("#bubbleCourses")
@@ -129,7 +129,7 @@ var aaaa = 0
               section: data[node_counter].section,
               cluster: i,
               enrol: data[node_counter].enrollments,
-              radius: 1.2*Math.sqrt(data[node_counter].enrollments),
+              radius: Math.sqrt(data[node_counter].enrollments),
               text: id,
               short_name: id,
               name: data[node_counter].course_name,
@@ -183,7 +183,7 @@ var aaaa = 0
         .force("cluster", forceCluster)
         .force("gravity", d3.forceManyBody(50))
         .force("x", d3.forceX().strength(.3))
-        .force("y", d3.forceY().strength(1))
+        .force("y", d3.forceY().strength(1.1))
         .on("tick", tick);
         var svg = d3.select("#bubbleCourses").append("svg")
             .attr("width", width)
