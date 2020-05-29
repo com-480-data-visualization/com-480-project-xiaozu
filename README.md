@@ -106,7 +106,7 @@ Prototype: [Website](https://xiaozuepfl.herokuapp.com/)
 
 **80% of the final grade**
 ### ISN'T academia web https://xiaozuepfl.herokuapp.com/
-[process book](https://github.com/com-480-data-visualization/com-480-project-xiaozu/blob/master/report/Final%20Report.pdf)
+[process book](https://github.com/com-480-data-visualization/com-480-project-xiaozu/tree/master/report/Process_book.pdf)
 vedio : https://youtu.be/Re1K1QFFP3Q
 #### Getting Started for local run
 ##### setup
@@ -119,6 +119,3 @@ vedio : https://youtu.be/Re1K1QFFP3Q
  - `npm install`: Install all the packages
  - `npm run dev`: Run project
  - `open "http://localhost:3000/"`: Start website   
-
-`Getting Started`: git clone 
-Video: https://youtu.be/Re1K1QFFP3Q
