@@ -41,8 +41,8 @@ for(var i = 0;i<node.length;i++){
 function course_section(node, id){
   var div = document.getElementById(id+"-course_section");
   div.innerHTML = `
-    <label><input type="radio" class="dataset" name="dataset" id="dataset" value="Course" checked> Number of courses</label>
-    <label><input type="radio" class="dataset" name="dataset" id="dataset" value="Enrollments"> Average number of enrollments</label>`;
+    <label style="margin: 5px;"><input type="radio" class="dataset" name="dataset" id="dataset" value="Course" checked><span style="vertical-align: text-bottom; font-size: 12px;"> Number of courses</span></label>
+    <label style="margin: 5px;"><input type="radio" class="dataset" name="dataset" id="dataset" value="Enrollments"><span style="vertical-align: text-bottom; font-size: 12px;"> Average number of enrollments</span></label>`;
 
   // Set margin and dimesion
   var margin = {top: 20, right: 10, bottom: 10, left: 60};

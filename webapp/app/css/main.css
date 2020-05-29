@@ -79,13 +79,14 @@ body{
 
 #showStatisticCourse{
   font-size: 10px;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
 #statistic-tutorial-bubble{
   overflow-x: hidden;
   padding-top: 15px;
   padding-bottom: 25px;
+  overflow-x: auto;
   /* padding-left: 0px; */
 }
 
