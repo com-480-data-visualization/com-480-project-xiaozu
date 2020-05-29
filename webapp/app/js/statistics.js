@@ -94,8 +94,8 @@ export function course_network(student_name) {
       })
     }
 
-    var width = 800;//$(window).width();
-    var height = 800; //$(window).height();
+    var width = $(window).width();
+    var height = $(window).height();
 
     document.getElementById("course_network").innerHTML = "";
 
@@ -138,7 +138,7 @@ export function course_network(student_name) {
     var svg = d3.select("#course_network")
         .append("svg")
         //.attr("style", "height: 100%;")
-        .attr("viewBox", [20, 20, width-20, height-20])
+        .attr("viewBox", [20, 20, width, height])
         .attr("font-size", 8)
         .attr("font-family", "sans-serif")
     //     .call(d3.zoom().on("zoom", function () {

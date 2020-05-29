@@ -70,6 +70,7 @@ body{
 .graph{
   z-index: 0;
   overflow-x:hidden;
+  overflow-y:hidden;
 }
 
 .my_courses {
