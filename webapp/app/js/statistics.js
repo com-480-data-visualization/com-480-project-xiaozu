@@ -120,23 +120,13 @@ export function course_network(student_name) {
         .style("opacity", 1)
         .html([d.name])
         .style("top",  (d3.event.pageY  + radius * 2) + "px")
-      if(d3.event.pageX  < width / 2){
-        tooltip.style("left", (d3.event.pageX  + radius * 2) + "px")
-      }
-      else {
-        tooltip.style("right", (width - d3.event.pageX  - radius * 2) + "px")
-      }
+        .style("left", (d3.event.pageX  + radius * 2) + "px")
 
     }
     var moveTooltip = function (d) {
       tooltip
-      .style("top",  (d3.event.pageY  + radius * 2) + "px")
-      if(d3.event.pageX  < width / 2){
-        tooltip.style("left", (d3.event.pageX  + radius * 2) + "px")
-      }
-      else {
-        tooltip.style("right", (width - d3.event.pageX  - radius * 2) + "px")
-      }
+        .style("top",  (d3.event.pageY  + radius * 2) + "px")
+        .style("left", (d3.event.pageX  + radius * 2) + "px")
     }
     var hideTooltip = function (d) {
       tooltip
