@@ -570,14 +570,14 @@ function fill_stud_by_year(course_name, id) {
 
         tooltip
           .style("opacity", 1)
-          .style("left", d3.event.pageX + "px")
-          .style("top", d3.event.pageY + "px")
+          .style("left", (d3.event.pageX + 10)+ "px")
+          .style("top", (d3.event.pageY + 20) + "px")
       }
       var mousemove = function(d) {
         tooltip
           .html( "" + d.nr_students + " students")
-          .style("left", d3.event.pageX + "px")
-          .style("top", d3.event.pageY + "px")
+          .style("left",(d3.event.pageX + 10) + "px")
+          .style("top", (d3.event.pageY + 20) + "px")
       }
       var mouseleave = function(d) {
         tooltip
