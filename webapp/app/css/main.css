@@ -301,12 +301,11 @@ body{
     font-size: 12px;
   }
 
-  #copyright{
+  #copyright {
     color: gray;
     font-size: 12px;
-    right: 0px;
     text-align: end;
-  }
+}
 
   #isa-link {
     color: #2699b2 !important;
