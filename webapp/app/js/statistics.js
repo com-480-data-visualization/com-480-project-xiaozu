@@ -29,7 +29,7 @@ export function load_side_bar(student_name){
 
           // hideLoaderBadges();
           document.getElementById("coursesbadges").innerHTML = ""; // reset
-          $("#selected-courses").css("height", $("#network-graph").height());
+          // $("#selected-courses").css("height", $("#network-graph").height());
           // show badges
           Array.from(new Set(courses_by_stud)).forEach((course, idx) => {
               $("#coursesbadges").append(

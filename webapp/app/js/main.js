@@ -27,7 +27,6 @@ introguide.onbeforechange(function(targetElement) {
   }
   else {
     if(targetElement.id == "slide-courses"){
-      console.log("inside!!!!!!!!!!!!!!!!!!!")
       $("#course_network")[0].children[1].children[1].children[9].setAttribute("id", "circle-tutorial");
     }
     if(targetElement.id == "course_network"){
@@ -139,7 +138,7 @@ $('#slide-courses').click(function (e) {
 
   var $marginLefty = $("#selected-courses");
   $marginLefty.animate({
-    marginLeft: toExpand ? "55%" : "100%" });
+    marginLeft: toExpand ? "55%" : "150%" });
   });
 
   $('#start-the-tutorial').on('click', function (e) {

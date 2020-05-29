@@ -54,7 +54,7 @@ body{
 
 .my_courses {
   height: 100%;
-  margin-left: 100%;
+  margin-left: 150%;
   /*border-bottom: 1px #1993AE solid;*/
 }
 
@@ -90,6 +90,9 @@ body{
   /* padding-left: 0px; */
 }
 
+#coursesbadges{
+  margin-bottom: 0;
+}
 
 
 #selected-courses {
@@ -103,6 +106,8 @@ body{
   background-color: #fff;
   z-index: 1;
   font-size: 10px;
+  overflow-x: hidden;
+  padding-bottom: 0;
 }
 
 .ul-courses-lock {
