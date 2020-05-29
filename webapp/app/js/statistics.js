@@ -29,7 +29,7 @@ export function load_side_bar(student_name){
 
           // hideLoaderBadges();
           document.getElementById("coursesbadges").innerHTML = ""; // reset
-
+          $("#selected-courses").css("height", $("#network-graph").height());
           // show badges
           Array.from(new Set(courses_by_stud)).forEach((course, idx) => {
               $("#coursesbadges").append(
@@ -48,6 +48,7 @@ export function load_side_bar(student_name){
                   </li>`
                   );
           });
+          //$("#coursesbadges").append("<div class="col-11"></div> <div class="col-11"></div>");
           courses_by_stud.forEach((_, idx) => {
             var lockButton = document.getElementById("small_lock_button_" + idx.toString());
             lockButton.addEventListener("click", function(event) {
@@ -327,7 +328,7 @@ function fill_course_prof(course_name, id) {
       padding = 2
     }
     div.innerHTML = `
-    <p> Prof: <i> ${prof_str} </i>  <p>
+    <p style="100%"> Prof: <i> ${prof_str} </i>  <p>
     `;
 
   });
